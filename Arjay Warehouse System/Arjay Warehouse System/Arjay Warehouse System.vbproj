@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Arjay_Warehouse_System.My.MyApplication</StartupObject>
+    <RootNamespace>Arjay_Warehouse_System</RootNamespace>
+    <AssemblyName>Arjay Warehouse System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Arjay Warehouse System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Arjay Warehouse System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Create Account Landing Page.Designer.vb">
+      <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Create Account Landing Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Login.Designer.vb">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel.Designer.vb">
+      <DependentUpon>Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create A Dispatch Personnel Account.Designer.vb">
+      <DependentUpon>Create A Dispatch Personnel Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create A Dispatch Personnel Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Admin Account.Designer.vb">
+      <DependentUpon>Create Admin Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Admin Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Receiving Personnel Account.Designer.vb">
+      <DependentUpon>Create Receiving Personnel Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Create Receiving Personnel Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch Login.Designer.vb">
+      <DependentUpon>Dispatch Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch Panel.Designer.vb">
+      <DependentUpon>Dispatch Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee database lookup.Designer.vb">
+      <DependentUpon>Employee database lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee database lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Registration Form.Designer.vb">
+      <DependentUpon>Employee Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry Log Viewer.Designer.vb">
+      <DependentUpon>Entry Log Viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entry Log Viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login As.Designer.vb">
+      <DependentUpon>Login As.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login As.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Receiving Login.Designer.vb">
+      <DependentUpon>Receiving Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving Panel.Designer.vb">
+      <DependentUpon>Receiving Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time Keeping System.Designer.vb">
+      <DependentUpon>Time Keeping System.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Time Keeping System.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin Create Account Landing Page.resx">
+      <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Login.resx">
+      <DependentUpon>Admin Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel.resx">
+      <DependentUpon>Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create A Dispatch Personnel Account.resx">
+      <DependentUpon>Create A Dispatch Personnel Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Admin Account.resx">
+      <DependentUpon>Create Admin Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Receiving Personnel Account.resx">
+      <DependentUpon>Create Receiving Personnel Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Login.resx">
+      <DependentUpon>Dispatch Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Panel.resx">
+      <DependentUpon>Dispatch Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee database lookup.resx">
+      <DependentUpon>Employee database lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Registration Form.resx">
+      <DependentUpon>Employee Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry Log Viewer.resx">
+      <DependentUpon>Entry Log Viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login As.resx">
+      <DependentUpon>Login As.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving Login.resx">
+      <DependentUpon>Receiving Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving Panel.resx">
+      <DependentUpon>Receiving Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time Keeping System.resx">
+      <DependentUpon>Time Keeping System.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
