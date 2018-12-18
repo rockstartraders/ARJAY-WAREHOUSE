@@ -99,12 +99,13 @@ Public Class Correction_Ticket
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox4.Text = ""
-        ComboBox1.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
-        TextBox8.Text = ""
         ComboBox2.Text = ""
+
+        Dim rn As New Random
+        TextBox1.Text = (rn.Next(233, 334455) + 5)
 
 
 
@@ -112,6 +113,10 @@ Public Class Correction_Ticket
     End Sub
 
     Private Sub Label13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label13.Click
+
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub
 End Class

@@ -66,6 +66,7 @@ Partial Class Admin_Correction_Form
         Me.ListView1.Location = New System.Drawing.Point(318, 22)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(534, 311)
+        Me.ListView1.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -140,11 +141,11 @@ Partial Class Admin_Correction_Form
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(19, 495)
+        Me.Label12.Location = New System.Drawing.Point(23, 498)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(83, 65)
+        Me.Label12.Size = New System.Drawing.Size(81, 13)
         Me.Label12.TabIndex = 78
-        Me.Label12.Text = "Resolved Notes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label12.Text = "Admin Remarks"
         '
         'TextBox7
         '
