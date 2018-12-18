@@ -23,16 +23,17 @@ Public Class Correction_Ticket
         Dim D As Date = Now()  ' this is date and time 
         Me.Label3.Text = D
 
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept` FROM `employee record`", con)
         Dim table As New DataTable()
 
-        
+
 
     End Sub
 
     Private Sub ComboBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ComboBox1.KeyPress
-        e.Handled = True
+
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -86,7 +87,7 @@ Public Class Correction_Ticket
 
         con.Open()
         Dim query As String
-        query = "INSERT INTO `correction request`( `date_submitted`,`Incident_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `status`, `correction_type`, `prob_des`,`resolution`) VALUES ('" & Label3.Text & "','" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "')"
+        query = "INSERT INTO `correction request`( `date_submitted`,`Incident_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `status`, `correction_type`, `prob_des`,`resolution`,`resolved_date`) VALUES ('" & Label3.Text & "','" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "','" & Label13.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
@@ -107,6 +108,10 @@ Public Class Correction_Ticket
 
 
 
+
+    End Sub
+
+    Private Sub Label13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label13.Click
 
     End Sub
 End Class

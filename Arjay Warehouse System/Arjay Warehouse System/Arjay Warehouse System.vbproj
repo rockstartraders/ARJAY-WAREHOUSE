@@ -73,6 +73,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin Correction Form.Designer.vb">
+      <DependentUpon>Admin Correction Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Correction Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin Create Account Landing Page.Designer.vb">
       <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
     </Compile>
@@ -193,6 +199,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin Correction Form.resx">
+      <DependentUpon>Admin Correction Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin Create Account Landing Page.resx">
       <DependentUpon>Admin Create Account Landing Page.vb</DependentUpon>
     </EmbeddedResource>

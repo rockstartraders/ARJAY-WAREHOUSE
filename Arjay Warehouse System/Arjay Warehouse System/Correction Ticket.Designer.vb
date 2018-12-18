@@ -46,6 +46,7 @@ Partial Class Correction_Ticket
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -70,6 +71,7 @@ Partial Class Correction_Ticket
         '
         Me.TextBox1.Location = New System.Drawing.Point(128, 76)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(130, 20)
         Me.TextBox1.TabIndex = 33
         '
@@ -102,6 +104,7 @@ Partial Class Correction_Ticket
         '
         Me.TextBox3.Location = New System.Drawing.Point(128, 159)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(179, 20)
         Me.TextBox3.TabIndex = 38
         '
@@ -118,6 +121,7 @@ Partial Class Correction_Ticket
         '
         Me.TextBox4.Location = New System.Drawing.Point(128, 198)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(179, 20)
         Me.TextBox4.TabIndex = 40
         '
@@ -134,6 +138,7 @@ Partial Class Correction_Ticket
         '
         Me.TextBox5.Location = New System.Drawing.Point(128, 236)
         Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(179, 20)
         Me.TextBox5.TabIndex = 42
         '
@@ -150,6 +155,7 @@ Partial Class Correction_Ticket
         '
         Me.TextBox6.Location = New System.Drawing.Point(128, 271)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(179, 20)
         Me.TextBox6.TabIndex = 44
         '
@@ -254,11 +260,23 @@ Partial Class Correction_Ticket
         Me.Label12.TabIndex = 57
         Me.Label12.Text = "Resolved Notes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Enabled = False
+        Me.Label13.Location = New System.Drawing.Point(303, 647)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(56, 13)
+        Me.Label13.TabIndex = 62
+        Me.Label13.Text = "PENDING"
+        Me.Label13.Visible = False
+        '
         'Correction_Ticket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(730, 759)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Button2)
@@ -284,7 +302,7 @@ Partial Class Correction_Ticket
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Correction_Ticket"
-        Me.Text = " "
+        Me.Text = " Correction Request"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -313,4 +331,5 @@ Partial Class Correction_Ticket
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class
