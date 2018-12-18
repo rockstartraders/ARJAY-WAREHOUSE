@@ -204,7 +204,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Create_A_Dispatch_Personnel_Account"
-        Me.Text = "Create A Dispatch Personnel Account"
+        Me.Text = "n"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
