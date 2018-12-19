@@ -16,40 +16,25 @@ Public Class Password_Reset_for_Dispatch
         
         Dim D As Date = Now()  ' this is date and time 
         Me.Label3.Text = D
+
+        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `dispatch access`", con)
+        Dim table As New DataTable()
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "userid"
+        ComboBox1.DisplayMember = "userid"
+
+        
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
-        'Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept` FROM `employee record`", con)
-        Dim table As New DataTable()
-        Dim da As New SqlClient.SqlDataAdapter
-        Dim rd As MySqlDataReader
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        Try
-
-
-            con.Open()
-            Dim query As String
-            query = "SELECT * FROM `dispatch access` WHERE `userid` ='" + TextBox1.Text + "'"
-            cmd = New MySqlCommand(query, con)
-            rd = cmd.ExecuteReader
-            While rd.Read
-                TextBox2.Text = rd.Item("emp_no")
-                TextBox3.Text = rd.Item("f_name")
-                TextBox4.Text = rd.Item("m_name")
-                TextBox5.Text = rd.Item("l_name")
-                TextBox6.Text = rd.Item("dept")
-
-
-            End While
-            con.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
 
     End Sub
 
@@ -149,7 +134,7 @@ Public Class Password_Reset_for_Dispatch
 
         con.Close()
 
-        TextBox1.Text = ""
+        ComboBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox4.Text = ""
@@ -162,4 +147,33 @@ Public Class Password_Reset_for_Dispatch
 
 
 
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+        'Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept` FROM `employee record`", con)
+        Dim table As New DataTable()
+        Dim da As New SqlClient.SqlDataAdapter
+        Dim rd As MySqlDataReader
+
+        Try
+
+
+            con.Open()
+            Dim query As String
+            query = "SELECT * FROM `dispatch access` WHERE `userid` ='" + ComboBox1.Text + "'"
+            cmd = New MySqlCommand(query, con)
+            rd = cmd.ExecuteReader
+            While rd.Read
+                TextBox2.Text = rd.Item("emp_no")
+                TextBox3.Text = rd.Item("f_name")
+                TextBox4.Text = rd.Item("m_name")
+                TextBox5.Text = rd.Item("l_name")
+                TextBox6.Text = rd.Item("dept")
+
+
+            End While
+            con.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
 End Class

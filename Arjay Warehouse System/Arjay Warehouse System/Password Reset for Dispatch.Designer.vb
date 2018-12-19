@@ -34,7 +34,6 @@ Partial Class Password_Reset_for_Dispatch
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
@@ -42,6 +41,7 @@ Partial Class Password_Reset_for_Dispatch
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -147,13 +147,6 @@ Partial Class Password_Reset_for_Dispatch
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "Date"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(183, 102)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox1.TabIndex = 46
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -213,11 +206,20 @@ Partial Class Password_Reset_for_Dispatch
         Me.Button2.Text = "CANCEL"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(183, 107)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(179, 21)
+        Me.ComboBox1.TabIndex = 64
+        '
         'Password_Reset_for_Dispatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 608)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox8)
@@ -235,7 +237,6 @@ Partial Class Password_Reset_for_Dispatch
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Password_Reset_for_Dispatch"
@@ -256,7 +257,6 @@ Partial Class Password_Reset_for_Dispatch
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
@@ -264,4 +264,5 @@ Partial Class Password_Reset_for_Dispatch
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class
