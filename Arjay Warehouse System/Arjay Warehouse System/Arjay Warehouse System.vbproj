@@ -179,6 +179,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Password Reset Admin Panel.Designer.vb">
+      <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password Reset for Dispatch.Designer.vb">
+      <DependentUpon>Password Reset for Dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Password Reset for Dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Receiving Login.Designer.vb">
       <DependentUpon>Receiving Login.vb</DependentUpon>
     </Compile>
@@ -255,6 +267,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset Admin Panel.resx">
+      <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password Reset for Dispatch.resx">
+      <DependentUpon>Password Reset for Dispatch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Receiving Login.resx">
       <DependentUpon>Receiving Login.vb</DependentUpon>
