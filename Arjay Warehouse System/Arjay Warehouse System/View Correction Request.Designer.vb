@@ -72,6 +72,7 @@ Partial Class View_Correction_Request
         Me.TextBox8.Location = New System.Drawing.Point(167, 531)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(310, 113)
         Me.TextBox8.TabIndex = 102
         '
