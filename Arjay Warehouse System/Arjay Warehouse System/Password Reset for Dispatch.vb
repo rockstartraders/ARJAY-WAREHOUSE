@@ -154,6 +154,8 @@ Public Class Password_Reset_for_Dispatch
         Dim da As New SqlClient.SqlDataAdapter
         Dim rd As MySqlDataReader
 
+
+
         Try
 
 
@@ -175,5 +177,9 @@ Public Class Password_Reset_for_Dispatch
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
     End Sub
 End Class
