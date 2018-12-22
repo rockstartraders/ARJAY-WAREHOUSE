@@ -81,8 +81,13 @@ Public Class Dispatch_Login
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+        Dim af As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Login_As.Visible = True
-        Me.Dispose()
+        af.ShowDialog()
+        End
+
     End Sub
 End Class

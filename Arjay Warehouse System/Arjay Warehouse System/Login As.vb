@@ -12,23 +12,35 @@ Public Class Login_As
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        Dim ad As New Receiving_Login    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Receiving_Login.ShowDialog()
-        Me.Dispose()
+        ad.ShowDialog()
+        End
+
+
     End Sub
 
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        Dim ab As New Admin_Login    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Admin_Login.ShowDialog()
-        Me.Dispose()
+        ab.ShowDialog()
+        End
 
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+        Dim ac As New Dispatch_Login   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Dispatch_Login.ShowDialog()
-        Me.Dispose()
+        ac.ShowDialog()
+        End
 
 
     End Sub

@@ -31,7 +31,7 @@ Partial Class Login_As
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(186, 39)
+        Me.Label1.Location = New System.Drawing.Point(321, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 13)
         Me.Label1.TabIndex = 5
@@ -41,25 +41,25 @@ Partial Class Login_As
         '
         Me.Button1.Location = New System.Drawing.Point(90, 77)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 84)
+        Me.Button1.Size = New System.Drawing.Size(158, 92)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "ADMIN"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(180, 77)
+        Me.Button2.Location = New System.Drawing.Point(282, 77)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 84)
+        Me.Button2.Size = New System.Drawing.Size(158, 92)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "DISPATCH"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(270, 77)
+        Me.Button3.Location = New System.Drawing.Point(471, 77)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 84)
+        Me.Button3.Size = New System.Drawing.Size(158, 92)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "RECEIVING"
         Me.Button3.UseVisualStyleBackColor = True
@@ -68,7 +68,7 @@ Partial Class Login_As
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 257)
+        Me.ClientSize = New System.Drawing.Size(743, 313)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
