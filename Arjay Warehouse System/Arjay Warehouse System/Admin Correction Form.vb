@@ -162,4 +162,14 @@ Public Class Admin_Correction_Form
         End While
         con.Close()
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Dim aaab As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aaab.ShowDialog()
+        End
+
+    End Sub
 End Class
