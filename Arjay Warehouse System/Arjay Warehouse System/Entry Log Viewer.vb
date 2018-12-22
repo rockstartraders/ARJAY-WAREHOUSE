@@ -72,7 +72,12 @@ Public Class Entry_Log_Viewer
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Close()
+
+        Dim aaaae As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aaaae.ShowDialog()
+        End
 
     End Sub
 
@@ -135,7 +140,7 @@ Public Class Entry_Log_Viewer
         If a = DialogResult.Yes Then
 
             con.Open()
-            query = "Delete from `entry log` where `time_stamp`='" & ListView1.SelectedItems(0).Text & "'"
+            query = "Delete * from `entry log` where `time_stamp`='" & ListView1.SelectedItems(0).Text & "'"
             cmd = New MySqlCommand(query, con)
             rd = cmd.ExecuteReader
 

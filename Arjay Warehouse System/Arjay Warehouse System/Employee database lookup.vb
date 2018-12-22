@@ -44,7 +44,12 @@ Public Class Employee_database
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.Close()
+
+        Dim aaaal As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aaaal.ShowDialog()
+        End
 
     End Sub
 

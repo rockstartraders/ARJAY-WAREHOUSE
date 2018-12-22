@@ -33,36 +33,36 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(248, 228)
+        Me.Button4.Location = New System.Drawing.Point(295, 169)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(187, 31)
         Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Cancel"
+        Me.Button4.Text = "BACK"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(339, 139)
+        Me.Button3.Location = New System.Drawing.Point(488, 94)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(85, 54)
+        Me.Button3.Size = New System.Drawing.Size(187, 47)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "DISPATCH PERSONNEL"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(236, 139)
+        Me.Button2.Location = New System.Drawing.Point(295, 94)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 54)
+        Me.Button2.Size = New System.Drawing.Size(187, 47)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "RECEIVING PERSONNEL"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(145, 139)
+        Me.Button1.Location = New System.Drawing.Point(102, 94)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 54)
+        Me.Button1.Size = New System.Drawing.Size(187, 47)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "ADMIN"
         Me.Button1.UseVisualStyleBackColor = True
@@ -70,7 +70,7 @@ Partial Class Admin_Create_Account_Landing_Page
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(230, 95)
+        Me.Label3.Location = New System.Drawing.Point(355, 45)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 13)
         Me.Label3.TabIndex = 11
@@ -79,7 +79,7 @@ Partial Class Admin_Create_Account_Landing_Page
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(166, 60)
+        Me.Label2.Location = New System.Drawing.Point(117, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(95, 13)
         Me.Label2.TabIndex = 10
@@ -88,7 +88,7 @@ Partial Class Admin_Create_Account_Landing_Page
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(88, 60)
+        Me.Label1.Location = New System.Drawing.Point(39, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 13)
         Me.Label1.TabIndex = 8
@@ -98,7 +98,7 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(591, 350)
+        Me.ClientSize = New System.Drawing.Size(780, 262)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

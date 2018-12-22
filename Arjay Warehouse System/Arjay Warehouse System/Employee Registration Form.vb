@@ -80,7 +80,15 @@ Public Class Employee_Registration_Form
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Close()
+
+
+        Dim aaaac As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aaaac.ShowDialog()
+        End
+
+
 
     End Sub
 
