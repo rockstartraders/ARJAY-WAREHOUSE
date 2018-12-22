@@ -2,25 +2,52 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+
+        Dim aab As New Create_Admin_Account    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Create_Admin_Account.ShowDialog()
-        Me.Close()
+        aab.ShowDialog()
+        End
+
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    
+        Dim aac As New Create_Receiving_Personnel_Account    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Create_Receiving_Personnel_Account.ShowDialog()
-        Me.Close()
+        aac.ShowDialog()
+        End
+
+
+
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        Dim aad As New Create_A_Dispatch_Personnel_Account   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
         Me.Hide()
-        Create_A_Dispatch_Personnel_Account.ShowDialog()
-        Me.Close()
+        aad.ShowDialog()
+        End
+
+
+
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        Me.Close()
+
+        Dim aae As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aae.ShowDialog()
+        End
+
+
+    End Sub
+
+    Private Sub Admin_Create_Account_Landing_Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

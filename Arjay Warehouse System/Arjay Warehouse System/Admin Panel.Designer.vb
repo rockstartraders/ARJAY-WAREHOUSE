@@ -22,16 +22,40 @@ Partial Class Admin_Panel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(558, 33)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(187, 47)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "PASSWORD RESET"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(558, 101)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(187, 47)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "CREATE ACCESS"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 262)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Name = "Admin_Panel"
         Me.Text = "ADMIN PANEL"
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

@@ -58,7 +58,12 @@ Public Class Create_A_Dispatch_Personnel_Account
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Close()
+        Dim aag As New Admin_Create_Account_Landing_Page    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        aag.ShowDialog()
+        End
+
 
     End Sub
 
