@@ -119,4 +119,17 @@ Public Class Correction_Ticket
     Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Dim ba As New Dispatch_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        ba.ShowDialog()
+        End
+
+
+       
+
+    End Sub
 End Class

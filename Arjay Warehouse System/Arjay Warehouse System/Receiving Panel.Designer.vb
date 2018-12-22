@@ -22,16 +22,28 @@ Partial Class Receiving_Panel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(601, 88)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(145, 68)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "SUBMIT CORRECTION REQUEST"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Receiving_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 332)
+        Me.Controls.Add(Me.Button1)
         Me.Name = "Receiving_Panel"
         Me.Text = "RECEIVING PANEL"
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
