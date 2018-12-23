@@ -21,6 +21,9 @@ Public Class Dispatch_Self_Help_Reset_Password
 
         Me.TextBox1.Text = Dispatch_Panel.Label1.Text
 
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label5.Text = D
+
 
 
 
@@ -62,12 +65,17 @@ Public Class Dispatch_Self_Help_Reset_Password
             rd = cmd.ExecuteReader
             ' MsgBox("Password Has Been Change", 0 + 64)
 
+
+
             Dim ahaaaa As New Dispatch_Login   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
             Dim a As DialogResult = MsgBox("Password Has Been Change But for Security Reason you Need to Logout and Log Back in Using your New Password ", 0 + 64)
             If a = DialogResult.OK Then
 
                 TextBox2.Text = ""
+
+                con.Close()
+
 
                 Me.Dispose()
                 Me.Close()
@@ -78,9 +86,9 @@ Public Class Dispatch_Self_Help_Reset_Password
 
 
             End If
-           
 
-            con.Close()
+
+
 
         End If
 
@@ -110,6 +118,10 @@ Public Class Dispatch_Self_Help_Reset_Password
     End Sub
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
 
     End Sub
 End Class
