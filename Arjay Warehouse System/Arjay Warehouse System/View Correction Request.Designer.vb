@@ -170,9 +170,9 @@ Partial Class View_Correction_Request
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(96, 253)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(58, 13)
+        Me.Label7.Size = New System.Drawing.Size(65, 13)
         Me.Label7.TabIndex = 91
-        Me.Label7.Text = "Last Name"
+        Me.Label7.Text = "Last Name *"
         '
         'TextBox4
         '
@@ -220,9 +220,9 @@ Partial Class View_Correction_Request
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(80, 129)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(73, 13)
+        Me.Label4.Size = New System.Drawing.Size(80, 13)
         Me.Label4.TabIndex = 85
-        Me.Label4.Text = "Employee No."
+        Me.Label4.Text = "Employee No. *"
         '
         'TextBox1
         '
@@ -234,11 +234,11 @@ Partial Class View_Correction_Request
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(80, 94)
+        Me.Label13.Location = New System.Drawing.Point(71, 93)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(80, 13)
+        Me.Label13.Size = New System.Drawing.Size(87, 13)
         Me.Label13.TabIndex = 83
-        Me.Label13.Text = "INCIDENT NO."
+        Me.Label13.Text = "INCIDENT NO. *"
         '
         'TextBox9
         '
