@@ -133,6 +133,12 @@
     <Compile Include="Dispatch Panel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Dispatch Self Help Reset Password.Designer.vb">
+      <DependentUpon>Dispatch Self Help Reset Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch Self Help Reset Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Employee database lookup.Designer.vb">
       <DependentUpon>Employee database lookup.vb</DependentUpon>
     </Compile>
@@ -258,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dispatch Panel.resx">
       <DependentUpon>Dispatch Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch Self Help Reset Password.resx">
+      <DependentUpon>Dispatch Self Help Reset Password.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee database lookup.resx">
       <DependentUpon>Employee database lookup.vb</DependentUpon>

@@ -122,11 +122,8 @@ Public Class Correction_Ticket
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
-        Dim ba As New Dispatch_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
-
-        Me.Hide()
-        ba.ShowDialog()
-        End
+        Me.Dispose()
+        Me.Close()
 
 
        

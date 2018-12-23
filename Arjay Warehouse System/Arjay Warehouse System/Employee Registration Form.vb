@@ -82,11 +82,9 @@ Public Class Employee_Registration_Form
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
 
-        Dim aaaac As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Me.Dispose()
+        Me.Close()
 
-        Me.Hide()
-        aaaac.ShowDialog()
-        End
 
 
 

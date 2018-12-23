@@ -25,9 +25,9 @@
 
         Dim aaaa As New Admin_Correction_Form    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         aaaa.ShowDialog()
-        End
+
 
 
 
@@ -40,9 +40,9 @@
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         Dim aaaab As New Employee_Registration_Form    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         aaaab.ShowDialog()
-        End
+
 
     End Sub
 
@@ -50,9 +50,9 @@
 
         Dim aaaad As New Entry_Log_Viewer    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         aaaad.ShowDialog()
-        End
+
 
 
     End Sub
@@ -61,9 +61,9 @@
 
         Dim aaaak As New Employee_database    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         aaaak.ShowDialog()
-        End
+
 
 
     End Sub

@@ -73,11 +73,9 @@ Public Class Entry_Log_Viewer
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
-        Dim aaaae As New Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Me.Dispose()
+        Me.Close()
 
-        Me.Hide()
-        aaaae.ShowDialog()
-        End
 
     End Sub
 
