@@ -33,4 +33,8 @@
         ahaaazz.ShowDialog()
 
     End Sub
+
+    Private Sub Receiving_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

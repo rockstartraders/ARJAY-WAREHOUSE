@@ -68,6 +68,10 @@ Public Class Admin_Login
         If rd.HasRows Then
 
             rd.Read()
+            ' <-- This is needed to show the username automatically inside VB form
+            rd.Read()
+            Admin_Panel.Label1.Text = rd("userid")
+
 
             Me.Hide()
             Admin_Panel.ShowDialog()
