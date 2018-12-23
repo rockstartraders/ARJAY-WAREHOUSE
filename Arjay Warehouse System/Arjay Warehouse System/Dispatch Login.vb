@@ -59,12 +59,19 @@ Public Class Dispatch_Login
 
         If rd.HasRows Then
 
+
+          
+            ' <-- This is needed to show the username automatically inside VB form
             rd.Read()
+            Dispatch_Panel.Label1.Text = rd("userid")
+            'Dispatch_Panel.Show()
+
 
             Me.Hide()
             Dispatch_Panel.ShowDialog()
             Me.Close()
-
+            
+           
 
         Else
             MsgBox("Invalid User Name and Password !", 0 + 64)

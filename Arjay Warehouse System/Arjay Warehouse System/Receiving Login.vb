@@ -61,6 +61,9 @@ Public Class Receiving_Login
         If rd.HasRows Then
 
             rd.Read()
+            ' <-- This is needed to show the username automatically inside VB form
+            rd.Read()
+            Receiving_Panel.Label1.Text = rd("userid")
 
             Me.Hide()
             Receiving_Panel.ShowDialog()
