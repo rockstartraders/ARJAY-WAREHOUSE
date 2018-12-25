@@ -86,7 +86,7 @@ Partial Class Admin_Panel
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(187, 47)
         Me.Button6.TabIndex = 5
-        Me.Button6.Text = "EMPLOYEE LOOKUP"
+        Me.Button6.Text = "MODIFY / DELETE EMPLOYEE RECORD"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Label1

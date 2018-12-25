@@ -58,6 +58,7 @@ Partial Class Admin_Correction_Form
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
@@ -344,18 +345,28 @@ Partial Class Admin_Correction_Form
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(467, 697)
+        Me.Button2.Location = New System.Drawing.Point(536, 697)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 83
         Me.Button2.Text = "EXIT"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(455, 697)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 84
+        Me.Button3.Text = "EXPORT"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Admin_Correction_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 763)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label13)
@@ -424,4 +435,5 @@ Partial Class Admin_Correction_Form
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

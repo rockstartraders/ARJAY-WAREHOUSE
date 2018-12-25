@@ -9,6 +9,7 @@ Public Class Employee_database
     Private Sub Employee_database_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
 
+
         con.Open()
         query = "Select * from `employee record`"
         cmd = New MySqlCommand(query, con)
@@ -40,6 +41,8 @@ Public Class Employee_database
         con.Close()
 
 
+        ' < -- Auto load Admin User ID 
+        Me.TextBox16.Text = Admin_Panel.Label1.Text
 
     End Sub
 
@@ -173,6 +176,304 @@ Public Class Employee_database
             MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
 
+
+
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
+
+        ' <-- Function to load List View data to fields inside this form 
+
+
+        Dim emp_no As String = ListView1.SelectedItems(0).SubItems(0).Text()
+        Dim hire_date As String = ListView1.SelectedItems(0).SubItems(1).Text()
+        Dim f_name As String = ListView1.SelectedItems(0).SubItems(2).Text()
+        Dim m_name As String = ListView1.SelectedItems(0).SubItems(3).Text()
+        Dim l_name As String = ListView1.SelectedItems(0).SubItems(4).Text()
+        Dim dob As String = ListView1.SelectedItems(0).SubItems(5).Text()
+        Dim gender As String = ListView1.SelectedItems(0).SubItems(6).Text()
+
+        Dim address As String = ListView1.SelectedItems(0).SubItems(7).Text()
+        Dim contact_no As String = ListView1.SelectedItems(0).SubItems(8).Text()
+        Dim ssn As String = ListView1.SelectedItems(0).SubItems(9).Text()
+
+        Dim tin As String = ListView1.SelectedItems(0).SubItems(10).Text()
+        Dim dept As String = ListView1.SelectedItems(0).SubItems(11).Text()
+        Dim emer_name As String = ListView1.SelectedItems(0).SubItems(12).Text()
+
+        Dim emer_contact As String = ListView1.SelectedItems(0).SubItems(13).Text()
+        Dim emer_rel As String = ListView1.SelectedItems(0).SubItems(14).Text()
+        Dim emer_address As String = ListView1.SelectedItems(0).SubItems(15).Text()
+
+
+
+        ' < -- Declare Items per textBox and combo box
+
+
+        TextBox15.Text = emp_no
+        TextBox13.Text = hire_date
+        TextBox2.Text = f_name
+        TextBox3.Text = m_name
+        TextBox4.Text = l_name
+        TextBox14.Text = dob
+        ComboBox1.Text = gender
+        TextBox5.Text = address
+        TextBox6.Text = contact_no
+        TextBox7.Text = ssn
+        TextBox8.Text = tin
+        ComboBox2.Text = dept
+        TextBox9.Text = emer_name
+        TextBox10.Text = emer_contact
+        TextBox11.Text = emer_rel
+        TextBox12.Text = emer_address
+
+
+        ' < -- End -- >
+
+
+
+
+
+
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub TextBox11_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox11.TextChanged
+
+    End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
+        '<-- Update Function --> 
+
+        con.Open()
+        query = "Update  `employee record` set `emp_no`='" & TextBox15.Text & "',`hire_date`='" & TextBox13.Text & "',`f_name`='" & TextBox2.Text & "',`m_name`='" & TextBox3.Text & "',`l_name`='" & TextBox4.Text & "',`dob`='" & TextBox14.Text & "',`gender`='" & ComboBox1.Text & "',`address`='" & TextBox5.Text & "',`contact_no`='" & TextBox6.Text & "',`ssn`='" & TextBox7.Text & "',`tin`='" & TextBox8.Text & "',`dept`='" & ComboBox2.Text & "',`emer_name`='" & TextBox9.Text & "',`emer_contact`='" & TextBox10.Text & "',`emer_rel`='" & TextBox11.Text & "',`emer_address`='" & TextBox12.Text & "'  where `emp_no`='" & TextBox15.Text & "'"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader()
+
+        If TextBox15.Text = "" Then  ' if else for condition
+            MsgBox("Please Choose a Profile to Modify", 0 + 64)
+        Else
+            MsgBox("Employee Profile Has Been Updated", 0 + 64)
+
+        End If
+
+        ' < -- Clear Fieldset 
+
+        TextBox15.Text = ""
+        TextBox13.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox14.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+        ComboBox2.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+        TextBox11.Text = ""
+        TextBox12.Text = ""
+
+        ' < -- Refresh ListView
+
+        While rd.Read
+
+            Dim lv As ListViewItem = ListView1.Items.Add(rd("emp_no").ToString())
+
+            lv.SubItems.Add(rd("hire_date").ToString())
+            lv.SubItems.Add(rd("f_name").ToString())
+            lv.SubItems.Add(rd("m_name").ToString())
+            lv.SubItems.Add(rd("l_name").ToString())
+            lv.SubItems.Add(rd("dob").ToString())
+            lv.SubItems.Add(rd("gender").ToString())
+            lv.SubItems.Add(rd("address").ToString())
+            lv.SubItems.Add(rd("contact_no").ToString())
+            lv.SubItems.Add(rd("ssn").ToString())
+            lv.SubItems.Add(rd("tin").ToString())
+            lv.SubItems.Add(rd("dept").ToString())
+            lv.SubItems.Add(rd("emer_name").ToString())
+            lv.SubItems.Add(rd("emer_contact").ToString())
+            lv.SubItems.Add(rd("emer_rel").ToString())
+            lv.SubItems.Add(rd("emer_address").ToString())
+
+
+        End While
+
+        con.Close()
+
+        ' < -- Refresh ListView
+        con.Open()
+        query = "Select * from `employee record`"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader
+
+        ListView1.Items.Clear()
+
+        While rd.Read
+            Dim lv As ListViewItem = ListView1.Items.Add(rd("emp_no").ToString())
+
+            lv.SubItems.Add(rd("hire_date").ToString())
+            lv.SubItems.Add(rd("f_name").ToString())
+            lv.SubItems.Add(rd("m_name").ToString())
+            lv.SubItems.Add(rd("l_name").ToString())
+            lv.SubItems.Add(rd("dob").ToString())
+            lv.SubItems.Add(rd("gender").ToString())
+            lv.SubItems.Add(rd("address").ToString())
+            lv.SubItems.Add(rd("contact_no").ToString())
+            lv.SubItems.Add(rd("ssn").ToString())
+            lv.SubItems.Add(rd("tin").ToString())
+            lv.SubItems.Add(rd("dept").ToString())
+            lv.SubItems.Add(rd("emer_name").ToString())
+            lv.SubItems.Add(rd("emer_contact").ToString())
+            lv.SubItems.Add(rd("emer_rel").ToString())
+            lv.SubItems.Add(rd("emer_address").ToString())
+
+
+        End While
+        con.Close()
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub Button6_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+
+
+        ' < -- Delete function -->
+
+        con.Open()
+        query = "Delete from `employee record` where `emp_no`='" & TextBox15.Text & "'"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader()
+        If TextBox15.Text = "" Then  ' if else for condition
+            MsgBox("Please Choose a Profile to Delete.", 0 + 64)
+        Else
+            MsgBox("Employee Profile Has Been Deleted", 0 + 64)
+        End If
+
+
+        ' < -- Clear Fieldset 
+
+        TextBox15.Text = ""
+        TextBox13.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox14.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+        ComboBox2.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+        TextBox11.Text = ""
+        TextBox12.Text = ""
+
+        ' < -- Refresh ListView
+
+        While rd.Read
+
+            Dim lv As ListViewItem = ListView1.Items.Add(rd("emp_no").ToString())
+
+            lv.SubItems.Add(rd("hire_date").ToString())
+            lv.SubItems.Add(rd("f_name").ToString())
+            lv.SubItems.Add(rd("m_name").ToString())
+            lv.SubItems.Add(rd("l_name").ToString())
+            lv.SubItems.Add(rd("dob").ToString())
+            lv.SubItems.Add(rd("gender").ToString())
+            lv.SubItems.Add(rd("address").ToString())
+            lv.SubItems.Add(rd("contact_no").ToString())
+            lv.SubItems.Add(rd("ssn").ToString())
+            lv.SubItems.Add(rd("tin").ToString())
+            lv.SubItems.Add(rd("dept").ToString())
+            lv.SubItems.Add(rd("emer_name").ToString())
+            lv.SubItems.Add(rd("emer_contact").ToString())
+            lv.SubItems.Add(rd("emer_rel").ToString())
+            lv.SubItems.Add(rd("emer_address").ToString())
+
+
+        End While
+
+        con.Close()
+
+        ' < -- Refresh ListView
+        con.Open()
+        query = "Select * from `employee record`"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader
+
+        ListView1.Items.Clear()
+
+        While rd.Read
+            Dim lv As ListViewItem = ListView1.Items.Add(rd("emp_no").ToString())
+
+            lv.SubItems.Add(rd("hire_date").ToString())
+            lv.SubItems.Add(rd("f_name").ToString())
+            lv.SubItems.Add(rd("m_name").ToString())
+            lv.SubItems.Add(rd("l_name").ToString())
+            lv.SubItems.Add(rd("dob").ToString())
+            lv.SubItems.Add(rd("gender").ToString())
+            lv.SubItems.Add(rd("address").ToString())
+            lv.SubItems.Add(rd("contact_no").ToString())
+            lv.SubItems.Add(rd("ssn").ToString())
+            lv.SubItems.Add(rd("tin").ToString())
+            lv.SubItems.Add(rd("dept").ToString())
+            lv.SubItems.Add(rd("emer_name").ToString())
+            lv.SubItems.Add(rd("emer_contact").ToString())
+            lv.SubItems.Add(rd("emer_rel").ToString())
+            lv.SubItems.Add(rd("emer_address").ToString())
+
+
+        End While
+        con.Close()
+
+
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+
+        '< -- Clear All Field -- > 
+
+        TextBox15.Text = ""
+        TextBox13.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox14.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+        ComboBox2.Text = ""
+        TextBox9.Text = ""
+        TextBox10.Text = ""
+        TextBox11.Text = ""
+        TextBox12.Text = ""
 
 
 
