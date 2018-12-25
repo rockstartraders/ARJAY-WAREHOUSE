@@ -5,9 +5,9 @@
 
         Dim aab As New Create_Admin_Account    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+        'Me.Hide()
         aab.ShowDialog()
-        End
+        'End
 
 
     End Sub
@@ -16,9 +16,9 @@
     
         Dim aac As New Create_Receiving_Personnel_Account    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+        'Me.Hide()
         aac.ShowDialog()
-        End
+        'End
 
 
 
@@ -28,9 +28,9 @@
 
         Dim aad As New Create_A_Dispatch_Personnel_Account   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+        ' Me.Hide()
         aad.ShowDialog()
-        End
+        ' End
 
 
 
@@ -38,11 +38,11 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
-        Dim aae As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        'Dim aae As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
-        aae.ShowDialog()
-        End
+        Me.Dispose()
+        Me.Close()
+
 
 
     End Sub

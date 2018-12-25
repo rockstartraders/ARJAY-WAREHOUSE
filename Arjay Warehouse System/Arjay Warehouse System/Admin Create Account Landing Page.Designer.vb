@@ -27,8 +27,6 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button4
@@ -37,7 +35,7 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(187, 31)
         Me.Button4.TabIndex = 15
-        Me.Button4.Text = "BACK"
+        Me.Button4.Text = "CLOSE"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
@@ -76,24 +74,6 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Create An Account For"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(117, 27)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(95, 13)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Pangalan ni Admin"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(39, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Hello Admin"
-        '
         'Admin_Create_Account_Landing_Page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -104,8 +84,6 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "Admin_Create_Account_Landing_Page"
         Me.Text = "Admin Create Account Landing Page"
         Me.ResumeLayout(False)
@@ -117,6 +95,4 @@ Partial Class Admin_Create_Account_Landing_Page
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

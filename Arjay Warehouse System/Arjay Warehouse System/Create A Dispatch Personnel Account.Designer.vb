@@ -39,6 +39,8 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox6
@@ -78,7 +80,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(262, 377)
+        Me.Button2.Location = New System.Drawing.Point(264, 421)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 38
@@ -87,7 +89,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(181, 377)
+        Me.Button1.Location = New System.Drawing.Point(183, 421)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
@@ -181,11 +183,30 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.Label8.TabIndex = 46
         Me.Label8.Text = "Department"
         '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(184, 370)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(220, 20)
+        Me.TextBox7.TabIndex = 49
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(98, 377)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(75, 13)
+        Me.Label9.TabIndex = 48
+        Me.Label9.Text = "Processed By:"
+        '
         'Create_A_Dispatch_Personnel_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(513, 446)
+        Me.ClientSize = New System.Drawing.Size(513, 486)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ComboBox1)
@@ -204,7 +225,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Create_A_Dispatch_Personnel_Account"
-        Me.Text = "n"
+        Me.Text = "Create Dispatch Account"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -226,4 +247,6 @@ Partial Class Create_A_Dispatch_Personnel_Account
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class

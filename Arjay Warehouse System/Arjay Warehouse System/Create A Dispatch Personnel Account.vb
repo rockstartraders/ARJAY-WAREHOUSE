@@ -24,6 +24,8 @@ Public Class Create_A_Dispatch_Personnel_Account
         ComboBox1.ValueMember = "emp_no"
         ComboBox1.DisplayMember = "emp_no"
 
+        Me.TextBox7.Text = Admin_Panel.Label1.Text
+
     End Sub
 
     Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
@@ -58,11 +60,20 @@ Public Class Create_A_Dispatch_Personnel_Account
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Dim aag As New Admin_Create_Account_Landing_Page    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        Me.Hide()
-        aag.ShowDialog()
-        End
+        'Dim c As New Password_Reset_Admin_Panel  ' -- I need to create a new dim to avoid same instance 
+        If a = DialogResult.Yes Then
+
+
+
+            Me.Dispose()
+            Me.Close()
+
+
+
+        End If
+
 
 
     End Sub

@@ -23,9 +23,9 @@ Public Class Admin_Panel
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Dim aai As New Admin_Create_Account_Landing_Page    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+        ' Me.Hide()
         aai.ShowDialog()
-        End
+        'End
 
 
     End Sub
