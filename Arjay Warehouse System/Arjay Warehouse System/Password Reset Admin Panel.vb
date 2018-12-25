@@ -4,9 +4,9 @@
 
         Dim a As New Password_Reset_for_an_Admin    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         a.ShowDialog()
-        End
+
 
     End Sub
 
@@ -14,9 +14,9 @@
 
         Dim b As New Password_Reset_for_Dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         b.ShowDialog()
-        End
+
 
 
     End Sub
@@ -26,9 +26,9 @@
 
         Dim c As New Password_Reset_for_Receiving_Personnel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         c.ShowDialog()
-        End
+
 
 
     End Sub
@@ -36,19 +36,23 @@
     Private Sub Password_Reset_Admin_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
+
         Me.Controls.Clear() 'removes all the controls on the form
         InitializeComponent() 'load all the controls again
+
 
 
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
-        Dim f As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        'Dim f As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
-        f.ShowDialog()
-        End
+        Me.Dispose()
+        Me.Close()
+
+
+
 
 
 

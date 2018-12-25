@@ -29,6 +29,7 @@ Public Class Password_Reset_for_Receiving_Personnel
         ComboBox1.ValueMember = "userid"
         ComboBox1.DisplayMember = "userid"
 
+        Me.TextBox8.Text = Admin_Panel.Label1.Text
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -119,11 +120,9 @@ Public Class Password_Reset_for_Receiving_Personnel
 
 
 
-            Me.Hide()
-            d.ShowDialog()
+           
+            Me.Dispose()
             Me.Close()
-            End
-
 
 
         End If

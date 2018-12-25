@@ -71,7 +71,7 @@ Partial Class Password_Reset_Admin_Panel
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(158, 23)
         Me.Button4.TabIndex = 4
-        Me.Button4.Text = "BACK TO ADMIN PANEL"
+        Me.Button4.Text = "CLOSE"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Password_Reset_Admin_Panel

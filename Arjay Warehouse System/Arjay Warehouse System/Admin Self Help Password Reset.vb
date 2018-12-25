@@ -8,37 +8,33 @@ Imports System.IO
 
 
 
-
-Public Class Dispatch_Self_Help_Reset_Password
+Public Class Admin_Self_Help_Password_Reset
     Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
     Dim cmd As MySqlCommand
     Dim rd As MySqlDataReader
     Dim query As String
 
-    Private Sub Dispatch_Self_Help_Reset_Password_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-        '< --- Use this to display text from previous from to this new instance 
-
-        Me.TextBox1.Text = Dispatch_Panel.Label1.Text
-
-       
-
-
-
-
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
 
     End Sub
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
 
+    End Sub
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
 
         Me.Dispose()
         Me.Close()
 
+
     End Sub
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
 
+    End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
 
         Dim username As String
         Dim newpassword As String
@@ -50,7 +46,7 @@ Public Class Dispatch_Self_Help_Reset_Password
 
 
         con.Open()
-        query = "select * from `dispatch access` where `userid`='" & TextBox1.Text & "'"
+        query = "select * from `admin access` where `userid`='" & TextBox1.Text & "'"
         cmd = New MySqlCommand(query, con)
         rd = cmd.ExecuteReader
 
@@ -58,14 +54,14 @@ Public Class Dispatch_Self_Help_Reset_Password
 
             con.Close()
             con.Open()
-            query = "Update `dispatch access` set `password` = '" & TextBox2.Text & "' where `userid` ='" & TextBox1.Text & "'"
+            query = "Update `admin access` set `password` = '" & TextBox2.Text & "' where `userid` ='" & TextBox1.Text & "'"
             cmd = New MySqlCommand(query, con)
             rd = cmd.ExecuteReader
             ' MsgBox("Password Has Been Change", 0 + 64)
 
 
 
-            Dim ahaaaa As New Dispatch_Login   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+            Dim ahaaaah As New Admin_Login   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
             Dim a As DialogResult = MsgBox("Password Has Been Change But for Security Reason you Need to Logout and Log Back in Using your New Password ", 0 + 64)
             If a = DialogResult.OK Then
@@ -77,49 +73,25 @@ Public Class Dispatch_Self_Help_Reset_Password
 
                 Me.Dispose()
                 Me.Close()
-                Dispatch_Panel.Dispose()
-                Dispatch_Panel.Close()
-                ahaaaa.ShowDialog()
+                Admin_Panel.Dispose()
+                Admin_Panel.Close()
+                ahaaaah.ShowDialog()
 
 
 
             End If
 
-
-
-
         End If
 
 
     End Sub
-
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-  
-
-    End Sub
-
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
 
-
-
     End Sub
 
-    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub Admin_Self_Help_Password_Reset_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-
-
-
-    End Sub
-
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.TextBox1.Text = Admin_Panel.Label1.Text
 
     End Sub
 End Class

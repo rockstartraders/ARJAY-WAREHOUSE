@@ -30,6 +30,7 @@ Partial Class Admin_Panel
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -104,11 +105,21 @@ Partial Class Admin_Panel
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "HELLO ADMIN"
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(172, 33)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(187, 47)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "RESET MY PASSWORD"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 262)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button6)
@@ -131,4 +142,5 @@ Partial Class Admin_Panel
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

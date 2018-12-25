@@ -185,6 +185,7 @@ Partial Class Password_Reset_for_Dispatch
         '
         Me.TextBox8.Location = New System.Drawing.Point(175, 432)
         Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(187, 20)
         Me.TextBox8.TabIndex = 61
         '

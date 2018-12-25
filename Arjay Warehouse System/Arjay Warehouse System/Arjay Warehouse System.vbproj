@@ -97,6 +97,12 @@
     <Compile Include="Admin Panel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin Self Help Password Reset.Designer.vb">
+      <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Self Help Password Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Correction Ticket Dispatch.Designer.vb">
       <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Panel.resx">
       <DependentUpon>Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Self Help Password Reset.resx">
+      <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Correction Ticket Dispatch.resx">
       <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>

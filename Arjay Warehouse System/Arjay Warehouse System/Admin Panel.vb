@@ -1,12 +1,21 @@
-﻿Public Class Admin_Panel
+﻿Imports System.IO
+Imports System.Net
+Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
+
+Public Class Admin_Panel
+    Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+    Dim cmd As MySqlCommand
+    Dim rd As MySqlDataReader
+    Dim query As String
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         Dim aaa As New Password_Reset_Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        Me.Hide()
+
         aaa.ShowDialog()
-        End
+
 
 
     End Sub
@@ -34,6 +43,9 @@
     End Sub
 
     Private Sub Admin_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+
+      
 
     End Sub
 
@@ -63,6 +75,23 @@
 
 
         aaaak.ShowDialog()
+
+
+
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+
+        Dim aaaaka As New Admin_Self_Help_Password_Reset    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        aaaaka.ShowDialog()
+
+
+
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
 
 
 

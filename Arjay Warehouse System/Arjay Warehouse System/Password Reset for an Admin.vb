@@ -27,6 +27,7 @@ Public Class Password_Reset_for_an_Admin
         ComboBox1.ValueMember = "userid"
         ComboBox1.DisplayMember = "userid"
 
+        Me.TextBox8.Text = Admin_Panel.Label1.Text
 
     End Sub
 
@@ -118,10 +119,10 @@ Public Class Password_Reset_for_an_Admin
         If a = DialogResult.Yes Then
 
 
-            Me.Hide()
-            c.ShowDialog()
+            
+            Me.Dispose()
             Me.Close()
-            End
+
 
 
         End If
