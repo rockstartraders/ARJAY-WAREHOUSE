@@ -139,4 +139,42 @@ Public Class Employee_database
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+
+        '<-- Export to Excel function 
+
+        Try
+            Me.Cursor = Cursors.WaitCursor
+            Dim ExcelApp As Object, ExcelBook As Object
+            Dim ExcelSheet As Object
+            Dim i As Integer
+            Dim j As Integer
+            'create object of excel
+            ExcelApp = CreateObject("Excel.Application")
+            ExcelBook = ExcelApp.WorkBooks.Add
+            ExcelSheet = ExcelBook.WorkSheets(1)
+            With ExcelSheet
+                For i = 1 To Me.ListView1.Items.Count
+                    .cells(i, 1) = Me.ListView1.Items(i - 1).Text
+                    For j = 1 To ListView1.Columns.Count - 1
+                        .cells(i, j + 1) = Me.ListView1.Items(i - 1).SubItems(j).Text
+                    Next
+                Next
+            End With
+            ExcelApp.Visible = True
+            ExcelSheet = Nothing
+            ExcelBook = Nothing
+            ExcelApp = Nothing
+            Me.Cursor = Cursors.Default
+        Catch ex As Exception
+            Me.Cursor = Cursors.Default
+            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+
+
+
+
+    End Sub
 End Class
