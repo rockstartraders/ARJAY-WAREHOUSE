@@ -105,4 +105,14 @@ Public Class Admin_Panel
         aaaakab.ShowDialog()
 
     End Sub
+
+    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
+
+        Dim aaaakaba As New Delete_Access_Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        aaaakaba.ShowDialog()
+
+
+    End Sub
 End Class

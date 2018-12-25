@@ -32,6 +32,7 @@ Partial Class Admin_Panel
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -54,7 +55,7 @@ Partial Class Admin_Panel
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(558, 169)
+        Me.Button3.Location = New System.Drawing.Point(558, 236)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(187, 47)
         Me.Button3.TabIndex = 2
@@ -124,11 +125,21 @@ Partial Class Admin_Panel
         Me.Button8.Text = "VIEW ACCESS MODIFICATION BY ADMIN"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(558, 169)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(187, 47)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = "TERMINATE ACCESS"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 322)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label2)
@@ -155,4 +166,5 @@ Partial Class Admin_Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
 End Class

@@ -38,7 +38,7 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
-        'Dim aae As New Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
 
         Me.Dispose()
         Me.Close()

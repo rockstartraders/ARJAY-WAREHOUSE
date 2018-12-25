@@ -127,6 +127,24 @@
     <Compile Include="Create Receiving Personnel Account.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Delete Access Admin Panel.Designer.vb">
+      <DependentUpon>Delete Access Admin Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access Admin Panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access for an ADMIN admin.Designer.vb">
+      <DependentUpon>Delete Access for an ADMIN admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for an ADMIN admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Access for Dispatch Admin function.Designer.vb">
+      <DependentUpon>Delete Access for Dispatch Admin function.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for Dispatch Admin function.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dispatch Login.Designer.vb">
       <DependentUpon>Dispatch Login.vb</DependentUpon>
     </Compile>
@@ -279,6 +297,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Create Receiving Personnel Account.resx">
       <DependentUpon>Create Receiving Personnel Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access Admin Panel.resx">
+      <DependentUpon>Delete Access Admin Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for an ADMIN admin.resx">
+      <DependentUpon>Delete Access for an ADMIN admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for Dispatch Admin function.resx">
+      <DependentUpon>Delete Access for Dispatch Admin function.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dispatch Login.resx">
       <DependentUpon>Dispatch Login.vb</DependentUpon>

@@ -129,4 +129,8 @@ Public Class Password_Reset_for_an_Admin
 
 
     End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
 End Class
