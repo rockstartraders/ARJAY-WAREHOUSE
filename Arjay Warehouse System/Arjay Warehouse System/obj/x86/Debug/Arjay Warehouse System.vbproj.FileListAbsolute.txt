@@ -56,3 +56,4 @@ C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arja
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Dispatch_Self_Help_Reset_Password.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Receiving_Self_Help_Password_Resetvb.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Admin_Self_Help_Password_Reset.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.View_ADMIN_Actions_for_Account_Modifications.resources
