@@ -92,6 +92,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.TextBox7.Location = New System.Drawing.Point(144, 336)
         Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox7.Size = New System.Drawing.Size(247, 20)
         Me.TextBox7.TabIndex = 79
         '

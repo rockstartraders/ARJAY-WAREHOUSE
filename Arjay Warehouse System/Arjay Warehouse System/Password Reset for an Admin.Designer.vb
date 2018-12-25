@@ -91,6 +91,7 @@ Partial Class Password_Reset_for_an_Admin
         '
         Me.TextBox7.Location = New System.Drawing.Point(145, 351)
         Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox7.Size = New System.Drawing.Size(247, 20)
         Me.TextBox7.TabIndex = 79
         '
