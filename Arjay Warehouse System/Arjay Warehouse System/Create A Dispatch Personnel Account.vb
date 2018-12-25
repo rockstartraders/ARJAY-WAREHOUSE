@@ -27,6 +27,19 @@ Public Class Create_A_Dispatch_Personnel_Account
         ComboBox1.ValueMember = "emp_no"
         ComboBox1.DisplayMember = "emp_no"
 
+        ' <-- Will clear combobox
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+
+
+
+
         Me.TextBox7.Text = Admin_Panel.Label1.Text
 
     End Sub
@@ -63,7 +76,18 @@ Public Class Create_A_Dispatch_Personnel_Account
 
         con.Close()
 
+        '<-- Will clear and reload the combobox empty
 
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
+        Dim table As New DataTable()
+
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "emp_no"
+        ComboBox1.DisplayMember = "emp_no"
+
+        ' <-- Will clear combobox
 
         TextBox1.Text = ""
         TextBox2.Text = ""
@@ -72,6 +96,7 @@ Public Class Create_A_Dispatch_Personnel_Account
         ComboBox1.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
+
 
     End Sub
 

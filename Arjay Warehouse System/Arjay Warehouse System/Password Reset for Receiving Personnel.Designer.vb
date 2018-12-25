@@ -48,14 +48,14 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"", "", "", ""})
-        Me.ComboBox1.Location = New System.Drawing.Point(190, 119)
+        Me.ComboBox1.Location = New System.Drawing.Point(190, 71)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(179, 21)
         Me.ComboBox1.TabIndex = 84
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(272, 547)
+        Me.Button2.Location = New System.Drawing.Point(272, 499)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 83
@@ -64,7 +64,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(191, 547)
+        Me.Button1.Location = New System.Drawing.Point(191, 499)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 82
@@ -73,7 +73,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(182, 444)
+        Me.TextBox8.Location = New System.Drawing.Point(182, 396)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(187, 20)
@@ -82,7 +82,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(101, 451)
+        Me.Label10.Location = New System.Drawing.Point(101, 403)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(75, 13)
         Me.Label10.TabIndex = 80
@@ -90,7 +90,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(144, 384)
+        Me.TextBox7.Location = New System.Drawing.Point(144, 336)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(247, 20)
         Me.TextBox7.TabIndex = 79
@@ -98,7 +98,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(213, 355)
+        Me.Label9.Location = New System.Drawing.Point(213, 307)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(97, 13)
         Me.Label9.TabIndex = 78
@@ -106,7 +106,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(190, 309)
+        Me.TextBox6.Location = New System.Drawing.Point(190, 261)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(179, 20)
@@ -115,7 +115,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(119, 316)
+        Me.Label8.Location = New System.Drawing.Point(119, 268)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 13)
         Me.Label8.TabIndex = 76
@@ -123,7 +123,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(190, 274)
+        Me.TextBox5.Location = New System.Drawing.Point(190, 226)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(179, 20)
@@ -132,7 +132,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(119, 281)
+        Me.Label7.Location = New System.Drawing.Point(119, 233)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(58, 13)
         Me.Label7.TabIndex = 74
@@ -140,7 +140,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(190, 236)
+        Me.TextBox4.Location = New System.Drawing.Point(190, 188)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(179, 20)
@@ -149,7 +149,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(108, 243)
+        Me.Label6.Location = New System.Drawing.Point(108, 195)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(69, 13)
         Me.Label6.TabIndex = 72
@@ -157,7 +157,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(190, 197)
+        Me.TextBox3.Location = New System.Drawing.Point(190, 149)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(179, 20)
@@ -166,7 +166,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(119, 204)
+        Me.Label5.Location = New System.Drawing.Point(119, 156)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 13)
         Me.Label5.TabIndex = 70
@@ -174,7 +174,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(190, 157)
+        Me.TextBox2.Location = New System.Drawing.Point(190, 109)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(179, 20)
@@ -183,7 +183,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(103, 157)
+        Me.Label4.Location = New System.Drawing.Point(103, 109)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(73, 13)
         Me.Label4.TabIndex = 68
@@ -192,16 +192,17 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(108, 77)
+        Me.Label3.Location = New System.Drawing.Point(12, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(30, 13)
         Me.Label3.TabIndex = 67
         Me.Label3.Text = "Date"
+        Me.Label3.Visible = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(103, 122)
+        Me.Label2.Location = New System.Drawing.Point(103, 74)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 13)
         Me.Label2.TabIndex = 66

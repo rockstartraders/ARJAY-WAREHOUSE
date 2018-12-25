@@ -26,6 +26,16 @@ Public Class Password_Reset_for_Dispatch
         ComboBox1.ValueMember = "userid"
         ComboBox1.DisplayMember = "userid"
 
+        ' <-- Clear all fields during form load 
+
+        ComboBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+
         Me.TextBox8.Text = Admin_Panel.Label1.Text
         
     End Sub
@@ -135,6 +145,19 @@ Public Class Password_Reset_for_Dispatch
 
         con.Close()
 
+
+        ' <-- Clear all fields after reset 
+
+
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `dispatch access`", con)
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "userid"
+        ComboBox1.DisplayMember = "userid"
+
+        ' <-- Clear all fields during form load 
+
         ComboBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
@@ -142,6 +165,7 @@ Public Class Password_Reset_for_Dispatch
         TextBox5.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
+
 
     End Sub
 

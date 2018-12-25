@@ -29,6 +29,17 @@ Public Class Password_Reset_for_Receiving_Personnel
         ComboBox1.ValueMember = "userid"
         ComboBox1.DisplayMember = "userid"
 
+        ' < -- Clear fields on form load events 
+
+
+        ComboBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        TextBox7.Text = ""
+
         Me.TextBox8.Text = Admin_Panel.Label1.Text
     End Sub
 
@@ -101,6 +112,19 @@ Public Class Password_Reset_for_Receiving_Personnel
 
         con.Close()
 
+        ' <-- Clear fields and empty combo box for another form load event 
+
+
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `receiving access`", con)
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "userid"
+        ComboBox1.DisplayMember = "userid"
+
+        ' < -- Clear fields on form load events 
+
+
         ComboBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
@@ -108,6 +132,10 @@ Public Class Password_Reset_for_Receiving_Personnel
         TextBox5.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
+
+
+
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

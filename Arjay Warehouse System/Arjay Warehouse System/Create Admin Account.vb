@@ -30,6 +30,17 @@ Public Class Create_Admin_Account
         ComboBox1.ValueMember = "emp_no"
         ComboBox1.DisplayMember = "emp_no"
 
+        ' <-- Will clear the combobox on form load 
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+
+
         Me.TextBox7.Text = Admin_Panel.Label1.Text
 
 
@@ -115,6 +126,18 @@ Public Class Create_Admin_Account
 
         con.Close()
 
+        ' <-- will auto load form and will clear fields at the same time 
+
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
+        Dim table As New DataTable()
+
+       
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "emp_no"
+        ComboBox1.DisplayMember = "emp_no"
+
+        ' <-- Will clear the combobox on form load 
 
         TextBox1.Text = ""
         TextBox2.Text = ""
@@ -123,7 +146,9 @@ Public Class Create_Admin_Account
         ComboBox1.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
-       
+
+
+
 
 
     End Sub

@@ -31,6 +31,16 @@ Public Class Delete_Access_for_Receiving_admin_function
         ComboBox1.ValueMember = "emp_no"
         ComboBox1.DisplayMember = "emp_no"
 
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+
+
         Me.TextBox7.Text = Admin_Panel.Label1.Text
 
 
@@ -121,6 +131,19 @@ Public Class Delete_Access_for_Receiving_admin_function
         rd = cmd.ExecuteReader()
 
         con.Close()
+
+        ' < -- added to reload form 
+
+
+        Dim adapter As New MySqlDataAdapter("SELECT  `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `receiving access`", con)
+        Dim table As New DataTable()
+
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "emp_no"
+        ComboBox1.DisplayMember = "emp_no"
+
 
 
         TextBox1.Text = ""

@@ -30,6 +30,16 @@ Public Class Create_Receiving_Personnel_Account
         ComboBox1.ValueMember = "emp_no"
         ComboBox1.DisplayMember = "emp_no"
 
+        ' <-- Will clear all fields on form load but allow drop down function 
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+
         Me.TextBox7.Text = Admin_Panel.Label1.Text
 
     End Sub
@@ -105,6 +115,20 @@ Public Class Create_Receiving_Personnel_Account
 
         con.Close()
 
+        ' < -- Reload form but ensure its empty but dropdown should not 
+
+        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
+        Dim table As New DataTable()
+
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label10.Text = D
+
+        adapter.Fill(table)
+        ComboBox1.DataSource = table
+        ComboBox1.ValueMember = "emp_no"
+        ComboBox1.DisplayMember = "emp_no"
+
+        ' <-- Will clear all fields on form load but allow drop down function 
 
         TextBox1.Text = ""
         TextBox2.Text = ""
