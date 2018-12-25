@@ -41,6 +41,7 @@ Partial Class Create_Receiving_Personnel_Account
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox6
@@ -200,11 +201,22 @@ Partial Class Create_Receiving_Personnel_Account
         Me.Label9.TabIndex = 63
         Me.Label9.Text = "Processed By:"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(12, 9)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(30, 13)
+        Me.Label10.TabIndex = 70
+        Me.Label10.Text = "Date"
+        Me.Label10.Visible = False
+        '
         'Create_Receiving_Personnel_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(510, 505)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox1)
@@ -249,4 +261,5 @@ Partial Class Create_Receiving_Personnel_Account
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

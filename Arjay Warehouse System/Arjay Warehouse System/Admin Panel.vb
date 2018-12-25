@@ -96,4 +96,14 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+
+        'Dim aaaaka As New Admin_Self_Help_Password_Reset    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        ' Later lagay dito using Admin changes log
+
+        'aaaaka.ShowDialog()
+
+    End Sub
 End Class

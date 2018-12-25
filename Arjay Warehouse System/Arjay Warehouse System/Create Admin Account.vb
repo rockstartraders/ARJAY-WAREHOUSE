@@ -123,14 +123,7 @@ Public Class Create_Admin_Account
         ComboBox1.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
-        TextBox1.Text = ""
-        TextBox2.Text = ""
-        TextBox3.Text = ""
-        TextBox4.Text = ""
-        ComboBox1.Text = ""
-        TextBox5.Text = ""
-        TextBox6.Text = ""
-        
+       
 
 
     End Sub

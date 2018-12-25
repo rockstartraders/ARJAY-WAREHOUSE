@@ -22,6 +22,9 @@ Public Class Create_Receiving_Personnel_Account
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
         Dim table As New DataTable()
 
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label10.Text = D
+
         adapter.Fill(table)
         ComboBox1.DataSource = table
         ComboBox1.ValueMember = "emp_no"
@@ -94,6 +97,15 @@ Public Class Create_Receiving_Personnel_Account
         MsgBox(" New Access has Been Created for A Receiving Personnel ")
         con.Close()
 
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & Label1.Text & "','" & Label10.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox7.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+        con.Close()
+
+
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
@@ -101,5 +113,7 @@ Public Class Create_Receiving_Personnel_Account
         ComboBox1.Text = ""
         TextBox5.Text = ""
         TextBox6.Text = ""
+
+
     End Sub
 End Class
