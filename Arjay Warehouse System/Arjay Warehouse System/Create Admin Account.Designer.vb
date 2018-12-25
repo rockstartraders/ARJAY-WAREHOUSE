@@ -41,6 +41,7 @@ Partial Class Create_Admin_Account
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox6
@@ -80,7 +81,7 @@ Partial Class Create_Admin_Account
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(250, 419)
+        Me.Button2.Location = New System.Drawing.Point(265, 448)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 23
@@ -89,7 +90,7 @@ Partial Class Create_Admin_Account
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(169, 419)
+        Me.Button1.Location = New System.Drawing.Point(184, 448)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 22
@@ -200,11 +201,22 @@ Partial Class Create_Admin_Account
         Me.Label9.TabIndex = 50
         Me.Label9.Text = "Processed By:"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(12, 9)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(30, 13)
+        Me.Label10.TabIndex = 69
+        Me.Label10.Text = "Date"
+        Me.Label10.Visible = False
+        '
         'Create_Admin_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(490, 493)
+        Me.ClientSize = New System.Drawing.Size(490, 507)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox1)
@@ -249,4 +261,5 @@ Partial Class Create_Admin_Account
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

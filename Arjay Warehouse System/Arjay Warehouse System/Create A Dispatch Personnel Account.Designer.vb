@@ -41,46 +41,47 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(184, 314)
+        Me.TextBox6.Location = New System.Drawing.Point(180, 329)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(220, 20)
         Me.TextBox6.TabIndex = 44
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(184, 281)
+        Me.TextBox5.Location = New System.Drawing.Point(180, 296)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(220, 20)
         Me.TextBox5.TabIndex = 43
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(187, 196)
+        Me.TextBox4.Location = New System.Drawing.Point(183, 211)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(220, 20)
         Me.TextBox4.TabIndex = 42
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(187, 161)
+        Me.TextBox3.Location = New System.Drawing.Point(183, 176)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(220, 20)
         Me.TextBox3.TabIndex = 41
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(184, 118)
+        Me.TextBox2.Location = New System.Drawing.Point(180, 133)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(220, 20)
         Me.TextBox2.TabIndex = 40
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(264, 421)
+        Me.Button2.Location = New System.Drawing.Point(272, 474)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 38
@@ -89,7 +90,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(183, 421)
+        Me.Button1.Location = New System.Drawing.Point(191, 474)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
@@ -99,7 +100,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(124, 321)
+        Me.Label7.Location = New System.Drawing.Point(120, 336)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(53, 13)
         Me.Label7.TabIndex = 36
@@ -108,7 +109,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(130, 288)
+        Me.Label6.Location = New System.Drawing.Point(126, 303)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(43, 13)
         Me.Label6.TabIndex = 35
@@ -117,7 +118,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(112, 203)
+        Me.Label5.Location = New System.Drawing.Point(108, 218)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(58, 13)
         Me.Label5.TabIndex = 34
@@ -126,7 +127,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(112, 168)
+        Me.Label4.Location = New System.Drawing.Point(108, 183)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 33
@@ -135,7 +136,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(120, 125)
+        Me.Label3.Location = New System.Drawing.Point(116, 140)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 13)
         Me.Label3.TabIndex = 32
@@ -144,7 +145,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(108, 84)
+        Me.Label2.Location = New System.Drawing.Point(104, 99)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(73, 13)
         Me.Label2.TabIndex = 31
@@ -162,14 +163,14 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(188, 75)
+        Me.ComboBox1.Location = New System.Drawing.Point(184, 90)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(216, 21)
         Me.ComboBox1.TabIndex = 45
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(184, 236)
+        Me.TextBox1.Location = New System.Drawing.Point(180, 251)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(220, 20)
         Me.TextBox1.TabIndex = 47
@@ -177,7 +178,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(105, 243)
+        Me.Label8.Location = New System.Drawing.Point(101, 258)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 13)
         Me.Label8.TabIndex = 46
@@ -185,7 +186,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(184, 370)
+        Me.TextBox7.Location = New System.Drawing.Point(180, 385)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(220, 20)
@@ -194,17 +195,28 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(98, 377)
+        Me.Label9.Location = New System.Drawing.Point(94, 392)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(75, 13)
         Me.Label9.TabIndex = 48
         Me.Label9.Text = "Processed By:"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(30, 9)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(30, 13)
+        Me.Label10.TabIndex = 68
+        Me.Label10.Text = "Date"
+        Me.Label10.Visible = False
+        '
         'Create_A_Dispatch_Personnel_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(513, 486)
+        Me.ClientSize = New System.Drawing.Size(513, 526)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox1)
@@ -249,4 +261,5 @@ Partial Class Create_A_Dispatch_Personnel_Account
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

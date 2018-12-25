@@ -67,7 +67,6 @@ Public Class Create_Receiving_Personnel_Account
 
         Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        'Dim c As New Password_Reset_Admin_Panel  ' -- I need to create a new dim to avoid same instance 
         If a = DialogResult.Yes Then
 
 

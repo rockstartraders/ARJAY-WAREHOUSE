@@ -22,7 +22,8 @@ Public Class Create_Admin_Account
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
         Dim table As New DataTable()
 
-        
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label10.Text = D
         
         adapter.Fill(table)
         ComboBox1.DataSource = table
@@ -76,7 +77,6 @@ Public Class Create_Admin_Account
 
         Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        'Dim c As New Password_Reset_Admin_Panel  ' -- I need to create a new dim to avoid same instance 
         If a = DialogResult.Yes Then
 
 
@@ -98,13 +98,31 @@ Public Class Create_Admin_Account
 
         con.Open()
         Dim query As String
-        query = "Insert Into `admin access`(`emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password`, `img`) values ('" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
+        query = "Insert Into `admin access`(`emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password`) values ('" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
         MsgBox(" New Admin Access has Been Created ")
         con.Close()
 
+        '<-- for logging purposes 
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & Label1.Text & "','" & Label10.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox7.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+        con.Close()
+
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
@@ -114,6 +132,10 @@ Public Class Create_Admin_Account
         TextBox6.Text = ""
         
 
+
+    End Sub
+
+    Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
 
     End Sub
 End Class
