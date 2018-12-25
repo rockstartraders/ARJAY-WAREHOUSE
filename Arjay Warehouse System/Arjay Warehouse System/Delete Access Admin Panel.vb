@@ -29,4 +29,14 @@
 
 
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        Dim aaaakabbbd As New Delete_Access_for_Receiving_admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        aaaakabbbd.ShowDialog()
+
+
+    End Sub
 End Class

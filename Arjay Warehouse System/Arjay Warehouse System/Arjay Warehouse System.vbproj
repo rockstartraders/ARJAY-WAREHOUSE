@@ -145,6 +145,12 @@
     <Compile Include="Delete Access for Dispatch Admin function.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Delete Access for Receiving admin function.Designer.vb">
+      <DependentUpon>Delete Access for Receiving admin function.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Access for Receiving admin function.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dispatch Login.Designer.vb">
       <DependentUpon>Dispatch Login.vb</DependentUpon>
     </Compile>
@@ -306,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Delete Access for Dispatch Admin function.resx">
       <DependentUpon>Delete Access for Dispatch Admin function.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Access for Receiving admin function.resx">
+      <DependentUpon>Delete Access for Receiving admin function.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dispatch Login.resx">
       <DependentUpon>Dispatch Login.vb</DependentUpon>
