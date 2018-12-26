@@ -22,6 +22,7 @@ Partial Class View_ADMIN_Actions_for_Account_Modifications
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(View_ADMIN_Actions_for_Account_Modifications))
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -118,6 +119,7 @@ Partial Class View_ADMIN_Actions_for_Account_Modifications
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "View_ADMIN_Actions_for_Account_Modifications"
         Me.Text = "View Access Modifications done By ADMIN "
         Me.ResumeLayout(False)

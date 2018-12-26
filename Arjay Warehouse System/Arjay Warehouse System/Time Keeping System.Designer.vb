@@ -22,6 +22,7 @@ Partial Class Time_Keeping_System
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Time_Keeping_System))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -121,6 +122,7 @@ Partial Class Time_Keeping_System
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Time_Keeping_System"
         Me.Text = "Time Keeping System"
         Me.ResumeLayout(False)

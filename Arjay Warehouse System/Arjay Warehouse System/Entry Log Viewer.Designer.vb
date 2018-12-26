@@ -22,6 +22,7 @@ Partial Class Entry_Log_Viewer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Entry_Log_Viewer))
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -33,7 +34,6 @@ Partial Class Entry_Log_Viewer
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
@@ -77,7 +77,7 @@ Partial Class Entry_Log_Viewer
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(466, 550)
+        Me.Button1.Location = New System.Drawing.Point(557, 549)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(165, 35)
         Me.Button1.TabIndex = 1
@@ -118,27 +118,18 @@ Partial Class Entry_Log_Viewer
         Me.TextBox1.Size = New System.Drawing.Size(168, 20)
         Me.TextBox1.TabIndex = 5
         '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(637, 551)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(85, 34)
-        Me.Button5.TabIndex = 8
-        Me.Button5.Text = "DELETE"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Entry_Log_Viewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(855, 596)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entry_Log_Viewer"
         Me.Text = "Entry Log Viewer"
         Me.ResumeLayout(False)
@@ -156,5 +147,4 @@ Partial Class Entry_Log_Viewer
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

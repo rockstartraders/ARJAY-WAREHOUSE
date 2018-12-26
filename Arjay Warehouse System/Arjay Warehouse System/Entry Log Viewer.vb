@@ -142,31 +142,8 @@ Public Class Entry_Log_Viewer
 
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        ' Delete function in ListView : https://social.msdn.microsoft.com/Forums/vstudio/en-US/b22ac2cf-b1e2-4463-a11a-a17d4fabc82a/how-to-remove-selected-row-in-listview?forum=vbgeneral
-        Dim a As DialogResult = MsgBox("Are You Sure You Want To Delete All Logs? Once Deleted This Cannot Be Undone.  Please Make Sure To Export It First Before Deleting It.", 4 + 32, "Confirmation")
-        If a = DialogResult.Yes Then
-
-            con.Open()
-            query = "Delete * from `entry log` where `time_stamp`='" & ListView1.SelectedItems(0).Text & "'"
-            cmd = New MySqlCommand(query, con)
-            rd = cmd.ExecuteReader
-
-            ListView1.Items.Clear()
-            While rd.Read
-                Dim lv As ListViewItem = ListView1.Items.Add(rd("time_stamp").ToString())
-
-                lv.SubItems.Add(rd("username").ToString())
-                lv.SubItems.Add(rd("pcname").ToString())
-                lv.SubItems.Add(rd("ipaddress").ToString())
-                lv.SubItems.Add(rd("access type").ToString())
-
-            End While
-        Else
-            Me.Show()
-        End If
-        con.Close()
 
     End Sub
 End Class

@@ -106,7 +106,7 @@ Public Class Correction_Ticket
 
         con.Open()
         Dim query As String
-        query = "INSERT INTO `correction request`( `date_submitted`,`Incident_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `status`, `correction_type`, `prob_des`,`resolution`,`resolved_date`) VALUES ('" & Label3.Text & "','" & TextBox1.Text & "','" & ComboBox3.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "','" & Label13.Text & "')"
+        query = "INSERT INTO `correction request`( `date_submitted`,`Incident_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `status`, `correction_type`, `prob_des`,`resolution`,`resolved_date`,`Processed By`) VALUES ('" & Label3.Text & "','" & TextBox1.Text & "','" & ComboBox3.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & ComboBox1.Text & "','" & ComboBox2.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "','" & Label13.Text & "','" & TextBox16.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
@@ -121,6 +121,8 @@ Public Class Correction_Ticket
         TextBox6.Text = ""
         TextBox7.Text = ""
         ComboBox2.Text = ""
+        TextBox16.Text = ""
+
 
         Dim rn As New Random
         TextBox1.Text = (rn.Next(233, 334455) + 5)

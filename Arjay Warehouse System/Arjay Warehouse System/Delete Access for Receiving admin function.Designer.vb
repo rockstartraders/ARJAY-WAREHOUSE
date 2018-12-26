@@ -22,6 +22,7 @@ Partial Class Delete_Access_for_Receiving_admin_function
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Delete_Access_for_Receiving_admin_function))
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -238,6 +239,7 @@ Partial Class Delete_Access_for_Receiving_admin_function
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Access_for_Receiving_admin_function"
         Me.Text = "Terminate RECEIVING Access"
         Me.ResumeLayout(False)

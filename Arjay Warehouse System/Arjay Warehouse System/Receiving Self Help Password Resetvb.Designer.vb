@@ -22,6 +22,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Receiving_Self_Help_Password_Resetvb))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -103,6 +104,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Receiving_Self_Help_Password_Resetvb"
         Me.Text = "Self Help Password Reset"
         Me.ResumeLayout(False)

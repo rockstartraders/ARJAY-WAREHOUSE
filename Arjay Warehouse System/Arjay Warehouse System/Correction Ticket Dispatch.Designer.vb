@@ -22,6 +22,7 @@ Partial Class Correction_Ticket
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Correction_Ticket))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -47,6 +48,8 @@ Partial Class Correction_Ticket
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -218,7 +221,7 @@ Partial Class Correction_Ticket
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(266, 691)
+        Me.Button1.Location = New System.Drawing.Point(251, 733)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 55
@@ -227,7 +230,7 @@ Partial Class Correction_Ticket
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(347, 691)
+        Me.Button2.Location = New System.Drawing.Point(332, 733)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 56
@@ -272,11 +275,33 @@ Partial Class Correction_Ticket
         Me.ComboBox3.Size = New System.Drawing.Size(179, 21)
         Me.ComboBox3.TabIndex = 105
         '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(151, 663)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(220, 20)
+        Me.TextBox16.TabIndex = 136
+        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBox16.Visible = False
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(65, 670)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(75, 13)
+        Me.Label18.TabIndex = 135
+        Me.Label18.Text = "Processed By:"
+        Me.Label18.Visible = False
+        '
         'Correction_Ticket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(730, 759)
+        Me.ClientSize = New System.Drawing.Size(730, 824)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.TextBox8)
@@ -302,6 +327,7 @@ Partial Class Correction_Ticket
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Correction_Ticket"
         Me.Text = " Correction Request"
         Me.ResumeLayout(False)
@@ -333,4 +359,6 @@ Partial Class Correction_Ticket
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
 End Class
