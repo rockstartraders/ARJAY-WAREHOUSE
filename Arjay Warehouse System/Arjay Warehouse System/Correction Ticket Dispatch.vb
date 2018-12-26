@@ -157,8 +157,18 @@ Public Class Correction_Ticket
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
-        Me.Dispose()
-        Me.Close()
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+
+        If a = DialogResult.Yes Then
+
+
+
+            Me.Dispose()
+            Me.Close()
+
+
+
+        End If
 
 
        

@@ -89,12 +89,28 @@ Public Class Dispatch_Login
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        Dim af As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        If a = DialogResult.Yes Then
 
-        Me.Hide()
-        af.ShowDialog()
-        End
+
+
+            'Me.Dispose()
+            'Me.Close()
+
+
+
+
+
+            Dim ae As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+            Me.Hide()
+            ae.ShowDialog()
+            End
+
+
+        End If
+
 
     End Sub
 End Class

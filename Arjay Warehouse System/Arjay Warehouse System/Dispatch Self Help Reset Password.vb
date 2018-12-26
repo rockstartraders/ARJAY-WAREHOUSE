@@ -31,9 +31,20 @@ Public Class Dispatch_Self_Help_Reset_Password
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        Me.Dispose()
-        Me.Close()
+        If a = DialogResult.Yes Then
+
+
+
+            Me.Dispose()
+            Me.Close()
+
+
+
+        End If
+
+
 
     End Sub
 
