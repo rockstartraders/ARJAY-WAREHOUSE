@@ -9,6 +9,9 @@ Public Class Employee_database
     Private Sub Employee_database_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
 
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label19.Text = D
+
 
         con.Open()
         query = "Select * from `employee record`"
@@ -259,6 +262,8 @@ Public Class Employee_database
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
+        TextBox17.Text = "Update Employees Information"
+
         '<-- Update Function --> 
 
         con.Open()
@@ -272,6 +277,18 @@ Public Class Employee_database
             MsgBox("Employee Profile Has Been Updated", 0 + 64)
 
         End If
+        con.Close()
+
+        '< -- Insert to activity log -->
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & TextBox17.Text & "','" & Label19.Text & "','" & TextBox15.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox16.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+
+
 
         ' < -- Clear Fieldset 
 
@@ -291,6 +308,8 @@ Public Class Employee_database
         TextBox10.Text = ""
         TextBox11.Text = ""
         TextBox12.Text = ""
+        TextBox17.Text = ""
+
 
         ' < -- Refresh ListView
 
@@ -360,6 +379,12 @@ Public Class Employee_database
 
     Private Sub Button6_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
+        ' <-- This text that will show on the log --> 
+
+
+        TextBox17.Text = "Deleted Employees Information"
+
+
 
         ' < -- Delete function -->
 
@@ -372,6 +397,16 @@ Public Class Employee_database
         Else
             MsgBox("Employee Profile Has Been Deleted", 0 + 64)
         End If
+
+        con.Close()
+
+        '< -- Insert to activity log -->
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & TextBox17.Text & "','" & Label19.Text & "','" & TextBox15.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox16.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
 
 
         ' < -- Clear Fieldset 
@@ -392,6 +427,7 @@ Public Class Employee_database
         TextBox10.Text = ""
         TextBox11.Text = ""
         TextBox12.Text = ""
+        TextBox17.Text = ""
 
         ' < -- Refresh ListView
 
@@ -476,6 +512,10 @@ Public Class Employee_database
         TextBox12.Text = ""
 
 
+
+    End Sub
+
+    Private Sub TextBox17_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox17.TextChanged
 
     End Sub
 End Class

@@ -57,6 +57,10 @@ Partial Class Employee_Registration_Form
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox4
@@ -318,16 +322,16 @@ Partial Class Employee_Registration_Form
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(352, 787)
+        Me.Button2.Location = New System.Drawing.Point(348, 817)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 65
-        Me.Button2.Text = "Back"
+        Me.Button2.Text = "Exit"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(254, 787)
+        Me.Button1.Location = New System.Drawing.Point(250, 817)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 64
@@ -348,11 +352,51 @@ Partial Class Employee_Registration_Form
         Me.TextBox14.Size = New System.Drawing.Size(197, 20)
         Me.TextBox14.TabIndex = 67
         '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(247, 9)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(120, 13)
+        Me.Label18.TabIndex = 68
+        Me.Label18.Text = "Register New Employee"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(11, 9)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(62, 13)
+        Me.Label19.TabIndex = 69
+        Me.Label19.Text = "Date for log"
+        Me.Label19.Visible = False
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(181, 765)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(220, 20)
+        Me.TextBox16.TabIndex = 132
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(95, 772)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(75, 13)
+        Me.Label20.TabIndex = 131
+        Me.Label20.Text = "Processed By:"
+        '
         'Employee_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(653, 848)
+        Me.ClientSize = New System.Drawing.Size(653, 876)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.Button2)
@@ -429,4 +473,8 @@ Partial Class Employee_Registration_Form
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label20 As System.Windows.Forms.Label
 End Class

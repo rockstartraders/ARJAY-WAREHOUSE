@@ -82,6 +82,8 @@ Partial Class Employee_database
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListView1
@@ -549,11 +551,32 @@ Partial Class Employee_database
         Me.Button7.Text = "CLEAR"
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'TextBox17
+        '
+        Me.TextBox17.Location = New System.Drawing.Point(812, 25)
+        Me.TextBox17.Multiline = True
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(168, 30)
+        Me.TextBox17.TabIndex = 132
+        Me.TextBox17.Visible = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(1001, 25)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(45, 13)
+        Me.Label19.TabIndex = 133
+        Me.Label19.Text = "Label19"
+        Me.Label19.Visible = False
+        '
         'Employee_database
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 921)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.TextBox17)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.Label18)
@@ -664,4 +687,6 @@ Partial Class Employee_database
     Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
 End Class

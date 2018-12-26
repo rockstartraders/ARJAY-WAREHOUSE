@@ -38,6 +38,16 @@ Public Class Employee_Registration_Form
         con.Close()
 
 
+        ' <-- Insert to Activity log -- >
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & Label18.Text & "','" & Label19.Text & "','" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & TextBox16.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+
+
         TextBox1.Text = ""
         TextBox13.Text = ""
         TextBox2.Text = ""
@@ -56,10 +66,10 @@ Public Class Employee_Registration_Form
         TextBox12.Text = ""
 
 
-        
-        
+        con.Close()
 
 
+        ' < -- END -->
 
 
     End Sub
@@ -75,6 +85,10 @@ Public Class Employee_Registration_Form
         Dim rn As New Random
         TextBox1.Text = (rn.Next(113344, 9998855) + 8)
 
+        Dim D As Date = Now()  ' this is date and time 
+        Me.Label19.Text = D
+
+        Me.TextBox16.Text = Admin_Panel.Label1.Text
 
 
     End Sub
