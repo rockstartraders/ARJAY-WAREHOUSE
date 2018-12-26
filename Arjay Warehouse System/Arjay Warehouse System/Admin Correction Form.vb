@@ -18,6 +18,9 @@ Public Class Admin_Correction_Form
         Dim D As Date = Now()  ' this is date and time 
         Me.Label13.Text = D
 
+        Me.TextBox16.Text = Admin_Panel.Label1.Text
+
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         con.Open()
         query = "SELECT * FROM `correction request`"
@@ -104,7 +107,7 @@ Public Class Admin_Correction_Form
         Incident_no = TextBox1.Text
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         con.Open()
-        query = "UPDATE `correction request` SET `Incident_no`='" & TextBox1.Text & "',`date_submitted`='" & Label3.Text & "',`emp_no`='" & TextBox2.Text & "',`f_name`='" & TextBox3.Text & "',`m_name`='" & TextBox4.Text & "',`l_name`='" & TextBox5.Text & "',`dept`='" & TextBox6.Text & "',`status`='" & ComboBox1.Text & "',`correction_type`='" & ComboBox2.Text & "',`prob_des`='" & TextBox7.Text & "',`resolution`='" & TextBox8.Text & "',`resolved_date`='" & Label13.Text & "' WHERE `Incident_no`='" & TextBox1.Text & "'"
+        query = "UPDATE `correction request` SET `Incident_no`='" & TextBox1.Text & "',`date_submitted`='" & Label3.Text & "',`emp_no`='" & TextBox2.Text & "',`f_name`='" & TextBox3.Text & "',`m_name`='" & TextBox4.Text & "',`l_name`='" & TextBox5.Text & "',`dept`='" & TextBox6.Text & "',`status`='" & ComboBox1.Text & "',`correction_type`='" & ComboBox2.Text & "',`prob_des`='" & TextBox7.Text & "',`resolution`='" & TextBox8.Text & "',`resolved_date`='" & Label13.Text & "',`Processed By`='" & TextBox16.Text & "' WHERE `Incident_no`='" & TextBox1.Text & "'"
         cmd = New MySqlCommand(query, con)
         rd = cmd.ExecuteReader()
 

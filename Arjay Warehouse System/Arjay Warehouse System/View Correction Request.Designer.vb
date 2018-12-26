@@ -42,10 +42,12 @@ Partial Class View_Correction_Request
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,7 +62,7 @@ Partial Class View_Correction_Request
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(75, 57)
+        Me.Label2.Location = New System.Drawing.Point(75, 101)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 13)
         Me.Label2.TabIndex = 82
@@ -104,7 +106,6 @@ Partial Class View_Correction_Request
         '
         'ComboBox2
         '
-        Me.ComboBox2.Enabled = False
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"", "Time Correction", "Employee Data Correction", "Login/Access Correction", "Inventory Correction (Receiving) ", "Inventory Correction (Dispatch)", "Others"})
         Me.ComboBox2.Location = New System.Drawing.Point(167, 348)
@@ -146,6 +147,7 @@ Partial Class View_Correction_Request
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(179, 20)
         Me.TextBox6.TabIndex = 94
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -162,17 +164,19 @@ Partial Class View_Correction_Request
         Me.TextBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.TextBox5.Location = New System.Drawing.Point(167, 246)
         Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(179, 20)
         Me.TextBox5.TabIndex = 92
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(96, 253)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 13)
+        Me.Label7.Size = New System.Drawing.Size(61, 13)
         Me.Label7.TabIndex = 91
-        Me.Label7.Text = "Last Name *"
+        Me.Label7.Text = "Last Name "
         '
         'TextBox4
         '
@@ -181,6 +185,7 @@ Partial Class View_Correction_Request
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(179, 20)
         Me.TextBox4.TabIndex = 90
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
         '
@@ -198,6 +203,7 @@ Partial Class View_Correction_Request
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(179, 20)
         Me.TextBox3.TabIndex = 88
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
         '
@@ -212,29 +218,24 @@ Partial Class View_Correction_Request
         '
         Me.TextBox2.Location = New System.Drawing.Point(167, 129)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(179, 20)
         Me.TextBox2.TabIndex = 86
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(80, 129)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 13)
+        Me.Label4.Size = New System.Drawing.Size(76, 13)
         Me.Label4.TabIndex = 85
-        Me.Label4.Text = "Employee No. *"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(167, 86)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox1.TabIndex = 84
+        Me.Label4.Text = "Employee No. "
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(71, 93)
+        Me.Label13.Location = New System.Drawing.Point(71, 63)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(87, 13)
         Me.Label13.TabIndex = 83
@@ -242,26 +243,56 @@ Partial Class View_Correction_Request
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(167, 50)
+        Me.TextBox9.Location = New System.Drawing.Point(167, 94)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(179, 20)
         Me.TextBox9.TabIndex = 103
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(271, 698)
+        Me.Button1.Location = New System.Drawing.Point(283, 754)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 104
         Me.Button1.Text = "CLOSE"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(167, 668)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(220, 20)
+        Me.TextBox16.TabIndex = 134
+        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(81, 675)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(75, 13)
+        Me.Label18.TabIndex = 133
+        Me.Label18.Text = "Processed By:"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(167, 55)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(179, 21)
+        Me.ComboBox3.TabIndex = 135
+        '
         'View_Correction_Request
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(663, 769)
+        Me.ClientSize = New System.Drawing.Size(663, 814)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
@@ -282,7 +313,6 @@ Partial Class View_Correction_Request
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -312,8 +342,10 @@ Partial Class View_Correction_Request
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
 End Class

@@ -59,6 +59,8 @@ Partial Class Admin_Correction_Form
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListView1
@@ -336,7 +338,7 @@ Partial Class Admin_Correction_Form
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(374, 697)
+        Me.Button1.Location = New System.Drawing.Point(386, 800)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 82
@@ -345,7 +347,7 @@ Partial Class Admin_Correction_Form
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(536, 697)
+        Me.Button2.Location = New System.Drawing.Point(548, 800)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 83
@@ -354,18 +356,37 @@ Partial Class Admin_Correction_Form
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(455, 697)
+        Me.Button3.Location = New System.Drawing.Point(467, 800)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 84
         Me.Button3.Text = "EXPORT"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(116, 682)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(220, 20)
+        Me.TextBox16.TabIndex = 132
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(30, 689)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(75, 13)
+        Me.Label18.TabIndex = 131
+        Me.Label18.Text = "Processed By:"
+        '
         'Admin_Correction_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(864, 763)
+        Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -436,4 +457,6 @@ Partial Class Admin_Correction_Form
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
 End Class

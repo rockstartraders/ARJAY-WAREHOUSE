@@ -18,7 +18,33 @@ Public Class View_Correction_Request
 
     Private Sub View_Correction_Request_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-       
+        '< -- Autoload information in the combo box -->
+
+
+
+        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+        Dim adapter As New MySqlDataAdapter("SELECT `Incident_no`, `date_submitted`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `status`, `correction_type`, `prob_des`, `resolution`, `resolved_date`, `Processed By` FROM `correction request`", con)
+        Dim table As New DataTable()
+
+        adapter.Fill(table)
+        ComboBox3.DataSource = table
+        ComboBox3.ValueMember = "Incident_no"
+        ComboBox3.DisplayMember = "Incident_no"
+
+        ' <-- clear all fields when form loads 
+
+        ComboBox3.Text = ""
+        TextBox2.Text = ""
+        TextBox9.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+        ComboBox1.Text = ""
+        ComboBox2.Text = ""
+        TextBox7.Text = ""
+        TextBox8.Text = ""
+
 
     End Sub
 
@@ -31,74 +57,11 @@ Public Class View_Correction_Request
     End Sub
 
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
-        Dim table As New DataTable()
-        Dim da As New SqlClient.SqlDataAdapter
-        Dim rd As MySqlDataReader
-
-        Try
-
-
-            con.Open()
-            Dim query As String
-            query = "SELECT * FROM `correction request` where `emp_no` ='" + TextBox2.Text + "'"
-            cmd = New MySqlCommand(query, con)
-            rd = cmd.ExecuteReader
-            While rd.Read
-
-                TextBox1.Text = rd.Item("Incident_no")
-                TextBox9.Text = rd.Item("date_submitted")
-                TextBox3.Text = rd.Item("f_name")
-                TextBox4.Text = rd.Item("m_name")
-                TextBox5.Text = rd.Item("l_name")
-                TextBox6.Text = rd.Item("dept")
-                ComboBox1.Text = rd.Item("status")
-                ComboBox2.Text = rd.Item("correction_type")
-                TextBox7.Text = rd.Item("prob_des")
-                TextBox8.Text = rd.Item("resolution")
-
-            End While
-            con.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+       
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
-        Dim table As New DataTable()
-        Dim da As New SqlClient.SqlDataAdapter
-        Dim rd As MySqlDataReader
-
-        Try
-
-
-            con.Open()
-            Dim query As String
-            query = "SELECT * FROM `correction request` where `Incident_no` ='" + TextBox1.Text + "'"
-            cmd = New MySqlCommand(query, con)
-            rd = cmd.ExecuteReader
-            While rd.Read
-
-                TextBox2.Text = rd.Item("emp_no")
-                TextBox9.Text = rd.Item("date_submitted")
-                TextBox3.Text = rd.Item("f_name")
-                TextBox4.Text = rd.Item("m_name")
-                TextBox5.Text = rd.Item("l_name")
-                TextBox6.Text = rd.Item("dept")
-                ComboBox1.Text = rd.Item("status")
-                ComboBox2.Text = rd.Item("correction_type")
-                TextBox7.Text = rd.Item("prob_des")
-                TextBox8.Text = rd.Item("resolution")
-
-            End While
-            con.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
+   
 
     Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
@@ -109,39 +72,7 @@ Public Class View_Correction_Request
     End Sub
 
     Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
-        Dim table As New DataTable()
-        Dim da As New SqlClient.SqlDataAdapter
-        Dim rd As MySqlDataReader
-
-        Try
-
-
-            con.Open()
-            Dim query As String
-            query = "SELECT * FROM `correction request` where `l_name` ='" + TextBox5.Text + "'"
-            cmd = New MySqlCommand(query, con)
-            rd = cmd.ExecuteReader
-            While rd.Read
-
-                TextBox1.Text = rd.Item("Incident_no")
-                TextBox9.Text = rd.Item("date_submitted")
-                TextBox3.Text = rd.Item("f_name")
-                TextBox4.Text = rd.Item("m_name")
-                TextBox2.Text = rd.Item("emp_no")
-                TextBox6.Text = rd.Item("dept")
-                ComboBox1.Text = rd.Item("status")
-                ComboBox2.Text = rd.Item("correction_type")
-                TextBox7.Text = rd.Item("prob_des")
-                TextBox8.Text = rd.Item("resolution")
-
-
-
-            End While
-            con.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+       
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -169,7 +100,7 @@ Public Class View_Correction_Request
 
         '<------  clear all fields ---->
 
-        TextBox1.Text = ""
+        ComboBox3.Text = ""
         TextBox2.Text = ""
         TextBox9.Text = ""
         TextBox3.Text = ""
@@ -180,6 +111,7 @@ Public Class View_Correction_Request
         ComboBox2.Text = ""
         TextBox7.Text = ""
         TextBox8.Text = ""
+        TextBox16.Text = ""
 
     End Sub
 
@@ -189,5 +121,43 @@ Public Class View_Correction_Request
 
     Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
 
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox3.SelectedIndexChanged
+
+        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+        Dim table As New DataTable()
+        Dim da As New SqlClient.SqlDataAdapter
+        Dim rd As MySqlDataReader
+
+
+
+        Try
+
+
+            con.Open()
+            Dim query As String
+            query = "SELECT * FROM `correction request` WHERE `Incident_no`='" + ComboBox3.Text + "'"
+            cmd = New MySqlCommand(query, con)
+            rd = cmd.ExecuteReader
+            While rd.Read
+
+                TextBox9.Text = rd.Item("date_submitted")
+                TextBox3.Text = rd.Item("f_name")
+                TextBox4.Text = rd.Item("m_name")
+                TextBox5.Text = rd.Item("l_name")
+                TextBox2.Text = rd.Item("emp_no")
+                TextBox6.Text = rd.Item("dept")
+                ComboBox1.Text = rd.Item("status")
+                ComboBox2.Text = rd.Item("correction_type")
+                TextBox7.Text = rd.Item("prob_des")
+                TextBox8.Text = rd.Item("resolution")
+                TextBox16.Text = rd.Item("Processed By")
+
+            End While
+            con.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 End Class
