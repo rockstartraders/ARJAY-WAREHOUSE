@@ -39,7 +39,7 @@ Partial Class Admin_Panel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(558, 33)
+        Me.Button1.Location = New System.Drawing.Point(445, 125)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(187, 47)
         Me.Button1.TabIndex = 0
@@ -48,7 +48,7 @@ Partial Class Admin_Panel
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(558, 101)
+        Me.Button2.Location = New System.Drawing.Point(445, 193)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(187, 47)
         Me.Button2.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class Admin_Panel
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(558, 236)
+        Me.Button3.Location = New System.Drawing.Point(445, 328)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(187, 47)
         Me.Button3.TabIndex = 2
@@ -66,7 +66,7 @@ Partial Class Admin_Panel
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(365, 33)
+        Me.Button4.Location = New System.Drawing.Point(252, 125)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(187, 47)
         Me.Button4.TabIndex = 3
@@ -75,7 +75,7 @@ Partial Class Admin_Panel
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(365, 101)
+        Me.Button5.Location = New System.Drawing.Point(252, 193)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(187, 47)
         Me.Button5.TabIndex = 4
@@ -84,7 +84,7 @@ Partial Class Admin_Panel
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(365, 169)
+        Me.Button6.Location = New System.Drawing.Point(252, 261)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(187, 47)
         Me.Button6.TabIndex = 5
@@ -94,7 +94,7 @@ Partial Class Admin_Panel
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(98, 21)
+        Me.Label1.Location = New System.Drawing.Point(92, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 6
@@ -111,7 +111,7 @@ Partial Class Admin_Panel
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(172, 33)
+        Me.Button7.Location = New System.Drawing.Point(59, 125)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(187, 47)
         Me.Button7.TabIndex = 8
@@ -120,7 +120,7 @@ Partial Class Admin_Panel
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(172, 101)
+        Me.Button8.Location = New System.Drawing.Point(59, 193)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(187, 47)
         Me.Button8.TabIndex = 9
@@ -129,7 +129,7 @@ Partial Class Admin_Panel
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(558, 169)
+        Me.Button9.Location = New System.Drawing.Point(445, 261)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(187, 47)
         Me.Button9.TabIndex = 10
@@ -138,7 +138,7 @@ Partial Class Admin_Panel
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(172, 169)
+        Me.Button10.Location = New System.Drawing.Point(59, 261)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(187, 47)
         Me.Button10.TabIndex = 11
@@ -149,7 +149,7 @@ Partial Class Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(780, 322)
+        Me.ClientSize = New System.Drawing.Size(688, 543)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
