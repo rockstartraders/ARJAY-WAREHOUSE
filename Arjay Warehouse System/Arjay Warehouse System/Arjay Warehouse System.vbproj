@@ -109,6 +109,12 @@
     <Compile Include="Consignor Registration Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Consignors Address Book.Designer.vb">
+      <DependentUpon>Consignors Address Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consignors Address Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Correction Ticket Dispatch.Designer.vb">
       <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>
     </Compile>
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consignor Registration Form.resx">
       <DependentUpon>Consignor Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consignors Address Book.resx">
+      <DependentUpon>Consignors Address Book.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Correction Ticket Dispatch.resx">
       <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>

@@ -14,7 +14,7 @@ Public Class Admin_Panel
         Dim aaa As New Password_Reset_Admin_Panel    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaa.ShowDialog()
+        aaa.Show()
 
 
 
@@ -23,9 +23,9 @@ Public Class Admin_Panel
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Dim aai As New Admin_Create_Account_Landing_Page    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        ' Me.Hide()
-        aai.ShowDialog()
-        'End
+
+        aai.Show()
+
 
 
     End Sub
@@ -35,7 +35,7 @@ Public Class Admin_Panel
         Dim aaaa As New Admin_Correction_Form    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaa.ShowDialog()
+        aaaa.Show()
 
 
 
@@ -53,7 +53,7 @@ Public Class Admin_Panel
         Dim aaaab As New Employee_Registration_Form    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaab.ShowDialog()
+        aaaab.Show()
 
 
     End Sub
@@ -63,7 +63,7 @@ Public Class Admin_Panel
         Dim aaaad As New Entry_Log_Viewer    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaad.ShowDialog()
+        aaaad.Show()
 
 
 
@@ -74,7 +74,7 @@ Public Class Admin_Panel
         Dim aaaak As New Employee_database    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaak.ShowDialog()
+        aaaak.Show()
 
 
 
@@ -85,7 +85,7 @@ Public Class Admin_Panel
         Dim aaaaka As New Admin_Self_Help_Password_Reset    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaaka.ShowDialog()
+        aaaaka.Show()
 
 
 
@@ -102,7 +102,7 @@ Public Class Admin_Panel
         Dim aaaakab As New View_ADMIN_Actions_for_Account_Modifications   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
         
-        aaaakab.ShowDialog()
+        aaaakab.Show()
 
     End Sub
 
@@ -111,7 +111,7 @@ Public Class Admin_Panel
         Dim aaaakaba As New Delete_Access_Admin_Panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaakaba.ShowDialog()
+        aaaakaba.Show()
 
 
     End Sub

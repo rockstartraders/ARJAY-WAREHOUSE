@@ -5,7 +5,7 @@
         Dim bago As New Correction_Ticket    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        bago.ShowDialog()
+        bago.Show()
 
 
 
@@ -16,7 +16,7 @@
 
         Dim agaa As New View_Correction_Request   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        agaa.ShowDialog()
+        agaa.Show()
 
 
 
@@ -30,7 +30,7 @@
 
         Dim ahaaazz As New Receiving_Self_Help_Password_Resetvb   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        ahaaazz.ShowDialog()
+        ahaaazz.Show()
 
     End Sub
 

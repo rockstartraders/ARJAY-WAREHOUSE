@@ -19,7 +19,7 @@ Public Class Dispatch_Panel
 
         Dim ah As New Correction_Ticket    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        ah.ShowDialog()
+        ah.Show()
 
 
 
@@ -29,7 +29,7 @@ Public Class Dispatch_Panel
 
         Dim ahaa As New View_Correction_Request   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        ahaa.ShowDialog()
+        ahaa.Show()
 
 
     End Sub
@@ -45,7 +45,7 @@ Public Class Dispatch_Panel
 
         Dim ahaaa As New Dispatch_Self_Help_Reset_Password   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
-        ahaaa.ShowDialog()
+        ahaaa.Show()
 
        
 

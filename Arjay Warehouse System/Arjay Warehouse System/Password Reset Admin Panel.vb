@@ -5,7 +5,7 @@
         Dim a As New Password_Reset_for_an_Admin    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        a.ShowDialog()
+        a.Show()
 
 
     End Sub
@@ -15,7 +15,7 @@
         Dim b As New Password_Reset_for_Dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        b.ShowDialog()
+        b.Show()
 
 
 
@@ -27,7 +27,7 @@
         Dim c As New Password_Reset_for_Receiving_Personnel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        c.ShowDialog()
+        c.Show()
 
 
 

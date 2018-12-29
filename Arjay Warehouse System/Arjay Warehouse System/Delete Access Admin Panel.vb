@@ -4,7 +4,7 @@
         Dim aaaakabb As New Delete_Access_for_an_ADMIN_admin   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaakabb.ShowDialog()
+        aaaakabb.Show()
 
 
 
@@ -33,7 +33,7 @@
         Dim aaaakabbb As New Delete_Access_for_Dispatch_Admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaakabbb.ShowDialog()
+        aaaakabbb.Show()
 
 
 
@@ -44,7 +44,7 @@
         Dim aaaakabbbd As New Delete_Access_for_Receiving_admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        aaaakabbbd.ShowDialog()
+        aaaakabbbd.Show()
 
 
     End Sub
