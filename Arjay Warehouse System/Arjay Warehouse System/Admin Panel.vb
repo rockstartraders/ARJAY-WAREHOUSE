@@ -115,4 +115,14 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+
+        Dim bakanaman As New Consignor_Registration_Form   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        bakanaman.ShowDialog()
+
+
+    End Sub
 End Class

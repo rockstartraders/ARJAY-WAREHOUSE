@@ -40,12 +40,20 @@ Partial Class Consignor_Registration_Form
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -189,13 +197,6 @@ Partial Class Consignor_Registration_Form
         Me.TextBox6.Size = New System.Drawing.Size(308, 20)
         Me.TextBox6.TabIndex = 16
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(252, 369)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(308, 20)
-        Me.TextBox7.TabIndex = 17
-        '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(252, 434)
@@ -214,16 +215,17 @@ Partial Class Consignor_Registration_Form
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(162, 489)
+        Me.Label10.Location = New System.Drawing.Point(173, 496)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(75, 13)
+        Me.Label10.Size = New System.Drawing.Size(62, 13)
         Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Processed By:"
+        Me.Label10.Text = "Created By:"
         '
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(252, 489)
         Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(308, 20)
         Me.TextBox9.TabIndex = 21
         '
@@ -236,17 +238,113 @@ Partial Class Consignor_Registration_Form
         Me.Label11.TabIndex = 22
         Me.Label11.Text = "Consignor Registration Form"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(253, 367)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(307, 21)
+        Me.ComboBox1.TabIndex = 23
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(738, 179)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox7.TabIndex = 24
+        Me.TextBox7.Text = "0"
+        Me.TextBox7.Visible = False
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(738, 220)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox10.TabIndex = 25
+        Me.TextBox10.Text = "0"
+        Me.TextBox10.Visible = False
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(738, 260)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.ReadOnly = True
+        Me.TextBox11.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox11.TabIndex = 26
+        Me.TextBox11.Text = "0"
+        Me.TextBox11.Visible = False
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(738, 298)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.ReadOnly = True
+        Me.TextBox12.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox12.TabIndex = 27
+        Me.TextBox12.Text = "0"
+        Me.TextBox12.Visible = False
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(738, 339)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.ReadOnly = True
+        Me.TextBox13.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox13.TabIndex = 28
+        Me.TextBox13.Text = "0"
+        Me.TextBox13.Visible = False
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(738, 390)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.ReadOnly = True
+        Me.TextBox14.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox14.TabIndex = 29
+        Me.TextBox14.Text = "0"
+        Me.TextBox14.Visible = False
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(738, 427)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.ReadOnly = True
+        Me.TextBox15.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox15.TabIndex = 30
+        Me.TextBox15.Text = "0"
+        Me.TextBox15.Visible = False
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(738, 464)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.ReadOnly = True
+        Me.TextBox16.Size = New System.Drawing.Size(16, 20)
+        Me.TextBox16.TabIndex = 31
+        Me.TextBox16.Text = "0"
+        Me.TextBox16.Visible = False
+        '
         'Consignor_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(766, 622)
+        Me.Controls.Add(Me.TextBox16)
+        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.TextBox14)
+        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -288,10 +386,18 @@ Partial Class Consignor_Registration_Form
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
 End Class
