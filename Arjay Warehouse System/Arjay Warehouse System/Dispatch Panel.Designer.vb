@@ -28,6 +28,7 @@ Partial Class Dispatch_Panel
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -75,11 +76,21 @@ Partial Class Dispatch_Panel
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "HELLO "
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(394, 153)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(145, 52)
+        Me.Button4.TabIndex = 7
+        Me.Button4.Text = "CONSIGNOR'S ADDRESS BOOK"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Dispatch_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(785, 315)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
@@ -97,4 +108,5 @@ Partial Class Dispatch_Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

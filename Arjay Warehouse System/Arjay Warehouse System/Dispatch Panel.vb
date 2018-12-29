@@ -51,4 +51,13 @@ Public Class Dispatch_Panel
 
 
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+        Dim ahaaahz As New Consignors_Address_Book   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        ahaaahz.Show()
+
+
+    End Sub
 End Class

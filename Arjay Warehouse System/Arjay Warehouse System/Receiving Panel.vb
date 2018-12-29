@@ -37,4 +37,12 @@
     Private Sub Receiving_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+        Dim no_more_brain As New Consignors_Address_Book   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        no_more_brain.Show()
+
+    End Sub
 End Class

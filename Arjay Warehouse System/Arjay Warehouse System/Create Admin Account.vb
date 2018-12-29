@@ -32,7 +32,6 @@ Public Class Create_Admin_Account
         Dim random As New Random
         Dim password As New System.Text.StringBuilder
         For i As Int32 = 0 To 3
-            'password.Append(("$"))
             password.Append(Chr(random.Next(65, 90)))
             password.Append(Chr(random.Next(48, 57)))
 
@@ -72,7 +71,7 @@ Public Class Create_Admin_Account
         Dim table As New DataTable()
         Dim da As New SqlClient.SqlDataAdapter
         Dim rd As MySqlDataReader
-        'Dim reader As SqlClient.MySqlDataReader
+
 
         
 

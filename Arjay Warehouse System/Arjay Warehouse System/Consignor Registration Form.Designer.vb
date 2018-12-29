@@ -95,7 +95,7 @@ Partial Class Consignor_Registration_Form
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(162, 228)
+        Me.Label5.Location = New System.Drawing.Point(162, 281)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 13)
         Me.Label5.TabIndex = 4
@@ -104,7 +104,7 @@ Partial Class Consignor_Registration_Form
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(162, 275)
+        Me.Label6.Location = New System.Drawing.Point(162, 328)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(58, 13)
         Me.Label6.TabIndex = 5
@@ -113,7 +113,7 @@ Partial Class Consignor_Registration_Form
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(162, 323)
+        Me.Label7.Location = New System.Drawing.Point(162, 376)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(73, 13)
         Me.Label7.TabIndex = 6
@@ -122,7 +122,7 @@ Partial Class Consignor_Registration_Form
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(158, 376)
+        Me.Label8.Location = New System.Drawing.Point(158, 429)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(88, 13)
         Me.Label8.TabIndex = 7
@@ -131,7 +131,7 @@ Partial Class Consignor_Registration_Form
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(162, 441)
+        Me.Label9.Location = New System.Drawing.Point(162, 494)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(80, 13)
         Me.Label9.TabIndex = 8
@@ -139,7 +139,7 @@ Partial Class Consignor_Registration_Form
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(312, 567)
+        Me.Button1.Location = New System.Drawing.Point(312, 620)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 9
@@ -148,7 +148,7 @@ Partial Class Consignor_Registration_Form
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(404, 567)
+        Me.Button2.Location = New System.Drawing.Point(404, 620)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 10
@@ -172,34 +172,35 @@ Partial Class Consignor_Registration_Form
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(252, 179)
+        Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(308, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(308, 78)
         Me.TextBox3.TabIndex = 13
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(252, 221)
+        Me.TextBox4.Location = New System.Drawing.Point(252, 274)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(308, 20)
         Me.TextBox4.TabIndex = 14
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(252, 275)
+        Me.TextBox5.Location = New System.Drawing.Point(252, 328)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(308, 20)
         Me.TextBox5.TabIndex = 15
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(252, 320)
+        Me.TextBox6.Location = New System.Drawing.Point(252, 373)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(308, 20)
         Me.TextBox6.TabIndex = 16
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(252, 434)
+        Me.TextBox8.Location = New System.Drawing.Point(252, 487)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(308, 20)
         Me.TextBox8.TabIndex = 18
@@ -215,7 +216,7 @@ Partial Class Consignor_Registration_Form
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(173, 496)
+        Me.Label10.Location = New System.Drawing.Point(173, 549)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(62, 13)
         Me.Label10.TabIndex = 20
@@ -223,7 +224,7 @@ Partial Class Consignor_Registration_Form
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(252, 489)
+        Me.TextBox9.Location = New System.Drawing.Point(252, 542)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(308, 20)
@@ -241,7 +242,8 @@ Partial Class Consignor_Registration_Form
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(253, 367)
+        Me.ComboBox1.Items.AddRange(New Object() {"", "Bay 1 ", "Bay 2", "Bay 3", "Bay 4", "Bay 5", "Bay 6", "Delivery Area", "Loading Dock A", "Loading Dock B"})
+        Me.ComboBox1.Location = New System.Drawing.Point(253, 420)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(307, 21)
         Me.ComboBox1.TabIndex = 23
@@ -330,7 +332,7 @@ Partial Class Consignor_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(766, 622)
+        Me.ClientSize = New System.Drawing.Size(766, 684)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.TextBox15)
         Me.Controls.Add(Me.TextBox14)
