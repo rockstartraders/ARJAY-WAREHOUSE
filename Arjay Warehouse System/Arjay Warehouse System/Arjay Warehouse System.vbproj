@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Login_As</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Consignor_Registration_Form</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -101,6 +101,12 @@
       <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin Self Help Password Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consignor Registration Form.Designer.vb">
+      <DependentUpon>Consignor Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consignor Registration Form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Correction Ticket Dispatch.Designer.vb">
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Self Help Password Reset.resx">
       <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consignor Registration Form.resx">
+      <DependentUpon>Consignor Registration Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Correction Ticket Dispatch.resx">
       <DependentUpon>Correction Ticket Dispatch.vb</DependentUpon>
