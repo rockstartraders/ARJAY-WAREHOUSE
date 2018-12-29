@@ -126,6 +126,7 @@ Public Class Password_Reset_for_Receiving_Personnel
         TextBox5.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
+        Button1.Enabled = False
 
 
 
@@ -169,7 +170,7 @@ Public Class Password_Reset_for_Receiving_Personnel
         rd = cmd.ExecuteReader
 
         If rd.HasRows Then
-            MsgBox("Password Exist", 0 + 64)
+            MsgBox("Sorry This Password is Not Acceptable , Please Enter a more Complex Password.", 0 + 64)
             TextBox7.Text = ""
             'InitializeComponent() 'load all the controls again
             'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
@@ -177,7 +178,7 @@ Public Class Password_Reset_for_Receiving_Personnel
 
         Else
 
-            MsgBox("Password is Good", 0 + 64)
+            MsgBox("Password is Good To Go.", 0 + 64)
             Button1.Enabled = True
 
 
