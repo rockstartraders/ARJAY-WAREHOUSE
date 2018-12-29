@@ -39,8 +39,15 @@ Public Class Admin_Correction_Form
             lv.SubItems.Add(rd("correction_type").ToString())
             lv.SubItems.Add(rd("prob_des").ToString())
 
+           
+
         End While
+
         con.Close()
+
+      
+
+
 
     End Sub
 
@@ -78,6 +85,8 @@ Public Class Admin_Correction_Form
         ComboBox2.Text = correction_type
         TextBox7.Text = prob_des
 
+
+
         con.Close()
 
 
@@ -85,7 +94,7 @@ Public Class Admin_Correction_Form
 
     Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
 
-        
+       
 
     End Sub
 

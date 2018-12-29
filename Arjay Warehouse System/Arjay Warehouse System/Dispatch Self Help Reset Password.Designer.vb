@@ -30,6 +30,7 @@ Partial Class Dispatch_Self_Help_Reset_Password
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,7 +54,7 @@ Partial Class Dispatch_Self_Help_Reset_Password
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(167, 202)
+        Me.Label3.Location = New System.Drawing.Point(167, 193)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(99, 26)
         Me.Label3.TabIndex = 2
@@ -69,7 +70,7 @@ Partial Class Dispatch_Self_Help_Reset_Password
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(117, 239)
+        Me.TextBox2.Location = New System.Drawing.Point(117, 230)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(206, 20)
         Me.TextBox2.TabIndex = 5
@@ -92,11 +93,21 @@ Partial Class Dispatch_Self_Help_Reset_Password
         Me.Button2.Text = "CLOSE"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(181, 274)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 29)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "VALIDATE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Dispatch_Self_Help_Reset_Password
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(442, 480)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
@@ -118,4 +129,5 @@ Partial Class Dispatch_Self_Help_Reset_Password
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

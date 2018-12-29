@@ -89,9 +89,11 @@ Public Class Admin_Self_Help_Password_Reset
 
 
 
+
             End If
 
         End If
+
 
 
     End Sub
@@ -102,6 +104,40 @@ Public Class Admin_Self_Help_Password_Reset
     Private Sub Admin_Self_Help_Password_Reset_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Me.TextBox1.Text = Admin_Panel.Label1.Text
+        Button1.Enabled = False
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        ' <-- Form validation -->
+
+        Dim newpassword As String
+
+        newpassword = TextBox2.Text
+       
+        con.Open()
+        query = "select * from `admin access` where `password`='" & TextBox2.Text & "'"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader
+
+        If rd.HasRows Then
+            MsgBox("Password Exist", 0 + 64)
+            TextBox2.Text = ""
+            'InitializeComponent() 'load all the controls again
+            'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
+
+
+        Else
+
+            MsgBox("Password is Good", 0 + 64)
+            Button1.Enabled = True
+
+
+        End If
+
+        con.Close()
+
+
 
     End Sub
 End Class
