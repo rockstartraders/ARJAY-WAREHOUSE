@@ -49,6 +49,7 @@ Partial Class Create_Receiving_Personnel_Account
         '
         Me.TextBox6.Location = New System.Drawing.Point(157, 310)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(220, 20)
         Me.TextBox6.TabIndex = 59
         '

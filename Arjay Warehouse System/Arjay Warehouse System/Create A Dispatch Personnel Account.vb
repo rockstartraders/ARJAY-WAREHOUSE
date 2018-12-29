@@ -22,6 +22,25 @@ Public Class Create_A_Dispatch_Personnel_Account
         Dim D As Date = Now()  ' this is date and time 
         Me.Label10.Text = D
 
+
+        '<--  Generate random password to AVOID the ADMIN to do the hula hula -->
+        ' <-- URL : http://www.vbforums.com/showthread.php?637315-RESOLVED-Random-Password-Generator
+
+        Dim random As New Random
+        Dim password As New System.Text.StringBuilder
+        For i As Int32 = 0 To 3
+            'password.Append(("$"))
+            password.Append(Chr(random.Next(65, 90)))
+            password.Append(Chr(random.Next(48, 57)))
+
+
+        Next
+        TextBox6.Text = password.ToString
+
+
+        '< -- Done with password generate -->
+
+
         adapter.Fill(table)
         ComboBox1.DataSource = table
         ComboBox1.ValueMember = "emp_no"
@@ -35,7 +54,7 @@ Public Class Create_A_Dispatch_Personnel_Account
         TextBox4.Text = ""
         ComboBox1.Text = ""
         TextBox5.Text = ""
-        TextBox6.Text = ""
+        'TextBox6.Text = ""
 
 
 
@@ -148,6 +167,11 @@ Public Class Create_A_Dispatch_Personnel_Account
     End Sub
 
     Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
 
     End Sub
 End Class

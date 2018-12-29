@@ -49,6 +49,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         Me.TextBox6.Location = New System.Drawing.Point(180, 329)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(220, 20)
         Me.TextBox6.TabIndex = 44
         '
@@ -82,7 +83,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(272, 474)
+        Me.Button2.Location = New System.Drawing.Point(283, 446)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 38
@@ -91,7 +92,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(191, 474)
+        Me.Button1.Location = New System.Drawing.Point(202, 446)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
@@ -187,7 +188,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(180, 385)
+        Me.TextBox7.Location = New System.Drawing.Point(183, 386)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(220, 20)
@@ -196,7 +197,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(94, 392)
+        Me.Label9.Location = New System.Drawing.Point(97, 393)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(75, 13)
         Me.Label9.TabIndex = 48
