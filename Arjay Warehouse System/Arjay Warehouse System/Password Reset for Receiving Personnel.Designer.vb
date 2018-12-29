@@ -43,6 +43,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -56,7 +57,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(272, 499)
+        Me.Button2.Location = New System.Drawing.Point(280, 526)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 83
@@ -65,7 +66,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(191, 499)
+        Me.Button1.Location = New System.Drawing.Point(199, 526)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 82
@@ -74,7 +75,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(182, 396)
+        Me.TextBox8.Location = New System.Drawing.Point(190, 423)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(187, 20)
@@ -83,7 +84,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(101, 403)
+        Me.Label10.Location = New System.Drawing.Point(109, 430)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(75, 13)
         Me.Label10.TabIndex = 80
@@ -219,11 +220,21 @@ Partial Class Password_Reset_for_Receiving_Personnel
         Me.Label1.TabIndex = 65
         Me.Label1.Text = "PASSWORD CHANGE FOR A RECEIVING PERSONNEL"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(226, 371)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 85
+        Me.Button3.Text = "VALIDATE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Password_Reset_for_Receiving_Personnel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 608)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -271,4 +282,5 @@ Partial Class Password_Reset_for_Receiving_Personnel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

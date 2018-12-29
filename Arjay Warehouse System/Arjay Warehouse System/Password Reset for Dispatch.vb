@@ -17,6 +17,8 @@ Public Class Password_Reset_for_Dispatch
         Dim D As Date = Now()  ' this is date and time 
         Me.Label3.Text = D
 
+        Button1.Enabled = False
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `dispatch access`", con)
         Dim table As New DataTable()
@@ -120,14 +122,6 @@ Public Class Password_Reset_for_Dispatch
         new_password = TextBox7.Text
        
         
-        con.Open()
-        query = "select * from `dispatch access` where `emp_no`='" & TextBox2.Text & "'"
-        cmd = New MySqlCommand(query, con)
-        rd = cmd.ExecuteReader
-
-        'If rd.HasRows Then
-        con.Close()
-
 
         con.Open()
         query = "UPDATE `dispatch access` SET `password` ='" & TextBox7.Text & "' WHERE `emp_no` = '" & TextBox2.Text & "'"
@@ -219,6 +213,39 @@ Public Class Password_Reset_for_Dispatch
             Me.Close()
 
         End If
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+
+        ' <-- Form validation -->
+
+        Dim newpassword As String
+
+        newpassword = TextBox7.Text
+
+        con.Open()
+        query = "select * from `admin access` where `password`='" & TextBox7.Text & "'"
+        cmd = New MySqlCommand(query, con)
+        rd = cmd.ExecuteReader
+
+        If rd.HasRows Then
+            MsgBox("Password Exist", 0 + 64)
+            TextBox7.Text = ""
+            'InitializeComponent() 'load all the controls again
+            'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
+
+
+        Else
+
+            MsgBox("Password is Good", 0 + 64)
+            Button1.Enabled = True
+
+
+        End If
+
+        con.Close()
 
     End Sub
 End Class

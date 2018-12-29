@@ -43,6 +43,7 @@ Partial Class Password_Reset_for_Dispatch
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -178,7 +179,7 @@ Partial Class Password_Reset_for_Dispatch
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(98, 401)
+        Me.Label10.Location = New System.Drawing.Point(98, 426)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(75, 13)
         Me.Label10.TabIndex = 60
@@ -186,7 +187,7 @@ Partial Class Password_Reset_for_Dispatch
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(179, 394)
+        Me.TextBox8.Location = New System.Drawing.Point(179, 419)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(187, 20)
@@ -194,7 +195,7 @@ Partial Class Password_Reset_for_Dispatch
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(188, 497)
+        Me.Button1.Location = New System.Drawing.Point(188, 522)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 62
@@ -203,7 +204,7 @@ Partial Class Password_Reset_for_Dispatch
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(269, 497)
+        Me.Button2.Location = New System.Drawing.Point(269, 522)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 63
@@ -218,11 +219,21 @@ Partial Class Password_Reset_for_Dispatch
         Me.ComboBox1.Size = New System.Drawing.Size(179, 21)
         Me.ComboBox1.TabIndex = 64
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(213, 375)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 86
+        Me.Button3.Text = "VALIDATE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Password_Reset_for_Dispatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 608)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -270,4 +281,5 @@ Partial Class Password_Reset_for_Dispatch
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
