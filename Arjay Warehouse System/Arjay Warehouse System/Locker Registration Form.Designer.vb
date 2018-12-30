@@ -45,14 +45,17 @@ Partial Class Locker_Registration_Form
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
-        Me.ListView1.Location = New System.Drawing.Point(30, 42)
+        Me.ListView1.Location = New System.Drawing.Point(12, 40)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(795, 366)
+        Me.ListView1.Size = New System.Drawing.Size(828, 366)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -96,12 +99,12 @@ Partial Class Locker_Registration_Form
         '
         Me.ColumnHeader7.Text = "Issued By:"
         Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader7.Width = 130
+        Me.ColumnHeader7.Width = 170
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(343, 471)
+        Me.Label1.Location = New System.Drawing.Point(374, 473)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 13)
         Me.Label1.TabIndex = 1
@@ -163,15 +166,17 @@ Partial Class Locker_Registration_Form
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(409, 464)
+        Me.TextBox1.Location = New System.Drawing.Point(440, 466)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(113, 20)
         Me.TextBox1.TabIndex = 8
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(334, 564)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(296, 20)
         Me.TextBox2.TabIndex = 9
         '
@@ -179,6 +184,7 @@ Partial Class Locker_Registration_Form
         '
         Me.TextBox3.Location = New System.Drawing.Point(334, 607)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(296, 20)
         Me.TextBox3.TabIndex = 10
         '
@@ -186,6 +192,7 @@ Partial Class Locker_Registration_Form
         '
         Me.TextBox4.Location = New System.Drawing.Point(334, 655)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(296, 20)
         Me.TextBox4.TabIndex = 11
         '
@@ -193,6 +200,7 @@ Partial Class Locker_Registration_Form
         '
         Me.TextBox5.Location = New System.Drawing.Point(334, 698)
         Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(296, 20)
         Me.TextBox5.TabIndex = 12
         '
@@ -200,6 +208,7 @@ Partial Class Locker_Registration_Form
         '
         Me.TextBox6.Location = New System.Drawing.Point(334, 743)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(296, 20)
         Me.TextBox6.TabIndex = 13
         '
@@ -211,11 +220,41 @@ Partial Class Locker_Registration_Form
         Me.ComboBox1.Size = New System.Drawing.Size(295, 21)
         Me.ComboBox1.TabIndex = 14
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(346, 823)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "ASSIGN"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(427, 823)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "REMOVE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(508, 823)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "EXIT"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Locker_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
@@ -260,4 +299,7 @@ Partial Class Locker_Registration_Form
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
