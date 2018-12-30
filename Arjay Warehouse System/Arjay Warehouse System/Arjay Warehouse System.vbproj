@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Login_As</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Locker_Registration_Form</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -206,6 +206,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Locker Registration Form.Designer.vb">
+      <DependentUpon>Locker Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Locker Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login As.Designer.vb">
       <DependentUpon>Login As.vb</DependentUpon>
     </Compile>
@@ -354,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locker Registration Form.resx">
+      <DependentUpon>Locker Registration Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login As.resx">
       <DependentUpon>Login As.vb</DependentUpon>

@@ -124,7 +124,7 @@ Public Class Admin_Panel
         Dim bakanaman As New Consignor_Registration_Form   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        bakanaman.ShowDialog()
+        bakanaman.Show()
 
 
     End Sub
@@ -154,6 +154,16 @@ Public Class Admin_Panel
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+
+        Dim locker As New Locker_Registration_Form   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        locker.Show()
+
 
     End Sub
 End Class

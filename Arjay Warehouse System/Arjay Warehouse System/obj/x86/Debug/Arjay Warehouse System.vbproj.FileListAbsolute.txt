@@ -63,3 +63,4 @@ C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arja
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Delete_Access_for_Receiving_admin_function.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Consignor_Registration_Form.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Consignors_Address_Book.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Locker_Registration_Form.resources
