@@ -48,6 +48,9 @@ Partial Class Locker_Registration_Form
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ListView1
@@ -247,11 +250,44 @@ Partial Class Locker_Registration_Form
         Me.Button3.Text = "EXIT"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(12, 430)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.TabIndex = 18
+        Me.Label8.Text = "Label8"
+        Me.Label8.Visible = False
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(12, 466)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox7.TabIndex = 19
+        Me.TextBox7.Text = "Assigned A Locker"
+        Me.TextBox7.Visible = False
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(12, 492)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.ReadOnly = True
+        Me.TextBox8.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox8.TabIndex = 20
+        Me.TextBox8.Text = "Unassigned a Locker"
+        Me.TextBox8.Visible = False
+        '
         'Locker_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -302,4 +338,7 @@ Partial Class Locker_Registration_Form
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
 End Class
