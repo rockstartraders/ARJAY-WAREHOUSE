@@ -16,9 +16,9 @@ Public Class Admin_Login
         Me.TextBox3.Text = D
 
         Me.TextBox4.Text = My.Computer.Name
-        'Me.TextBox5.Text = My.Computer.Info.GetHashCode
 
-        Dim localIp As String
+
+        'Dim localIp As String
 
         For Each address As System.Net.IPAddress In System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName).AddressList
             If address.AddressFamily = Net.Sockets.AddressFamily.InterNetwork Then
@@ -47,12 +47,14 @@ Public Class Admin_Login
         Dim username As String
         Dim password As String
 
-
         username = TextBox1.Text
         password = TextBox2.Text
 
+
+        
+
         con.Open()
-        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "')"
+        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `Instance`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & Label5.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
@@ -74,14 +76,21 @@ Public Class Admin_Login
 
 
             Me.Hide()
-            Admin_Panel.ShowDialog()
+            Admin_Panel.Show()
             Me.Close()
 
 
         Else
-            MsgBox("Invalid User Name and Password !", 0 + 64)
-            TextBox1.Text = ""
-            TextBox2.Text = ""
+            'MsgBox("Invalid User Name and Password !", 0 + 64)
+            'TextBox1.Text = ""
+            'TextBox2.Text = ""
+
+
+            Dim erroruna As New Error_Login_Admin    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+            erroruna.Show()
+
+            
 
 
         End If
@@ -109,11 +118,15 @@ Public Class Admin_Login
             Dim ae As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
             Me.Hide()
-            ae.ShowDialog()
+            ae.Show()
             End
 
 
         End If
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class
