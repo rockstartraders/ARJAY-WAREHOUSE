@@ -199,12 +199,6 @@
     <Compile Include="Entry Log Viewer.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Error Login Admin.Designer.vb">
-      <DependentUpon>Error Login Admin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Error Login Admin.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -363,9 +357,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entry Log Viewer.resx">
       <DependentUpon>Entry Log Viewer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Error Login Admin.resx">
-      <DependentUpon>Error Login Admin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

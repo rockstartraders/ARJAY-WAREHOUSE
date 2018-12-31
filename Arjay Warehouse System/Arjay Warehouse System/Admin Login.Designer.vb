@@ -34,7 +34,6 @@ Partial Class Admin_Login
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox2
@@ -134,22 +133,11 @@ Partial Class Admin_Login
         Me.Label4.Text = "Admin"
         Me.Label4.Visible = False
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(295, 256)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(88, 13)
-        Me.Label5.TabIndex = 43
-        Me.Label5.Text = "Successful Login"
-        Me.Label5.Visible = False
-        '
         'Admin_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 278)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -179,5 +167,4 @@ Partial Class Admin_Login
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

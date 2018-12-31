@@ -54,7 +54,7 @@ Public Class Admin_Login
         
 
         con.Open()
-        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `Instance`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & Label5.Text & "')"
+        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
@@ -76,19 +76,15 @@ Public Class Admin_Login
 
 
             Me.Hide()
-            Admin_Panel.Show()
+            Admin_Panel.ShowDialog()
             Me.Close()
 
 
         Else
-            'MsgBox("Invalid User Name and Password !", 0 + 64)
-            'TextBox1.Text = ""
-            'TextBox2.Text = ""
+            MsgBox("Invalid User Name and Password !", 0 + 64)
+            TextBox1.Text = ""
+            TextBox2.Text = ""
 
-
-            Dim erroruna As New Error_Login_Admin    ' -- I need to create a new dim to avoid same instance and avoid instance error 
-
-            erroruna.Show()
 
             
 

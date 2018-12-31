@@ -45,7 +45,20 @@ Public Class Locker_Registration_Form
         TextBox6.Text = Issued_by
         ComboBox1.Text = emp_no
 
+
+        '<-- This is to disable the edit function if the form is loaded or data is present -->
+
+        If ComboBox1.Text <> "" Then
+            ComboBox1.Enabled = False
+
+        Else
+            ComboBox1.Enabled = True
+
+        End If
+
         Me.TextBox6.Text = Admin_Panel.Label1.Text
+
+
 
         con.Close()
 
@@ -137,7 +150,7 @@ Public Class Locker_Registration_Form
         Dim table As New DataTable()
         Dim da As New SqlClient.SqlDataAdapter
         Dim rd As MySqlDataReader
-        'Dim reader As SqlClient.MySqlDataReader
+
         Try
 
 
@@ -188,7 +201,6 @@ Public Class Locker_Registration_Form
 
         con.Open()
         Dim query As String
-        ' query = "INSERT INTO `Locker Registration`(`locker_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `Issued_by`) values ('" & TextBox1.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
         query = "Update `Locker Registration` SET `locker_no`='" & TextBox1.Text & "',`emp_no`='" & ComboBox1.Text & "',`f_name`='" & TextBox2.Text & "',`m_name`='" & TextBox3.Text & "',`l_name`='" & TextBox4.Text & "',`dept`='" & TextBox5.Text & "',`Issued_by`='" & TextBox6.Text & "' where `locker_no`='" & TextBox1.Text & "'"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
