@@ -51,6 +51,12 @@ Partial Class Locker_Registration_Form
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ListView1
@@ -280,11 +286,71 @@ Partial Class Locker_Registration_Form
         Me.TextBox8.Text = "Unassigned a Locker"
         Me.TextBox8.Visible = False
         '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(15, 524)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.ReadOnly = True
+        Me.TextBox9.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox9.TabIndex = 21
+        Me.TextBox9.Visible = False
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(15, 550)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox10.TabIndex = 22
+        Me.TextBox10.Visible = False
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(15, 586)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.ReadOnly = True
+        Me.TextBox11.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox11.TabIndex = 23
+        Me.TextBox11.Visible = False
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(15, 614)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.ReadOnly = True
+        Me.TextBox12.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox12.TabIndex = 24
+        Me.TextBox12.Visible = False
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(15, 655)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.ReadOnly = True
+        Me.TextBox13.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox13.TabIndex = 25
+        Me.TextBox13.Visible = False
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(15, 698)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.ReadOnly = True
+        Me.TextBox14.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox14.TabIndex = 26
+        Me.TextBox14.Visible = False
+        '
         'Locker_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.Controls.Add(Me.TextBox14)
+        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label8)
@@ -341,4 +407,10 @@ Partial Class Locker_Registration_Form
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
 End Class

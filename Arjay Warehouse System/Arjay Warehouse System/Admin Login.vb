@@ -18,7 +18,7 @@ Public Class Admin_Login
         Me.TextBox4.Text = My.Computer.Name
         'Me.TextBox5.Text = My.Computer.Info.GetHashCode
 
-        Dim localIp As String
+        'Dim localIp As String
 
         For Each address As System.Net.IPAddress In System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName).AddressList
             If address.AddressFamily = Net.Sockets.AddressFamily.InterNetwork Then
@@ -82,12 +82,10 @@ Public Class Admin_Login
             MsgBox("Invalid User Name and Password !", 0 + 64)
             TextBox1.Text = ""
             TextBox2.Text = ""
-<<<<<<< HEAD
 
 
-            
-=======
->>>>>>> parent of 2310a6f...  tried to modify the login but it is a waste of my precious time
+
+
 
 
         End If
@@ -123,3 +121,5 @@ Public Class Admin_Login
 
     End Sub
 End Class
+
+
