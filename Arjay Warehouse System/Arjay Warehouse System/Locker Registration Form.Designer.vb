@@ -51,13 +51,6 @@ Partial Class Locker_Registration_Form
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListView1
@@ -73,7 +66,7 @@ Partial Class Locker_Registration_Form
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "Locker No."
-        Me.ColumnHeader1.Width = 70
+        Me.ColumnHeader1.Width = 80
         '
         'ColumnHeader2
         '
@@ -85,7 +78,7 @@ Partial Class Locker_Registration_Form
         '
         Me.ColumnHeader3.Text = "First Name"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader3.Width = 160
+        Me.ColumnHeader3.Width = 120
         '
         'ColumnHeader4
         '
@@ -97,7 +90,7 @@ Partial Class Locker_Registration_Form
         '
         Me.ColumnHeader5.Text = "Last Name"
         Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader5.Width = 140
+        Me.ColumnHeader5.Width = 120
         '
         'ColumnHeader6
         '
@@ -109,7 +102,7 @@ Partial Class Locker_Registration_Form
         '
         Me.ColumnHeader7.Text = "Issued By:"
         Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader7.Width = 150
+        Me.ColumnHeader7.Width = 170
         '
         'Label1
         '
@@ -274,7 +267,7 @@ Partial Class Locker_Registration_Form
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(53, 20)
         Me.TextBox7.TabIndex = 19
-        Me.TextBox7.Text = "Assigned a locker for an Employee"
+        Me.TextBox7.Text = "Assigned A Locker"
         Me.TextBox7.Visible = False
         '
         'TextBox8
@@ -284,84 +277,14 @@ Partial Class Locker_Registration_Form
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(53, 20)
         Me.TextBox8.TabIndex = 20
-        Me.TextBox8.Text = "Unassigned an employee locker"
+        Me.TextBox8.Text = "Unassigned a Locker"
         Me.TextBox8.Visible = False
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(16, 545)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox9.TabIndex = 21
-        Me.TextBox9.Visible = False
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(16, 571)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox10.TabIndex = 22
-        Me.TextBox10.Visible = False
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(16, 607)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox11.TabIndex = 23
-        Me.TextBox11.Visible = False
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(16, 643)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox12.TabIndex = 24
-        Me.TextBox12.Visible = False
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(16, 669)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox13.TabIndex = 25
-        Me.TextBox13.Visible = False
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(16, 702)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox14.TabIndex = 26
-        Me.TextBox14.Visible = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(374, 9)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(112, 13)
-        Me.Label9.TabIndex = 27
-        Me.Label9.Text = "Locker Issuance Form"
         '
         'Locker_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 881)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label8)
@@ -418,11 +341,4 @@ Partial Class Locker_Registration_Form
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class

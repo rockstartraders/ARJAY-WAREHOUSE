@@ -49,16 +49,7 @@ Public Class Locker_Registration_Form
 
         con.Close()
 
-        '< -- On click function inside Listview the combobox will be set to disable if this condition is met -->
 
-        If ComboBox1.Text <> "" Then
-            ComboBox1.Enabled = False
-
-        Else
-            ComboBox1.Enabled = True
-        End If
-
-        '< -- Again Good Luck sa code kung magulo -->
 
 
 
@@ -197,6 +188,7 @@ Public Class Locker_Registration_Form
 
         con.Open()
         Dim query As String
+        ' query = "INSERT INTO `Locker Registration`(`locker_no`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `Issued_by`) values ('" & TextBox1.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
         query = "Update `Locker Registration` SET `locker_no`='" & TextBox1.Text & "',`emp_no`='" & ComboBox1.Text & "',`f_name`='" & TextBox2.Text & "',`m_name`='" & TextBox3.Text & "',`l_name`='" & TextBox4.Text & "',`dept`='" & TextBox5.Text & "',`Issued_by`='" & TextBox6.Text & "' where `locker_no`='" & TextBox1.Text & "'"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
@@ -277,93 +269,6 @@ Public Class Locker_Registration_Form
     End Sub
 
     Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
-
-    End Sub
-
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-
-        con.Open()
-        Dim query As String
-        query = "Update `Locker Registration` SET `locker_no`='" & TextBox1.Text & "',`emp_no`='" & TextBox9.Text & "',`f_name`='" & TextBox10.Text & "',`m_name`='" & TextBox11.Text & "',`l_name`='" & TextBox12.Text & "',`dept`='" & TextBox13.Text & "',`Issued_by`='" & TextBox14.Text & "' where `locker_no`='" & TextBox1.Text & "'"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-        MsgBox(" Locker Has Been Unassigned. ")
-        con.Close()
-
-
-        '<-- for logging purposes 
-
-        con.Open()
-        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & TextBox8.Text & "','" & Label8.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-
-        con.Close()
-
-        '<-- Will Reload the Event in ComboBox -->
-
-        '< -- Load event for Combobox -->
-
-        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
-        Dim table As New DataTable()
-
-        '< -- Fill function 
-
-        adapter.Fill(table)
-        ComboBox1.DataSource = table
-        ComboBox1.ValueMember = "emp_no"
-        ComboBox1.DisplayMember = "emp_no"
-
-        '<-- Clear Function -->
-
-        TextBox1.Text = ""
-        TextBox2.Text = ""
-        TextBox3.Text = ""
-        TextBox4.Text = ""
-        TextBox5.Text = ""
-        ComboBox1.Text = ""
-
-        '< -- End of function here -->
-
-
-        '<-- List View Reload Event -->
-
-
-        con.Open()
-        query = "SELECT * FROM `Locker Registration`"
-        cmd = New MySqlCommand(query, con)
-        rd = cmd.ExecuteReader
-        ListView1.Items.Clear()
-        While rd.Read
-            Dim lv As ListViewItem = ListView1.Items.Add(rd("locker_no").ToString())
-            lv.SubItems.Add(rd("emp_no").ToString())
-            lv.SubItems.Add(rd("f_name").ToString())
-            lv.SubItems.Add(rd("m_name").ToString())
-            lv.SubItems.Add(rd("l_name").ToString())
-            lv.SubItems.Add(rd("dept").ToString())
-            lv.SubItems.Add(rd("Issued_by").ToString())
-
-
-        End While
-
-        Me.TextBox6.Text = Admin_Panel.Label1.Text
-
-        con.Close()
-
-
-        '< -- Good Luck Sana Naunawaan Mo kasi nalito din Ako -->
-
-
-
-    End Sub
-
-    Private Sub TextBox11_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox11.TextChanged
-
-    End Sub
-
-    Private Sub TextBox9_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox9.TextChanged
 
     End Sub
 End Class
