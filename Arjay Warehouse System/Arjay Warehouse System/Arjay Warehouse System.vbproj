@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Login_As</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Caution_Error</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -101,6 +101,12 @@
       <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin Self Help Password Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caution Error.Designer.vb">
+      <DependentUpon>Caution Error.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caution Error.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consignor Registration Form.Designer.vb">
@@ -310,6 +316,9 @@
     <EmbeddedResource Include="Admin Self Help Password Reset.resx">
       <DependentUpon>Admin Self Help Password Reset.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Caution Error.resx">
+      <DependentUpon>Caution Error.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consignor Registration Form.resx">
       <DependentUpon>Consignor Registration Form.vb</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +423,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caution.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
