@@ -48,15 +48,23 @@ Public Class Admin_Correction_Form
 
 
             If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(0).BackColor = Color.Red  'later ito
                 lv.SubItems(1).BackColor = Color.Red  'later ito
-                If lv.SubItems(1).Text = "Open" Then
-                    lv.SubItems(1).BackColor = Color.Red
-                  
-                End If
+                lv.SubItems(2).BackColor = Color.Red  'later ito
+                lv.SubItems(3).BackColor = Color.Red  'later ito
+                lv.SubItems(4).BackColor = Color.Red  'later ito
+                lv.SubItems(5).BackColor = Color.Red  'later ito
+                lv.SubItems(6).BackColor = Color.Red  'later ito
+                lv.SubItems(7).BackColor = Color.Red  'later ito
+                lv.SubItems(8).BackColor = Color.Red  'later ito
+                lv.SubItems(9).BackColor = Color.Red  'later ito
+
 
             End If
 
         End While
+
+       
 
         con.Close()
 
@@ -101,6 +109,16 @@ Public Class Admin_Correction_Form
         TextBox7.Text = prob_des
 
 
+        '< -- Validation -- >
+
+        If ComboBox1.Text = "Resolved" Then
+            ComboBox1.Enabled = False
+            Button1.Enabled = False
+
+        Else
+            ComboBox1.Enabled = True
+            Button1.Enabled = True
+        End If
 
         con.Close()
 
@@ -153,13 +171,18 @@ Public Class Admin_Correction_Form
             ListView1.FullRowSelect = True
             lv.UseItemStyleForSubItems = False
 
-
             If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(0).BackColor = Color.Red  'later ito
                 lv.SubItems(1).BackColor = Color.Red  'later ito
-                If lv.SubItems(1).Text = "Open" Then
-                    lv.SubItems(1).BackColor = Color.Red
+                lv.SubItems(2).BackColor = Color.Red  'later ito
+                lv.SubItems(3).BackColor = Color.Red  'later ito
+                lv.SubItems(4).BackColor = Color.Red  'later ito
+                lv.SubItems(5).BackColor = Color.Red  'later ito
+                lv.SubItems(6).BackColor = Color.Red  'later ito
+                lv.SubItems(7).BackColor = Color.Red  'later ito
+                lv.SubItems(8).BackColor = Color.Red  'later ito
+                lv.SubItems(9).BackColor = Color.Red  'later ito
 
-                End If
 
             End If
 
@@ -209,13 +232,21 @@ Public Class Admin_Correction_Form
             lv.UseItemStyleForSubItems = False
 
             If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(0).BackColor = Color.Red  'later ito
                 lv.SubItems(1).BackColor = Color.Red  'later ito
-                If lv.SubItems(1).Text = "Open" Then
-                    lv.SubItems(1).BackColor = Color.Red
+                lv.SubItems(2).BackColor = Color.Red  'later ito
+                lv.SubItems(3).BackColor = Color.Red  'later ito
+                lv.SubItems(4).BackColor = Color.Red  'later ito
+                lv.SubItems(5).BackColor = Color.Red  'later ito
+                lv.SubItems(6).BackColor = Color.Red  'later ito
+                lv.SubItems(7).BackColor = Color.Red  'later ito
+                lv.SubItems(8).BackColor = Color.Red  'later ito
+                lv.SubItems(9).BackColor = Color.Red  'later ito
 
+               
                 End If
 
-            End If
+
             
 
 
