@@ -45,8 +45,6 @@ Public Class Admin_Panel
     Private Sub Admin_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
-
-
        
 
 

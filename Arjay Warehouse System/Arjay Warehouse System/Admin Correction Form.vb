@@ -2,6 +2,7 @@
 Imports MySql.Data.MySqlClient
 Imports System.IO
 
+
 ' Comments, Error and URL ' 
 ' Timeouts = https://www.grasshopper3d.com/group/slingshot/forum/topics/problem-with-connection '
 ' Out of range = https://stackoverflow.com/questions/14284494/mysql-error-1264-out-of-range-value-for-column '
@@ -48,8 +49,12 @@ Public Class Admin_Correction_Form
 
             If lv.SubItems(1).Text = "Open" Then
                 lv.SubItems(1).BackColor = Color.Red  'later ito
-            End If
+                If lv.SubItems(1).Text = "Open" Then
+                    lv.SubItems(1).BackColor = Color.Red
+                  
+                End If
 
+            End If
 
         End While
 
@@ -151,6 +156,11 @@ Public Class Admin_Correction_Form
 
             If lv.SubItems(1).Text = "Open" Then
                 lv.SubItems(1).BackColor = Color.Red  'later ito
+                If lv.SubItems(1).Text = "Open" Then
+                    lv.SubItems(1).BackColor = Color.Red
+
+                End If
+
             End If
 
         End While
@@ -198,10 +208,15 @@ Public Class Admin_Correction_Form
             ListView1.FullRowSelect = True
             lv.UseItemStyleForSubItems = False
 
-
             If lv.SubItems(1).Text = "Open" Then
                 lv.SubItems(1).BackColor = Color.Red  'later ito
+                If lv.SubItems(1).Text = "Open" Then
+                    lv.SubItems(1).BackColor = Color.Red
+
+                End If
+
             End If
+            
 
 
         End While
