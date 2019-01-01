@@ -43,7 +43,7 @@ Partial Class Caution_Error
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(250, 309)
+        Me.Button1.Location = New System.Drawing.Point(243, 338)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(93, 33)
         Me.Button1.TabIndex = 1
@@ -58,7 +58,7 @@ Partial Class Caution_Error
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(530, 96)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "        ""With Great Power Comes Great Responsibility"" " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "So Please Cautious In Per" & _
+        Me.Label1.Text = "      ""With Great Power Comes A Great Responsibility"" " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "So Please Cautious In Per" & _
             "forming Actions and Changes. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "                        Please do treat it with c" & _
             "are." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -75,7 +75,7 @@ Partial Class Caution_Error
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(576, 369)
+        Me.ClientSize = New System.Drawing.Size(576, 387)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)

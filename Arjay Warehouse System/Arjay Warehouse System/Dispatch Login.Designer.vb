@@ -34,6 +34,8 @@ Partial Class Dispatch_Login
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TextBox2
@@ -133,11 +135,33 @@ Partial Class Dispatch_Login
         Me.Label4.Text = "Dispatch"
         Me.Label4.Visible = False
         '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(12, 184)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(73, 20)
+        Me.TextBox7.TabIndex = 47
+        Me.TextBox7.Text = "Login Failed"
+        Me.TextBox7.Visible = False
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(12, 158)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.Size = New System.Drawing.Size(73, 20)
+        Me.TextBox6.TabIndex = 46
+        Me.TextBox6.Text = "Login Successful"
+        Me.TextBox6.Visible = False
+        '
         'Dispatch_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(407, 263)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -167,4 +191,6 @@ Partial Class Dispatch_Login
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
 End Class

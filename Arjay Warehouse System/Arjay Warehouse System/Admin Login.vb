@@ -16,9 +16,7 @@ Public Class Admin_Login
         Me.TextBox3.Text = D
 
         Me.TextBox4.Text = My.Computer.Name
-        'Me.TextBox5.Text = My.Computer.Info.GetHashCode
 
-        'Dim localIp As String
 
         For Each address As System.Net.IPAddress In System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName).AddressList
             If address.AddressFamily = Net.Sockets.AddressFamily.InterNetwork Then
@@ -52,14 +50,6 @@ Public Class Admin_Login
         password = TextBox2.Text
 
         con.Open()
-        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-
-        con.Close()
-
-        con.Open()
 
         query = "SELECT * FROM `admin access` WHERE `userid`='" & TextBox1.Text & "' and `password`= '" & TextBox2.Text & "'"
         cmd = New MySqlCommand(query, con)
@@ -68,9 +58,19 @@ Public Class Admin_Login
         If rd.HasRows Then
 
             rd.Read()
+
             ' <-- This is needed to show the username automatically inside VB form
             rd.Read()
             Admin_Panel.Label1.Text = rd("userid")
+
+            con.Close()
+
+            con.Open()
+            query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox6.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
+
 
 
             Me.Hide()
@@ -78,19 +78,35 @@ Public Class Admin_Login
             Me.Close()
 
 
+            '< -- Here the block for close connection needs to be declared to avoid 2 open instance for reader -->
+
         Else
+            con.Close()
+            rd.Close()
+
             MsgBox("Invalid User Name and Password !", 0 + 64)
+
+            '<-- Logging for invalid Instance -->
+            con.Open()
+            query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox7.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
+
+
+
+
             TextBox1.Text = ""
             TextBox2.Text = ""
 
-
+            con.Close()
 
 
 
 
         End If
 
-        con.Close()
+
 
 
     End Sub
@@ -101,11 +117,7 @@ Public Class Admin_Login
 
         If a = DialogResult.Yes Then
 
-
-
-            'Me.Dispose()
-            'Me.Close()
-
+            
 
 
 
@@ -118,6 +130,14 @@ Public Class Admin_Login
 
 
         End If
+
+    End Sub
+
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
 
     End Sub
 End Class

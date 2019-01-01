@@ -43,15 +43,6 @@ Public Class Dispatch_Login
         password = TextBox2.Text
 
         con.Open()
-        query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-
-        con.Close()
-
-
-        con.Open()
 
         query = "SELECT * FROM `dispatch access` WHERE `userid`='" & TextBox1.Text & "' and `password`= '" & TextBox2.Text & "'"
         cmd = New MySqlCommand(query, con)
@@ -65,6 +56,15 @@ Public Class Dispatch_Login
             rd.Read()
             Dispatch_Panel.Label1.Text = rd("userid")
 
+            con.Close()
+
+            '< -- Logging Purposes -->
+
+            con.Open()
+            query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox6.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
 
 
             Me.Hide()
@@ -74,14 +74,29 @@ Public Class Dispatch_Login
            
 
         Else
+            con.Close()
+            rd.Close()
+
             MsgBox("Invalid User Name and Password !", 0 + 64)
+
+            '<-- Logging for invalid Instance -->
+            con.Open()
+            query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox7.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
+
+
+
+
             TextBox1.Text = ""
             TextBox2.Text = ""
+
+            con.Close()
 
 
         End If
 
-        con.Close()
 
         
 
