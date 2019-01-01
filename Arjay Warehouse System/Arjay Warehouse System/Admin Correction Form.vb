@@ -39,13 +39,23 @@ Public Class Admin_Correction_Form
             lv.SubItems.Add(rd("correction_type").ToString())
             lv.SubItems.Add(rd("prob_des").ToString())
 
+
+            '<-- Warning came here -->
+
             ListView1.FullRowSelect = True
+            lv.UseItemStyleForSubItems = False
+
+
+            If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(1).BackColor = Color.Red  'later ito
+            End If
+
 
         End While
 
         con.Close()
 
-      
+
 
 
 
@@ -132,6 +142,17 @@ Public Class Admin_Correction_Form
             lv.SubItems.Add(rd("correction_type").ToString())
             lv.SubItems.Add(rd("prob_des").ToString())
 
+
+            '<-- Warning came here -->
+
+            ListView1.FullRowSelect = True
+            lv.UseItemStyleForSubItems = False
+
+
+            If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(1).BackColor = Color.Red  'later ito
+            End If
+
         End While
         MsgBox("Correction Request Has Been Resolved")
 
@@ -170,6 +191,18 @@ Public Class Admin_Correction_Form
             lv.SubItems.Add(rd("dept").ToString())
             lv.SubItems.Add(rd("correction_type").ToString())
             lv.SubItems.Add(rd("prob_des").ToString())
+
+
+            '<-- Warning came here -->
+
+            ListView1.FullRowSelect = True
+            lv.UseItemStyleForSubItems = False
+
+
+            If lv.SubItems(1).Text = "Open" Then
+                lv.SubItems(1).BackColor = Color.Red  'later ito
+            End If
+
 
         End While
         con.Close()
