@@ -97,6 +97,9 @@ Public Class Locker_Registration_Form
             lv.SubItems.Add(rd("l_name").ToString())
             lv.SubItems.Add(rd("dept").ToString())
             lv.SubItems.Add(rd("Issued_by").ToString())
+
+
+            ListView1.FullRowSelect = True
             
 
         End While

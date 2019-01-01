@@ -39,6 +39,7 @@ Public Class Employee_database
             lv.SubItems.Add(rd("emer_rel").ToString())
             lv.SubItems.Add(rd("emer_address").ToString())
 
+            ListView1.FullRowSelect = True
 
         End While
         con.Close()

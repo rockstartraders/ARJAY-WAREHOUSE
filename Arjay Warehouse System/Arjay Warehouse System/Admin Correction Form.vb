@@ -39,7 +39,7 @@ Public Class Admin_Correction_Form
             lv.SubItems.Add(rd("correction_type").ToString())
             lv.SubItems.Add(rd("prob_des").ToString())
 
-           
+            ListView1.FullRowSelect = True
 
         End While
 

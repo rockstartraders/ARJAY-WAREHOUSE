@@ -27,6 +27,8 @@ Public Class View_ADMIN_Actions_for_Account_Modifications
             lv.SubItems.Add(rd("dept").ToString())
             lv.SubItems.Add(rd("done_by").ToString())
 
+            ListView1.FullRowSelect = True
+
         End While
         con.Close()
 

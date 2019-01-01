@@ -28,6 +28,8 @@ Public Class Entry_Log_Viewer
             lv.SubItems.Add(rd("access type").ToString())
             lv.SubItems.Add(rd("outcome").ToString())
 
+            ListView1.FullRowSelect = True
+
         End While
         con.Close()
 
