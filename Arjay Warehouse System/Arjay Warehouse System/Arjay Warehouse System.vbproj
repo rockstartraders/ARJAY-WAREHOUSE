@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Admin_Correction_Form</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Admin_Login</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -378,9 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Password Reset Admin Panel.resx">
       <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
@@ -426,6 +426,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_rocket.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
