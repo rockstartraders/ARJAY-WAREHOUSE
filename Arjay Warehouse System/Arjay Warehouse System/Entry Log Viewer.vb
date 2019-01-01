@@ -26,6 +26,7 @@ Public Class Entry_Log_Viewer
             lv.SubItems.Add(rd("pcname").ToString())
             lv.SubItems.Add(rd("ipaddress").ToString())
             lv.SubItems.Add(rd("access type").ToString())
+            lv.SubItems.Add(rd("outcome").ToString())
 
         End While
         con.Close()
@@ -115,6 +116,7 @@ Public Class Entry_Log_Viewer
             lv.SubItems.Add(rd("pcname").ToString())
             lv.SubItems.Add(rd("ipaddress").ToString())
             lv.SubItems.Add(rd("access type").ToString())
+            lv.SubItems.Add(rd("outcome").ToString())
 
         End While
         con.Close()
@@ -136,6 +138,7 @@ Public Class Entry_Log_Viewer
             lv.SubItems.Add(rd("pcname").ToString())
             lv.SubItems.Add(rd("ipaddress").ToString())
             lv.SubItems.Add(rd("access type").ToString())
+            lv.SubItems.Add(rd("outcome").ToString())
 
         End While
         con.Close()
