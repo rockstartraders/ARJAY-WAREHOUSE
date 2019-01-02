@@ -37,6 +37,7 @@ Partial Class Admin_Panel
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -165,11 +166,21 @@ Partial Class Admin_Panel
         Me.Button12.Text = "MODIFY / TERMINATE CONSIGNOR RECORD"
         Me.Button12.UseVisualStyleBackColor = True
         '
+        'Button13
+        '
+        Me.Button13.Location = New System.Drawing.Point(59, 381)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(187, 47)
+        Me.Button13.TabIndex = 14
+        Me.Button13.Text = "VIEW MODIFICATION FOR CONSIGNORS DATA"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
         'Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(688, 543)
+        Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
@@ -205,4 +216,5 @@ Partial Class Admin_Panel
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Button13 As System.Windows.Forms.Button
 End Class

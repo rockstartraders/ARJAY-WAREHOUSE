@@ -175,4 +175,14 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
+
+        Dim consignorkagebunshinreadonly As New View_Log_for_Consignor_Modification   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        consignorkagebunshinreadonly.Show()
+
+
+    End Sub
 End Class
