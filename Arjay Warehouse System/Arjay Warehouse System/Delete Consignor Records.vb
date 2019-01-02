@@ -156,6 +156,8 @@ Public Class Delete_Consignor_Records
                 TextBox8.Text = rd.Item("con_contact_person")
 
 
+
+
             End While
             con.Close()
         Catch ex As Exception
@@ -216,6 +218,14 @@ Public Class Delete_Consignor_Records
 
 
 
+
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
 
     End Sub
 End Class
