@@ -23,21 +23,11 @@ Partial Class Login_As
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login_As))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(321, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Login As"
         '
         'Button1
         '
@@ -72,7 +62,7 @@ Partial Class Login_As
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(158, 92)
         Me.Button4.TabIndex = 9
-        Me.Button4.Text = "TIME IN and OUT"
+        Me.Button4.Text = "TIME KEEPING SYSTEM"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Login_As
@@ -84,15 +74,12 @@ Partial Class Login_As
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login_As"
         Me.Text = "Login As"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
