@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Admin_Correction_Form</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Update_Consignor_Record</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -287,6 +287,12 @@
     <Compile Include="Time Keeping System.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Update Consignor Record.Designer.vb">
+      <DependentUpon>Update Consignor Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update Consignor Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View ADMIN Actions for Account Modifications.Designer.vb">
       <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>
     </Compile>
@@ -405,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Time Keeping System.resx">
       <DependentUpon>Time Keeping System.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Consignor Record.resx">
+      <DependentUpon>Update Consignor Record.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View ADMIN Actions for Account Modifications.resx">
       <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>

@@ -49,8 +49,6 @@ Public Class Password_Reset_for_an_Admin
         Dim da As New SqlClient.SqlDataAdapter
         Dim rd As MySqlDataReader
 
-
-
         Try
 
 
