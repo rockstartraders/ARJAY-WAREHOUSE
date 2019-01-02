@@ -62,6 +62,9 @@ Partial Class Admin_Correction_Form
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ListView1
@@ -339,7 +342,7 @@ Partial Class Admin_Correction_Form
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(386, 800)
+        Me.Button1.Location = New System.Drawing.Point(303, 800)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 82
@@ -381,11 +384,43 @@ Partial Class Admin_Correction_Form
         Me.Label18.TabIndex = 131
         Me.Label18.Text = "Processed By:"
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(386, 800)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 133
+        Me.Button4.Text = "REOPEN"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(442, 647)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.ReadOnly = True
+        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox9.TabIndex = 134
+        Me.TextBox9.Text = "Re-open a Resolved Ticket"
+        Me.TextBox9.Visible = False
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(442, 673)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox10.TabIndex = 135
+        Me.TextBox10.Text = "Resolved Ticket / Provided a resolution"
+        Me.TextBox10.Visible = False
+        '
         'Admin_Correction_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Button3)
@@ -461,4 +496,7 @@ Partial Class Admin_Correction_Form
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
 End Class

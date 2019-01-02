@@ -20,7 +20,14 @@ Public Class Admin_Correction_Form
         Me.Label13.Text = D
 
         Me.TextBox16.Text = Admin_Panel.Label1.Text
+        Button4.Enabled = False
 
+        If TextBox1.Text = "" Then
+            Button1.Enabled = False
+
+        Else
+            Button1.Enabled = True
+        End If
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         con.Open()
@@ -114,10 +121,13 @@ Public Class Admin_Correction_Form
         If ComboBox1.Text = "Resolved" Then
             ComboBox1.Enabled = False
             Button1.Enabled = False
+            Button4.Enabled = True
 
         Else
             ComboBox1.Enabled = True
             Button1.Enabled = True
+            Button4.Enabled = False
+
         End If
 
         con.Close()
@@ -144,6 +154,8 @@ Public Class Admin_Correction_Form
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+
 
         Dim Incident_no As String
         Incident_no = TextBox1.Text
@@ -186,8 +198,40 @@ Public Class Admin_Correction_Form
 
             End If
 
+
         End While
-        MsgBox("Correction Request Has Been Resolved")
+
+        ' <-- Close reader and connection before opening it again to avoid stack -->
+
+        con.Close()
+        rd.Close()
+
+        ' <-- For Logging --> 
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & TextBox10.Text & "','" & Label13.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox16.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+        con.Close()
+
+
+        ' <-- Validation na walang katapusan -->
+
+        If ComboBox1.Text = "Open" Then
+            MsgBox("Please Make Sure To Change The Status To Resolved Before Clicking The Update Button.")
+            Button1.Enabled = False
+        else
+
+            MsgBox("Correction Request Has Been Resolved")
+            Button1.Enabled = False
+
+            '<< -- EOL for this validation --> 
+
+        End If
+
+
 
         ' <<----------------- Clear Function ------------------>>
         TextBox1.Text = ""
@@ -243,11 +287,11 @@ Public Class Admin_Correction_Form
                 lv.SubItems(8).BackColor = Color.Red  'later ito
                 lv.SubItems(9).BackColor = Color.Red  'later ito
 
-               
-                End If
+
+            End If
 
 
-            
+
 
 
         End While
@@ -308,6 +352,31 @@ Public Class Admin_Correction_Form
 
 
 
+
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+        ' For Logging --> 
+
+        con.Open()
+        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & TextBox9.Text & "','" & Label13.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox16.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+
+        con.Close()
+
+        ' <-- As usual validation ulit
+
+        ComboBox1.Enabled = True
+        ComboBox1.Text = "Open"  '<-- mababago content from Resolved to Open
+        Button4.Enabled = False
+        Button1.Enabled = True
+
+    End Sub
+
+    Private Sub TextBox9_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox9.TextChanged
 
     End Sub
 End Class

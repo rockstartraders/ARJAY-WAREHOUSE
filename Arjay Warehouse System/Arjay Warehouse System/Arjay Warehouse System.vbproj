@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8D2A5BA8-A28C-46CA-973D-6277A7FDFB96}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Arjay_Warehouse_System.Admin_Login</StartupObject>
+    <StartupObject>Arjay_Warehouse_System.Admin_Correction_Form</StartupObject>
     <RootNamespace>Arjay_Warehouse_System</RootNamespace>
     <AssemblyName>Arjay Warehouse System</AssemblyName>
     <FileAlignment>512</FileAlignment>
