@@ -44,4 +44,15 @@ Public Class Login_As
 
 
     End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+
+        Dim timeinandout As New Time_Keeping_System   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Hide()
+        timeinandout.ShowDialog()
+        End
+
+    End Sub
 End Class

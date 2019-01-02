@@ -16,4 +16,15 @@ Public Class Time_Keeping_System
     Private Sub Time_Keeping_System_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+        Dim itamaangmali As New Correction_Ticket    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        itamaangmali.Show()
+
+
+
+    End Sub
 End Class
