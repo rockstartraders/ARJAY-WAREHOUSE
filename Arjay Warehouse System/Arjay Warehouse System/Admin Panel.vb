@@ -164,4 +164,15 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Button12_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+
+
+        Dim consignorkagebunshin As New Consignor_Modification   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        consignorkagebunshin.Show()
+
+
+    End Sub
 End Class
