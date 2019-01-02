@@ -50,7 +50,7 @@ Public Class Update_Consignor_Record
         '<-- Update Function --> 
 
         If TextBox7.Text = "" Then
-            MsgBox(" Sorry But You Need To Indicate The Changes Made Onto The Consignors Information And Please Make It Detailed.", 0 + 64)
+            MsgBox("Sorry But You Need To Indicate The Changes Made Onto The Consignors Information And Please Make It Detailed.", 0 + 64)
 
         Else
 
