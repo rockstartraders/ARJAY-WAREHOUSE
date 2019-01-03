@@ -140,4 +140,22 @@ Public Class View_Log_for_Consignor_Modification
 
 
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+
+        If a = DialogResult.Yes Then
+
+
+
+
+            Me.Dispose()
+            Me.Close()
+
+        End If
+
+
+    End Sub
 End Class

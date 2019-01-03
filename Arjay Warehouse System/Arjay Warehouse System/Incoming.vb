@@ -54,6 +54,7 @@ Public Class Incoming
 
         '< -- Fill Event --> 
 
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim adapter As New MySqlDataAdapter("SELECT `Con_ID`, `Con_Name`, `Con_address`, `Con_landline_no`, `Con_mobile_no`, `Con_email`, `Con_sign_up_date`, `Storage_location`, `con_contact_person`, `Prod_Camote`, `Prod_Chili`, `Prod_Coffee_Beans`, `Prod_Corn`, `Prod_Potatoes`, `Prod_Rice`, `Prod_Tobacco`, `Prod_Tomatoes` FROM `Inventory`", con)
         Dim table As New DataTable()
@@ -102,6 +103,8 @@ Public Class Incoming
 
         '<-- Resibo -->
 
+
+
         TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
@@ -122,8 +125,8 @@ Public Class Incoming
         TextBox1.AppendText(vbTab + vbTab + "Processed By:" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("User ID:" + vbTab + TextBox8.Text + vbNewLine)
-        TextBox1.AppendText("Employee's First Name :" + vbTab + TextBox32.Text + vbNewLine)
-        TextBox1.AppendText("Employee's Last Name:" + vbTab + TextBox33.Text + vbNewLine)
+        TextBox1.AppendText("Employees First Name :" + vbTab + TextBox32.Text + vbNewLine)
+        TextBox1.AppendText("Employees Last Name:" + vbTab + TextBox33.Text + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("=====================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
@@ -655,6 +658,26 @@ Public Class Incoming
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
+        ' <-- Submit Function --> 
+        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+        Dim cmd As MySqlCommand
+        Dim rd As MySqlDataReader
+        Dim query As String
+
+
+        con.Open()
+        query = "INSERT INTO `Invoice_copy`(`Invoice_no`, `transaction`, `invoice_main`) Values ('" & TextBox3.Text & "','" & Label34.Text & "','" & TextBox1.Text & "')"
+        cmd = New MySqlCommand(query, con)
+        cmd.CommandTimeout = 240  'for time out errors
+        rd = cmd.ExecuteReader()
+        MsgBox("Done")
+
+        '< -- Reboot Form --> 
+        Me.Controls.Clear() 'removes all the controls on the form
+        InitializeComponent() 'load all the controls again
+        Incoming_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
+
+        con.Close()
      
 
     End Sub

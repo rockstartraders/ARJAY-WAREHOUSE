@@ -54,4 +54,13 @@
 
 
     End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+
+        Dim no_more_brain_left_promise As New Invoice_Copy   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        no_more_brain_left_promise.Show()
+
+
+    End Sub
 End Class

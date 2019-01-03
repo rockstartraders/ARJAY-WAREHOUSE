@@ -230,6 +230,12 @@
     <Compile Include="Incoming.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Invoice Copy.Designer.vb">
+      <DependentUpon>Invoice Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Locker Registration Form.Designer.vb">
       <DependentUpon>Locker Registration Form.vb</DependentUpon>
     </Compile>
@@ -408,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Incoming.resx">
       <DependentUpon>Incoming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice Copy.resx">
+      <DependentUpon>Invoice Copy.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Locker Registration Form.resx">
       <DependentUpon>Locker Registration Form.vb</DependentUpon>

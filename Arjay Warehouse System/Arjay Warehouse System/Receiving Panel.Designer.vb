@@ -32,6 +32,7 @@ Partial Class Receiving_Panel
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -117,11 +118,21 @@ Partial Class Receiving_Panel
         Me.Button5.Text = "INCOMING "
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(273, 175)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(145, 52)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "INVOICE ARCHIVE"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Receiving_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 332)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -147,4 +158,5 @@ Partial Class Receiving_Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 End Class
