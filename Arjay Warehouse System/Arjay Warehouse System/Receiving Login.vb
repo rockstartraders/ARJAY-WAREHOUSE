@@ -23,8 +23,6 @@ Public Class Receiving_Login
         Me.TextBox4.Text = My.Computer.Name
 
 
-        Dim localIp As String
-
         For Each address As System.Net.IPAddress In System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName).AddressList
             If address.AddressFamily = Net.Sockets.AddressFamily.InterNetwork Then
                 TextBox5.Text = address.ToString()
@@ -57,6 +55,9 @@ Public Class Receiving_Login
             ' <-- This is needed to show the username automatically inside VB form
             rd.Read()
             Receiving_Panel.Label1.Text = rd("userid")
+            Receiving_Panel.Label3.Text = rd("f_name")
+            Receiving_Panel.Label4.Text = rd("l_name")
+
 
             con.Close()
 

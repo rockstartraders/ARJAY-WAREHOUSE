@@ -45,4 +45,13 @@
         no_more_brain.Show()
 
     End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
+        Dim no_more_brain_left As New Incoming   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        no_more_brain_left.Show()
+
+
+    End Sub
 End Class

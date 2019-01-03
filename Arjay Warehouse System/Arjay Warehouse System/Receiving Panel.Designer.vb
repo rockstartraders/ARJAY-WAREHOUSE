@@ -29,6 +29,9 @@ Partial Class Receiving_Panel
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -85,11 +88,43 @@ Partial Class Receiving_Panel
         Me.Button4.Text = "CONSIGNOR'S ADDRESS BOOK"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(50, 67)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "first_name"
+        Me.Label3.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(50, 80)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(55, 13)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "last_name"
+        Me.Label4.Visible = False
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(273, 108)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(145, 52)
+        Me.Button5.TabIndex = 11
+        Me.Button5.Text = "INCOMING "
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Receiving_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 332)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button3)
@@ -109,4 +144,7 @@ Partial Class Receiving_Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

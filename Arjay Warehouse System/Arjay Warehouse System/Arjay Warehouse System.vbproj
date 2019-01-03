@@ -224,6 +224,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Incoming.Designer.vb">
+      <DependentUpon>Incoming.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Incoming.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Locker Registration Form.Designer.vb">
       <DependentUpon>Locker Registration Form.vb</DependentUpon>
     </Compile>
@@ -399,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incoming.resx">
+      <DependentUpon>Incoming.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Locker Registration Form.resx">
       <DependentUpon>Locker Registration Form.vb</DependentUpon>
