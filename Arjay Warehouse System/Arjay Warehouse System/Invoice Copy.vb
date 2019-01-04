@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 Imports System.IO
-Imports System.Drawing.Image
+Imports System.Drawing.Printing
 
 ' Comments, Error and URL ' 
 ' Timeouts = https://www.grasshopper3d.com/group/slingshot/forum/topics/problem-with-connection '
@@ -148,7 +148,6 @@ Public Class Invoice_Copy
 
         ' < -- Print -->
 
-        PrintDocument1.PrinterSettings.Copies = 1
         PrintDocument1.Print()
 
 
@@ -213,14 +212,21 @@ Public Class Invoice_Copy
         e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Black, 100, 100)
 
 
-
-
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
+        
 
-        PrintPreviewDialog1.ShowDialog()
+        PrintPreviewDialog1.Show()
+
+      
+   
+
+
+    End Sub
+
+    Private Sub PrintPreviewDialog1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles PrintPreviewDialog1.Click
 
 
 

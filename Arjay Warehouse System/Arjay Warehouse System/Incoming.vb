@@ -103,32 +103,23 @@ Public Class Incoming
 
         '<-- Resibo -->
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("            #########   ARJAY TRADING    #########     " + vbNewLine)
-        TextBox1.AppendText("                 Welcome To Our Warehousing Solution     " + vbNewLine)
-        TextBox1.AppendText("      ARJAY TRADING SOLUTIONS, ISABELA PHILIPPINES    " + vbNewLine)
-        TextBox1.AppendText("       TIN REG. NO." + vbTab + "___________________________________" + vbNewLine)
-        TextBox1.AppendText("       BUSINESS PERMIT NO." + vbTab + "_____________________________" + vbNewLine)
+        TextBox1.AppendText("      #########   ARJAY TRADING    #########     " + vbNewLine)
+        TextBox1.AppendText("Welcome To Our Warehousing Solution     " + vbNewLine)
+        TextBox1.AppendText("ARJAY TRADING SOLUTIONS, ISABELA PHILIPPINES    " + vbNewLine)
+        TextBox1.AppendText("TIN REG. NO." + vbTab + "___________________________________" + vbNewLine)
+        TextBox1.AppendText("BUSINESS PERMIT NO." + vbTab + "_____________________________" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Date And Time : " + vbTab + Label23.Text + vbNewLine)
         TextBox1.AppendText("INVOICE NO. : " + vbTab + TextBox3.Text + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Transaction Type : " + vbTab + Label34.Text + vbNewLine)
-        TextBox1.AppendText("====================================" + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbTab + vbTab + "Processed By:" + vbNewLine)
+        TextBox1.AppendText("Processed By:" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("User ID:" + vbTab + TextBox8.Text + vbNewLine)
-        TextBox1.AppendText("Employees First Name :" + vbTab + TextBox32.Text + vbNewLine)
-        TextBox1.AppendText("Employees Last Name:" + vbTab + TextBox33.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("=====================================" + vbNewLine)
-
-
+        TextBox1.AppendText("User ID:" + vbTab + TextBox8.Text + vbTab + "Employees First Name :" + vbTab + TextBox32.Text + vbTab + "Employees Last Name:" + vbTab + TextBox33.Text + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
+        ' < end of line --> 
 
 
 
@@ -376,74 +367,68 @@ Public Class Incoming
 
         ' < -- Resibo Ulit --> 
 
-        TextBox1.AppendText(" Consignor Information" + vbNewLine)
+       
+        TextBox1.AppendText("Consignor Information" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(" Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText(" Consignor Name: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(" Landline No. : " + vbTab + TextBox4.Text + vbNewLine)
-        TextBox1.AppendText(" Mobile No. : " + vbTab + TextBox5.Text + vbNewLine)
-        TextBox1.AppendText(" Email: " + vbTab + TextBox6.Text + vbNewLine)
-        TextBox1.AppendText(" Storage Location: " + vbTab + TextBox2.Text + vbNewLine)
-        TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText(vbTab + "Product Information" + vbNewLine)
+        TextBox1.AppendText("Consignor ID: " + vbTab + ComboBox2.Text + vbTab + " Consignor Name: " + vbTab + ComboBox3.Text + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
+        TextBox1.AppendText("Product Information" + vbNewLine)
         TextBox1.AppendText("Current Stock Prior to Adding Stocks" + vbNewLine)
-        TextBox1.AppendText(" Camote " + vbTab + vbTab + TextBox7.Text + vbTab + Label2.Text + vbNewLine)
-        TextBox1.AppendText(" Red Chili " + vbTab + TextBox9.Text + vbTab + Label4.Text + vbNewLine)
-        TextBox1.AppendText(" Coffee Beans " + vbTab + TextBox10.Text + vbTab + Label9.Text + vbNewLine)
-        TextBox1.AppendText(" Corn " + vbTab + vbTab + TextBox11.Text + vbTab + Label24.Text + vbNewLine)
-        TextBox1.AppendText(" Potatoes " + vbTab + TextBox12.Text + vbTab + Label25.Text + vbNewLine)
-        TextBox1.AppendText(" Rice " + vbTab + vbTab + TextBox13.Text + vbTab + Label26.Text + vbNewLine)
-        TextBox1.AppendText(" Tobacco " + vbTab + TextBox14.Text + vbTab + Label27.Text + vbNewLine)
-        TextBox1.AppendText(" Tomatoes " + vbTab + TextBox15.Text + vbTab + Label28.Text + vbNewLine)
-        TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText("Camote " + vbTab + TextBox7.Text + vbTab + Label2.Text + vbNewLine)
+        TextBox1.AppendText("Red Chili " + vbTab + TextBox9.Text + vbTab + Label4.Text + vbNewLine)
+        TextBox1.AppendText("Coffee Beans " + vbTab + TextBox10.Text + vbTab + Label9.Text + vbNewLine)
+        TextBox1.AppendText("Corn " + vbTab + vbTab + TextBox11.Text + vbTab + Label24.Text + vbNewLine)
+        TextBox1.AppendText("Potatoes " + vbTab + TextBox12.Text + vbTab + Label25.Text + vbNewLine)
+        TextBox1.AppendText("Rice " + vbTab + vbTab + TextBox13.Text + vbTab + Label26.Text + vbNewLine)
+        TextBox1.AppendText("Tobacco " + vbTab + TextBox14.Text + vbTab + Label27.Text + vbNewLine)
+        TextBox1.AppendText("Tomatoes " + vbTab + TextBox15.Text + vbTab + Label28.Text + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
         TextBox1.AppendText("Stock Received" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(" Camote " + vbTab + vbTab + TextBox23.Text + vbTab + Label2.Text + vbNewLine)
-        TextBox1.AppendText(" Red Chili " + vbTab + TextBox22.Text + vbTab + Label4.Text + vbNewLine)
-        TextBox1.AppendText(" Coffee Beans " + vbTab + TextBox21.Text + vbTab + Label9.Text + vbNewLine)
-        TextBox1.AppendText(" Corn " + vbTab + vbTab + TextBox20.Text + vbTab + Label24.Text + vbNewLine)
-        TextBox1.AppendText(" Potatoes " + vbTab + TextBox19.Text + vbTab + Label25.Text + vbNewLine)
-        TextBox1.AppendText(" Rice " + vbTab + vbTab + TextBox18.Text + vbTab + Label26.Text + vbNewLine)
-        TextBox1.AppendText(" Tobacco " + vbTab + TextBox17.Text + vbTab + Label27.Text + vbNewLine)
-        TextBox1.AppendText(" Tomatoes " + vbTab + TextBox16.Text + vbTab + Label28.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText("Camote " + vbTab + TextBox23.Text + vbTab + Label2.Text + vbNewLine)
+        TextBox1.AppendText("Red Chili " + vbTab + TextBox22.Text + vbTab + Label4.Text + vbNewLine)
+        TextBox1.AppendText("Coffee Beans " + vbTab + TextBox21.Text + vbTab + Label9.Text + vbNewLine)
+        TextBox1.AppendText("Corn " + vbTab + vbTab + TextBox20.Text + vbTab + Label24.Text + vbNewLine)
+        TextBox1.AppendText("Potatoes " + vbTab + TextBox19.Text + vbTab + Label25.Text + vbNewLine)
+        TextBox1.AppendText("Rice " + vbTab + vbTab + TextBox18.Text + vbTab + Label26.Text + vbNewLine)
+        TextBox1.AppendText("Tobacco " + vbTab + TextBox17.Text + vbTab + Label27.Text + vbNewLine)
+        TextBox1.AppendText("Tomatoes " + vbTab + TextBox16.Text + vbTab + Label28.Text + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
         TextBox1.AppendText("Total After Commit" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(" Camote " + vbTab + vbTab + TextBox31.Text + vbTab + Label2.Text + vbNewLine)
-        TextBox1.AppendText(" Red Chili " + vbTab + TextBox30.Text + vbTab + Label4.Text + vbNewLine)
-        TextBox1.AppendText(" Coffee Beans " + vbTab + TextBox29.Text + vbTab + Label9.Text + vbNewLine)
-        TextBox1.AppendText(" Corn " + vbTab + vbTab + TextBox28.Text + vbTab + Label24.Text + vbNewLine)
-        TextBox1.AppendText(" Potatoes " + vbTab + TextBox27.Text + vbTab + Label25.Text + vbNewLine)
-        TextBox1.AppendText(" Rice " + vbTab + vbTab + TextBox26.Text + vbTab + Label26.Text + vbNewLine)
-        TextBox1.AppendText(" Tobacco " + vbTab + TextBox25.Text + vbTab + Label27.Text + vbNewLine)
-        TextBox1.AppendText(" Tomatoes " + vbTab + TextBox24.Text + vbTab + Label28.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
+        TextBox1.AppendText("Camote " + vbTab + TextBox31.Text + vbTab + Label2.Text + vbNewLine)
+        TextBox1.AppendText("Red Chili " + vbTab + TextBox30.Text + vbTab + Label4.Text + vbNewLine)
+        TextBox1.AppendText("Coffee Beans " + vbTab + TextBox29.Text + vbTab + Label9.Text + vbNewLine)
+        TextBox1.AppendText("Corn " + vbTab + vbTab + TextBox28.Text + vbTab + Label24.Text + vbNewLine)
+        TextBox1.AppendText("Potatoes " + vbTab + TextBox27.Text + vbTab + Label25.Text + vbNewLine)
+        TextBox1.AppendText("Rice " + vbTab + vbTab + TextBox26.Text + vbTab + Label26.Text + vbNewLine)
+        TextBox1.AppendText("Tobacco " + vbTab + TextBox25.Text + vbTab + Label27.Text + vbNewLine)
+        TextBox1.AppendText("Tomatoes " + vbTab + TextBox24.Text + vbTab + Label28.Text + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
         TextBox1.AppendText("            #########   THANK YOU    #########     " + vbNewLine)
-        TextBox1.AppendText("                For Trusting OUR Warehousing Solution     " + vbNewLine)
-        TextBox1.AppendText("      ARJAY TRADING SOLUTIONS, ISABELA PHILIPPINES    " + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("========================================" + vbNewLine)
+        TextBox1.AppendText("           For Trusting ARJAY TRADING SOLUTIONS     " + vbNewLine)
+        TextBox1.AppendText("==================================================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("RELEASED BY: __________________________" + vbTab + vbNewLine)
+        TextBox1.AppendText("RELEASED and INSPECTED BY: ________________________________" + vbTab + vbNewLine)
         TextBox1.AppendText("Signature Over Printed Name" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
 
         ' < -- End ng Resibo --> 
 
 
         Button3.Enabled = True
 
+
+        ' < -- Another Condition --> 
+        TextBox23.Enabled = False
+        TextBox22.Enabled = False
+        TextBox21.Enabled = False
+        TextBox20.Enabled = False
+        TextBox19.Enabled = False
+        TextBox18.Enabled = False
+        TextBox17.Enabled = False
+        TextBox16.Enabled = False
+        Button1.Enabled = False
+
+        ' < -- End of Condition --> 
 
     End Sub
 
@@ -637,27 +622,59 @@ Public Class Incoming
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
-        ' <-- Submit Function --> 
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
-        Dim cmd As MySqlCommand
-        Dim rd As MySqlDataReader
-        Dim query As String
+
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Save this Changes? This Cannot be Undone, Please Check It Thoroughly Prior To Saving.", 4 + 32)
+
+        If a = DialogResult.Yes Then
+            ' <-- Submit Function --> 
+            Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+            Dim cmd As MySqlCommand
+            Dim rd As MySqlDataReader
+            Dim query As String
 
 
-        con.Open()
-        query = "INSERT INTO `Invoice_copy`(`Invoice_no`, `date_and_time`, `transaction`, `invoice_main`) Values ('" & TextBox3.Text & "','" & Label23.Text & "','" & Label34.Text & "','" & TextBox1.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-        MsgBox("Done")
+            ' <-- Print Function --> 
+            PrintDocument1.Print()
 
-        '< -- Reboot Form --> 
-        Me.Controls.Clear() 'removes all the controls on the form
-        InitializeComponent() 'load all the controls again
-        Incoming_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
 
-        con.Close()
-     
+            con.Open()
+            query = "UPDATE `Inventory` SET `Con_ID`='" & ComboBox2.Text & "',`Prod_Camote`='" & TextBox31.Text & "',`Prod_Chili`='" & TextBox30.Text & "',`Prod_Coffee_Beans`='" & TextBox29.Text & "',`Prod_Corn`='" & TextBox28.Text & "',`Prod_Potatoes`='" & TextBox27.Text & "',`Prod_Rice`='" & TextBox26.Text & "',`Prod_Tobacco`='" & TextBox25.Text & "', `Prod_Tomatoes`='" & TextBox24.Text & "' where `Con_ID`='" & ComboBox2.Text & "'"
+            cmd = New MySqlCommand(query, con)
+            rd = cmd.ExecuteReader()
+
+            rd.Close() ' < -- Reader close to avoid stack -->
+            con.Close()
+
+
+            con.Open()
+            query = "INSERT INTO `Invoice_copy`(`Invoice_no`, `date_and_time`, `transaction`, `invoice_main`) Values ('" & TextBox3.Text & "','" & Label23.Text & "','" & Label34.Text & "','" & TextBox1.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
+            MsgBox("Product Has Been Received from Consignor." + "  " + ComboBox2.Text + "   " + "Thank You.")
+
+            Dim bimbi As DialogResult = MsgBox("Do You Want to Do another Transaction ?", 4 + 32)
+            If bimbi = DialogResult.Yes Then
+
+                '< -- Reboot Form --> 
+                Me.Controls.Clear() 'removes all the controls on the form
+                InitializeComponent() 'load all the controls again
+                Incoming_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
+
+                con.Close()
+
+            Else
+                Me.Dispose()
+                Me.Close()
+
+            End If
+
+        End If
+
+
+
+
+
 
     End Sub
 
@@ -683,9 +700,12 @@ Public Class Incoming
         ' < -- Format --> 
 
 
-        Dim font As New Font("Arial", 10, FontStyle.Regular)
+        ' < -- Format --> 
+
+
+        Dim font As New Font("Arial", 8, FontStyle.Regular)
         e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Black, 100, 100)
-        e.HasMorePages = False
+
 
 
     End Sub

@@ -41,6 +41,7 @@ Partial Class Invoice_Copy
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.SuspendLayout()
         '
         'ListView1
@@ -193,6 +194,12 @@ Partial Class Invoice_Copy
         Me.TextBox1.TabIndex = 76
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.AllowCurrentPage = True
+        Me.PrintDialog1.Document = Me.PrintDocument1
+        Me.PrintDialog1.UseEXDialog = True
+        '
         'Invoice_Copy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -210,6 +217,7 @@ Partial Class Invoice_Copy
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.ListView1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Invoice_Copy"
         Me.Text = "Invoice Archive"
         Me.ResumeLayout(False)
@@ -234,4 +242,5 @@ Partial Class Invoice_Copy
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents PrintPreviewDialog1 As System.Windows.Forms.PrintPreviewDialog
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
 End Class
