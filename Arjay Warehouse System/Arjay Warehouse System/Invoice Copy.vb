@@ -16,6 +16,11 @@ Public Class Invoice_Copy
 
     Private Sub Invoice_Copy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+
+
+        Button2.Enabled = False
+        Button3.Enabled = False
+
         ' < -- Load Event for List View --> 
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -26,6 +31,7 @@ Public Class Invoice_Copy
         ListView1.Items.Clear()
         While rd.Read
             Dim lv As ListViewItem = ListView1.Items.Add(rd("Invoice_no").ToString())
+            lv.SubItems.Add(rd("date_and_time").ToString())
             lv.SubItems.Add(rd("transaction").ToString())
             lv.SubItems.Add(rd("invoice_main").ToString())
 
@@ -49,6 +55,20 @@ Public Class Invoice_Copy
 
 
 
+        
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
+
         '< -- Mouse Click Event --> 
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -58,14 +78,17 @@ Public Class Invoice_Copy
         rd = cmd.ExecuteReader
 
         Dim Invoice_no As String = ListView1.SelectedItems(0).SubItems(0).Text()
-        Dim transaction As String = ListView1.SelectedItems(0).SubItems(1).Text()
-        Dim invoice_main As String = ListView1.SelectedItems(0).SubItems(2).Text()
-        
+        Dim date_and_time As String = ListView1.SelectedItems(0).SubItems(1).Text()
+        Dim transaction As String = ListView1.SelectedItems(0).SubItems(2).Text()
+        Dim invoice_main As String = ListView1.SelectedItems(0).SubItems(3).Text()
+
 
 
         TextBox2.Text = Invoice_no
+        TextBox4.Text = date_and_time
         TextBox3.Text = transaction
         TextBox1.Text = invoice_main
+
 
 
 
@@ -74,13 +97,7 @@ Public Class Invoice_Copy
 
         con.Close()
 
-    End Sub
 
-    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
 
     End Sub
 
@@ -101,12 +118,14 @@ Public Class Invoice_Copy
 
 
             Dim Invoice_no As String = ListView1.SelectedItems(0).SubItems(0).Text()
-            Dim transaction As String = ListView1.SelectedItems(0).SubItems(1).Text()
-            Dim invoice_main As String = ListView1.SelectedItems(0).SubItems(2).Text()
+            Dim date_and_time As String = ListView1.SelectedItems(0).SubItems(1).Text()
+            Dim transaction As String = ListView1.SelectedItems(0).SubItems(2).Text()
+            Dim invoice_main As String = ListView1.SelectedItems(0).SubItems(3).Text()
 
 
 
             TextBox2.Text = Invoice_no
+            TextBox4.Text = date_and_time
             TextBox3.Text = transaction
             TextBox1.Text = invoice_main
 
@@ -118,9 +137,19 @@ Public Class Invoice_Copy
             con.Close()
         End If
 
+
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+
+       
+
+        ' < -- Print -->
+
+        PrintDocument1.PrinterSettings.Copies = 1
+        PrintDocument1.Print()
 
 
        
@@ -132,6 +161,20 @@ Public Class Invoice_Copy
     End Sub
 
     Private Sub TextBox1_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
+
+
+        ' < -- Condition --> 
+
+        If TextBox1.Text = "" Then
+            Button2.Enabled = False
+            Button3.Enabled = False
+        Else
+            Button2.Enabled = True
+            Button3.Enabled = True
+
+        End If
+
 
     End Sub
 
@@ -152,4 +195,47 @@ Public Class Invoice_Copy
 
 
     End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        ' < -- Format --> 
+
+
+        Dim font As New Font("Arial", 8, FontStyle.Regular)
+        e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Black, 100, 100)
+
+
+
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+
+        PrintPreviewDialog1.ShowDialog()
+
+
+
+    End Sub
+
+    Private Sub PrintPreviewDialog1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintPreviewDialog1.Load
+
+
+
+
+    End Sub
+
+    Private Sub PrintPreviewControl1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+
 End Class

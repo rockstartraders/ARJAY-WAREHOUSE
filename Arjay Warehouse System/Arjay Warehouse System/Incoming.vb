@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 Imports System.IO
-Imports System.Drawing.Image
+Imports System.Drawing.Printing
 
 ' Comments, Error and URL ' 
 ' Timeouts = https://www.grasshopper3d.com/group/slingshot/forum/topics/problem-with-connection '
@@ -103,23 +103,21 @@ Public Class Incoming
 
         '<-- Resibo -->
 
-
-
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
+        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText(vbNewLine)
+        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("            #########   ARJAY TRADING    #########     " + vbNewLine)
         TextBox1.AppendText("                 Welcome To Our Warehousing Solution     " + vbNewLine)
         TextBox1.AppendText("      ARJAY TRADING SOLUTIONS, ISABELA PHILIPPINES    " + vbNewLine)
-        TextBox1.AppendText("       TIN REG. NO." + vbTab + "_______________________________________" + vbNewLine)
-        TextBox1.AppendText("       BUSINESS PERMIT NO._____________________________" + vbNewLine)
+        TextBox1.AppendText("       TIN REG. NO." + vbTab + "___________________________________" + vbNewLine)
+        TextBox1.AppendText("       BUSINESS PERMIT NO." + vbTab + "_____________________________" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Date And Time : " + vbTab + Label23.Text + vbNewLine)
         TextBox1.AppendText("INVOICE NO. : " + vbTab + TextBox3.Text + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Transaction Type : " + vbTab + Label34.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("====================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbTab + vbTab + "Processed By:" + vbNewLine)
@@ -129,7 +127,7 @@ Public Class Incoming
         TextBox1.AppendText("Employees Last Name:" + vbTab + TextBox33.Text + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("=====================================" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
+
 
 
 
@@ -386,13 +384,9 @@ Public Class Incoming
         TextBox1.AppendText(" Mobile No. : " + vbTab + TextBox5.Text + vbNewLine)
         TextBox1.AppendText(" Email: " + vbTab + TextBox6.Text + vbNewLine)
         TextBox1.AppendText(" Storage Location: " + vbTab + TextBox2.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbTab + "Product Information" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Current Stock Prior to Adding Stocks" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(" Camote " + vbTab + vbTab + TextBox7.Text + vbTab + Label2.Text + vbNewLine)
         TextBox1.AppendText(" Red Chili " + vbTab + TextBox9.Text + vbTab + Label4.Text + vbNewLine)
         TextBox1.AppendText(" Coffee Beans " + vbTab + TextBox10.Text + vbTab + Label9.Text + vbNewLine)
@@ -401,7 +395,6 @@ Public Class Incoming
         TextBox1.AppendText(" Rice " + vbTab + vbTab + TextBox13.Text + vbTab + Label26.Text + vbNewLine)
         TextBox1.AppendText(" Tobacco " + vbTab + TextBox14.Text + vbTab + Label27.Text + vbNewLine)
         TextBox1.AppendText(" Tomatoes " + vbTab + TextBox15.Text + vbTab + Label28.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("========================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("Stock Received" + vbNewLine)
@@ -430,31 +423,17 @@ Public Class Incoming
         TextBox1.AppendText(" Tomatoes " + vbTab + TextBox24.Text + vbTab + Label28.Text + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("========================================" + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("            #########   THANK YOU    #########     " + vbNewLine)
         TextBox1.AppendText("                For Trusting OUR Warehousing Solution     " + vbNewLine)
         TextBox1.AppendText("      ARJAY TRADING SOLUTIONS, ISABELA PHILIPPINES    " + vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText("========================================" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
-        TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("" + vbNewLine)
         TextBox1.AppendText("RELEASED BY: __________________________" + vbTab + vbNewLine)
         TextBox1.AppendText("Signature Over Printed Name" + vbNewLine)
@@ -666,7 +645,7 @@ Public Class Incoming
 
 
         con.Open()
-        query = "INSERT INTO `Invoice_copy`(`Invoice_no`, `transaction`, `invoice_main`) Values ('" & TextBox3.Text & "','" & Label34.Text & "','" & TextBox1.Text & "')"
+        query = "INSERT INTO `Invoice_copy`(`Invoice_no`, `date_and_time`, `transaction`, `invoice_main`) Values ('" & TextBox3.Text & "','" & Label23.Text & "','" & Label34.Text & "','" & TextBox1.Text & "')"
         cmd = New MySqlCommand(query, con)
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
@@ -687,6 +666,34 @@ Public Class Incoming
     End Sub
 
     Private Sub TextBox33_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox33.TextChanged
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
+        '< -- Print Preview --> 
+
+        PrintPreviewDialog1.ShowDialog()
+
+
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        ' < -- Format --> 
+
+
+        Dim font As New Font("Arial", 10, FontStyle.Regular)
+        e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Black, 100, 100)
+        e.HasMorePages = False
+
+
+    End Sub
+
+    Private Sub PrintPreviewDialog1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintPreviewDialog1.Load
+
+
+
 
     End Sub
 End Class
