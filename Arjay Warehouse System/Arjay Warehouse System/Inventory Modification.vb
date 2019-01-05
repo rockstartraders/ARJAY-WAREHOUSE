@@ -87,6 +87,8 @@ Public Class Inventory_Modification
         ' < --End of this so called kalokohan --> 
 
 
+
+
         '< -- Fill Event --> 
 
 
@@ -262,6 +264,19 @@ Public Class Inventory_Modification
 
                 '< -- End of Autofill -->
 
+                ' < -- Enable Event dated 1 / 6 / 2019 Happy New Year--> 
+
+
+                Button1.Enabled = True
+                Button4.Enabled = True
+                Button6.Enabled = True
+                Button8.Enabled = True
+                Button10.Enabled = True
+                Button12.Enabled = True
+                Button14.Enabled = True
+                Button16.Enabled = True
+
+                ' < -- End of Enable Event --> 
 
                 ' < -- Since It's a Parsing game better to make it transparent -- > 
 
@@ -409,46 +424,7 @@ Public Class Inventory_Modification
 
 
 
-        ' <-- Condition for the buttons -->
-
-        If TextBox2.Text = "" Then
-
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button5.Enabled = False
-            Button7.Enabled = False
-            Button9.Enabled = False
-            Button11.Enabled = False
-            Button13.Enabled = False
-            Button15.Enabled = False
-
-            Button1.Enabled = False
-            Button4.Enabled = False
-            Button6.Enabled = False
-            Button8.Enabled = False
-            Button10.Enabled = False
-            Button12.Enabled = False
-            Button14.Enabled = False
-            Button16.Enabled = False
-
-        Else
-            ' < -- Enable Event --> 
-
-           
-            Button1.Enabled = True
-            Button4.Enabled = True
-            Button6.Enabled = True
-            Button8.Enabled = True
-            Button10.Enabled = True
-            Button12.Enabled = True
-            Button14.Enabled = True
-            Button16.Enabled = True
-
-
-            ' < -- End for this Event -->
-
-
-        End If
+  
     End Sub
 
     Private Sub Label29_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label29.Click
@@ -486,6 +462,11 @@ Public Class Inventory_Modification
     End Sub
 
     Private Sub TextBox22_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox22.TextChanged
+
+    End Sub
+
+    Private Sub TextBox23_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox23.Click
+
 
     End Sub
 
@@ -594,156 +575,190 @@ Public Class Inventory_Modification
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+        ' < -- Condition -->
+
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button2.Enabled = False
+
+        Else
+            Button2.Enabled = True
+
+            ' <-- Append Function --> 
+
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Camote " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox7.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' <-- Append Function --> 
+            ' < -- Button Function -- > 
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Camote " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox7.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
-
-        ' <-- End Append Function --> 
+            Button2.Enabled = True
+            Button1.Enabled = False
+            TextBox23.ReadOnly = False
+            TextBox23.ForeColor = Color.Red
+            TextBox23.Text = ""
+            TextBox23.Select()
 
 
-        ' < -- Button Function -- > 
+            ' <-- Disable function --> 
 
-        Button2.Enabled = True
-        Button1.Enabled = False
-        TextBox23.ReadOnly = False
-        TextBox23.ForeColor = Color.Red
-        TextBox23.Text = ""
-        TextBox23.Select()
+            ' Button1.Enabled = False
+            ' Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
+            ' < -- EOL -- > 
 
-        ' <-- Disable function --> 
-
-        ' Button1.Enabled = False
-        ' Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
-
-        ' < -- EOL -- > 
+        End If
 
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
-        ' <-- Append Function --> 
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Red Chili " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox9.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
+        ' < -- Condition -->
 
-        ' <-- End Append Function --> 
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button3.Enabled = False
+
+        Else
+            Button3.Enabled = True
 
 
 
+            ' <-- Append Function --> 
+
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Red Chili " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox9.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
 
-        Button3.Enabled = True
-        Button4.Enabled = False
-        TextBox22.ReadOnly = False
-        TextBox22.ForeColor = Color.Red
-        TextBox22.Text = ""
-        TextBox22.Select()
 
-        ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        'Button4.Enabled = False
-        'Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            ' < -- Button Function -- > 
 
-        ' < -- EOL -- > 
+            Button3.Enabled = True
+            Button4.Enabled = False
+            TextBox22.ReadOnly = False
+            TextBox22.ForeColor = Color.Red
+            TextBox22.Text = ""
+            TextBox22.Select()
+
+            ' <-- Disable function --> 
+
+            Button1.Enabled = False
+            Button2.Enabled = False
+            'Button4.Enabled = False
+            'Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
+
+            ' < -- EOL -- > 
+
+        End If
+
 
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
 
-        ' <-- Append Function --> 
+        ' < -- Condition -->
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Coffee Beans " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox10.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button5.Enabled = False
 
-        ' <-- End Append Function --> 
+        Else
+            Button5.Enabled = True
+
+            ' <-- Append Function --> 
+
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Coffee Beans " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox10.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button5.Enabled = True
-        Button6.Enabled = False
-        TextBox21.ReadOnly = False
-        TextBox21.ForeColor = Color.Red
-        TextBox21.Text = ""
-        TextBox21.Select()
+            Button5.Enabled = True
+            Button6.Enabled = False
+            TextBox21.ReadOnly = False
+            TextBox21.ForeColor = Color.Red
+            TextBox21.Text = ""
+            TextBox21.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        'Button5.Enabled = False
-        'Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            'Button5.Enabled = False
+            'Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
+        End If
 
 
     End Sub
@@ -751,52 +766,63 @@ Public Class Inventory_Modification
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
 
 
+        ' < -- Condition -->
+
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button7.Enabled = False
+
+        Else
+            Button7.Enabled = True
 
 
-        ' <-- Append Function --> 
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Corn " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox11.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
+            ' <-- Append Function --> 
 
-        ' <-- End Append Function --> 
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Corn " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox11.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button7.Enabled = True
-        Button8.Enabled = False
-        TextBox20.ReadOnly = False
-        TextBox20.ForeColor = Color.Red
-        TextBox20.Text = ""
-        TextBox20.Select()
+            Button7.Enabled = True
+            Button8.Enabled = False
+            TextBox20.ReadOnly = False
+            TextBox20.ForeColor = Color.Red
+            TextBox20.Text = ""
+            TextBox20.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        ' Button8.Enabled = False
-        ' Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            ' Button8.Enabled = False
+            ' Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
+
+        End If
 
 
     End Sub
@@ -804,211 +830,254 @@ Public Class Inventory_Modification
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
 
 
+        ' < -- Condition -->
+
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button9.Enabled = False
+
+        Else
+            Button9.Enabled = True
 
 
-        ' <-- Append Function --> 
+            ' <-- Append Function --> 
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Potatoes " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox12.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Potatoes " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox12.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
 
-        ' <-- End Append Function --> 
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button9.Enabled = True
-        Button10.Enabled = False
-        TextBox19.ReadOnly = False
-        TextBox19.ForeColor = Color.Red
-        TextBox19.Text = ""
-        TextBox19.Select()
+            Button9.Enabled = True
+            Button10.Enabled = False
+            TextBox19.ReadOnly = False
+            TextBox19.ForeColor = Color.Red
+            TextBox19.Text = ""
+            TextBox19.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        ' Button10.Enabled = False
-        ' Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            ' Button10.Enabled = False
+            ' Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
+
+        End If
 
     End Sub
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
 
 
+        ' < -- Condition -->
+
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button11.Enabled = False
+
+        Else
+            Button11.Enabled = True
 
 
-        ' <-- Append Function --> 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Rice " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox13.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
 
-        ' <-- End Append Function --> 
+            ' <-- Append Function --> 
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Rice " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox13.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button11.Enabled = True
-        Button12.Enabled = False
-        TextBox18.ReadOnly = False
-        TextBox18.ForeColor = Color.Red
-        TextBox18.Text = ""
-        TextBox18.Select()
+            Button11.Enabled = True
+            Button12.Enabled = False
+            TextBox18.ReadOnly = False
+            TextBox18.ForeColor = Color.Red
+            TextBox18.Text = ""
+            TextBox18.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        'Button12.Enabled = False
-        'Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            'Button12.Enabled = False
+            'Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
 
+        End If
 
     End Sub
 
     Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
 
 
+        ' < -- Condition -->
+
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button13.Enabled = False
+
+        Else
+            Button13.Enabled = True
 
 
-        ' <-- Append Function --> 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Tobacco " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox14.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
 
-        ' <-- End Append Function --> 
+            ' <-- Append Function --> 
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Tobacco " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox14.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button13.Enabled = True
-        Button14.Enabled = False
-        TextBox17.ReadOnly = False
-        TextBox17.ForeColor = Color.Red
-        TextBox17.Text = ""
-        TextBox17.Select()
+            Button13.Enabled = True
+            Button14.Enabled = False
+            TextBox17.ReadOnly = False
+            TextBox17.ForeColor = Color.Red
+            TextBox17.Text = ""
+            TextBox17.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        'Button14.Enabled = False
-        'Button13.Enabled = False
-        Button16.Enabled = False
-        Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            'Button14.Enabled = False
+            'Button13.Enabled = False
+            Button16.Enabled = False
+            Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
+
+        End If
+
 
     End Sub
 
     Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
 
 
-        ' <-- Append Function --> 
+        ' < -- Condition -->
 
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("Admin Click the Modify button for Product named Tomatoes " + vbNewLine)
-        TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox15.Text + vbNewLine)
-        TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
-        TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
-        TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
-        TextBox1.AppendText(vbNewLine)
+        If ComboBox3.Text = "" Then
+            MsgBox("Please Choose A Consignor Record From The Dropdown List.", 0 + 64)
+            Button15.Enabled = False
 
-        ' <-- End Append Function --> 
+        Else
+            Button15.Enabled = True
+
+            ' <-- Append Function --> 
+
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("Admin Click the Modify button for Product named Tomatoes " + vbNewLine)
+            TextBox1.AppendText("Current Value for this Product is:" + vbTab + TextBox15.Text + vbNewLine)
+            TextBox1.AppendText("This Changes will affect Consignor ID: " + vbTab + ComboBox2.Text + vbNewLine)
+            TextBox1.AppendText("Consignor Name is: " + vbTab + ComboBox3.Text + vbNewLine)
+            TextBox1.AppendText(vbNewLine)
+            TextBox1.AppendText("======================================")
+            TextBox1.AppendText(vbNewLine)
+
+            ' <-- End Append Function --> 
 
 
-        ' < -- Button Function -- > 
+            ' < -- Button Function -- > 
 
-        Button15.Enabled = True
-        Button16.Enabled = False
-        TextBox16.ReadOnly = False
-        TextBox16.ForeColor = Color.Red
-        TextBox16.Text = ""
-        TextBox16.Select()
+            Button15.Enabled = True
+            Button16.Enabled = False
+            TextBox16.ReadOnly = False
+            TextBox16.ForeColor = Color.Red
+            TextBox16.Text = ""
+            TextBox16.Select()
 
-        ' <-- Disable function --> 
+            ' <-- Disable function --> 
 
-        Button1.Enabled = False
-        Button2.Enabled = False
-        Button4.Enabled = False
-        Button3.Enabled = False
-        Button5.Enabled = False
-        Button6.Enabled = False
-        Button8.Enabled = False
-        Button7.Enabled = False
-        Button10.Enabled = False
-        Button9.Enabled = False
-        Button12.Enabled = False
-        Button11.Enabled = False
-        Button14.Enabled = False
-        Button13.Enabled = False
-        'Button16.Enabled = False
-        'Button15.Enabled = False
+            Button1.Enabled = False
+            Button2.Enabled = False
+            Button4.Enabled = False
+            Button3.Enabled = False
+            Button5.Enabled = False
+            Button6.Enabled = False
+            Button8.Enabled = False
+            Button7.Enabled = False
+            Button10.Enabled = False
+            Button9.Enabled = False
+            Button12.Enabled = False
+            Button11.Enabled = False
+            Button14.Enabled = False
+            Button13.Enabled = False
+            'Button16.Enabled = False
+            'Button15.Enabled = False
 
-        ' < -- EOL -- > 
+            ' < -- EOL -- > 
 
+        End If
 
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
 
 
         ' < -- Start of Append Function -->
@@ -1029,7 +1098,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox23.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Camote" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1079,7 +1148,7 @@ Public Class Inventory_Modification
 
 
         If TextBox22.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Red Chili" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1129,7 +1198,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox21.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Coffee Beans" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1184,7 +1253,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox20.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Corn" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1238,7 +1307,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox19.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Potatoes" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1293,7 +1362,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox18.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Rice" + vbNewLine)
             TextBox1.AppendText("System Advised to Enter a correct Value or Else Transaction wont go through" + vbNewLine)
@@ -1351,7 +1420,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox17.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Tobacco" + vbNewLine)
@@ -1402,8 +1471,9 @@ Public Class Inventory_Modification
         TextBox1.AppendText("Ending Value is" + vbTab + TextBox16.Text + vbNewLine)
         TextBox1.AppendText("For Product named: Tomatoes" + vbNewLine)
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("======================================")
         TextBox1.AppendText(vbNewLine)
+
+
 
         ' < -- End of Append Function --> 
 
@@ -1412,7 +1482,7 @@ Public Class Inventory_Modification
         ' <-- Condition --> 
 
         If TextBox16.Text = "" Then
-            MsgBox("Sorry ! This Value Cannot Be Set To Empty.")
+            MsgBox("Sorry ! This Value Cannot Be Set To Empty.", 0 + 64)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText(vbNewLine)
             TextBox1.AppendText("Admin Placed an Empty Value to for Product named Tomatoes" + vbNewLine)
@@ -1477,7 +1547,6 @@ Public Class Inventory_Modification
 
 
         TextBox1.AppendText(vbNewLine)
-        TextBox1.AppendText("=======================================")
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(" Submit Button Has been Clicked" + vbNewLine)
@@ -1494,7 +1563,7 @@ Public Class Inventory_Modification
 
         Else
 
-            Dim axa As DialogResult = MsgBox("Are You Sure You Want to Save this Changes?.", 4 + 32)
+            Dim axa As DialogResult = MsgBox("Are You Sure You Want to Save this Changes ?", 4 + 32)
 
             If axa = DialogResult.Yes Then
 
@@ -1507,6 +1576,16 @@ Public Class Inventory_Modification
                 rd.Close() ' < -- Reader close to avoid stack -->
                 con.Close()
 
+                ' < -- New Listings --> 
+
+                con.Open()
+                query = "INSERT INTO `Admin_Consignor Data Logs`(`modification_made`, `date_and_time`, `con_id`, `con_name`, `processed_by`, `notes`) values ('" & Label32.Text & "','" & Label2.Text & "','" & ComboBox2.Text & "','" & ComboBox3.Text & "','" & TextBox8.Text & "','" & Label34.Text & "')"
+                cmd = New MySqlCommand(query, con)
+                cmd.CommandTimeout = 240  'for time out errors
+                rd = cmd.ExecuteReader()
+
+                rd.Close() ' < -- Reader close to avoid stack -->
+                con.Close()
 
                 con.Open()
                 query = "UPDATE `Inventory` SET `Con_ID`='" & ComboBox2.Text & "',`Prod_Camote`='" & TextBox23.Text & "',`Prod_Chili`='" & TextBox22.Text & "',`Prod_Coffee_Beans`='" & TextBox21.Text & "',`Prod_Corn`='" & TextBox20.Text & "',`Prod_Potatoes`='" & TextBox19.Text & "',`Prod_Rice`='" & TextBox18.Text & "',`Prod_Tobacco`='" & TextBox17.Text & "', `Prod_Tomatoes`='" & TextBox16.Text & "' where `Con_ID`='" & ComboBox2.Text & "'"

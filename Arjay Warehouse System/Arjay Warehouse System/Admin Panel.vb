@@ -200,22 +200,33 @@ Public Class Admin_Panel
 
     Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
 
+        ' < -- This is needed to Avoid Modal Error -->
 
         Dim a As DialogResult = MsgBox("Are You Sure You Want to Sign Out From This Session ?", 4 + 32, )
 
         If a = DialogResult.Yes Then
 
 
-
-            Dim consignorkagebunshinreadonlyonetwo As New Login_As   ' -- I need to create a new dim to avoid same instance and avoid instance error 
-
-            consignorkagebunshinreadonlyonetwo.ShowDialog()
             Me.Dispose()
             Me.Close()
 
+            Dim consignorkagebunshinreadonlyonetwo As New Login_As   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+            consignorkagebunshinreadonlyonetwo.ShowDialog()
             
+
+
         End If
 
         
+    End Sub
+
+    Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
+
+        Dim consignorkagebunshinreadonlyonetwothree As New Inventory_Modification_Events   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        consignorkagebunshinreadonlyonetwothree.Show()
+
+
     End Sub
 End Class

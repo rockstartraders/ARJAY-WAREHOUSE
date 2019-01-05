@@ -101,6 +101,7 @@ Partial Class Inventory_Modification
         Me.Label32 = New System.Windows.Forms.Label()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox8
@@ -919,11 +920,23 @@ Partial Class Inventory_Modification
         Me.Label33.Text = "No Changes made"
         Me.Label33.Visible = False
         '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(1, 790)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(182, 39)
+        Me.Label34.TabIndex = 203
+        Me.Label34.Text = "Updated Inventory Record , " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please See System Generated Notes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " via Inventory Mo" & _
+            "dification Event."
+        Me.Label34.Visible = False
+        '
         'Inventory_Modification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 851)
+        Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.TextBox25)
         Me.Controls.Add(Me.Label32)
@@ -1088,4 +1101,5 @@ Partial Class Inventory_Modification
     Friend WithEvents Label32 As System.Windows.Forms.Label
     Friend WithEvents TextBox25 As System.Windows.Forms.TextBox
     Friend WithEvents Label33 As System.Windows.Forms.Label
+    Friend WithEvents Label34 As System.Windows.Forms.Label
 End Class
