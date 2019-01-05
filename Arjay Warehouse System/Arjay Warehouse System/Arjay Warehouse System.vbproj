@@ -230,6 +230,12 @@
     <Compile Include="Incoming.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory Modification.Designer.vb">
+      <DependentUpon>Inventory Modification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Modification.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Invoice Copy.Designer.vb">
       <DependentUpon>Invoice Copy.vb</DependentUpon>
     </Compile>
@@ -414,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Incoming.resx">
       <DependentUpon>Incoming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Modification.resx">
+      <DependentUpon>Inventory Modification.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice Copy.resx">
       <DependentUpon>Invoice Copy.vb</DependentUpon>

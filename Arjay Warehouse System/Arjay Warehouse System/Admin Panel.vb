@@ -185,4 +185,33 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
+
+
+        Dim consignorkagebunshinreadonlyone As New Inventory_Modification   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        consignorkagebunshinreadonlyone.Show()
+
+
+
+    End Sub
+
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+
+
+        Dim a As DialogResult = MsgBox("Are You Sure You Want to Sign Out From This Session ?", 4 + 32, )
+
+        If a = DialogResult.Yes Then
+
+
+
+            Me.Dispose()
+            Me.Close()
+
+        End If
+
+
+    End Sub
 End Class

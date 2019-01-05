@@ -38,6 +38,8 @@ Partial Class Admin_Panel
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -175,11 +177,31 @@ Partial Class Admin_Panel
         Me.Button13.Text = "VIEW MODIFICATION FOR CONSIGNORS DATA"
         Me.Button13.UseVisualStyleBackColor = True
         '
+        'Button14
+        '
+        Me.Button14.Location = New System.Drawing.Point(252, 381)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(187, 47)
+        Me.Button14.TabIndex = 15
+        Me.Button14.Text = "MODIFY INVENTORY RECORD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button15
+        '
+        Me.Button15.Location = New System.Drawing.Point(262, 484)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(187, 47)
+        Me.Button15.TabIndex = 16
+        Me.Button15.Text = "SIGN OUT"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
         'Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(688, 543)
+        Me.Controls.Add(Me.Button15)
+        Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
@@ -217,4 +239,6 @@ Partial Class Admin_Panel
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
     Friend WithEvents Button13 As System.Windows.Forms.Button
+    Friend WithEvents Button14 As System.Windows.Forms.Button
+    Friend WithEvents Button15 As System.Windows.Forms.Button
 End Class
