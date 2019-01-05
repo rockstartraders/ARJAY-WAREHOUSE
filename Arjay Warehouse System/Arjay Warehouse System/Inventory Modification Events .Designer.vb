@@ -45,10 +45,15 @@ Partial Class Inventory_Modification_Events
         '
         'ListView1
         '
+        Me.ListView1.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid
+        Me.ListView1.AllowColumnReorder = True
         Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView1.GridLines = True
         Me.ListView1.Location = New System.Drawing.Point(412, 72)
         Me.ListView1.Name = "ListView1"
+        Me.ListView1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.ListView1.Size = New System.Drawing.Size(479, 596)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
@@ -68,19 +73,16 @@ Partial Class Inventory_Modification_Events
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Process Made"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader3.Width = 220
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Processed By:"
-        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader4.Width = 180
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Admin Notes"
-        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader5.Width = 190
         '
         'ColumnHeader6
@@ -92,6 +94,7 @@ Partial Class Inventory_Modification_Events
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(24, 305)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -102,6 +105,7 @@ Partial Class Inventory_Modification_Events
         'TextBox2
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(24, 133)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
@@ -122,9 +126,10 @@ Partial Class Inventory_Modification_Events
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(17, 53)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(20, 52)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 13)
+        Me.Label2.Size = New System.Drawing.Size(79, 14)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Correction ID "
         '
@@ -135,6 +140,7 @@ Partial Class Inventory_Modification_Events
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(258, 20)
         Me.TextBox3.TabIndex = 5
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -143,13 +149,15 @@ Partial Class Inventory_Modification_Events
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(258, 20)
         Me.TextBox4.TabIndex = 7
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 79)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(17, 78)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 13)
+        Me.Label3.Size = New System.Drawing.Size(82, 14)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Date and Time"
         '
@@ -184,6 +192,7 @@ Partial Class Inventory_Modification_Events
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(384, 694)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 30)

@@ -105,105 +105,114 @@ Partial Class Incoming
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(923, 26)
+        Me.TextBox1.Location = New System.Drawing.Point(1077, 28)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(337, 796)
+        Me.TextBox1.Size = New System.Drawing.Size(393, 857)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.WordWrap = False
         '
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(167, 142)
+        Me.ComboBox3.Location = New System.Drawing.Point(195, 153)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(307, 21)
+        Me.ComboBox3.Size = New System.Drawing.Size(357, 22)
         Me.ComboBox3.TabIndex = 68
         '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(168, 97)
+        Me.ComboBox2.Location = New System.Drawing.Point(196, 104)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(307, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(357, 22)
         Me.ComboBox2.TabIndex = 67
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(168, 177)
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox6.Location = New System.Drawing.Point(196, 191)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(306, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(356, 21)
         Me.TextBox6.TabIndex = 63
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(579, 142)
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Location = New System.Drawing.Point(675, 153)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(260, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(303, 21)
         Me.TextBox5.TabIndex = 62
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(579, 98)
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Location = New System.Drawing.Point(675, 106)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(260, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(303, 21)
         Me.TextBox4.TabIndex = 61
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(485, 192)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(566, 207)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 13)
+        Me.Label8.Size = New System.Drawing.Size(96, 14)
         Me.Label8.TabIndex = 58
         Me.Label8.Text = "Storage Location"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(88, 184)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(103, 198)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 13)
+        Me.Label7.Size = New System.Drawing.Size(80, 14)
         Me.Label7.TabIndex = 57
         Me.Label7.Text = "Email Address"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(505, 150)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(589, 162)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 13)
+        Me.Label6.Size = New System.Drawing.Size(66, 14)
         Me.Label6.TabIndex = 56
         Me.Label6.Text = "Mobile No."
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(489, 98)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(570, 106)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 13)
+        Me.Label5.Size = New System.Drawing.Size(80, 14)
         Me.Label5.TabIndex = 55
         Me.Label5.Text = "Land Line No."
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(77, 145)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(90, 156)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.Size = New System.Drawing.Size(95, 14)
         Me.Label3.TabIndex = 53
         Me.Label3.Text = "Consignor Name"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(93, 106)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(108, 114)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 13)
+        Me.Label1.Size = New System.Drawing.Size(75, 14)
         Me.Label1.TabIndex = 51
         Me.Label1.Text = "Consignor ID"
         '
@@ -211,7 +220,7 @@ Partial Class Incoming
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(469, 22)
+        Me.Label11.Location = New System.Drawing.Point(547, 24)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(94, 20)
         Me.Label11.TabIndex = 71
@@ -221,7 +230,7 @@ Partial Class Incoming
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(62, 356)
+        Me.Label12.Location = New System.Drawing.Point(72, 383)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(154, 20)
         Me.Label12.TabIndex = 72
@@ -231,7 +240,7 @@ Partial Class Incoming
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(96, 406)
+        Me.Label10.Location = New System.Drawing.Point(112, 437)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(56, 17)
         Me.Label10.TabIndex = 73
@@ -241,7 +250,7 @@ Partial Class Incoming
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(91, 460)
+        Me.Label13.Location = New System.Drawing.Point(106, 495)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(61, 17)
         Me.Label13.TabIndex = 74
@@ -251,7 +260,7 @@ Partial Class Incoming
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(80, 508)
+        Me.Label14.Location = New System.Drawing.Point(93, 547)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(89, 17)
         Me.Label14.TabIndex = 75
@@ -261,7 +270,7 @@ Partial Class Incoming
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(114, 564)
+        Me.Label15.Location = New System.Drawing.Point(133, 607)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(38, 17)
         Me.Label15.TabIndex = 76
@@ -271,7 +280,7 @@ Partial Class Incoming
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(96, 624)
+        Me.Label16.Location = New System.Drawing.Point(112, 672)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(62, 17)
         Me.Label16.TabIndex = 77
@@ -281,7 +290,7 @@ Partial Class Incoming
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(119, 679)
+        Me.Label17.Location = New System.Drawing.Point(139, 731)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(33, 17)
         Me.Label17.TabIndex = 78
@@ -291,7 +300,7 @@ Partial Class Incoming
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(98, 734)
+        Me.Label18.Location = New System.Drawing.Point(114, 790)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(60, 17)
         Me.Label18.TabIndex = 79
@@ -301,7 +310,7 @@ Partial Class Incoming
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(96, 778)
+        Me.Label19.Location = New System.Drawing.Point(112, 838)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(68, 17)
         Me.Label19.TabIndex = 80
@@ -311,7 +320,7 @@ Partial Class Incoming
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(239, 356)
+        Me.Label20.Location = New System.Drawing.Point(279, 383)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(78, 20)
         Me.Label20.TabIndex = 81
@@ -323,10 +332,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(219, 406)
+        Me.TextBox7.Location = New System.Drawing.Point(255, 437)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(125, 21)
         Me.TextBox7.TabIndex = 82
         Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -336,10 +345,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Location = New System.Drawing.Point(219, 460)
+        Me.TextBox9.Location = New System.Drawing.Point(255, 495)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(125, 21)
         Me.TextBox9.TabIndex = 83
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -349,10 +358,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Location = New System.Drawing.Point(219, 508)
+        Me.TextBox10.Location = New System.Drawing.Point(255, 547)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(125, 21)
         Me.TextBox10.TabIndex = 84
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -362,10 +371,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox11.Location = New System.Drawing.Point(219, 564)
+        Me.TextBox11.Location = New System.Drawing.Point(255, 607)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox11.Size = New System.Drawing.Size(125, 21)
         Me.TextBox11.TabIndex = 85
         Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -375,10 +384,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox12.Location = New System.Drawing.Point(219, 624)
+        Me.TextBox12.Location = New System.Drawing.Point(255, 672)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox12.Size = New System.Drawing.Size(125, 21)
         Me.TextBox12.TabIndex = 86
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -388,10 +397,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox13.Location = New System.Drawing.Point(219, 679)
+        Me.TextBox13.Location = New System.Drawing.Point(255, 731)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox13.Size = New System.Drawing.Size(125, 21)
         Me.TextBox13.TabIndex = 87
         Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -401,10 +410,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox14.Location = New System.Drawing.Point(219, 734)
+        Me.TextBox14.Location = New System.Drawing.Point(255, 790)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox14.Size = New System.Drawing.Size(125, 21)
         Me.TextBox14.TabIndex = 88
         Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -414,10 +423,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox15.Location = New System.Drawing.Point(219, 778)
+        Me.TextBox15.Location = New System.Drawing.Point(255, 838)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.ReadOnly = True
-        Me.TextBox15.Size = New System.Drawing.Size(125, 20)
+        Me.TextBox15.Size = New System.Drawing.Size(125, 21)
         Me.TextBox15.TabIndex = 89
         Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -427,9 +436,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox16.Location = New System.Drawing.Point(372, 778)
+        Me.TextBox16.Location = New System.Drawing.Point(434, 838)
         Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox16.Size = New System.Drawing.Size(135, 21)
         Me.TextBox16.TabIndex = 98
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -439,9 +448,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox17.Location = New System.Drawing.Point(372, 734)
+        Me.TextBox17.Location = New System.Drawing.Point(434, 790)
         Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox17.Size = New System.Drawing.Size(135, 21)
         Me.TextBox17.TabIndex = 97
         Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -451,9 +460,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox18.Location = New System.Drawing.Point(372, 679)
+        Me.TextBox18.Location = New System.Drawing.Point(434, 731)
         Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox18.Size = New System.Drawing.Size(135, 21)
         Me.TextBox18.TabIndex = 96
         Me.TextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -463,9 +472,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox19.Location = New System.Drawing.Point(372, 624)
+        Me.TextBox19.Location = New System.Drawing.Point(434, 672)
         Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox19.Size = New System.Drawing.Size(135, 21)
         Me.TextBox19.TabIndex = 95
         Me.TextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -475,9 +484,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox20.Location = New System.Drawing.Point(372, 564)
+        Me.TextBox20.Location = New System.Drawing.Point(434, 607)
         Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox20.Size = New System.Drawing.Size(135, 21)
         Me.TextBox20.TabIndex = 94
         Me.TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -487,9 +496,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox21.Location = New System.Drawing.Point(372, 508)
+        Me.TextBox21.Location = New System.Drawing.Point(434, 547)
         Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox21.Size = New System.Drawing.Size(135, 21)
         Me.TextBox21.TabIndex = 93
         Me.TextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -499,9 +508,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox22.Location = New System.Drawing.Point(372, 460)
+        Me.TextBox22.Location = New System.Drawing.Point(434, 495)
         Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox22.Size = New System.Drawing.Size(135, 21)
         Me.TextBox22.TabIndex = 92
         Me.TextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -511,9 +520,9 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox23.Location = New System.Drawing.Point(372, 406)
+        Me.TextBox23.Location = New System.Drawing.Point(434, 437)
         Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox23.Size = New System.Drawing.Size(135, 21)
         Me.TextBox23.TabIndex = 91
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -521,7 +530,7 @@ Partial Class Incoming
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(402, 356)
+        Me.Label21.Location = New System.Drawing.Point(469, 383)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(76, 20)
         Me.Label21.TabIndex = 90
@@ -533,10 +542,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox24.Location = New System.Drawing.Point(529, 778)
+        Me.TextBox24.Location = New System.Drawing.Point(617, 838)
         Me.TextBox24.Name = "TextBox24"
         Me.TextBox24.ReadOnly = True
-        Me.TextBox24.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox24.Size = New System.Drawing.Size(135, 21)
         Me.TextBox24.TabIndex = 107
         Me.TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -546,10 +555,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox25.Location = New System.Drawing.Point(529, 734)
+        Me.TextBox25.Location = New System.Drawing.Point(617, 790)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.ReadOnly = True
-        Me.TextBox25.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox25.Size = New System.Drawing.Size(135, 21)
         Me.TextBox25.TabIndex = 106
         Me.TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -559,10 +568,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox26.Location = New System.Drawing.Point(529, 679)
+        Me.TextBox26.Location = New System.Drawing.Point(617, 731)
         Me.TextBox26.Name = "TextBox26"
         Me.TextBox26.ReadOnly = True
-        Me.TextBox26.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox26.Size = New System.Drawing.Size(135, 21)
         Me.TextBox26.TabIndex = 105
         Me.TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -572,10 +581,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox27.Location = New System.Drawing.Point(529, 624)
+        Me.TextBox27.Location = New System.Drawing.Point(617, 672)
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.ReadOnly = True
-        Me.TextBox27.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox27.Size = New System.Drawing.Size(135, 21)
         Me.TextBox27.TabIndex = 104
         Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -585,10 +594,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox28.Location = New System.Drawing.Point(529, 564)
+        Me.TextBox28.Location = New System.Drawing.Point(617, 607)
         Me.TextBox28.Name = "TextBox28"
         Me.TextBox28.ReadOnly = True
-        Me.TextBox28.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox28.Size = New System.Drawing.Size(135, 21)
         Me.TextBox28.TabIndex = 103
         Me.TextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -598,10 +607,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox29.Location = New System.Drawing.Point(529, 508)
+        Me.TextBox29.Location = New System.Drawing.Point(617, 547)
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.ReadOnly = True
-        Me.TextBox29.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox29.Size = New System.Drawing.Size(135, 21)
         Me.TextBox29.TabIndex = 102
         Me.TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -611,10 +620,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox30.Location = New System.Drawing.Point(529, 460)
+        Me.TextBox30.Location = New System.Drawing.Point(617, 495)
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.ReadOnly = True
-        Me.TextBox30.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox30.Size = New System.Drawing.Size(135, 21)
         Me.TextBox30.TabIndex = 101
         Me.TextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -624,10 +633,10 @@ Partial Class Incoming
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox31.Location = New System.Drawing.Point(529, 406)
+        Me.TextBox31.Location = New System.Drawing.Point(617, 437)
         Me.TextBox31.Name = "TextBox31"
         Me.TextBox31.ReadOnly = True
-        Me.TextBox31.Size = New System.Drawing.Size(135, 20)
+        Me.TextBox31.Size = New System.Drawing.Size(135, 21)
         Me.TextBox31.TabIndex = 100
         Me.TextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -635,7 +644,7 @@ Partial Class Incoming
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(559, 356)
+        Me.Label22.Location = New System.Drawing.Point(652, 383)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(47, 20)
         Me.Label22.TabIndex = 99
@@ -644,26 +653,27 @@ Partial Class Incoming
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(12, 9)
+        Me.Label23.Location = New System.Drawing.Point(14, 10)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(45, 13)
+        Me.Label23.Size = New System.Drawing.Size(47, 14)
         Me.Label23.TabIndex = 108
         Me.Label23.Text = "Label23"
         Me.Label23.Visible = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(579, 185)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(675, 199)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(260, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(303, 21)
         Me.TextBox2.TabIndex = 109
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(670, 409)
+        Me.Label2.Location = New System.Drawing.Point(782, 440)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 17)
         Me.Label2.TabIndex = 110
@@ -673,7 +683,7 @@ Partial Class Incoming
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(670, 463)
+        Me.Label4.Location = New System.Drawing.Point(782, 499)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 17)
         Me.Label4.TabIndex = 111
@@ -683,7 +693,7 @@ Partial Class Incoming
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(670, 511)
+        Me.Label9.Location = New System.Drawing.Point(782, 550)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(61, 17)
         Me.Label9.TabIndex = 112
@@ -693,7 +703,7 @@ Partial Class Incoming
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(670, 567)
+        Me.Label24.Location = New System.Drawing.Point(782, 611)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(61, 17)
         Me.Label24.TabIndex = 113
@@ -703,7 +713,7 @@ Partial Class Incoming
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(670, 682)
+        Me.Label26.Location = New System.Drawing.Point(782, 734)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(61, 17)
         Me.Label26.TabIndex = 115
@@ -713,7 +723,7 @@ Partial Class Incoming
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(670, 737)
+        Me.Label27.Location = New System.Drawing.Point(782, 794)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(61, 17)
         Me.Label27.TabIndex = 116
@@ -723,7 +733,7 @@ Partial Class Incoming
         '
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(670, 781)
+        Me.Label28.Location = New System.Drawing.Point(782, 841)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(71, 17)
         Me.Label28.TabIndex = 117
@@ -733,7 +743,7 @@ Partial Class Incoming
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(670, 627)
+        Me.Label25.Location = New System.Drawing.Point(782, 675)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(61, 17)
         Me.Label25.TabIndex = 118
@@ -742,19 +752,20 @@ Partial Class Incoming
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(99, 64)
+        Me.Label29.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(115, 69)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(62, 13)
+        Me.Label29.Size = New System.Drawing.Size(67, 14)
         Me.Label29.TabIndex = 119
         Me.Label29.Text = "Invoice No."
         '
         'TextBox3
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(167, 57)
+        Me.TextBox3.Location = New System.Drawing.Point(195, 61)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(242, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(282, 21)
         Me.TextBox3.TabIndex = 120
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -762,7 +773,7 @@ Partial Class Incoming
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(67, 220)
+        Me.Label30.Location = New System.Drawing.Point(78, 237)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(108, 20)
         Me.Label30.TabIndex = 121
@@ -771,54 +782,57 @@ Partial Class Incoming
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(114, 270)
+        Me.Label31.Location = New System.Drawing.Point(133, 291)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(43, 13)
+        Me.Label31.Size = New System.Drawing.Size(44, 14)
         Me.Label31.TabIndex = 122
         Me.Label31.Text = "User ID"
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(169, 263)
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox8.Location = New System.Drawing.Point(197, 283)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(306, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(356, 21)
         Me.TextBox8.TabIndex = 123
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox32
         '
-        Me.TextBox32.Location = New System.Drawing.Point(167, 300)
+        Me.TextBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox32.Location = New System.Drawing.Point(195, 323)
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.ReadOnly = True
-        Me.TextBox32.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox32.Size = New System.Drawing.Size(252, 21)
         Me.TextBox32.TabIndex = 125
         Me.TextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(112, 307)
+        Me.Label32.Location = New System.Drawing.Point(131, 331)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(55, 13)
+        Me.Label32.Size = New System.Drawing.Size(61, 14)
         Me.Label32.TabIndex = 124
         Me.Label32.Text = "First name"
         '
         'TextBox33
         '
-        Me.TextBox33.Location = New System.Drawing.Point(452, 300)
+        Me.TextBox33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox33.Location = New System.Drawing.Point(527, 323)
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.ReadOnly = True
-        Me.TextBox33.Size = New System.Drawing.Size(209, 20)
+        Me.TextBox33.Size = New System.Drawing.Size(243, 21)
         Me.TextBox33.TabIndex = 127
         Me.TextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(390, 307)
+        Me.Label33.Location = New System.Drawing.Point(455, 331)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(56, 13)
+        Me.Label33.Size = New System.Drawing.Size(60, 14)
         Me.Label33.TabIndex = 126
         Me.Label33.Text = "Last name"
         '
@@ -826,7 +840,7 @@ Partial Class Incoming
         '
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(11, 22)
+        Me.Label34.Location = New System.Drawing.Point(13, 24)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(72, 15)
         Me.Label34.TabIndex = 128
@@ -835,36 +849,36 @@ Partial Class Incoming
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(363, 822)
+        Me.Button1.Location = New System.Drawing.Point(423, 885)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(78, 25)
+        Me.Button1.Size = New System.Drawing.Size(91, 27)
         Me.Button1.TabIndex = 129
         Me.Button1.Text = "COMMIT"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(452, 822)
+        Me.Button2.Location = New System.Drawing.Point(527, 885)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(78, 25)
+        Me.Button2.Size = New System.Drawing.Size(91, 27)
         Me.Button2.TabIndex = 130
         Me.Button2.Text = "RESET"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(368, 908)
+        Me.Button3.Location = New System.Drawing.Point(429, 978)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(78, 25)
+        Me.Button3.Size = New System.Drawing.Size(91, 27)
         Me.Button3.TabIndex = 131
         Me.Button3.Text = "SAVE"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(457, 908)
+        Me.Button4.Location = New System.Drawing.Point(533, 978)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(78, 25)
+        Me.Button4.Size = New System.Drawing.Size(91, 27)
         Me.Button4.TabIndex = 132
         Me.Button4.Text = "EXIT"
         Me.Button4.UseVisualStyleBackColor = True
@@ -872,9 +886,9 @@ Partial Class Incoming
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft JhengHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(1051, 842)
+        Me.Button5.Location = New System.Drawing.Point(1226, 907)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(99, 23)
+        Me.Button5.Size = New System.Drawing.Size(115, 25)
         Me.Button5.TabIndex = 133
         Me.Button5.Text = "PRINT PREVIEW"
         Me.Button5.UseVisualStyleBackColor = True
@@ -895,7 +909,7 @@ Partial Class Incoming
         '
         'Incoming
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
@@ -974,6 +988,7 @@ Partial Class Incoming
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
+        Me.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Incoming"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
