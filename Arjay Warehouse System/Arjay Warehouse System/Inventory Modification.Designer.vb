@@ -906,7 +906,7 @@ Partial Class Inventory_Modification
         Me.TextBox25.ReadOnly = True
         Me.TextBox25.Size = New System.Drawing.Size(41, 20)
         Me.TextBox25.TabIndex = 201
-        Me.TextBox25.Text = "No Changes made / Not Business Impacting"
+        Me.TextBox25.Text = "No Changes Made and This Is Not Business Impacting"
         Me.TextBox25.Visible = False
         '
         'Label33

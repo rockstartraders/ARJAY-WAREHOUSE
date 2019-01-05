@@ -241,6 +241,7 @@ Partial Class Delete_Access_for_an_ADMIN_admin
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Access_for_an_ADMIN_admin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Terminate ADMIN Access"
         Me.ResumeLayout(False)
         Me.PerformLayout()

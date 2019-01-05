@@ -207,11 +207,15 @@ Public Class Admin_Panel
 
 
 
+            Dim consignorkagebunshinreadonlyonetwo As New Login_As   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+            consignorkagebunshinreadonlyonetwo.ShowDialog()
             Me.Dispose()
             Me.Close()
 
+            
         End If
 
-
+        
     End Sub
 End Class

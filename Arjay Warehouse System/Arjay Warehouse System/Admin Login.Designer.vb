@@ -175,6 +175,7 @@ Partial Class Admin_Login
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin_Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

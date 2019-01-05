@@ -329,6 +329,7 @@ Partial Class Correction_Ticket
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Correction_Ticket"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " Correction Request"
         Me.ResumeLayout(False)
         Me.PerformLayout()

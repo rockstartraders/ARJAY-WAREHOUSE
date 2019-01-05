@@ -319,6 +319,7 @@ Partial Class View_Correction_Request
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "View_Correction_Request"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "View Correction Request"
         Me.ResumeLayout(False)
         Me.PerformLayout()

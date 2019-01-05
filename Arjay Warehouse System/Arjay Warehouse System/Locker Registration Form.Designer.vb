@@ -374,6 +374,7 @@ Partial Class Locker_Registration_Form
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Locker_Registration_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Locker Registration Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

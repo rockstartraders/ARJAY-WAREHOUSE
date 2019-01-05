@@ -317,6 +317,7 @@ Partial Class Update_Consignor_Record
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Update_Consignor_Record"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Update Consignor Records"
         Me.ResumeLayout(False)
         Me.PerformLayout()

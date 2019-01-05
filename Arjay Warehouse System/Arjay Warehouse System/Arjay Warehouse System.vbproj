@@ -230,6 +230,12 @@
     <Compile Include="Incoming.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory Modification Events .Designer.vb">
+      <DependentUpon>Inventory Modification Events .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Modification Events .vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inventory Modification.Designer.vb">
       <DependentUpon>Inventory Modification.vb</DependentUpon>
     </Compile>
@@ -420,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Incoming.resx">
       <DependentUpon>Incoming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Modification Events .resx">
+      <DependentUpon>Inventory Modification Events .vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory Modification.resx">
       <DependentUpon>Inventory Modification.vb</DependentUpon>

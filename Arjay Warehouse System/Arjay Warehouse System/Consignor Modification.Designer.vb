@@ -65,6 +65,7 @@ Partial Class Consignor_Modification
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Consignor_Modification"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Modify Consignors Landing Page"
         Me.ResumeLayout(False)
 

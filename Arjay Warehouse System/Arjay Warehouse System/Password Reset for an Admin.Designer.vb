@@ -256,6 +256,7 @@ Partial Class Password_Reset_for_an_Admin
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Password_Reset_for_an_Admin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Password Reset for an Admin"
         Me.ResumeLayout(False)
         Me.PerformLayout()

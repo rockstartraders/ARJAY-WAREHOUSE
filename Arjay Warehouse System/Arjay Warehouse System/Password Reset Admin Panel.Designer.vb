@@ -87,6 +87,7 @@ Partial Class Password_Reset_Admin_Panel
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Password_Reset_Admin_Panel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Password Reset Admin Panel"
         Me.ResumeLayout(False)
         Me.PerformLayout()

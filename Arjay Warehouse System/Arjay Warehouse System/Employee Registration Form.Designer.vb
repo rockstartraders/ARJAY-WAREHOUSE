@@ -435,6 +435,7 @@ Partial Class Employee_Registration_Form
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Employee_Registration_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Employee Registration Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

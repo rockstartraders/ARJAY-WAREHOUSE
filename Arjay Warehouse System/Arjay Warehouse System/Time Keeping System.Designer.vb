@@ -124,6 +124,7 @@ Partial Class Time_Keeping_System
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Time_Keeping_System"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Time Keeping System"
         Me.ResumeLayout(False)
         Me.PerformLayout()

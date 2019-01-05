@@ -366,6 +366,7 @@ Partial Class Consignor_Registration_Form
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Consignor_Registration_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Consignor Registration Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

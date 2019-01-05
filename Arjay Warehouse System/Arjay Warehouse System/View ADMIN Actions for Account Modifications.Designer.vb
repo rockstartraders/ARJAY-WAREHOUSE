@@ -121,6 +121,7 @@ Partial Class View_ADMIN_Actions_for_Account_Modifications
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "View_ADMIN_Actions_for_Account_Modifications"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "View Access Modifications done By ADMIN "
         Me.ResumeLayout(False)
 

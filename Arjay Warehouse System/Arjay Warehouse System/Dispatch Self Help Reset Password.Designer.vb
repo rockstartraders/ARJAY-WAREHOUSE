@@ -117,6 +117,7 @@ Partial Class Dispatch_Self_Help_Reset_Password
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Dispatch_Self_Help_Reset_Password"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Self Help Password Reset"
         Me.ResumeLayout(False)
         Me.PerformLayout()

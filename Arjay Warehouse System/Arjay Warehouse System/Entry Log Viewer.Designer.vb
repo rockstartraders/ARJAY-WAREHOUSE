@@ -29,12 +29,12 @@ Partial Class Entry_Log_Viewer
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'ListView1
@@ -75,6 +75,12 @@ Partial Class Entry_Log_Viewer
         Me.ColumnHeader5.Text = "Access Used"
         Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader5.Width = 227
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Login Outcome"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader6.Width = 150
         '
         'Button1
         '
@@ -119,12 +125,6 @@ Partial Class Entry_Log_Viewer
         Me.TextBox1.Size = New System.Drawing.Size(168, 20)
         Me.TextBox1.TabIndex = 5
         '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Login Outcome"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader6.Width = 150
-        '
         'Entry_Log_Viewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -138,6 +138,7 @@ Partial Class Entry_Log_Viewer
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entry_Log_Viewer"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Entry Log Viewer"
         Me.ResumeLayout(False)
         Me.PerformLayout()

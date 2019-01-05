@@ -624,6 +624,7 @@ Partial Class Employee_database
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Employee_database"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Employee Database Lookup"
         Me.ResumeLayout(False)
         Me.PerformLayout()

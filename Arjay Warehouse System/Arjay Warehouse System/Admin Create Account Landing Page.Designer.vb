@@ -87,6 +87,7 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Controls.Add(Me.Label3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin_Create_Account_Landing_Page"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Create Account Landing Page"
         Me.ResumeLayout(False)
         Me.PerformLayout()

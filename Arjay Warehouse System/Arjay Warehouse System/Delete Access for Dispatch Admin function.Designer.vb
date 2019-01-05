@@ -241,6 +241,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Access_for_Dispatch_Admin_function"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Terminate DISPATCH Access"
         Me.ResumeLayout(False)
         Me.PerformLayout()

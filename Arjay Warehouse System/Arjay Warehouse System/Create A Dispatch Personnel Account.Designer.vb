@@ -240,6 +240,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Create_A_Dispatch_Personnel_Account"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Create Dispatch Account"
         Me.ResumeLayout(False)
         Me.PerformLayout()

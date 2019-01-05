@@ -219,6 +219,7 @@ Partial Class Invoice_Copy
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Invoice_Copy"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Invoice Archive"
         Me.ResumeLayout(False)
         Me.PerformLayout()

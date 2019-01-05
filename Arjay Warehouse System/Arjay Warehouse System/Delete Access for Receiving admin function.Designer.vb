@@ -241,6 +241,7 @@ Partial Class Delete_Access_for_Receiving_admin_function
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Access_for_Receiving_admin_function"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Terminate RECEIVING Access"
         Me.ResumeLayout(False)
         Me.PerformLayout()

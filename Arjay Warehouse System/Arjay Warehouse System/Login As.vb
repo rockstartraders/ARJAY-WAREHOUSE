@@ -28,6 +28,7 @@ Public Class Login_As
 
         Me.Hide()
         ab.ShowDialog()
+        Me.Dispose()
         End
 
 

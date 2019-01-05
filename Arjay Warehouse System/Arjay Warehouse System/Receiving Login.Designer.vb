@@ -175,6 +175,7 @@ Partial Class Receiving_Login
         Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Receiving_Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Receiving Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

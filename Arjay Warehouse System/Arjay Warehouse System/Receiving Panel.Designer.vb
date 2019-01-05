@@ -144,6 +144,7 @@ Partial Class Receiving_Panel
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Receiving_Panel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RECEIVING PANEL"
         Me.ResumeLayout(False)
         Me.PerformLayout()

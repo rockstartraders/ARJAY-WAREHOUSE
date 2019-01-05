@@ -98,6 +98,7 @@ Partial Class Dispatch_Panel
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Dispatch_Panel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DISPATCH PANEL"
         Me.ResumeLayout(False)
         Me.PerformLayout()

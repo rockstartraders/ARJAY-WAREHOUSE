@@ -452,6 +452,7 @@ Partial Class Admin_Correction_Form
         Me.Controls.Add(Me.ListView1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin_Correction_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Correction Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
