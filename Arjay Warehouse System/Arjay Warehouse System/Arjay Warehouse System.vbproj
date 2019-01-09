@@ -510,6 +510,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Caution.png" />
+    <None Include="Resources\admin_guy1.png" />
     <Content Include="Resources\Rocket.gif" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
