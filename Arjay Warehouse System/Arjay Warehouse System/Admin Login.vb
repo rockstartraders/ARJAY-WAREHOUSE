@@ -76,6 +76,7 @@ Public Class Admin_Login
 
             Me.Hide()
             Admin_Panel.ShowDialog()
+            Me.Dispose()
             Me.Close()
 
 
