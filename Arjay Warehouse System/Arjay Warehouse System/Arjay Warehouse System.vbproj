@@ -509,9 +509,15 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\view-correction_request.png" />
     <None Include="Resources\Caution.png" />
     <None Include="Resources\admin_guy1.png" />
+    <None Include="Resources\address-book.png" />
+    <None Include="Resources\reset_self_help.png" />
+    <None Include="Resources\Inventory.png" />
+    <None Include="Resources\problem.png" />
     <Content Include="Resources\Rocket.gif" />
+    <None Include="Resources\seo.png" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

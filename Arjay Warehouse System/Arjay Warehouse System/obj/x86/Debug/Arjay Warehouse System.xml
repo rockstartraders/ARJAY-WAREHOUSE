@@ -15,6 +15,10 @@ ArjayWarehouseSystem
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.address_book">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.admin_guy">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -27,7 +31,19 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.Inventory">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.Receiving_first_page">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.reset_self_help">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.seo">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -40,6 +56,10 @@ ArjayWarehouseSystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.timein_out">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.view_correction_request">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -124,11 +124,14 @@
   <data name="team_rocket1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\team_rocket.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="timein_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timein_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="address-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\address-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reset_self_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reset_self_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inventory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dispatch_first_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dispatch_first_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,10 +151,10 @@
   <data name="Caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Caution.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="timein_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\timein_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reset_self_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset_self_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inventory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="problem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\problem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
