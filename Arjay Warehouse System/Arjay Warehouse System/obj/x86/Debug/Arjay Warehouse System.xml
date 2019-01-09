@@ -15,10 +15,6 @@ ArjayWarehouseSystem
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.admin_guy">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.Caution">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

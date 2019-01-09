@@ -11,7 +11,7 @@ Public Class Login_As
 
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim ad As New Receiving_Login    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
@@ -22,7 +22,7 @@ Public Class Login_As
 
     End Sub
 
-    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         Dim ab As New Admin_Login    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
@@ -35,7 +35,7 @@ Public Class Login_As
 
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
         Dim ac As New Dispatch_Login   ' -- I need to create a new dim to avoid same instance and avoid instance error 
@@ -47,7 +47,7 @@ Public Class Login_As
 
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
         Dim timeinandout As New Time_Keeping_System   ' -- I need to create a new dim to avoid same instance and avoid instance error 

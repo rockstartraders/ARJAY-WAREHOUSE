@@ -265,6 +265,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -441,6 +446,7 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Password Reset Admin Panel.resx">
       <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
@@ -491,9 +497,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Caution.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\admin_guy.png" />
   </ItemGroup>
   <ItemGroup>
@@ -506,6 +509,7 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Caution.png" />
     <Content Include="Resources\Rocket.gif" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
