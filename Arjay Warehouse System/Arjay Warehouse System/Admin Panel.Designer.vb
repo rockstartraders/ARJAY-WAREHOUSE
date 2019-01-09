@@ -45,7 +45,6 @@ Partial Class Admin_Panel
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(445, 125)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(187, 47)
@@ -55,7 +54,6 @@ Partial Class Admin_Panel
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(445, 193)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(187, 47)
@@ -65,7 +63,6 @@ Partial Class Admin_Panel
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(445, 328)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(187, 47)
@@ -75,7 +72,6 @@ Partial Class Admin_Panel
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(252, 125)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(187, 47)
@@ -85,7 +81,6 @@ Partial Class Admin_Panel
         '
         'Button5
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(252, 193)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(187, 47)
@@ -95,7 +90,6 @@ Partial Class Admin_Panel
         '
         'Button6
         '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(252, 261)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(187, 47)
@@ -106,26 +100,23 @@ Partial Class Admin_Panel
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(92, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 15)
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Label1"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 15)
+        Me.Label2.Size = New System.Drawing.Size(80, 13)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "HELLO ADMIN"
         '
         'Button7
         '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(59, 125)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(187, 47)
@@ -135,7 +126,6 @@ Partial Class Admin_Panel
         '
         'Button8
         '
-        Me.Button8.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(59, 193)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(187, 47)
@@ -145,7 +135,6 @@ Partial Class Admin_Panel
         '
         'Button9
         '
-        Me.Button9.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(445, 261)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(187, 47)
@@ -155,7 +144,6 @@ Partial Class Admin_Panel
         '
         'Button10
         '
-        Me.Button10.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(59, 261)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(187, 47)
@@ -165,7 +153,6 @@ Partial Class Admin_Panel
         '
         'Button11
         '
-        Me.Button11.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(252, 328)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(187, 47)
@@ -175,7 +162,6 @@ Partial Class Admin_Panel
         '
         'Button12
         '
-        Me.Button12.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(59, 328)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(187, 47)
@@ -185,7 +171,6 @@ Partial Class Admin_Panel
         '
         'Button13
         '
-        Me.Button13.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Location = New System.Drawing.Point(59, 381)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(187, 47)
@@ -195,7 +180,6 @@ Partial Class Admin_Panel
         '
         'Button14
         '
-        Me.Button14.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Location = New System.Drawing.Point(252, 381)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(187, 47)
@@ -205,7 +189,6 @@ Partial Class Admin_Panel
         '
         'Button15
         '
-        Me.Button15.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Location = New System.Drawing.Point(262, 484)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(187, 47)
@@ -215,7 +198,6 @@ Partial Class Admin_Panel
         '
         'Button16
         '
-        Me.Button16.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(445, 381)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(187, 47)

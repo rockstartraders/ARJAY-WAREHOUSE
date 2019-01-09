@@ -32,7 +32,6 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(295, 169)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(187, 31)
@@ -42,7 +41,6 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(488, 94)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(187, 47)
@@ -52,7 +50,6 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(295, 94)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(187, 47)
@@ -62,7 +59,6 @@ Partial Class Admin_Create_Account_Landing_Page
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(102, 94)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(187, 47)
@@ -73,10 +69,9 @@ Partial Class Admin_Create_Account_Landing_Page
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(328, 48)
+        Me.Label3.Location = New System.Drawing.Point(355, 45)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 15)
+        Me.Label3.Size = New System.Drawing.Size(115, 13)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Create An Account For"
         '

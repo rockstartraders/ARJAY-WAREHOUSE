@@ -70,7 +70,6 @@ Partial Class Admin_Correction_Form
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10})
-        Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.Location = New System.Drawing.Point(318, 22)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(534, 311)
@@ -149,10 +148,9 @@ Partial Class Admin_Correction_Form
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(23, 498)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(89, 14)
+        Me.Label12.Size = New System.Drawing.Size(81, 13)
         Me.Label12.TabIndex = 78
         Me.Label12.Text = "Admin Remarks"
         '
@@ -168,10 +166,9 @@ Partial Class Admin_Correction_Form
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(5, 354)
+        Me.Label11.Location = New System.Drawing.Point(13, 351)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(114, 14)
+        Me.Label11.Size = New System.Drawing.Size(101, 13)
         Me.Label11.TabIndex = 76
         Me.Label11.Text = "Problem Description"
         '
@@ -188,31 +185,28 @@ Partial Class Admin_Correction_Form
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(13, 321)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(106, 14)
+        Me.Label10.Size = New System.Drawing.Size(96, 13)
         Me.Label10.TabIndex = 74
         Me.Label10.Text = "Correction Needed"
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Open", "Resolved"})
         Me.ComboBox1.Location = New System.Drawing.Point(116, 279)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(179, 22)
+        Me.ComboBox1.Size = New System.Drawing.Size(179, 21)
         Me.ComboBox1.TabIndex = 73
         Me.ComboBox1.Text = "Open"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(65, 287)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 14)
+        Me.Label9.Size = New System.Drawing.Size(37, 13)
         Me.Label9.TabIndex = 72
         Me.Label9.Text = "Status"
         '
@@ -227,10 +221,9 @@ Partial Class Admin_Correction_Form
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(45, 252)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 14)
+        Me.Label8.Size = New System.Drawing.Size(62, 13)
         Me.Label8.TabIndex = 70
         Me.Label8.Text = "Department"
         '
@@ -245,10 +238,9 @@ Partial Class Admin_Correction_Form
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(45, 217)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(62, 14)
+        Me.Label7.Size = New System.Drawing.Size(58, 13)
         Me.Label7.TabIndex = 68
         Me.Label7.Text = "Last Name"
         '
@@ -263,10 +255,9 @@ Partial Class Admin_Correction_Form
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(34, 179)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 14)
+        Me.Label6.Size = New System.Drawing.Size(69, 13)
         Me.Label6.TabIndex = 66
         Me.Label6.Text = "Middle Name"
         '
@@ -281,10 +272,9 @@ Partial Class Admin_Correction_Form
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(45, 140)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 14)
+        Me.Label5.Size = New System.Drawing.Size(57, 13)
         Me.Label5.TabIndex = 64
         Me.Label5.Text = "First Name"
         '
@@ -299,20 +289,18 @@ Partial Class Admin_Correction_Form
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(29, 93)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 14)
+        Me.Label4.Size = New System.Drawing.Size(73, 13)
         Me.Label4.TabIndex = 62
         Me.Label4.Text = "Employee No."
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(113, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 14)
+        Me.Label3.Size = New System.Drawing.Size(30, 13)
         Me.Label3.TabIndex = 61
         Me.Label3.Text = "Date"
         '
@@ -327,20 +315,18 @@ Partial Class Admin_Correction_Form
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(29, 58)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 14)
+        Me.Label2.Size = New System.Drawing.Size(80, 13)
         Me.Label2.TabIndex = 59
         Me.Label2.Text = "INCIDENT NO."
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(23, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 14)
+        Me.Label1.Size = New System.Drawing.Size(80, 13)
         Me.Label1.TabIndex = 80
         Me.Label1.Text = "Date Submitted"
         '
@@ -356,7 +342,6 @@ Partial Class Admin_Correction_Form
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(303, 800)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -366,7 +351,6 @@ Partial Class Admin_Correction_Form
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(548, 800)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
@@ -376,7 +360,6 @@ Partial Class Admin_Correction_Form
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(467, 800)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
@@ -395,16 +378,14 @@ Partial Class Admin_Correction_Form
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(30, 689)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(79, 14)
+        Me.Label18.Size = New System.Drawing.Size(75, 13)
         Me.Label18.TabIndex = 131
         Me.Label18.Text = "Processed By:"
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(386, 800)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
