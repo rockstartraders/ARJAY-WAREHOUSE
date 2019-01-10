@@ -509,6 +509,9 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\visualization.png" />
+    <None Include="Resources\view_access_log.png" />
+    <None Include="Resources\view-correction_request1.png" />
     <None Include="Resources\view-correction_request.png" />
     <None Include="Resources\Caution.png" />
     <None Include="Resources\admin_guy1.png" />
@@ -516,6 +519,19 @@
     <None Include="Resources\reset_self_help.png" />
     <None Include="Resources\Inventory.png" />
     <None Include="Resources\problem.png" />
+    <None Include="Resources\address-book1.png" />
+    <None Include="Resources\problem1.png" />
+    <None Include="Resources\reset_self_help1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\lockers_admin_panel_first_page.png" />
+    <None Include="Resources\password_reset_admin_panel.png" />
+    <None Include="Resources\admin_panel_view_incident_request.png" />
+    <None Include="Resources\reset_self_help2.png" />
+    <None Include="Resources\Admin_panel_register_new_employee.png" />
+    <None Include="Resources\consignor.png" />
+    <None Include="Resources\add_consignor.png" />
+    <None Include="Resources\add_user_admin_panel.png" />
+    <None Include="Resources\remove-friend.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <Content Include="Resources\team_rocket.gif" />

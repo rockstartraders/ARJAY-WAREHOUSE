@@ -31,13 +31,14 @@ Partial Class Login_As
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(250, 225)
+        Me.Label2.Location = New System.Drawing.Point(246, 279)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(105, 24)
         Me.Label2.TabIndex = 11
@@ -47,7 +48,7 @@ Partial Class Login_As
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(452, 225)
+        Me.Label3.Location = New System.Drawing.Point(448, 279)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(109, 24)
         Me.Label3.TabIndex = 12
@@ -57,7 +58,7 @@ Partial Class Login_As
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(647, 227)
+        Me.Label4.Location = New System.Drawing.Point(643, 281)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(141, 24)
         Me.Label4.TabIndex = 13
@@ -70,7 +71,7 @@ Partial Class Login_As
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Transparent
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_guy
-        Me.Button1.Location = New System.Drawing.Point(32, 35)
+        Me.Button1.Location = New System.Drawing.Point(28, 89)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 193)
         Me.Button1.TabIndex = 14
@@ -81,7 +82,7 @@ Partial Class Login_As
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(86, 225)
+        Me.Label1.Location = New System.Drawing.Point(82, 279)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 24)
         Me.Label1.TabIndex = 15
@@ -94,7 +95,7 @@ Partial Class Login_As
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Transparent
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Dispatch_first_page
-        Me.Button2.Location = New System.Drawing.Point(222, 29)
+        Me.Button2.Location = New System.Drawing.Point(218, 83)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(195, 193)
         Me.Button2.TabIndex = 16
@@ -108,7 +109,7 @@ Partial Class Login_As
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Transparent
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Receiving_first_page
-        Me.Button3.Location = New System.Drawing.Point(409, 29)
+        Me.Button3.Location = New System.Drawing.Point(405, 83)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(195, 193)
         Me.Button3.TabIndex = 17
@@ -122,18 +123,29 @@ Partial Class Login_As
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Transparent
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.timein_out
-        Me.Button4.Location = New System.Drawing.Point(615, 31)
+        Me.Button4.Location = New System.Drawing.Point(611, 85)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(195, 193)
         Me.Button4.TabIndex = 18
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(149, 35)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(532, 47)
+        Me.Label5.TabIndex = 19
+        Me.Label5.Text = "ARJAY WAREHOUSE SYSTEM"
+        '
         'Login_As
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(822, 313)
+        Me.ClientSize = New System.Drawing.Size(822, 367)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
@@ -160,4 +172,5 @@ Partial Class Login_As
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

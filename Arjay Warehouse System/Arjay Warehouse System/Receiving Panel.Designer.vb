@@ -39,15 +39,16 @@ Partial Class Receiving_Panel
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(147, 18)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(132, 86)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 24)
+        Me.Label1.Size = New System.Drawing.Size(78, 26)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Label1"
         '
@@ -55,7 +56,7 @@ Partial Class Receiving_Panel
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(29, 9)
+        Me.Label2.Location = New System.Drawing.Point(14, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(112, 35)
         Me.Label2.TabIndex = 5
@@ -64,7 +65,7 @@ Partial Class Receiving_Panel
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 44)
+        Me.Label3.Location = New System.Drawing.Point(1, 8)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 9
@@ -74,7 +75,7 @@ Partial Class Receiving_Panel
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(32, 57)
+        Me.Label4.Location = New System.Drawing.Point(1, 21)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 10
@@ -209,17 +210,28 @@ Partial Class Receiving_Panel
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Transparent
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.problem
-        Me.Button1.Location = New System.Drawing.Point(101, 136)
+        Me.Button1.Location = New System.Drawing.Point(113, 136)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(199, 146)
         Me.Button1.TabIndex = 1
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(202, 21)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(460, 47)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "RECEIVING DASHBOARD"
         '
         'Receiving_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(859, 625)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -260,4 +272,5 @@ Partial Class Receiving_Panel
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class
