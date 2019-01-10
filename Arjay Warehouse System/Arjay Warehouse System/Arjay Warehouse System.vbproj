@@ -509,6 +509,8 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\x.png" />
+    <None Include="Resources\warehouse-inventory-icon-33851.png" />
     <None Include="Resources\visualization.png" />
     <None Include="Resources\view_access_log.png" />
     <None Include="Resources\view-correction_request1.png" />
@@ -532,6 +534,9 @@
     <None Include="Resources\add_consignor.png" />
     <None Include="Resources\add_user_admin_panel.png" />
     <None Include="Resources\remove-friend.png" />
+    <None Include="Resources\employee_lookup.png" />
+    <None Include="Resources\farmer_x.png" />
+    <None Include="Resources\check.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <Content Include="Resources\team_rocket.gif" />

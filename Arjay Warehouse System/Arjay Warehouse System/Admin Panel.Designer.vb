@@ -23,12 +23,9 @@ Partial Class Admin_Panel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Panel))
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -42,27 +39,26 @@ Partial Class Admin_Panel
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(12, 380)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(187, 47)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "MODIFY / DELETE EMPLOYEE RECORD"
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -84,15 +80,6 @@ Partial Class Admin_Panel
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "HELLO ADMIN"
         '
-        'Button12
-        '
-        Me.Button12.Location = New System.Drawing.Point(12, 447)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(187, 47)
-        Me.Button12.TabIndex = 13
-        Me.Button12.Text = "MODIFY / TERMINATE CONSIGNOR RECORD"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
         'Button13
         '
         Me.Button13.Location = New System.Drawing.Point(12, 500)
@@ -101,15 +88,6 @@ Partial Class Admin_Panel
         Me.Button13.TabIndex = 14
         Me.Button13.Text = "VIEW MODIFICATION FOR CONSIGNORS DATA"
         Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button14
-        '
-        Me.Button14.Location = New System.Drawing.Point(12, 302)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(187, 47)
-        Me.Button14.TabIndex = 15
-        Me.Button14.Text = "MODIFY INVENTORY RECORD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button14.UseVisualStyleBackColor = True
         '
         'Button16
         '
@@ -124,7 +102,7 @@ Partial Class Admin_Panel
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(616, 645)
+        Me.Label8.Location = New System.Drawing.Point(536, 696)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 20)
         Me.Label8.TabIndex = 21
@@ -134,7 +112,7 @@ Partial Class Admin_Panel
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(562, 439)
+        Me.Label3.Location = New System.Drawing.Point(224, 407)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(181, 20)
         Me.Label3.TabIndex = 22
@@ -144,7 +122,7 @@ Partial Class Admin_Panel
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(744, 439)
+        Me.Label4.Location = New System.Drawing.Point(566, 232)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(150, 40)
         Me.Label4.TabIndex = 23
@@ -154,7 +132,7 @@ Partial Class Admin_Panel
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(755, 460)
+        Me.Label5.Location = New System.Drawing.Point(577, 253)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(124, 19)
         Me.Label5.TabIndex = 24
@@ -164,7 +142,7 @@ Partial Class Admin_Panel
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(780, 223)
+        Me.Label7.Location = New System.Drawing.Point(759, 223)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(99, 40)
         Me.Label7.TabIndex = 26
@@ -174,7 +152,7 @@ Partial Class Admin_Panel
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(901, 447)
+        Me.Label6.Location = New System.Drawing.Point(945, 374)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(208, 20)
         Me.Label6.TabIndex = 25
@@ -194,7 +172,7 @@ Partial Class Admin_Panel
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(904, 224)
+        Me.Label10.Location = New System.Drawing.Point(402, 404)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(178, 40)
         Me.Label10.TabIndex = 28
@@ -204,7 +182,7 @@ Partial Class Admin_Panel
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(577, 224)
+        Me.Label11.Location = New System.Drawing.Point(974, 204)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(153, 20)
         Me.Label11.TabIndex = 29
@@ -214,7 +192,7 @@ Partial Class Admin_Panel
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(315, 437)
+        Me.Label12.Location = New System.Drawing.Point(911, 551)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(242, 40)
         Me.Label12.TabIndex = 30
@@ -240,23 +218,98 @@ Partial Class Admin_Panel
         Me.Label14.TabIndex = 32
         Me.Label14.Text = "TERMINATE ACCESS"
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(711, 430)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(220, 40)
+        Me.Label15.TabIndex = 33
+        Me.Label15.Text = "      EMPLOYEE LOOKUP " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "AND MODIFICATION TOOL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(701, 645)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(242, 20)
+        Me.Label16.TabIndex = 34
+        Me.Label16.Text = "MODIFY INVENTORY RECORD"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(23, 427)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(203, 40)
+        Me.Label17.TabIndex = 35
+        Me.Label17.Text = "MODIFY OR TERMINATE " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  CONSIGNOR RECORD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Button18
+        '
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.ForeColor = System.Drawing.Color.Transparent
+        Me.Button18.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.x
+        Me.Button18.Location = New System.Drawing.Point(192, 401)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(22, 23)
+        Me.Button18.TabIndex = 37
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.ForeColor = System.Drawing.Color.Transparent
+        Me.Button17.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.check
+        Me.Button17.Location = New System.Drawing.Point(36, 401)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(21, 23)
+        Me.Button17.TabIndex = 36
+        Me.Button17.UseVisualStyleBackColor = True
+        '
         'Button15
         '
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button15.ForeColor = System.Drawing.Color.Transparent
         Me.Button15.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.logout
-        Me.Button15.Location = New System.Drawing.Point(600, 500)
+        Me.Button15.Location = New System.Drawing.Point(520, 551)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(130, 142)
         Me.Button15.TabIndex = 16
         Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button14
+        '
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.ForeColor = System.Drawing.Color.Transparent
+        Me.Button14.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.warehouse_inventory_icon_33851
+        Me.Button14.Location = New System.Drawing.Point(763, 511)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(124, 131)
+        Me.Button14.TabIndex = 15
+        Me.Button14.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.ForeColor = System.Drawing.Color.Transparent
+        Me.Button12.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.farmer_x
+        Me.Button12.Location = New System.Drawing.Point(54, 282)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(144, 142)
+        Me.Button12.TabIndex = 13
+        Me.Button12.UseVisualStyleBackColor = True
         '
         'Button11
         '
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.ForeColor = System.Drawing.Color.Transparent
         Me.Button11.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.lockers_admin_panel_first_page
-        Me.Button11.Location = New System.Drawing.Point(581, 294)
+        Me.Button11.Location = New System.Drawing.Point(243, 262)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(135, 142)
         Me.Button11.TabIndex = 12
@@ -267,7 +320,7 @@ Partial Class Admin_Panel
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.ForeColor = System.Drawing.Color.Transparent
         Me.Button10.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.add_consignor
-        Me.Button10.Location = New System.Drawing.Point(929, 80)
+        Me.Button10.Location = New System.Drawing.Point(427, 262)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(142, 141)
         Me.Button10.TabIndex = 11
@@ -289,7 +342,7 @@ Partial Class Admin_Panel
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.ForeColor = System.Drawing.Color.Transparent
         Me.Button8.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.visualization
-        Me.Button8.Location = New System.Drawing.Point(377, 294)
+        Me.Button8.Location = New System.Drawing.Point(973, 408)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(154, 140)
         Me.Button8.TabIndex = 9
@@ -300,18 +353,29 @@ Partial Class Admin_Panel
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.ForeColor = System.Drawing.Color.Transparent
         Me.Button7.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.reset_self_help2
-        Me.Button7.Location = New System.Drawing.Point(757, 78)
+        Me.Button7.Location = New System.Drawing.Point(736, 78)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(139, 151)
         Me.Button7.TabIndex = 8
         Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.ForeColor = System.Drawing.Color.Transparent
+        Me.Button6.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.employee_lookup
+        Me.Button6.Location = New System.Drawing.Point(763, 285)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(133, 142)
+        Me.Button6.TabIndex = 5
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.ForeColor = System.Drawing.Color.Transparent
         Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.view_access_log
-        Me.Button5.Location = New System.Drawing.Point(573, 78)
+        Me.Button5.Location = New System.Drawing.Point(970, 58)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(157, 144)
         Me.Button5.TabIndex = 4
@@ -334,7 +398,7 @@ Partial Class Admin_Panel
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.ForeColor = System.Drawing.Color.Transparent
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_panel_view_incident_request
-        Me.Button3.Location = New System.Drawing.Point(929, 302)
+        Me.Button3.Location = New System.Drawing.Point(973, 229)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(142, 142)
         Me.Button3.TabIndex = 2
@@ -356,7 +420,7 @@ Partial Class Admin_Panel
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.Transparent
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.password_reset_admin_panel
-        Me.Button1.Location = New System.Drawing.Point(744, 294)
+        Me.Button1.Location = New System.Drawing.Point(566, 87)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 142)
         Me.Button1.TabIndex = 0
@@ -366,7 +430,12 @@ Partial Class Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1178, 717)
+        Me.ClientSize = New System.Drawing.Size(1178, 743)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button17)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -435,4 +504,9 @@ Partial Class Admin_Panel
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Button17 As System.Windows.Forms.Button
+    Friend WithEvents Button18 As System.Windows.Forms.Button
 End Class
