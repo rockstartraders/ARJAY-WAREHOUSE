@@ -509,6 +509,8 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\worker.png" />
+    <None Include="Resources\vision.png" />
     <None Include="Resources\x.png" />
     <None Include="Resources\warehouse-inventory-icon-33851.png" />
     <None Include="Resources\visualization.png" />
@@ -537,8 +539,17 @@
     <None Include="Resources\employee_lookup.png" />
     <None Include="Resources\farmer_x.png" />
     <None Include="Resources\check.png" />
+    <None Include="Resources\logistic-icon-png-12709.png" />
+    <None Include="Resources\add_account.png" />
+    <None Include="Resources\admin_first_page.png" />
+    <None Include="Resources\receiving.png" />
+    <None Include="Resources\businessman.png" />
+    <None Include="Resources\exit_round.png" />
+    <None Include="Resources\exit_main.png" />
+    <None Include="Resources\close.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
+    <None Include="Resources\skills.png" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

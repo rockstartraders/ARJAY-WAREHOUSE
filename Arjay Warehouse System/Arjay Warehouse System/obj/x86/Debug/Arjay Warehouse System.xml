@@ -15,6 +15,10 @@ ArjayWarehouseSystem
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.add_account">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.add_consignor">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -31,6 +35,10 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.admin_first_page">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.admin_guy">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -43,11 +51,19 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.businessman">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.Caution">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.check">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.close">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -63,6 +79,14 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.exit_main">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.exit_round">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.farmer_x">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -72,6 +96,10 @@ ArjayWarehouseSystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.lockers_admin_panel_first_page">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.logistic_icon_png_12709">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -88,6 +116,10 @@ ArjayWarehouseSystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.problem1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.receiving">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -115,6 +147,10 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.skills">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.team_rocket">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -139,11 +175,19 @@ ArjayWarehouseSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.vision">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.visualization">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.warehouse_inventory_icon_33851">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Arjay_Warehouse_System.My.Resources.Resources.worker">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

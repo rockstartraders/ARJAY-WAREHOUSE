@@ -25,8 +25,6 @@ Partial Class Admin_Panel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Panel))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -42,10 +40,14 @@ Partial Class Admin_Panel
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -79,24 +81,6 @@ Partial Class Admin_Panel
         Me.Label2.Size = New System.Drawing.Size(143, 24)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "HELLO ADMIN"
-        '
-        'Button13
-        '
-        Me.Button13.Location = New System.Drawing.Point(12, 500)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(187, 47)
-        Me.Button13.TabIndex = 14
-        Me.Button13.Text = "VIEW MODIFICATION FOR CONSIGNORS DATA"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Button16
-        '
-        Me.Button16.Location = New System.Drawing.Point(12, 553)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(187, 47)
-        Me.Button16.TabIndex = 17
-        Me.Button16.Text = "VIEW INVENTORY MODIFICATION LOG" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button16.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -248,6 +232,26 @@ Partial Class Admin_Panel
         Me.Label17.TabIndex = 35
         Me.Label17.Text = "MODIFY OR TERMINATE " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  CONSIGNOR RECORD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(237, 673)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(202, 40)
+        Me.Label18.TabIndex = 38
+        Me.Label18.Text = "   VIEW MODIFICATION " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FOR CONSIGNORS DATA" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(23, 673)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(169, 40)
+        Me.Label19.TabIndex = 39
+        Me.Label19.Text = "  VIEW INVENTORY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MODIFICATION LOG"
+        '
         'Button18
         '
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -269,6 +273,17 @@ Partial Class Admin_Panel
         Me.Button17.Size = New System.Drawing.Size(21, 23)
         Me.Button17.TabIndex = 36
         Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.ForeColor = System.Drawing.Color.Transparent
+        Me.Button16.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.logistic_icon_png_12709
+        Me.Button16.Location = New System.Drawing.Point(27, 543)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(150, 127)
+        Me.Button16.TabIndex = 17
+        Me.Button16.UseVisualStyleBackColor = True
         '
         'Button15
         '
@@ -292,6 +307,17 @@ Partial Class Admin_Panel
         Me.Button14.TabIndex = 15
         Me.Button14.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button13
+        '
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button13.ForeColor = System.Drawing.Color.Transparent
+        Me.Button13.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.vision
+        Me.Button13.Location = New System.Drawing.Point(270, 538)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(135, 132)
+        Me.Button13.TabIndex = 14
+        Me.Button13.UseVisualStyleBackColor = True
         '
         'Button12
         '
@@ -431,6 +457,8 @@ Partial Class Admin_Panel
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1178, 743)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Button18)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Label17)
@@ -509,4 +537,6 @@ Partial Class Admin_Panel
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Button17 As System.Windows.Forms.Button
     Friend WithEvents Button18 As System.Windows.Forms.Button
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
 End Class
