@@ -1642,7 +1642,7 @@ Public Class Inventory_Modification
             If axa69 = DialogResult.Yes Then
 
                 con.Open()
-                query = "INSERT INTO `Admin Inventory Modification`(`Correction_ID`, `time_and Date`, `Action_made`, `Processed_by`, `Admin_notes`, `Sys_log`) Values ('" & TextBox3.Text & "','" & Label2.Text & "','" & Label33.Text & "','" & TextBox8.Text & "','" & TextBox25.Text & "','" & TextBox1.Text & "')"
+                query = "INSERT INTO `Admin Inventory Modification`(`Correction_ID`, `time_and_date`, `Action_made`, `Processed_by`, `Admin_notes`, `Sys_log`) Values ('" & TextBox3.Text & "','" & Label2.Text & "','" & Label33.Text & "','" & TextBox8.Text & "','" & TextBox25.Text & "','" & TextBox1.Text & "')"
                 cmd = New MySqlCommand(query, con)
                 cmd.CommandTimeout = 240  'for time out errors
                 rd = cmd.ExecuteReader()

@@ -23,90 +23,110 @@ Partial Class Admin_Self_Help_Password_Reset
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Self_Help_Password_Reset))
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(221, 337)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 38)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "CLOSE"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(129, 337)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 38)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "CHANGE"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 226)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Location = New System.Drawing.Point(127, 213)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(206, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(240, 21)
         Me.TextBox2.TabIndex = 13
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(111, 132)
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(129, 142)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(206, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(240, 21)
         Me.TextBox1.TabIndex = 12
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(161, 189)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(206, 182)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(99, 26)
+        Me.Label3.Size = New System.Drawing.Size(98, 28)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "        ENTER" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NEW PASSWORD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(182, 99)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(208, 125)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 13)
+        Me.Label2.Size = New System.Drawing.Size(68, 14)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "USERNAME"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(166, 40)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(155, 58)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 13)
+        Me.Label1.Size = New System.Drawing.Size(177, 24)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "RESET PASSWORD"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(175, 265)
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(195, 255)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 29)
+        Me.Button3.Size = New System.Drawing.Size(110, 38)
         Me.Button3.TabIndex = 16
-        Me.Button3.Text = "VALIDATE"
+        Me.Button3.Text = "        VALIDATE"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel1
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(256, 333)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(102, 41)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "       CLOSE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.update
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(148, 333)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(102, 41)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "CHANGE"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Admin_Self_Help_Password_Reset
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(442, 480)
+        Me.ClientSize = New System.Drawing.Size(516, 449)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -115,6 +135,7 @@ Partial Class Admin_Self_Help_Password_Reset
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin_Self_Help_Password_Reset"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

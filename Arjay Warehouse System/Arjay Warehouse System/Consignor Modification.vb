@@ -37,4 +37,8 @@
 
 
     End Sub
+
+    Private Sub Consignor_Modification_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

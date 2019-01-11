@@ -509,6 +509,10 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\validate.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\worker2.png" />
+    <None Include="Resources\worker1.png" />
     <None Include="Resources\worker.png" />
     <None Include="Resources\vision.png" />
     <None Include="Resources\x.png" />
@@ -547,9 +551,28 @@
     <None Include="Resources\exit_round.png" />
     <None Include="Resources\exit_main.png" />
     <None Include="Resources\close.png" />
+    <None Include="Resources\d16ee50246d0a41f8cac9656cfa34990.png" />
+    <None Include="Resources\businessman1.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\pass_reset.png" />
+    <None Include="Resources\businessman2.png" />
+    <None Include="Resources\close2.png" />
+    <None Include="Resources\farmer_nga.png" />
+    <None Include="Resources\close3.png" />
+    <None Include="Resources\modify_huge.png" />
+    <None Include="Resources\delete_account.png" />
+    <None Include="Resources\export_to_excel.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\refresh_2.png" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\register.png" />
+    <None Include="Resources\cancel2.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />
+    <None Include="Resources\skills1.png" />
+    <None Include="Resources\skills2.png" />
+    <None Include="Resources\search.png" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

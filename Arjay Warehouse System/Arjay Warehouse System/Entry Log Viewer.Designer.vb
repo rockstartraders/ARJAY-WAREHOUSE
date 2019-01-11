@@ -30,16 +30,17 @@ Partial Class Entry_Log_Viewer
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.Location = New System.Drawing.Point(12, 50)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(828, 493)
@@ -82,48 +83,69 @@ Partial Class Entry_Log_Viewer
         Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader6.Width = 150
         '
-        'Button1
+        'TextBox1
         '
-        Me.Button1.Location = New System.Drawing.Point(557, 549)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 35)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "EXPORT TO EXCEL"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(728, 549)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 35)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "CLOSE"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Location = New System.Drawing.Point(16, 8)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(168, 32)
+        Me.TextBox1.TabIndex = 5
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(354, 8)
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.refresh_2
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(390, 8)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(75, 32)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "Clear"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.search
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Button4.Location = New System.Drawing.Point(190, 8)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(158, 23)
+        Me.Button4.Size = New System.Drawing.Size(185, 32)
         Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Search using Access Type"
+        Me.Button4.Text = "   Search using Access Type"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'Button2
         '
-        Me.TextBox1.Location = New System.Drawing.Point(10, 8)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(728, 549)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(113, 37)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "   CLOSE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.export_to_excel
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(573, 549)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(149, 37)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "EXPORT TO EXCEL"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Entry_Log_Viewer
         '
@@ -136,6 +158,7 @@ Partial Class Entry_Log_Viewer
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entry_Log_Viewer"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
