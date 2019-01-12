@@ -653,6 +653,8 @@
     <None Include="Resources\exit %282%29.png" />
     <None Include="Resources\exit_sign_gif.gif" />
     <None Include="Resources\close5.png" />
+    <None Include="Resources\address-book2.png" />
+    <None Include="Resources\close6.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />

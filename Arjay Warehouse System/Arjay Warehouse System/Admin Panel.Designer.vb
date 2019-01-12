@@ -291,7 +291,7 @@ Partial Class Admin_Panel
         'Button18
         '
         Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button18.ForeColor = System.Drawing.Color.Transparent
+        Me.Button18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button18.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.x
         Me.Button18.Location = New System.Drawing.Point(899, 267)
         Me.Button18.Name = "Button18"
@@ -302,7 +302,7 @@ Partial Class Admin_Panel
         'Button17
         '
         Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button17.ForeColor = System.Drawing.Color.Transparent
+        Me.Button17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button17.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.check
         Me.Button17.Location = New System.Drawing.Point(743, 267)
         Me.Button17.Name = "Button17"
@@ -313,7 +313,7 @@ Partial Class Admin_Panel
         'Button16
         '
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.ForeColor = System.Drawing.Color.Transparent
+        Me.Button16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button16.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.logistic_icon_png_12709
         Me.Button16.Location = New System.Drawing.Point(568, 628)
         Me.Button16.Name = "Button16"
@@ -325,7 +325,7 @@ Partial Class Admin_Panel
         '
         Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.ForeColor = System.Drawing.Color.Transparent
+        Me.Button15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button15.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close5
         Me.Button15.Location = New System.Drawing.Point(1103, 10)
         Me.Button15.Name = "Button15"
@@ -336,7 +336,7 @@ Partial Class Admin_Panel
         'Button14
         '
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.ForeColor = System.Drawing.Color.Transparent
+        Me.Button14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button14.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.warehouse_inventory_icon_33851
         Me.Button14.Location = New System.Drawing.Point(997, 159)
         Me.Button14.Name = "Button14"
@@ -348,7 +348,7 @@ Partial Class Admin_Panel
         'Button13
         '
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.ForeColor = System.Drawing.Color.Transparent
+        Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button13.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.vision
         Me.Button13.Location = New System.Drawing.Point(761, 423)
         Me.Button13.Name = "Button13"
@@ -359,7 +359,7 @@ Partial Class Admin_Panel
         'Button12
         '
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.ForeColor = System.Drawing.Color.Transparent
+        Me.Button12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button12.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.farmer_x
         Me.Button12.Location = New System.Drawing.Point(761, 148)
         Me.Button12.Name = "Button12"
@@ -370,7 +370,7 @@ Partial Class Admin_Panel
         'Button11
         '
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.Color.Transparent
+        Me.Button11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button11.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.lockers_admin_panel_first_page
         Me.Button11.Location = New System.Drawing.Point(261, 536)
         Me.Button11.Name = "Button11"
@@ -381,7 +381,7 @@ Partial Class Admin_Panel
         'Button10
         '
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Transparent
+        Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button10.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.add_consignor
         Me.Button10.Location = New System.Drawing.Point(567, 148)
         Me.Button10.Name = "Button10"
@@ -392,7 +392,7 @@ Partial Class Admin_Panel
         'Button9
         '
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.Color.Transparent
+        Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button9.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.remove_friend
         Me.Button9.Location = New System.Drawing.Point(274, 334)
         Me.Button9.Name = "Button9"
@@ -403,7 +403,7 @@ Partial Class Admin_Panel
         'Button8
         '
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.Color.Transparent
+        Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button8.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.visualization
         Me.Button8.Location = New System.Drawing.Point(745, 621)
         Me.Button8.Name = "Button8"
@@ -414,7 +414,7 @@ Partial Class Admin_Panel
         'Button7
         '
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.Color.Transparent
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button7.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.reset_self_help2
         Me.Button7.Location = New System.Drawing.Point(274, 717)
         Me.Button7.Name = "Button7"
@@ -425,7 +425,7 @@ Partial Class Admin_Panel
         'Button6
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Transparent
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button6.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.employee_lookup
         Me.Button6.Location = New System.Drawing.Point(276, 123)
         Me.Button6.Name = "Button6"
@@ -436,7 +436,7 @@ Partial Class Admin_Panel
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.view_access_log
         Me.Button5.Location = New System.Drawing.Point(552, 423)
         Me.Button5.Name = "Button5"
@@ -447,7 +447,7 @@ Partial Class Admin_Panel
         'Button4
         '
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Admin_panel_register_new_employee
         Me.Button4.Location = New System.Drawing.Point(48, 126)
         Me.Button4.Name = "Button4"
@@ -459,7 +459,7 @@ Partial Class Admin_Panel
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_panel_view_incident_request
         Me.Button3.Location = New System.Drawing.Point(54, 726)
         Me.Button3.Name = "Button3"
@@ -470,7 +470,7 @@ Partial Class Admin_Panel
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.add_user_admin_panel
         Me.Button2.Location = New System.Drawing.Point(45, 334)
         Me.Button2.Name = "Button2"
@@ -481,7 +481,7 @@ Partial Class Admin_Panel
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.password_reset_admin_panel
         Me.Button1.Location = New System.Drawing.Point(39, 516)
         Me.Button1.Name = "Button1"
@@ -493,6 +493,7 @@ Partial Class Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1191, 930)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label22)

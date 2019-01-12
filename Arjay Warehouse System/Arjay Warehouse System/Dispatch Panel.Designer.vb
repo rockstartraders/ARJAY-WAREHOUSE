@@ -31,15 +31,16 @@ Partial Class Dispatch_Panel
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -122,54 +123,6 @@ Partial Class Dispatch_Panel
         Me.Label7.TabIndex = 21
         Me.Label7.Text = " VIEW CORRECTION " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  REQUEST STATUS"
         '
-        'Button4
-        '
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
-        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.address_book1
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.Location = New System.Drawing.Point(92, 337)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(133, 145)
-        Me.Button4.TabIndex = 7
-        Me.Button4.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
-        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.reset_self_help1
-        Me.Button3.Location = New System.Drawing.Point(336, 337)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(140, 145)
-        Me.Button3.TabIndex = 2
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.view_correction_request1
-        Me.Button2.Location = New System.Drawing.Point(579, 337)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 145)
-        Me.Button2.TabIndex = 1
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.problem1
-        Me.Button1.Location = New System.Drawing.Point(94, 129)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(140, 154)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -190,10 +143,31 @@ Partial Class Dispatch_Panel
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "INVOICE ARCHIVE"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(240, 22)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(450, 47)
+        Me.Label11.TabIndex = 26
+        Me.Label11.Text = "DISPATCH DASHBOARD"
+        '
+        'Button7
+        '
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button7.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close6
+        Me.Button7.Location = New System.Drawing.Point(380, 541)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 85)
+        Me.Button7.TabIndex = 27
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Button6
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Transparent
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button6.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.seo
         Me.Button6.Location = New System.Drawing.Point(589, 146)
         Me.Button6.Name = "Button6"
@@ -205,7 +179,7 @@ Partial Class Dispatch_Panel
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Inventory
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button5.Location = New System.Drawing.Point(336, 146)
@@ -214,22 +188,62 @@ Partial Class Dispatch_Panel
         Me.Button5.TabIndex = 22
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Label11
+        'Button4
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(240, 22)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(450, 47)
-        Me.Label11.TabIndex = 26
-        Me.Label11.Text = "DISPATCH DASHBOARD"
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.address_book1
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button4.Location = New System.Drawing.Point(92, 337)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(133, 145)
+        Me.Button4.TabIndex = 7
+        Me.Button4.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.reset_self_help1
+        Me.Button3.Location = New System.Drawing.Point(336, 337)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(140, 145)
+        Me.Button3.TabIndex = 2
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.view_correction_request1
+        Me.Button2.Location = New System.Drawing.Point(579, 337)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(111, 145)
+        Me.Button2.TabIndex = 1
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.problem1
+        Me.Button1.Location = New System.Drawing.Point(94, 129)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(140, 154)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Dispatch_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(859, 625)
+        Me.ClientSize = New System.Drawing.Size(859, 643)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label6)
@@ -273,4 +287,5 @@ Partial Class Dispatch_Panel
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

@@ -33,13 +33,14 @@ Partial Class Receiving_Panel
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -142,10 +143,31 @@ Partial Class Receiving_Panel
         Me.Label10.TabIndex = 18
         Me.Label10.Text = "             SUBMIT " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CORRECTION REQUEST" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(202, 21)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(460, 47)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "RECEIVING DASHBOARD"
+        '
+        'Button7
+        '
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button7.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close7
+        Me.Button7.Location = New System.Drawing.Point(401, 554)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 80)
+        Me.Button7.TabIndex = 21
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Button6
         '
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Transparent
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button6.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.seo
         Me.Button6.Location = New System.Drawing.Point(312, 354)
         Me.Button6.Name = "Button6"
@@ -157,7 +179,7 @@ Partial Class Receiving_Panel
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Inventory
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button5.Location = New System.Drawing.Point(337, 145)
@@ -168,21 +190,21 @@ Partial Class Receiving_Panel
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.Control
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
-        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.address_book
-        Me.Button4.Location = New System.Drawing.Point(117, 363)
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.address_book2
+        Me.Button4.Location = New System.Drawing.Point(149, 371)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(195, 140)
+        Me.Button4.Size = New System.Drawing.Size(127, 131)
         Me.Button4.TabIndex = 8
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.reset_self_help
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button3.Location = New System.Drawing.Point(583, 146)
@@ -195,7 +217,7 @@ Partial Class Receiving_Panel
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.view_correction_request
         Me.Button2.Location = New System.Drawing.Point(530, 353)
         Me.Button2.Name = "Button2"
@@ -208,7 +230,7 @@ Partial Class Receiving_Panel
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.problem
         Me.Button1.Location = New System.Drawing.Point(113, 136)
         Me.Button1.Name = "Button1"
@@ -216,21 +238,13 @@ Partial Class Receiving_Panel
         Me.Button1.TabIndex = 1
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(202, 21)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(460, 47)
-        Me.Label11.TabIndex = 20
-        Me.Label11.Text = "RECEIVING DASHBOARD"
-        '
         'Receiving_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(859, 625)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(859, 646)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -273,4 +287,5 @@ Partial Class Receiving_Panel
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

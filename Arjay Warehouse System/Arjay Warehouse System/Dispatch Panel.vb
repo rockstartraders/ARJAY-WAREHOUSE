@@ -60,4 +60,8 @@ Public Class Dispatch_Panel
 
 
     End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+
+    End Sub
 End Class
