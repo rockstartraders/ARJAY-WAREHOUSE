@@ -188,4 +188,8 @@ Public Class Password_Reset_for_Receiving_Personnel
 
 
     End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+
+    End Sub
 End Class

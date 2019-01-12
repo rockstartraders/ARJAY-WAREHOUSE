@@ -26,12 +26,13 @@ Partial Class Login_As
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label2
@@ -64,20 +65,6 @@ Partial Class Login_As
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "TIME KEEPING"
         '
-        'Button1
-        '
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_guy
-        Me.Button1.Location = New System.Drawing.Point(28, 89)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(195, 193)
-        Me.Button1.TabIndex = 14
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -88,19 +75,26 @@ Partial Class Login_As
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "ADMIN"
         '
-        'Button2
+        'Label5
         '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Dispatch_first_page
-        Me.Button2.Location = New System.Drawing.Point(218, 83)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(195, 193)
-        Me.Button2.TabIndex = 16
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(149, 35)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(532, 47)
+        Me.Label5.TabIndex = 19
+        Me.Label5.Text = "ARJAY WAREHOUSE SYSTEM"
+        '
+        'Button5
+        '
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close4
+        Me.Button5.Location = New System.Drawing.Point(373, 341)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 71)
+        Me.Button5.TabIndex = 20
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -130,21 +124,40 @@ Partial Class Login_As
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Label5
+        'Button2
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(149, 35)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(532, 47)
-        Me.Label5.TabIndex = 19
-        Me.Label5.Text = "ARJAY WAREHOUSE SYSTEM"
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Dispatch_first_page
+        Me.Button2.Location = New System.Drawing.Point(218, 83)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(195, 193)
+        Me.Button2.TabIndex = 16
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_guy
+        Me.Button1.Location = New System.Drawing.Point(28, 89)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(195, 193)
+        Me.Button1.TabIndex = 14
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Login_As
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(822, 367)
+        Me.ClientSize = New System.Drawing.Size(822, 433)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
@@ -173,4 +186,5 @@ Partial Class Login_As
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

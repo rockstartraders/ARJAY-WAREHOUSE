@@ -45,9 +45,6 @@ Partial Class Locker_Registration_Form
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
@@ -57,14 +54,19 @@ Partial Class Locker_Registration_Form
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
-        Me.ListView1.Location = New System.Drawing.Point(12, 40)
+        Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView1.Location = New System.Drawing.Point(14, 55)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(828, 366)
+        Me.ListView1.Size = New System.Drawing.Size(835, 394)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -77,274 +79,309 @@ Partial Class Locker_Registration_Form
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Employee No."
-        Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader2.Width = 100
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "First Name"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader3.Width = 120
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Middle Name"
-        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader4.Width = 120
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Last Name"
-        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader5.Width = 120
         '
         'ColumnHeader6
         '
         Me.ColumnHeader6.Text = "Department"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader6.Width = 120
         '
         'ColumnHeader7
         '
         Me.ColumnHeader7.Text = "Issued By:"
-        Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader7.Width = 170
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(374, 473)
+        Me.Label1.Location = New System.Drawing.Point(312, 483)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 13)
+        Me.Label1.Size = New System.Drawing.Size(64, 14)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Locker No."
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(255, 524)
+        Me.Label2.Location = New System.Drawing.Point(184, 525)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 13)
+        Me.Label2.Size = New System.Drawing.Size(80, 14)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Employee No."
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(269, 571)
+        Me.Label3.Location = New System.Drawing.Point(201, 561)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 13)
+        Me.Label3.Size = New System.Drawing.Size(63, 14)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "First Name"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(259, 614)
+        Me.Label4.Location = New System.Drawing.Point(186, 600)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 13)
+        Me.Label4.Size = New System.Drawing.Size(78, 14)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Middle Name"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(266, 662)
+        Me.Label5.Location = New System.Drawing.Point(202, 642)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 13)
+        Me.Label5.Size = New System.Drawing.Size(62, 14)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Last Name"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(262, 705)
+        Me.Label6.Location = New System.Drawing.Point(195, 684)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 13)
+        Me.Label6.Size = New System.Drawing.Size(69, 14)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Department"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(266, 746)
+        Me.Label7.Location = New System.Drawing.Point(208, 721)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(56, 13)
+        Me.Label7.Size = New System.Drawing.Size(56, 14)
         Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Issued By:"
+        Me.Label7.Text = "Issued By"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(440, 466)
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(382, 476)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(113, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(131, 21)
         Me.TextBox1.TabIndex = 8
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(334, 564)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(270, 554)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(296, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(345, 21)
         Me.TextBox2.TabIndex = 9
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(334, 607)
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(270, 593)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(296, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(345, 21)
         Me.TextBox3.TabIndex = 10
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(334, 655)
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(270, 635)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(296, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(345, 21)
         Me.TextBox4.TabIndex = 11
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(334, 698)
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(270, 677)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(296, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(345, 21)
         Me.TextBox5.TabIndex = 12
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(334, 743)
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox6.Location = New System.Drawing.Point(270, 714)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(296, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(345, 21)
         Me.TextBox6.TabIndex = 13
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(335, 515)
+        Me.ComboBox1.Location = New System.Drawing.Point(270, 517)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(295, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(343, 22)
         Me.ComboBox1.TabIndex = 14
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(346, 823)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "ASSIGN"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(427, 823)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "REMOVE"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(508, 823)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "EXIT"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 430)
+        Me.Label8.Location = New System.Drawing.Point(10, 485)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
+        Me.Label8.Size = New System.Drawing.Size(41, 14)
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "Label8"
         Me.Label8.Visible = False
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(12, 466)
+        Me.TextBox7.Location = New System.Drawing.Point(14, 502)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(61, 21)
         Me.TextBox7.TabIndex = 19
         Me.TextBox7.Text = "Assigned A Locker"
         Me.TextBox7.Visible = False
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(12, 492)
+        Me.TextBox8.Location = New System.Drawing.Point(14, 530)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(53, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(61, 21)
         Me.TextBox8.TabIndex = 20
         Me.TextBox8.Text = "Unassigned a Locker"
         Me.TextBox8.Visible = False
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(15, 524)
+        Me.TextBox9.Location = New System.Drawing.Point(17, 564)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(58, 21)
         Me.TextBox9.TabIndex = 21
         Me.TextBox9.Visible = False
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(15, 550)
+        Me.TextBox10.Location = New System.Drawing.Point(17, 592)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(58, 21)
         Me.TextBox10.TabIndex = 22
         Me.TextBox10.Visible = False
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(15, 586)
+        Me.TextBox11.Location = New System.Drawing.Point(17, 631)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox11.Size = New System.Drawing.Size(58, 21)
         Me.TextBox11.TabIndex = 23
         Me.TextBox11.Visible = False
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(15, 614)
+        Me.TextBox12.Location = New System.Drawing.Point(17, 661)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox12.Size = New System.Drawing.Size(58, 21)
         Me.TextBox12.TabIndex = 24
         Me.TextBox12.Visible = False
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(15, 655)
+        Me.TextBox13.Location = New System.Drawing.Point(17, 705)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox13.Size = New System.Drawing.Size(58, 21)
         Me.TextBox13.TabIndex = 25
         Me.TextBox13.Visible = False
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(15, 698)
+        Me.TextBox14.Location = New System.Drawing.Point(17, 752)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(50, 20)
+        Me.TextBox14.Size = New System.Drawing.Size(58, 21)
         Me.TextBox14.TabIndex = 26
         Me.TextBox14.Visible = False
         '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel10
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(496, 772)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(77, 37)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "EXIT"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.database_delete_small
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(395, 772)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(95, 37)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "REMOVE"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.checked
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(299, 772)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 37)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "ASSIGN"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(339, 18)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(209, 24)
+        Me.Label9.TabIndex = 27
+        Me.Label9.Text = "Locker Issuance Form"
+        '
         'Locker_Registration_Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(864, 881)
+        Me.ClientSize = New System.Drawing.Size(867, 848)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.TextBox12)
@@ -372,6 +409,8 @@ Partial Class Locker_Registration_Form
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListView1)
+        Me.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Locker_Registration_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -414,4 +453,5 @@ Partial Class Locker_Registration_Form
     Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class

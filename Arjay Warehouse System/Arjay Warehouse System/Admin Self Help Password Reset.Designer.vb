@@ -56,7 +56,7 @@ Partial Class Admin_Self_Help_Password_Reset
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(209, 155)
+        Me.Label3.Location = New System.Drawing.Point(195, 155)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(98, 28)
         Me.Label3.TabIndex = 11

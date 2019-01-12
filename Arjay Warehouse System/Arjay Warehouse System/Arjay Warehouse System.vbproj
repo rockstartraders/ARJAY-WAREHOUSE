@@ -513,6 +513,12 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\update4.png" />
+    <None Include="Resources\validate4.png" />
+    <None Include="Resources\update3.png" />
+    <None Include="Resources\validate3.png" />
+    <None Include="Resources\update2.png" />
+    <None Include="Resources\validate2.png" />
     <None Include="Resources\web-design1.png" />
     <None Include="Resources\web-design.png" />
     <None Include="Resources\website3.png" />
@@ -621,6 +627,17 @@
     <None Include="Resources\cancel18.png" />
     <None Include="Resources\paper-plane1.png" />
     <None Include="Resources\diskette.png" />
+    <None Include="Resources\cancel19.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\iconfinder_document-print-preview_232171.png" />
+    <None Include="Resources\cancel20.png" />
+    <None Include="Resources\cancel21.png" />
+    <None Include="Resources\database_delete_small.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\close4.png" />
+    <None Include="Resources\cancel22.png" />
+    <None Include="Resources\cancel23.png" />
+    <None Include="Resources\cancel24.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />

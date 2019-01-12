@@ -185,4 +185,12 @@ Public Class Password_Reset_for_an_Admin
         con.Close()
 
     End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
+    End Sub
 End Class
