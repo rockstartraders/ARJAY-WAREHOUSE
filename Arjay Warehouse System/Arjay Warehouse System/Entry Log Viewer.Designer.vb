@@ -35,13 +35,14 @@ Partial Class Entry_Log_Viewer
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ListView1
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
         Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.Location = New System.Drawing.Point(12, 50)
+        Me.ListView1.Location = New System.Drawing.Point(15, 102)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(828, 493)
         Me.ListView1.TabIndex = 0
@@ -56,53 +57,47 @@ Partial Class Entry_Log_Viewer
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Username"
-        Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader2.Width = 150
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Computer Name"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader3.Width = 150
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "IP Address"
-        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader4.Width = 150
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Access Used"
-        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader5.Width = 227
         '
         'ColumnHeader6
         '
-        Me.ColumnHeader6.Text = "Login Outcome"
-        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader6.Text = "Login Output"
         Me.ColumnHeader6.Width = 150
         '
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(16, 8)
-        Me.TextBox1.Multiline = True
+        Me.TextBox1.Location = New System.Drawing.Point(14, 71)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 32)
+        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
         Me.TextBox1.TabIndex = 5
         '
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.refresh_2
+        Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.eraser_maliit1
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(390, 8)
+        Me.Button3.Location = New System.Drawing.Point(379, 64)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 32)
+        Me.Button3.Size = New System.Drawing.Size(70, 32)
         Me.Button3.TabIndex = 7
-        Me.Button3.Text = "Clear"
+        Me.Button3.Text = "CLEAR"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -112,7 +107,7 @@ Partial Class Entry_Log_Viewer
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.search
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button4.Location = New System.Drawing.Point(190, 8)
+        Me.Button4.Location = New System.Drawing.Point(188, 64)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(185, 32)
         Me.Button4.TabIndex = 6
@@ -126,7 +121,7 @@ Partial Class Entry_Log_Viewer
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(728, 549)
+        Me.Button2.Location = New System.Drawing.Point(730, 610)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(113, 37)
         Me.Button2.TabIndex = 2
@@ -139,7 +134,7 @@ Partial Class Entry_Log_Viewer
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.export_to_excel
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(573, 549)
+        Me.Button1.Location = New System.Drawing.Point(575, 610)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(149, 37)
         Me.Button1.TabIndex = 1
@@ -147,11 +142,22 @@ Partial Class Entry_Log_Viewer
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(375, 23)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(162, 24)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "View Access Log"
+        '
         'Entry_Log_Viewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(855, 596)
+        Me.ClientSize = New System.Drawing.Size(855, 659)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TextBox1)
@@ -179,4 +185,5 @@ Partial Class Entry_Log_Viewer
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

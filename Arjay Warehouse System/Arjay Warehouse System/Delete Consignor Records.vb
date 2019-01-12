@@ -87,6 +87,13 @@ Public Class Delete_Consignor_Records
 
     End Sub
 
+    Private Sub ComboBox2_DrawItem(ByVal sender As Object, ByVal e As System.Windows.Forms.DrawItemEventArgs) Handles ComboBox2.DrawItem
+
+
+      
+    End Sub
+
+
     Private Sub ComboBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox2.SelectedIndexChanged
 
         ' < -- Auto Fill Event ComboBox2 -->
@@ -226,6 +233,10 @@ Public Class Delete_Consignor_Records
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub ComboBox2_StyleChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox2.StyleChanged
 
     End Sub
 End Class
