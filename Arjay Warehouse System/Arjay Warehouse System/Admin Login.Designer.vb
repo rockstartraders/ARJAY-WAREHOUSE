@@ -61,7 +61,7 @@ Partial Class Admin_Login
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(105, 123)
+        Me.Label3.Location = New System.Drawing.Point(101, 123)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(57, 14)
         Me.Label3.TabIndex = 34
@@ -71,7 +71,7 @@ Partial Class Admin_Login
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(102, 89)
+        Me.Label2.Location = New System.Drawing.Point(99, 89)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(59, 14)
         Me.Label2.TabIndex = 33
@@ -158,7 +158,7 @@ Partial Class Admin_Login
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.Location = New System.Drawing.Point(255, 154)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 43)
+        Me.Button2.Size = New System.Drawing.Size(94, 40)
         Me.Button2.TabIndex = 36
         Me.Button2.Text = "Cancel"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -172,7 +172,7 @@ Partial Class Admin_Login
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(164, 154)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 43)
+        Me.Button1.Size = New System.Drawing.Size(85, 40)
         Me.Button1.TabIndex = 35
         Me.Button1.Text = "Login"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight

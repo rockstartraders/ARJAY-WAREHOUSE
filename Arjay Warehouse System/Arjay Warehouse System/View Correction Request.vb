@@ -159,5 +159,14 @@ Public Class View_Correction_Request
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+
+
+        ' < -- Combobox Not editable after --> 
+
+        ComboBox1.Enabled = False
+        ComboBox2.Enabled = False
+
+
+
     End Sub
 End Class

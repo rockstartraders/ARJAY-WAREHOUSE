@@ -190,7 +190,7 @@ Partial Class Inventory_Modification_Events
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel10
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(374, 693)
+        Me.Button1.Location = New System.Drawing.Point(808, 693)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(83, 41)
         Me.Button1.TabIndex = 11
