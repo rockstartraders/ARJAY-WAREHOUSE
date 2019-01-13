@@ -69,52 +69,53 @@ Public Class Create_A_Dispatch_Personnel_Account
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
 
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
 
-        Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
+            Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
 
-        con.Open()
-        Dim query As String
-        query = "Insert Into `dispatch access`(`emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password`) values ('" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
-        MsgBox(" New Access has Been Created for A Dispatch Personnel ")
-        con.Close()
+            con.Open()
+            Dim query As String
+            query = "Insert Into `dispatch access`(`emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password`) values ('" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
+            MsgBox(" New Access has Been Created for A Dispatch Personnel ")
+            con.Close()
 
-        '<-- for logging purposes 
+            '<-- for logging purposes 
 
-        con.Open()
-        query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & Label1.Text & "','" & Label10.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox7.Text & "')"
-        cmd = New MySqlCommand(query, con)
-        cmd.CommandTimeout = 240  'for time out errors
-        rd = cmd.ExecuteReader()
+            con.Open()
+            query = "INSERT INTO `Admin changes log`(`action_made`, `date_process`, `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `done_by`) values ('" & Label1.Text & "','" & Label10.Text & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox1.Text & "','" & TextBox7.Text & "')"
+            cmd = New MySqlCommand(query, con)
+            cmd.CommandTimeout = 240  'for time out errors
+            rd = cmd.ExecuteReader()
 
-        con.Close()
+            con.Close()
 
-        '<-- Will clear and reload the combobox empty
+            '<-- Will clear and reload the combobox empty
 
-        Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
-        Dim table As New DataTable()
+            Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
+            Dim table As New DataTable()
 
 
-        adapter.Fill(table)
-        ComboBox1.DataSource = table
-        ComboBox1.ValueMember = "emp_no"
-        ComboBox1.DisplayMember = "emp_no"
+            adapter.Fill(table)
+            ComboBox1.DataSource = table
+            ComboBox1.ValueMember = "emp_no"
+            ComboBox1.DisplayMember = "emp_no"
 
-        ' <-- Will clear combobox
+            ' <-- Will clear combobox
 
-        TextBox1.Text = ""
-        TextBox2.Text = ""
-        TextBox3.Text = ""
-        TextBox4.Text = ""
-        ComboBox1.Text = ""
-        TextBox5.Text = ""
-        TextBox6.Text = ""
+            TextBox1.Text = ""
+            TextBox2.Text = ""
+            TextBox3.Text = ""
+            TextBox4.Text = ""
+            ComboBox1.Text = ""
+            TextBox5.Text = ""
+            TextBox6.Text = ""
 
 
     End Sub
@@ -144,7 +145,7 @@ Public Class Create_A_Dispatch_Personnel_Account
         Dim table As New DataTable()
         Dim da As New SqlClient.SqlDataAdapter
         Dim rd As MySqlDataReader
-        'Dim reader As SqlClient.MySqlDataReader
+
         Try
 
 
@@ -153,17 +154,27 @@ Public Class Create_A_Dispatch_Personnel_Account
             query = "select * from  `employee record` where `emp_no` ='" + ComboBox1.Text + "'"
             cmd = New MySqlCommand(query, con)
             rd = cmd.ExecuteReader
+
             While rd.Read
                 TextBox2.Text = rd.Item("f_name")
                 TextBox3.Text = rd.Item("m_name")
                 TextBox4.Text = rd.Item("l_name")
                 TextBox1.Text = rd.Item("dept")
 
+
             End While
             con.Close()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+
+
+
+      
+   
+
+        
+
     End Sub
 
     Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
@@ -228,6 +239,33 @@ Public Class Create_A_Dispatch_Personnel_Account
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
+    End Sub
+
+    Private Sub Label11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedValueChanged
+
+       
+
+    End Sub
+
+    Private Sub Label8_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label8.TextChanged
+
+      
+
+    End Sub
+
+    Private Sub Label8_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label8.Validated
+
+    End Sub
+
+    Private Sub TextBox1_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox1.Validated
+
+
+        
 
     End Sub
 End Class

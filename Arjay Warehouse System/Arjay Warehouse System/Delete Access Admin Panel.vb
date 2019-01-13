@@ -1,11 +1,15 @@
 ﻿Public Class Delete_Access_Admin_Panel
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         Dim aaaakabb As New Delete_Access_for_an_ADMIN_admin   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         aaaakabb.Show()
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub
@@ -30,10 +34,15 @@
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
+
         Dim aaaakabbb As New Delete_Access_for_Dispatch_Admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         aaaakabbb.Show()
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
 
@@ -41,10 +50,15 @@
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
+
         Dim aaaakabbbd As New Delete_Access_for_Receiving_admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         aaaakabbbd.Show()
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub

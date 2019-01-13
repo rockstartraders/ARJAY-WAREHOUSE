@@ -69,6 +69,8 @@ Public Class Invoice_Copy
 
     Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
 
+
+
         '< -- Mouse Click Event --> 
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -103,6 +105,8 @@ Public Class Invoice_Copy
 
     Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '< -- Mouse Click Event --> 
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -133,6 +137,7 @@ Public Class Invoice_Copy
 
             '<-- EOL for this Function -- > 
 
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
             con.Close()
         End If
@@ -145,11 +150,13 @@ Public Class Invoice_Copy
 
 
        
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         ' < -- Print -->
 
         PrintDocument1.Print()
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
        
 
@@ -216,11 +223,13 @@ Public Class Invoice_Copy
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
-        
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         PrintPreviewDialog1.Show()
 
-      
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
    
 
 

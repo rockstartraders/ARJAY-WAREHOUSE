@@ -49,6 +49,9 @@ Public Class Inventory_Modification_Events
     Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
 
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
+
         '< -- Mouse Click Event --> 
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -76,6 +79,9 @@ Public Class Inventory_Modification_Events
 
 
         '<-- EOL for this Function -- > 
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
 
 
         con.Close()

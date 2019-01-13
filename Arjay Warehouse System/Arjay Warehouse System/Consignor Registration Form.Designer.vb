@@ -60,7 +60,7 @@ Partial Class Consignor_Registration_Form
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(57, 90)
+        Me.Label1.Location = New System.Drawing.Point(81, 94)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(75, 14)
         Me.Label1.TabIndex = 0
@@ -370,6 +370,7 @@ Partial Class Consignor_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(894, 737)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.TextBox15)

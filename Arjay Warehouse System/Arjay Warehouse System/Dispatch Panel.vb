@@ -17,9 +17,13 @@ Public Class Dispatch_Panel
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+
+
         Dim ah As New Correction_Ticket    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
         ah.Show()
+        Me.Cursor = Cursors.Default
 
 
 
@@ -29,8 +33,9 @@ Public Class Dispatch_Panel
 
         Dim ahaa As New View_Correction_Request   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
         ahaa.Show()
-
+        Me.Cursor = Cursors.Default
 
     End Sub
 
@@ -45,8 +50,9 @@ Public Class Dispatch_Panel
 
         Dim ahaaa As New Dispatch_Self_Help_Reset_Password   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
         ahaaa.Show()
-
+        Me.Cursor = Cursors.Default
        
 
 
@@ -56,12 +62,43 @@ Public Class Dispatch_Panel
 
         Dim ahaaahz As New Consignors_Address_Book   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
+        Me.Cursor = Cursors.WaitCursor  ' < -- Curson Wait function -->
         ahaaahz.Show()
-
+        Me.Cursor = Cursors.Default
 
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+
+
+        Dim asuka As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+
+        If asuka = DialogResult.Yes Then
+
+
+            Me.Hide()
+            Login_As.ShowDialog()
+            Me.Dispose()
+            Me.Close()
+
+
+
+        End If
+
+    End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+
+
+        Dim no_more_brain_left_promise_again As New Invoice_Copy   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Cursor = Cursors.WaitCursor  ' < -- Curson Wait function -->
+        no_more_brain_left_promise_again.Show()
+        Me.Cursor = Cursors.Default
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
     End Sub
 End Class

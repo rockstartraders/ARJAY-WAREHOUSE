@@ -142,6 +142,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(308, 21)
         Me.TextBox9.TabIndex = 72
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
@@ -171,6 +172,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(308, 21)
         Me.TextBox8.TabIndex = 69
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox6
         '
@@ -181,6 +183,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(308, 21)
         Me.TextBox6.TabIndex = 68
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
@@ -191,6 +194,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(308, 21)
         Me.TextBox5.TabIndex = 67
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -201,6 +205,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(308, 21)
         Me.TextBox4.TabIndex = 66
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
@@ -212,6 +217,7 @@ Partial Class Delete_Consignor_Records
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(308, 78)
         Me.TextBox3.TabIndex = 65
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -335,6 +341,7 @@ Partial Class Delete_Consignor_Records
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(581, 822)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)

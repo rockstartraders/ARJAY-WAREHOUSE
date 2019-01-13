@@ -46,11 +46,13 @@ Public Class Update_Consignor_Record
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         '<-- Update Function --> 
 
         If TextBox7.Text = "" Then
             MsgBox("Sorry But You Need To Indicate The Changes Made Onto The Consignors Information And Please Make It Detailed.", 0 + 64)
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         Else
 
@@ -87,6 +89,7 @@ Public Class Update_Consignor_Record
             TextBox8.Text = ""
             TextBox7.Text = ""
 
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         End If
 

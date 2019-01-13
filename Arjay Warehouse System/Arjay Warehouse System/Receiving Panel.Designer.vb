@@ -195,9 +195,9 @@ Partial Class Receiving_Panel
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.address_book2
-        Me.Button4.Location = New System.Drawing.Point(149, 371)
+        Me.Button4.Location = New System.Drawing.Point(117, 353)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(127, 131)
+        Me.Button4.Size = New System.Drawing.Size(170, 149)
         Me.Button4.TabIndex = 8
         Me.Button4.UseVisualStyleBackColor = False
         '

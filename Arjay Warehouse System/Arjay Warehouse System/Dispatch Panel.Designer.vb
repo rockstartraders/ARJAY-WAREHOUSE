@@ -174,7 +174,7 @@ Partial Class Dispatch_Panel
         Me.Button6.Size = New System.Drawing.Size(135, 137)
         Me.Button6.TabIndex = 23
         Me.Button6.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button5
         '
@@ -186,7 +186,7 @@ Partial Class Dispatch_Panel
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(144, 137)
         Me.Button5.TabIndex = 22
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -200,7 +200,7 @@ Partial Class Dispatch_Panel
         Me.Button4.Size = New System.Drawing.Size(133, 145)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
@@ -211,7 +211,7 @@ Partial Class Dispatch_Panel
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(140, 145)
         Me.Button3.TabIndex = 2
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -222,7 +222,7 @@ Partial Class Dispatch_Panel
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(111, 145)
         Me.Button2.TabIndex = 1
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -234,7 +234,7 @@ Partial Class Dispatch_Panel
         Me.Button1.Size = New System.Drawing.Size(140, 154)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Dispatch_Panel
         '

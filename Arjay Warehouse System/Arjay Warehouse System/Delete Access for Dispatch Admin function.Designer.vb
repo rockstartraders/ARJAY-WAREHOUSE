@@ -65,6 +65,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(220, 21)
         Me.TextBox7.TabIndex = 108
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -85,6 +86,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(220, 21)
         Me.TextBox1.TabIndex = 106
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -123,6 +125,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(220, 21)
         Me.TextBox5.TabIndex = 102
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -133,6 +136,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(220, 21)
         Me.TextBox4.TabIndex = 101
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
@@ -143,6 +147,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(220, 21)
         Me.TextBox3.TabIndex = 100
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
         '
@@ -153,6 +158,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(220, 21)
         Me.TextBox2.TabIndex = 99
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -219,7 +225,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(83, 37)
+        Me.Label1.Location = New System.Drawing.Point(98, 37)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(257, 24)
         Me.Label1.TabIndex = 90
@@ -257,6 +263,7 @@ Partial Class Delete_Access_for_Dispatch_Admin_function
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(413, 445)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)

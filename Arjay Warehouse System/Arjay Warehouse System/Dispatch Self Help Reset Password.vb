@@ -52,6 +52,7 @@ Public Class Dispatch_Self_Help_Reset_Password
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         Dim username As String
         Dim newpassword As String
@@ -83,6 +84,9 @@ Public Class Dispatch_Self_Help_Reset_Password
             If a = DialogResult.OK Then
 
                 TextBox2.Text = ""
+
+                Me.Cursor = Cursors.Default  ' < -- Return to default Cursor -->
+
 
                 con.Close()
 
@@ -137,6 +141,7 @@ Public Class Dispatch_Self_Help_Reset_Password
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         ' <-- Form validation -->
 
@@ -155,12 +160,14 @@ Public Class Dispatch_Self_Help_Reset_Password
             'InitializeComponent() 'load all the controls again
             'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
 
+            Me.Cursor = Cursors.Default
 
         Else
 
             MsgBox("Password is Good To Go.", 0 + 64)
             Button1.Enabled = True
 
+            Me.Cursor = Cursors.Default
 
         End If
 

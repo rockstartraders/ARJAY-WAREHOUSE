@@ -132,7 +132,7 @@ Partial Class Inventory_Modification
         Me.TextBox3.Location = New System.Drawing.Point(103, 61)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(242, 21)
+        Me.TextBox3.Size = New System.Drawing.Size(307, 21)
         Me.TextBox3.TabIndex = 138
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -154,6 +154,7 @@ Partial Class Inventory_Modification
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(260, 21)
         Me.TextBox2.TabIndex = 136
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label11
         '
@@ -195,6 +196,7 @@ Partial Class Inventory_Modification
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(306, 21)
         Me.TextBox6.TabIndex = 132
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
@@ -205,6 +207,7 @@ Partial Class Inventory_Modification
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(260, 21)
         Me.TextBox5.TabIndex = 131
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -215,6 +218,7 @@ Partial Class Inventory_Modification
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(260, 21)
         Me.TextBox4.TabIndex = 130
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -1033,6 +1037,7 @@ Partial Class Inventory_Modification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(794, 851)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label33)

@@ -39,6 +39,8 @@ Public Class Create_Receiving_Personnel_Account
         TextBox6.Text = password.ToString
 
 
+        ComboBox1.Text = ""
+
         '< -- Done with password generate -->
 
 
@@ -61,7 +63,17 @@ Public Class Create_Receiving_Personnel_Account
 
     End Sub
 
+    Private Sub ComboBox1_Format(ByVal sender As Object, ByVal e As System.Windows.Forms.ListControlConvertEventArgs) Handles ComboBox1.Format
+
+    End Sub
+
+    Private Sub ComboBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ComboBox1.KeyPress
+
+    End Sub
+
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `hire_date`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `address`, `contact_no`, `ssn`, `tin`, `dept`, `emer_name`, `emer_contact`, `emer_rel`, `emer_address` FROM `employee record`", con)
         Dim table As New DataTable()
@@ -69,8 +81,6 @@ Public Class Create_Receiving_Personnel_Account
         Dim rd As MySqlDataReader
 
         Try
-
-
             con.Open()
             Dim query As String
             query = "select * from  `employee record` where `emp_no` ='" + ComboBox1.Text + "'"
@@ -81,7 +91,6 @@ Public Class Create_Receiving_Personnel_Account
                 TextBox3.Text = rd.Item("m_name")
                 TextBox4.Text = rd.Item("l_name")
                 TextBox1.Text = rd.Item("dept")
-
             End While
             con.Close()
         Catch ex As Exception

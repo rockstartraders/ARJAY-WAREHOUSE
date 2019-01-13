@@ -162,6 +162,8 @@ Public Class Employee_database
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '<-- Export to Excel function 
 
         Try
@@ -193,6 +195,7 @@ Public Class Employee_database
         End Try
 
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub
@@ -206,6 +209,9 @@ Public Class Employee_database
     End Sub
 
     Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
+
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         ' <-- Function to load List View data to fields inside this form 
 
@@ -255,7 +261,7 @@ Public Class Employee_database
 
         ' < -- End -- >
 
-
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
 
@@ -275,6 +281,8 @@ Public Class Employee_database
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         TextBox17.Text = "Update Employees Information"
 
         '<-- Update Function --> 
@@ -286,8 +294,14 @@ Public Class Employee_database
 
         If TextBox15.Text = "" Then  ' if else for condition
             MsgBox("Please Choose a Profile to Modify", 0 + 64)
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
         Else
+
             MsgBox("Employee Profile Has Been Updated", 0 + 64)
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         End If
         con.Close()
@@ -392,6 +406,9 @@ Public Class Employee_database
 
     Private Sub Button6_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
 
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         ' <-- This text that will show on the log --> 
 
 
@@ -407,8 +424,15 @@ Public Class Employee_database
         rd = cmd.ExecuteReader()
         If TextBox15.Text = "" Then  ' if else for condition
             MsgBox("Please Choose a Profile to Delete.", 0 + 64)
+
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
+
         Else
             MsgBox("Employee Profile Has Been Deleted", 0 + 64)
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
         End If
 
         con.Close()

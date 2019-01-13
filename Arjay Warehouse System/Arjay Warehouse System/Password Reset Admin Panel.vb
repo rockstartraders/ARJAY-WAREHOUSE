@@ -2,21 +2,28 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         Dim a As New Password_Reset_for_an_Admin    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         a.Show()
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         Dim b As New Password_Reset_for_Dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         b.Show()
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub
@@ -24,11 +31,15 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
 
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         Dim c As New Password_Reset_for_Receiving_Personnel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         c.Show()
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub

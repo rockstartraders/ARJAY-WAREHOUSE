@@ -57,7 +57,7 @@ Partial Class Correction_Ticket
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(247, 28)
+        Me.Label1.Location = New System.Drawing.Point(219, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(257, 24)
         Me.Label1.TabIndex = 31
@@ -113,6 +113,7 @@ Partial Class Correction_Ticket
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(179, 21)
         Me.TextBox3.TabIndex = 38
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
         '
@@ -133,6 +134,7 @@ Partial Class Correction_Ticket
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(179, 21)
         Me.TextBox4.TabIndex = 40
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label6
         '
@@ -153,6 +155,7 @@ Partial Class Correction_Ticket
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(179, 21)
         Me.TextBox5.TabIndex = 42
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -173,6 +176,7 @@ Partial Class Correction_Ticket
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(179, 21)
         Me.TextBox6.TabIndex = 44
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -327,7 +331,7 @@ Partial Class Correction_Ticket
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel5
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(360, 745)
+        Me.Button2.Location = New System.Drawing.Point(370, 731)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 37)
         Me.Button2.TabIndex = 56
@@ -341,7 +345,7 @@ Partial Class Correction_Ticket
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.paper_plane
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(265, 745)
+        Me.Button1.Location = New System.Drawing.Point(275, 731)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(89, 37)
         Me.Button1.TabIndex = 55
@@ -353,7 +357,8 @@ Partial Class Correction_Ticket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(660, 824)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(660, 791)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.Label18)

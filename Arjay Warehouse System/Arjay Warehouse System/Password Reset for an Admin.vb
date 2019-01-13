@@ -74,6 +74,7 @@ Public Class Password_Reset_for_an_Admin
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim table As New DataTable()
         Dim da As New SqlClient.SqlDataAdapter
@@ -86,6 +87,7 @@ Public Class Password_Reset_for_an_Admin
         employee_no = TextBox2.Text
         new_password = TextBox7.Text
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
 
         con.Open()
@@ -93,6 +95,7 @@ Public Class Password_Reset_for_an_Admin
         cmd = New MySqlCommand(query, con)
         rd = cmd.ExecuteReader
         MsgBox("Password Has Been Change")
+
 
         
         con.Close()
@@ -125,7 +128,7 @@ Public Class Password_Reset_for_an_Admin
         TextBox7.Text = ""
         Button1.Enabled = False
 
-
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default added / 1/13/2019 --> 
 
 
     End Sub
@@ -156,6 +159,9 @@ Public Class Password_Reset_for_an_Admin
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
 
+
+
+
         ' <-- Form validation -->
 
         Dim newpassword As String
@@ -174,15 +180,22 @@ Public Class Password_Reset_for_an_Admin
             'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
 
 
+
         Else
 
             MsgBox("Password is Good To Go. ", 0 + 64)
+
+
+
             Button1.Enabled = True
+
 
 
         End If
 
         con.Close()
+
+
 
     End Sub
 

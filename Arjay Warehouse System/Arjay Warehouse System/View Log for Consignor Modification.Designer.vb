@@ -129,6 +129,7 @@ Partial Class View_Log_for_Consignor_Modification
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(308, 21)
         Me.TextBox9.TabIndex = 65
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
@@ -149,6 +150,7 @@ Partial Class View_Log_for_Consignor_Modification
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(308, 21)
         Me.TextBox8.TabIndex = 63
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox6
         '
@@ -159,6 +161,7 @@ Partial Class View_Log_for_Consignor_Modification
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(308, 21)
         Me.TextBox6.TabIndex = 62
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -199,6 +202,7 @@ Partial Class View_Log_for_Consignor_Modification
         Me.TextBox11.ReadOnly = True
         Me.TextBox11.Size = New System.Drawing.Size(308, 21)
         Me.TextBox11.TabIndex = 76
+        Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox1
         '
@@ -209,6 +213,7 @@ Partial Class View_Log_for_Consignor_Modification
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(308, 21)
         Me.TextBox1.TabIndex = 78
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
@@ -224,12 +229,12 @@ Partial Class View_Log_for_Consignor_Modification
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.export_to_excel4
+        Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.export_to_excel5
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(1002, 580)
+        Me.Button2.Location = New System.Drawing.Point(999, 580)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(91, 35)
-        Me.Button2.TabIndex = 72
+        Me.Button2.Size = New System.Drawing.Size(94, 37)
+        Me.Button2.TabIndex = 79
         Me.Button2.Text = "EXPORT"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = True
@@ -252,11 +257,12 @@ Partial Class View_Log_for_Consignor_Modification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1195, 634)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.TextBox7)
@@ -290,7 +296,6 @@ Partial Class View_Log_for_Consignor_Modification
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
@@ -300,4 +305,5 @@ Partial Class View_Log_for_Consignor_Modification
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

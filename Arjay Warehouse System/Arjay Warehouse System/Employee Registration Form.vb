@@ -26,6 +26,8 @@ Public Class Employee_Registration_Form
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         'this should be present always
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
 
@@ -36,6 +38,8 @@ Public Class Employee_Registration_Form
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
         MsgBox(" New Employee Account has Been Created ")
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
         con.Close()
 
 
@@ -66,6 +70,8 @@ Public Class Employee_Registration_Form
         TextBox11.Text = ""
         TextBox12.Text = ""
 
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         con.Close()
 

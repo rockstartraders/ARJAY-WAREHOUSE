@@ -15,37 +15,7 @@ Public Class View_Log_for_Consignor_Modification
     Dim rd As MySqlDataReader
     Dim query As String
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-
-        ' <-- export to excel function -->
-
-        Try
-            Me.Cursor = Cursors.WaitCursor
-            Dim ExcelApp As Object, ExcelBook As Object
-            Dim ExcelSheet As Object
-            Dim i As Integer
-            Dim j As Integer
-            'create object of excel
-            ExcelApp = CreateObject("Excel.Application")
-            ExcelBook = ExcelApp.WorkBooks.Add
-            ExcelSheet = ExcelBook.WorkSheets(1)
-            With ExcelSheet
-                For i = 1 To Me.ListView1.Items.Count
-                    .cells(i, 1) = Me.ListView1.Items(i - 1).Text
-                    For j = 1 To ListView1.Columns.Count - 1
-                        .cells(i, j + 1) = Me.ListView1.Items(i - 1).SubItems(j).Text
-                    Next
-                Next
-            End With
-            ExcelApp.Visible = True
-            ExcelSheet = Nothing
-            ExcelBook = Nothing
-            ExcelApp = Nothing
-            Me.Cursor = Cursors.Default
-        Catch ex As Exception
-            Me.Cursor = Cursors.Default
-            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        End Try
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
 
@@ -90,7 +60,14 @@ Public Class View_Log_for_Consignor_Modification
 
     End Sub
 
+    Private Sub ListView1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ListView1.Click
+
+    End Sub
+
     Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
+
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         '< -- Mouse Click Event --> 
 
@@ -121,6 +98,8 @@ Public Class View_Log_for_Consignor_Modification
 
         '<-- EOL for this Function -- > 
 
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default / added 1/13/2019 --> 
 
 
 
@@ -155,6 +134,45 @@ Public Class View_Log_for_Consignor_Modification
             Me.Close()
 
         End If
+
+
+    End Sub
+
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
+        ' <-- export to excel function -->
+
+        Try
+            Me.Cursor = Cursors.WaitCursor
+            Dim ExcelApp As Object, ExcelBook As Object
+            Dim ExcelSheet As Object
+            Dim i As Integer
+            Dim j As Integer
+            'create object of excel
+            ExcelApp = CreateObject("Excel.Application")
+            ExcelBook = ExcelApp.WorkBooks.Add
+            ExcelSheet = ExcelBook.WorkSheets(1)
+            With ExcelSheet
+                For i = 1 To Me.ListView1.Items.Count
+                    .cells(i, 1) = Me.ListView1.Items(i - 1).Text
+                    For j = 1 To ListView1.Columns.Count - 1
+                        .cells(i, j + 1) = Me.ListView1.Items(i - 1).SubItems(j).Text
+                    Next
+                Next
+            End With
+            ExcelApp.Visible = True
+            ExcelSheet = Nothing
+            ExcelBook = Nothing
+            ExcelApp = Nothing
+            Me.Cursor = Cursors.Default
+        Catch ex As Exception
+            Me.Cursor = Cursors.Default
+            MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
 
     End Sub

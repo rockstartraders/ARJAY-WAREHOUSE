@@ -91,18 +91,18 @@ Partial Class Consignor_Modification
         'Button4
         '
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close3
-        Me.Button4.Location = New System.Drawing.Point(263, 413)
+        Me.Button4.Location = New System.Drawing.Point(262, 427)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(76, 70)
+        Me.Button4.Size = New System.Drawing.Size(76, 72)
         Me.Button4.TabIndex = 16
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.delete_account
         Me.Button2.Location = New System.Drawing.Point(333, 230)
         Me.Button2.Name = "Button2"
@@ -113,7 +113,7 @@ Partial Class Consignor_Modification
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.modify_huge
         Me.Button1.Location = New System.Drawing.Point(104, 230)
         Me.Button1.Name = "Button1"
@@ -126,7 +126,8 @@ Partial Class Consignor_Modification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(591, 495)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(591, 511)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
@@ -134,6 +135,7 @@ Partial Class Consignor_Modification
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Consignor_Modification"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

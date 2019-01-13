@@ -54,6 +54,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(220, 21)
         Me.TextBox6.TabIndex = 44
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
@@ -63,6 +64,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(220, 21)
         Me.TextBox5.TabIndex = 43
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -70,8 +72,10 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(172, 214)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(220, 21)
         Me.TextBox4.TabIndex = 42
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
@@ -79,8 +83,10 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(172, 179)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(220, 21)
         Me.TextBox3.TabIndex = 41
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
         '
@@ -88,8 +94,10 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(172, 136)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(220, 21)
         Me.TextBox2.TabIndex = 40
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
@@ -106,12 +114,13 @@ Partial Class Create_A_Dispatch_Personnel_Account
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(124, 306)
+        Me.Label6.ForeColor = System.Drawing.Color.Red
+        Me.Label6.Location = New System.Drawing.Point(112, 299)
         Me.Label6.Name = "Label6"
         Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label6.Size = New System.Drawing.Size(44, 14)
+        Me.Label6.Size = New System.Drawing.Size(60, 21)
         Me.Label6.TabIndex = 35
-        Me.Label6.Text = "User ID"
+        Me.Label6.Text = "User ID *"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label6.UseMnemonic = False
         '
@@ -188,8 +197,10 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(172, 254)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(220, 21)
         Me.TextBox1.TabIndex = 47
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -212,6 +223,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(220, 21)
         Me.TextBox7.TabIndex = 49
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -268,6 +280,7 @@ Partial Class Create_A_Dispatch_Personnel_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(495, 526)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)

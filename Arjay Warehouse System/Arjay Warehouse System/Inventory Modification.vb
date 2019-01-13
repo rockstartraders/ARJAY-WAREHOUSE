@@ -1544,7 +1544,7 @@ Public Class Inventory_Modification
     Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
 
 
-
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         TextBox1.AppendText(vbNewLine)
         TextBox1.AppendText(vbNewLine)
@@ -1593,15 +1593,22 @@ Public Class Inventory_Modification
                 rd = cmd.ExecuteReader()
                 MsgBox("Consignor Record Has Been Altered Successfully.")
 
+                Me.Cursor = Cursors.Default ' < -- Return cursor to default / added 1/13/2019  --> 
+
+
+
                 Dim bimbi3 As DialogResult = MsgBox("Do You Want to Do another Transaction ?", 4 + 32)
                 If bimbi3 = DialogResult.Yes Then
 
                     '< -- Reboot Form --> 
+
+                    Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
                     Me.Controls.Clear() 'removes all the controls on the form
                     InitializeComponent() 'load all the controls again
                     Inventory_Modification_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
 
-                   
+                    Me.Cursor = Cursors.Default ' < -- Return cursor to default / added 1/13/2019--> 
                 Else
                     Me.Dispose()
                     Me.Close()

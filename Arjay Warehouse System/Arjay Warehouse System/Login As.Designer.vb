@@ -88,7 +88,7 @@ Partial Class Login_As
         'Button5
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Transparent
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close4
         Me.Button5.Location = New System.Drawing.Point(373, 341)
         Me.Button5.Name = "Button5"
@@ -101,11 +101,11 @@ Partial Class Login_As
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Receiving_first_page
-        Me.Button3.Location = New System.Drawing.Point(405, 83)
+        Me.Button3.Location = New System.Drawing.Point(428, 83)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(195, 193)
+        Me.Button3.Size = New System.Drawing.Size(165, 193)
         Me.Button3.TabIndex = 17
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button3.UseVisualStyleBackColor = True
@@ -115,7 +115,7 @@ Partial Class Login_As
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.timein_out
         Me.Button4.Location = New System.Drawing.Point(611, 85)
         Me.Button4.Name = "Button4"
@@ -129,7 +129,7 @@ Partial Class Login_As
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.Dispatch_first_page
         Me.Button2.Location = New System.Drawing.Point(218, 83)
         Me.Button2.Name = "Button2"
@@ -143,9 +143,9 @@ Partial Class Login_As
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.admin_guy
-        Me.Button1.Location = New System.Drawing.Point(28, 89)
+        Me.Button1.Location = New System.Drawing.Point(17, 83)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 193)
         Me.Button1.TabIndex = 14
@@ -156,6 +156,7 @@ Partial Class Login_As
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(822, 433)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -168,7 +169,7 @@ Partial Class Login_As
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.ForeColor = System.Drawing.Color.Black
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login_As"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

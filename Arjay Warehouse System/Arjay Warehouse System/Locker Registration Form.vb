@@ -16,6 +16,9 @@ Public Class Locker_Registration_Form
 
     Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
 
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '<-- Mouse click Event -- >
 
 
@@ -45,6 +48,7 @@ Public Class Locker_Registration_Form
         TextBox6.Text = Issued_by
         ComboBox1.Text = emp_no
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         '<-- This is to disable the edit function if the form is loaded or data is present -->
 
@@ -198,6 +202,9 @@ Public Class Locker_Registration_Form
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '<-- Insert to Database -->
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -209,6 +216,7 @@ Public Class Locker_Registration_Form
         cmd.CommandTimeout = 240  'for time out errors
         rd = cmd.ExecuteReader()
         MsgBox(" Locker Has Been Assigned. ")
+
         con.Close()
 
 
@@ -268,6 +276,8 @@ Public Class Locker_Registration_Form
 
         End While
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
         Me.TextBox6.Text = Admin_Panel.Label1.Text
 
         con.Close()
@@ -288,6 +298,8 @@ Public Class Locker_Registration_Form
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         con.Open()
         Dim query As String
@@ -354,6 +366,8 @@ Public Class Locker_Registration_Form
 
 
         End While
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         Me.TextBox6.Text = Admin_Panel.Label1.Text
 

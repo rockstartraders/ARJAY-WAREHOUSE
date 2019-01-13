@@ -39,7 +39,7 @@ Partial Class Delete_Access_Admin_Panel
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(265, 177)
+        Me.Label1.Location = New System.Drawing.Point(238, 177)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(167, 20)
         Me.Label1.TabIndex = 5
@@ -53,7 +53,7 @@ Partial Class Delete_Access_Admin_Panel
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(116, 376)
+        Me.Label2.Location = New System.Drawing.Point(109, 376)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 20)
         Me.Label2.TabIndex = 18
@@ -67,7 +67,7 @@ Partial Class Delete_Access_Admin_Panel
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(285, 376)
+        Me.Label3.Location = New System.Drawing.Point(278, 376)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(94, 20)
         Me.Label3.TabIndex = 19
@@ -81,7 +81,7 @@ Partial Class Delete_Access_Admin_Panel
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(484, 376)
+        Me.Label4.Location = New System.Drawing.Point(457, 376)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(93, 20)
         Me.Label4.TabIndex = 20
@@ -90,7 +90,7 @@ Partial Class Delete_Access_Admin_Panel
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.d16ee50246d0a41f8cac9656cfa34990
-        Me.PictureBox1.Location = New System.Drawing.Point(257, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(230, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(196, 162)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -100,9 +100,9 @@ Partial Class Delete_Access_Admin_Panel
         'Button4
         '
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close1
-        Me.Button4.Location = New System.Drawing.Point(289, 418)
+        Me.Button4.Location = New System.Drawing.Point(282, 414)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(77, 72)
         Me.Button4.TabIndex = 9
@@ -111,20 +111,20 @@ Partial Class Delete_Access_Admin_Panel
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.worker1
-        Me.Button3.Location = New System.Drawing.Point(452, 237)
+        Me.Button3.Location = New System.Drawing.Point(419, 233)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(157, 133)
+        Me.Button3.Size = New System.Drawing.Size(163, 137)
         Me.Button3.TabIndex = 8
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.skills1
-        Me.Button2.Location = New System.Drawing.Point(248, 233)
+        Me.Button2.Location = New System.Drawing.Point(241, 233)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(158, 140)
         Me.Button2.TabIndex = 7
@@ -133,11 +133,11 @@ Partial Class Delete_Access_Admin_Panel
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.businessman1
-        Me.Button1.Location = New System.Drawing.Point(70, 224)
+        Me.Button1.Location = New System.Drawing.Point(63, 233)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(158, 149)
+        Me.Button1.Size = New System.Drawing.Size(158, 140)
         Me.Button1.TabIndex = 6
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -145,7 +145,8 @@ Partial Class Delete_Access_Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(707, 522)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(652, 512)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -155,6 +156,7 @@ Partial Class Delete_Access_Admin_Panel
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Access_Admin_Panel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

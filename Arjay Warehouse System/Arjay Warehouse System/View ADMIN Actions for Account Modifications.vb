@@ -58,6 +58,8 @@ Public Class View_ADMIN_Actions_for_Account_Modifications
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '<-- Export to Excel function 
 
         Try
@@ -88,7 +90,16 @@ Public Class View_ADMIN_Actions_for_Account_Modifications
             MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
+
+    End Sub
+
+    Private Sub ListView1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ListView1.Click
+
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
 
     End Sub
 End Class

@@ -64,6 +64,7 @@ Public Class Admin_Login
             rd.Read()
             Admin_Panel.Label1.Text = rd("userid")
 
+
             con.Close()
 
             con.Open()
@@ -73,12 +74,13 @@ Public Class Admin_Login
             rd = cmd.ExecuteReader()
 
 
-
             Me.Hide()
+
             Admin_Panel.ShowDialog()
             Me.Dispose()
             Me.Close()
 
+           
 
             '< -- Here the block for close connection needs to be declared to avoid 2 open instance for reader -->
 

@@ -56,6 +56,7 @@ Partial Class Consignors_Address_Book
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(175, 21)
         Me.TextBox1.TabIndex = 22
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
@@ -105,16 +106,17 @@ Partial Class Consignors_Address_Book
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(308, 21)
         Me.TextBox9.TabIndex = 36
+        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(161, 539)
+        Me.Label10.Location = New System.Drawing.Point(171, 539)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(66, 14)
+        Me.Label10.Size = New System.Drawing.Size(63, 14)
         Me.Label10.TabIndex = 35
-        Me.Label10.Text = "Created By:"
+        Me.Label10.Text = "Created By"
         '
         'TextBox8
         '
@@ -125,6 +127,7 @@ Partial Class Consignors_Address_Book
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(308, 21)
         Me.TextBox8.TabIndex = 34
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox6
         '
@@ -135,16 +138,18 @@ Partial Class Consignors_Address_Book
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(308, 21)
         Me.TextBox6.TabIndex = 33
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(240, 226)
+        Me.TextBox5.Location = New System.Drawing.Point(240, 213)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(308, 21)
         Me.TextBox5.TabIndex = 32
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -155,6 +160,7 @@ Partial Class Consignors_Address_Book
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(308, 21)
         Me.TextBox4.TabIndex = 31
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -170,7 +176,7 @@ Partial Class Consignors_Address_Book
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(146, 419)
+        Me.Label8.Location = New System.Drawing.Point(141, 419)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(96, 14)
         Me.Label8.TabIndex = 29
@@ -180,7 +186,7 @@ Partial Class Consignors_Address_Book
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(151, 366)
+        Me.Label7.Location = New System.Drawing.Point(157, 370)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(80, 14)
         Me.Label7.TabIndex = 28
@@ -190,7 +196,7 @@ Partial Class Consignors_Address_Book
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(150, 226)
+        Me.Label6.Location = New System.Drawing.Point(168, 220)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(66, 14)
         Me.Label6.TabIndex = 27
@@ -200,7 +206,7 @@ Partial Class Consignors_Address_Book
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(150, 179)
+        Me.Label5.Location = New System.Drawing.Point(154, 179)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(80, 14)
         Me.Label5.TabIndex = 26
@@ -215,14 +221,15 @@ Partial Class Consignors_Address_Book
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(308, 21)
         Me.TextBox2.TabIndex = 37
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(275, 24)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(223, 21)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(170, 14)
+        Me.Label4.Size = New System.Drawing.Size(325, 26)
         Me.Label4.TabIndex = 39
         Me.Label4.Text = "Consignor Contact Information"
         '
@@ -235,6 +242,7 @@ Partial Class Consignors_Address_Book
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(222, 21)
         Me.TextBox3.TabIndex = 40
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox7
         '
@@ -263,9 +271,9 @@ Partial Class Consignors_Address_Book
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel4
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(334, 593)
+        Me.Button1.Location = New System.Drawing.Point(340, 578)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 43)
+        Me.Button1.Size = New System.Drawing.Size(85, 40)
         Me.Button1.TabIndex = 38
         Me.Button1.Text = "CLOSE"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -275,7 +283,8 @@ Partial Class Consignors_Address_Book
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(718, 658)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(718, 646)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.TextBox3)

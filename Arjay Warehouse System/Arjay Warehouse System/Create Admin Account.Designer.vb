@@ -54,6 +54,7 @@ Partial Class Create_Admin_Account
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(220, 21)
         Me.TextBox6.TabIndex = 29
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox5
         '
@@ -63,6 +64,7 @@ Partial Class Create_Admin_Account
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(220, 21)
         Me.TextBox5.TabIndex = 28
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '
@@ -70,8 +72,10 @@ Partial Class Create_Admin_Account
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(156, 206)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(220, 21)
         Me.TextBox4.TabIndex = 27
+        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
@@ -79,8 +83,10 @@ Partial Class Create_Admin_Account
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(156, 171)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(220, 21)
         Me.TextBox3.TabIndex = 26
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox2
         '
@@ -88,14 +94,16 @@ Partial Class Create_Admin_Account
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(156, 128)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(220, 21)
         Me.TextBox2.TabIndex = 25
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(93, 323)
+        Me.Label7.Location = New System.Drawing.Point(96, 323)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(57, 14)
         Me.Label7.TabIndex = 21
@@ -105,17 +113,18 @@ Partial Class Create_Admin_Account
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Red
         Me.Label6.Location = New System.Drawing.Point(101, 290)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 14)
+        Me.Label6.Size = New System.Drawing.Size(52, 14)
         Me.Label6.TabIndex = 20
-        Me.Label6.Text = "User ID"
+        Me.Label6.Text = "User ID *"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(83, 213)
+        Me.Label5.Location = New System.Drawing.Point(88, 213)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(62, 14)
         Me.Label5.TabIndex = 19
@@ -125,7 +134,7 @@ Partial Class Create_Admin_Account
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(67, 178)
+        Me.Label4.Location = New System.Drawing.Point(72, 178)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 14)
         Me.Label4.TabIndex = 18
@@ -135,7 +144,7 @@ Partial Class Create_Admin_Account
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(82, 135)
+        Me.Label3.Location = New System.Drawing.Point(87, 135)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 14)
         Me.Label3.TabIndex = 17
@@ -145,7 +154,7 @@ Partial Class Create_Admin_Account
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 94)
+        Me.Label2.Location = New System.Drawing.Point(73, 94)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 14)
         Me.Label2.TabIndex = 16
@@ -176,14 +185,16 @@ Partial Class Create_Admin_Account
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(156, 244)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(220, 21)
         Me.TextBox1.TabIndex = 32
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(76, 251)
+        Me.Label8.Location = New System.Drawing.Point(81, 251)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(69, 14)
         Me.Label8.TabIndex = 31
@@ -198,16 +209,17 @@ Partial Class Create_Admin_Account
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(220, 21)
         Me.TextBox7.TabIndex = 51
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(66, 367)
+        Me.Label9.Location = New System.Drawing.Point(77, 367)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(79, 14)
+        Me.Label9.Size = New System.Drawing.Size(76, 14)
         Me.Label9.TabIndex = 50
-        Me.Label9.Text = "Processed By:"
+        Me.Label9.Text = "Processed By"
         '
         'Label10
         '
@@ -251,6 +263,7 @@ Partial Class Create_Admin_Account
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(455, 505)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.TextBox7)

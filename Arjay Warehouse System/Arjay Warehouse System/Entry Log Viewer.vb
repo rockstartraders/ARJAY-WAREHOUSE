@@ -35,6 +35,10 @@ Public Class Entry_Log_Viewer
 
     End Sub
 
+    Private Sub ListView1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListView1.MouseClick
+
+    End Sub
+
     Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
 
     End Sub
@@ -45,6 +49,10 @@ Public Class Entry_Log_Viewer
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         Try
             Me.Cursor = Cursors.WaitCursor
             Dim ExcelApp As Object, ExcelBook As Object
@@ -72,6 +80,9 @@ Public Class Entry_Log_Viewer
             Me.Cursor = Cursors.Default
             MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End Try
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -95,6 +106,8 @@ Public Class Entry_Log_Viewer
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         con.Open()
         query = "Select * from `entry log` Where `access type`='" & TextBox1.Text & "'"
         cmd = New MySqlCommand(query, con)
@@ -103,13 +116,19 @@ Public Class Entry_Log_Viewer
         If TextBox1.Text = "" Then
             MsgBox(" Please Enter Employees Last Name", 0 + 64)
 
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
         Else
 
             ListView1.Items.Clear()
 
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default  / added 1/13 2019 --> 
+
         End If
 
         ListView1.Items.Clear()
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default  / added 1/13 2019 --> 
 
         While rd.Read
             Dim lv As ListViewItem = ListView1.Items.Add(rd("time_stamp").ToString())
@@ -119,6 +138,8 @@ Public Class Entry_Log_Viewer
             lv.SubItems.Add(rd("ipaddress").ToString())
             lv.SubItems.Add(rd("access type").ToString())
             lv.SubItems.Add(rd("outcome").ToString())
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default / added 1/13 2019 --> 
 
         End While
         con.Close()

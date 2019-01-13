@@ -351,7 +351,7 @@ Public Class Incoming
 
 
        
-
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         '< -- Add Function / Commit Button -->
 
@@ -429,6 +429,11 @@ Public Class Incoming
         Button1.Enabled = False
 
         ' < -- End of Condition --> 
+
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default / added 1 / 13 / 2019--> 
+
+
 
     End Sub
 
@@ -585,17 +590,22 @@ Public Class Incoming
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+
+
+
         ' < -- Reset po ito --> 
 
         Dim kamotengfrog As DialogResult = MsgBox("Are You Sure You Want to Do A Reset? All Changes Will Be Revert When That Happened.", 4 + 32, )
         If kamotengfrog = DialogResult.Yes Then
 
-
+            Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
             Me.Controls.Clear() 'removes all the controls on the form
             InitializeComponent() 'load all the controls again
             Incoming_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
 
+
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
         End If
 
@@ -622,6 +632,8 @@ Public Class Incoming
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
 
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
         Dim a As DialogResult = MsgBox("Are You Sure You Want to Save this Changes? This Cannot be Undone, Please Check It Thoroughly Prior To Saving.", 4 + 32)
 
@@ -653,14 +665,21 @@ Public Class Incoming
             rd = cmd.ExecuteReader()
             MsgBox("Product Has Been Received from Consignor." + "  " + ComboBox2.Text + "   " + "Thank You.")
 
+            Me.Cursor = Cursors.Default ' < -- Return cursor to default -->  
+
             Dim bimbi As DialogResult = MsgBox("Do You Want to Do another Transaction ?", 4 + 32)
             If bimbi = DialogResult.Yes Then
 
                 '< -- Reboot Form --> 
+
+                Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
                 Me.Controls.Clear() 'removes all the controls on the form
+
                 InitializeComponent() 'load all the controls again
                 Incoming_Load(e, e) 'Load everything in your form load event again hahaha in tagalog ulit
 
+                Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
                 con.Close()
 
             Else
@@ -688,10 +707,13 @@ Public Class Incoming
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
         '< -- Print Preview --> 
 
         PrintPreviewDialog1.ShowDialog()
 
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
     End Sub
 

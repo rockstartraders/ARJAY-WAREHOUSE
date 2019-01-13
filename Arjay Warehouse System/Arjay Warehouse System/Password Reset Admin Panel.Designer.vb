@@ -100,7 +100,7 @@ Partial Class Password_Reset_Admin_Panel
         'Button4
         '
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Transparent
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close2
         Me.Button4.Location = New System.Drawing.Point(304, 437)
         Me.Button4.Name = "Button4"
@@ -111,7 +111,7 @@ Partial Class Password_Reset_Admin_Panel
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.worker2
         Me.Button3.Location = New System.Drawing.Point(445, 247)
         Me.Button3.Name = "Button3"
@@ -122,7 +122,7 @@ Partial Class Password_Reset_Admin_Panel
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.skills2
         Me.Button2.Location = New System.Drawing.Point(258, 247)
         Me.Button2.Name = "Button2"
@@ -133,7 +133,7 @@ Partial Class Password_Reset_Admin_Panel
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.businessman2
         Me.Button1.Location = New System.Drawing.Point(90, 226)
         Me.Button1.Name = "Button1"
@@ -145,6 +145,7 @@ Partial Class Password_Reset_Admin_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(691, 527)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
@@ -155,7 +156,7 @@ Partial Class Password_Reset_Admin_Panel
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Password_Reset_Admin_Panel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -60,7 +60,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox8.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(182, 408)
+        Me.TextBox8.Location = New System.Drawing.Point(182, 396)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(187, 21)
@@ -71,7 +71,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(101, 415)
+        Me.Label10.Location = New System.Drawing.Point(101, 403)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(76, 14)
         Me.Label10.TabIndex = 80
@@ -81,7 +81,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(182, 323)
+        Me.TextBox7.Location = New System.Drawing.Point(182, 311)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox7.Size = New System.Drawing.Size(187, 21)
@@ -92,7 +92,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(216, 305)
+        Me.Label9.Location = New System.Drawing.Point(216, 293)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(115, 15)
         Me.Label9.TabIndex = 78
@@ -228,11 +228,11 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(24, 23)
+        Me.Label1.Location = New System.Drawing.Point(44, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(467, 24)
+        Me.Label1.Size = New System.Drawing.Size(414, 24)
         Me.Label1.TabIndex = 65
-        Me.Label1.Text = "PASSWORD CHANGE FOR RECEIVING PERSONNEL"
+        Me.Label1.Text = "Password Change for a Receiving Personnel"
         '
         'Button3
         '
@@ -240,7 +240,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate4
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(219, 350)
+        Me.Button3.Location = New System.Drawing.Point(219, 338)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(99, 40)
         Me.Button3.TabIndex = 85
@@ -254,7 +254,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel10
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(276, 459)
+        Me.Button2.Location = New System.Drawing.Point(276, 447)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 36)
         Me.Button2.TabIndex = 83
@@ -268,7 +268,7 @@ Partial Class Password_Reset_for_Receiving_Personnel
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.update4
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(174, 459)
+        Me.Button1.Location = New System.Drawing.Point(174, 447)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(96, 36)
         Me.Button1.TabIndex = 82
@@ -280,7 +280,8 @@ Partial Class Password_Reset_for_Receiving_Personnel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(503, 533)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(503, 516)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
