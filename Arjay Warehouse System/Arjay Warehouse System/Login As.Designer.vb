@@ -28,7 +28,6 @@ Partial Class Login_As
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -84,17 +83,6 @@ Partial Class Login_As
         Me.Label5.Size = New System.Drawing.Size(532, 47)
         Me.Label5.TabIndex = 19
         Me.Label5.Text = "ARJAY WAREHOUSE SYSTEM"
-        '
-        'Button5
-        '
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.Button5.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close4
-        Me.Button5.Location = New System.Drawing.Point(373, 341)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 71)
-        Me.Button5.TabIndex = 20
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -158,7 +146,6 @@ Partial Class Login_As
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(822, 433)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
@@ -187,5 +174,4 @@ Partial Class Login_As
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

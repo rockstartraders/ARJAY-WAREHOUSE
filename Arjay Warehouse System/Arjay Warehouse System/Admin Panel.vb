@@ -286,7 +286,7 @@ Public Class Admin_Panel
 
 
             Me.Hide()
-            consignorkagebunshinreadonlyonetwo.ShowDialog()
+            MsgBox("Goodbye", 0)
             Me.Dispose()
             Me.Close()
 
@@ -346,6 +346,23 @@ Public Class Admin_Panel
     End Sub
 
     Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
+
+        Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
+
+
+
+        Dim marupok As New view_user_panel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+        marupok.Show()
+
+        Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
+
+
 
     End Sub
 End Class

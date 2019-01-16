@@ -98,20 +98,9 @@ Public Class Login_As
 
     End Sub
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-
-        Dim asaakira As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
-
-        If asaakira = DialogResult.Yes Then
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
-
-            Me.Dispose()
-            Me.Close()
-
-
-
-        End If
 
     End Sub
 End Class

@@ -332,6 +332,24 @@
     <Compile Include="Update Consignor Record.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="user_admin.Designer.vb">
+      <DependentUpon>user_admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_dispatch.Designer.vb">
+      <DependentUpon>user_dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_receiving.Designer.vb">
+      <DependentUpon>user_receiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user_receiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View ADMIN Actions for Account Modifications.Designer.vb">
       <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>
     </Compile>
@@ -348,6 +366,12 @@
       <DependentUpon>View Log for Consignor Modification.vb</DependentUpon>
     </Compile>
     <Compile Include="View Log for Consignor Modification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_user-panel.Designer.vb">
+      <DependentUpon>view_user-panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_user-panel.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -478,6 +502,15 @@
     <EmbeddedResource Include="Update Consignor Record.resx">
       <DependentUpon>Update Consignor Record.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="user_admin.resx">
+      <DependentUpon>user_admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_dispatch.resx">
+      <DependentUpon>user_dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_receiving.resx">
+      <DependentUpon>user_receiving.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View ADMIN Actions for Account Modifications.resx">
       <DependentUpon>View ADMIN Actions for Account Modifications.vb</DependentUpon>
     </EmbeddedResource>
@@ -486,6 +519,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View Log for Consignor Modification.resx">
       <DependentUpon>View Log for Consignor Modification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_user-panel.resx">
+      <DependentUpon>view_user-panel.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -657,6 +693,10 @@
     <None Include="Resources\close6.png" />
     <None Include="Resources\close7.png" />
     <None Include="Resources\export_to_excel5.png" />
+    <None Include="Resources\cancel30.png" />
+    <None Include="Resources\export_to_excel6.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\group2.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />
@@ -665,6 +705,8 @@
     <None Include="Resources\search.png" />
     <None Include="Resources\save.png" />
     <None Include="Resources\save1.png" />
+    <None Include="Resources\search-user_2.png" />
+    <None Include="Resources\search-user.png" />
     <Content Include="Resources\team_rocket.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

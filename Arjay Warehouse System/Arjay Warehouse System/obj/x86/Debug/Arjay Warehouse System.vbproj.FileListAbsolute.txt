@@ -73,3 +73,7 @@ C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arja
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Invoice_Copy.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Inventory_Modification.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Inventory_Modification_Events.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.user_admin.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.user_dispatch.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.user_receiving.resources
+C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.view_user_panel.resources

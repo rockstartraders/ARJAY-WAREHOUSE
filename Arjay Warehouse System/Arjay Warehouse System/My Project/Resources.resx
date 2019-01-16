@@ -170,13 +170,13 @@
     <value>..\Resources\paper-plane1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\cancel30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lockers_admin_panel_first_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lockers_admin_panel_first_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="businessman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\businessman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +238,11 @@
   <data name="update4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\update4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cleaning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cleaning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="farmer_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\farmer_x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,9 +265,6 @@
   <data name="close2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="worker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\worker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -283,14 +283,20 @@
   <data name="add_user_admin_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_user_admin_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="seo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dispatch_first_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dispatch_first_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_to_excel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_to_excel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="problem1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\problem1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eraser_maliit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eraser_maliit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,8 +331,8 @@
   <data name="close3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_to_excel4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_to_excel4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_to_excel5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_to_excel5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="validate4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\validate4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,20 +340,26 @@
   <data name="warehouse-inventory-icon-33851" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warehouse-inventory-icon-33851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="diskette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diskette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="modify_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modify_huge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cleaning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cleaning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="problem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\problem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inventory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-user_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-user_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="update2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\update2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,8 +370,11 @@
   <data name="cancel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_to_excel6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_to_excel6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magnifying_glass-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magnifying_glass-small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,8 +382,8 @@
   <data name="d16ee50246d0a41f8cac9656cfa34990" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\d16ee50246d0a41f8cac9656cfa34990.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="diskette" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\diskette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="consignor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\consignor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,8 +400,8 @@
   <data name="browser2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\browser2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="problem1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\problem1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_to_excel4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_to_excel4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="view-correction_request" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view-correction_request.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -400,6 +415,9 @@
   <data name="eraser1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eraser1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="team_rocket1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\team_rocket.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -409,8 +427,8 @@
   <data name="database_delete_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\database_delete_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,8 +451,8 @@
   <data name="paper-plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paper-plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lockers_admin_panel_first_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lockers_admin_panel_first_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="website" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\website.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -445,14 +463,11 @@
   <data name="validate5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\validate5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Admin_panel_register_new_employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin_panel_register_new_employee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="problem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\problem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="contract2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contract2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -463,8 +478,8 @@
   <data name="export_to_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\export_to_excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Caution.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -502,8 +517,8 @@
   <data name="employee_lookup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\employee_lookup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\documents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_to_excel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_to_excel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="website3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\website3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -526,7 +541,7 @@
   <data name="timein_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\timein_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_to_excel5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_to_excel5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
