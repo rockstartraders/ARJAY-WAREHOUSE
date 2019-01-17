@@ -77,7 +77,7 @@ Public Class Dispatch_Panel
 
 
             Me.Hide()
-            Login_As.ShowDialog()
+            MsgBox("Goodbye")
             Me.Dispose()
             Me.Close()
 

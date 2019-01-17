@@ -18,6 +18,8 @@ Public Class outgoing_dispatch
     Private Sub outgoing_dispatch_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
+
+
         ' < -- Default Load message --> 
 
         TextBox31.Text = " Waiting for Commit "
@@ -93,9 +95,9 @@ Public Class outgoing_dispatch
 
         ' String Parsing -->
 
-        Me.TextBox8.Text = Receiving_Panel.Label1.Text
-        Me.TextBox32.Text = Receiving_Panel.Label3.Text
-        Me.TextBox33.Text = Receiving_Panel.Label4.Text
+        Me.TextBox8.Text = Dispatch_Panel.Label1.Text
+        Me.TextBox32.Text = Dispatch_Panel.Label3.Text
+        Me.TextBox33.Text = Dispatch_Panel.Label4.Text
 
         '<-- Resibo -->
 
@@ -590,6 +592,10 @@ Public Class outgoing_dispatch
             Button2.Enabled = True
 
         End If
+
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub
 End Class

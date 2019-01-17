@@ -55,6 +55,8 @@ Public Class Dispatch_Login
             ' <-- This is needed to show the username automatically inside VB form
             rd.Read()
             Dispatch_Panel.Label1.Text = rd("userid")
+            Dispatch_Panel.Label3.Text = rd("f_name")
+            Dispatch_Panel.Label4.Text = rd("l_name")
 
             con.Close()
 
