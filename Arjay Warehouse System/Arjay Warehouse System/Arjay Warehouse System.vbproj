@@ -278,6 +278,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="outgoing_dispatch.Designer.vb">
+      <DependentUpon>outgoing_dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="outgoing_dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Password Reset Admin Panel.Designer.vb">
       <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
     </Compile>
@@ -474,6 +480,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outgoing_dispatch.resx">
+      <DependentUpon>outgoing_dispatch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Password Reset Admin Panel.resx">
       <DependentUpon>Password Reset Admin Panel.vb</DependentUpon>
@@ -697,6 +706,7 @@
     <None Include="Resources\export_to_excel6.png" />
     <None Include="Resources\group.png" />
     <None Include="Resources\group2.png" />
+    <None Include="Resources\idea.png" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />

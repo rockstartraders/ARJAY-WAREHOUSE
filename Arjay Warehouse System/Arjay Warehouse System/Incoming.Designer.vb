@@ -869,9 +869,9 @@ Partial Class Incoming
         Me.Label34.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(11, 22)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(72, 15)
+        Me.Label34.Size = New System.Drawing.Size(62, 15)
         Me.Label34.TabIndex = 128
-        Me.Label34.Text = "RECEIVING"
+        Me.Label34.Text = "Receiving"
         Me.Label34.Visible = False
         '
         'PrintDocument1

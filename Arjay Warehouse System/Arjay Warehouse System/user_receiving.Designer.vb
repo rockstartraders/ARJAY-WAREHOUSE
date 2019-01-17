@@ -37,22 +37,22 @@ Partial Class user_receiving
         '
         'ColumnHeader4
         '
-        Me.ColumnHeader4.Text = "Last name"
+        Me.ColumnHeader4.Text = "Middle Name"
         Me.ColumnHeader4.Width = 150
         '
         'ColumnHeader6
         '
-        Me.ColumnHeader6.Text = "User ID"
+        Me.ColumnHeader6.Text = "Department"
         Me.ColumnHeader6.Width = 90
         '
         'ColumnHeader5
         '
-        Me.ColumnHeader5.Text = "Department"
+        Me.ColumnHeader5.Text = "Last Name"
         Me.ColumnHeader5.Width = 150
         '
         'ColumnHeader3
         '
-        Me.ColumnHeader3.Text = "Middle Name"
+        Me.ColumnHeader3.Text = "First Name"
         Me.ColumnHeader3.Width = 150
         '
         'ListView1
@@ -73,7 +73,7 @@ Partial Class user_receiving
         '
         'ColumnHeader2
         '
-        Me.ColumnHeader2.Text = "First Name"
+        Me.ColumnHeader2.Text = "Username"
         Me.ColumnHeader2.Width = 150
         '
         'Label1

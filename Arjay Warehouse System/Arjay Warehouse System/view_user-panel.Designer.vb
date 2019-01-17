@@ -81,7 +81,7 @@ Partial Class view_user_panel
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(271, 197)
+        Me.Label1.Location = New System.Drawing.Point(270, 198)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(169, 24)
         Me.Label1.TabIndex = 23
@@ -91,10 +91,10 @@ Partial Class view_user_panel
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.group2
-        Me.PictureBox1.Location = New System.Drawing.Point(217, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(159, 19)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(276, 182)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.Size = New System.Drawing.Size(370, 240)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 28
         Me.PictureBox1.TabStop = False
         '
@@ -151,14 +151,16 @@ Partial Class view_user_panel
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "view_user_panel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "View User Panel"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

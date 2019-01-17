@@ -44,7 +44,7 @@ Partial Class Entry_Log_Viewer
         Me.ListView1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.Location = New System.Drawing.Point(15, 102)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(828, 493)
+        Me.ListView1.Size = New System.Drawing.Size(959, 493)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -72,7 +72,7 @@ Partial Class Entry_Log_Viewer
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Access Used"
-        Me.ColumnHeader5.Width = 227
+        Me.ColumnHeader5.Width = 200
         '
         'ColumnHeader6
         '
@@ -121,7 +121,7 @@ Partial Class Entry_Log_Viewer
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(730, 610)
+        Me.Button2.Location = New System.Drawing.Point(861, 610)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(113, 37)
         Me.Button2.TabIndex = 2
@@ -134,7 +134,7 @@ Partial Class Entry_Log_Viewer
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.export_to_excel
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(575, 610)
+        Me.Button1.Location = New System.Drawing.Point(706, 610)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(149, 37)
         Me.Button1.TabIndex = 1
@@ -157,7 +157,7 @@ Partial Class Entry_Log_Viewer
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(855, 659)
+        Me.ClientSize = New System.Drawing.Size(986, 671)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)

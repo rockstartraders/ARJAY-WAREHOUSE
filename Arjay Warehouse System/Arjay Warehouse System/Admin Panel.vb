@@ -365,4 +365,8 @@ Public Class Admin_Panel
 
 
     End Sub
+
+    Private Sub Label8_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
+
+    End Sub
 End Class

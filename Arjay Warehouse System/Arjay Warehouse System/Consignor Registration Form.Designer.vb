@@ -172,7 +172,6 @@ Partial Class Consignor_Registration_Form
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(359, 84)
         Me.TextBox3.TabIndex = 13
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox4
         '

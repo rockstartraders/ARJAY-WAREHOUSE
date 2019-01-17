@@ -719,8 +719,7 @@ Public Class Incoming
 
     Private Sub PrintDocument1_PrintPage(ByVal sender As System.Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
-        ' < -- Format --> 
-
+        
 
         ' < -- Format --> 
 
@@ -748,6 +747,10 @@ Public Class Incoming
     End Sub
 
     Private Sub TextBox3_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
 
     End Sub
 End Class

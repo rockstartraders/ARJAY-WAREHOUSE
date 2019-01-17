@@ -100,5 +100,13 @@ Public Class Dispatch_Panel
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
 
+
+        Dim no_more_brain_left_promise_againandagain As New outgoing_dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+        Me.Cursor = Cursors.WaitCursor  ' < -- Curson Wait function -->
+        no_more_brain_left_promise_againandagain.Show()
+        Me.Cursor = Cursors.Default
+
+
     End Sub
 End Class

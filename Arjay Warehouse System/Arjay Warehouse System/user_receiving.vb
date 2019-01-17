@@ -25,11 +25,12 @@ Public Class user_receiving
         ListView1.Items.Clear()
         While rd.Read
             Dim lv As ListViewItem = ListView1.Items.Add(rd("emp_no").ToString())
+            lv.SubItems.Add(rd("userid").ToString())
             lv.SubItems.Add(rd("f_name").ToString())
             lv.SubItems.Add(rd("m_name").ToString())
             lv.SubItems.Add(rd("l_name").ToString())
             lv.SubItems.Add(rd("dept").ToString())
-            lv.SubItems.Add(rd("userid").ToString())
+
 
 
             ListView1.FullRowSelect = True
