@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _500() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("500", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property add_account() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("add_account", resourceCulture)
@@ -813,6 +823,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property lg_dual_gear_loading_icon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lg.dual-gear-loading-icon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property lock() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lock", resourceCulture)
@@ -1176,6 +1196,16 @@ Namespace My.Resources
         Friend ReadOnly Property team_rocket1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("team_rocket1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property text_animation() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("text_animation", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

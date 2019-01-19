@@ -326,6 +326,12 @@
     <Compile Include="Receiving Self Help Password Resetvb.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Time Keeping System.Designer.vb">
       <DependentUpon>Time Keeping System.vb</DependentUpon>
     </Compile>
@@ -505,6 +511,9 @@
     <EmbeddedResource Include="Receiving Self Help Password Resetvb.resx">
       <DependentUpon>Receiving Self Help Password Resetvb.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Time Keeping System.resx">
       <DependentUpon>Time Keeping System.vb</DependentUpon>
     </EmbeddedResource>
@@ -558,6 +567,7 @@
     <None Include="Resources\timein_out.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\text_animation.gif" />
     <None Include="Resources\web_nga.png" />
     <None Include="Resources\update5.png" />
     <None Include="Resources\validate5.png" />
@@ -707,6 +717,8 @@
     <None Include="Resources\group.png" />
     <None Include="Resources\group2.png" />
     <None Include="Resources\idea.png" />
+    <None Include="Resources\lg.dual-gear-loading-icon.gif" />
+    <None Include="Resources\500.gif" />
     <Content Include="Resources\Rocket.gif" />
     <None Include="Resources\seo.png" />
     <None Include="Resources\skills.png" />
