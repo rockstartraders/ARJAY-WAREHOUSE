@@ -166,7 +166,7 @@ Partial Class chart
         Me.TabPage7.Location = New System.Drawing.Point(4, 24)
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage7.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "Tomatoes"
         '
@@ -202,7 +202,7 @@ Partial Class chart
         Me.TabPage6.Location = New System.Drawing.Point(4, 24)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage6.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Tobacco"
         '
@@ -235,7 +235,7 @@ Partial Class chart
         Me.TabPage5.Location = New System.Drawing.Point(4, 24)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage5.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Potatoes"
         '
@@ -268,7 +268,7 @@ Partial Class chart
         Me.TabPage4.Location = New System.Drawing.Point(4, 24)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage4.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Corn"
         '
@@ -301,7 +301,7 @@ Partial Class chart
         Me.TabPage3.Location = New System.Drawing.Point(4, 24)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage3.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Coffee Beans"
         '
@@ -335,7 +335,7 @@ Partial Class chart
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1124, 425)
+        Me.TabPage2.Size = New System.Drawing.Size(1252, 425)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Red Chili"
         '
@@ -436,77 +436,77 @@ Partial Class chart
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Red
         Me.Label2.Location = New System.Drawing.Point(242, 412)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 19)
+        Me.Label2.Size = New System.Drawing.Size(50, 24)
         Me.Label2.TabIndex = 135
         Me.Label2.Text = "sum"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Location = New System.Drawing.Point(393, 412)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 19)
+        Me.Label3.Size = New System.Drawing.Size(50, 24)
         Me.Label3.TabIndex = 136
         Me.Label3.Text = "sum"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Red
         Me.Label4.Location = New System.Drawing.Point(539, 412)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(41, 19)
+        Me.Label4.Size = New System.Drawing.Size(50, 24)
         Me.Label4.TabIndex = 137
         Me.Label4.Text = "sum"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Red
         Me.Label5.Location = New System.Drawing.Point(722, 412)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 19)
+        Me.Label5.Size = New System.Drawing.Size(50, 24)
         Me.Label5.TabIndex = 138
         Me.Label5.Text = "sum"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Red
         Me.Label6.Location = New System.Drawing.Point(842, 413)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 19)
+        Me.Label6.Size = New System.Drawing.Size(50, 24)
         Me.Label6.TabIndex = 139
         Me.Label6.Text = "sum"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Red
         Me.Label7.Location = New System.Drawing.Point(997, 411)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 19)
+        Me.Label7.Size = New System.Drawing.Size(50, 24)
         Me.Label7.TabIndex = 140
         Me.Label7.Text = "sum"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Red
         Me.Label8.Location = New System.Drawing.Point(1139, 412)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(41, 19)
+        Me.Label8.Size = New System.Drawing.Size(50, 24)
         Me.Label8.TabIndex = 141
         Me.Label8.Text = "sum"
         '

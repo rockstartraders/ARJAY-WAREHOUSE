@@ -40,12 +40,10 @@ C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arja
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Employee_database.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Employee_Registration_Form.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Entry_Log_Viewer.resources
-C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Form1.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Login_As.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Resources.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Receiving_Login.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Receiving_Panel.resources
-C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Time_Keeping_System.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay Warehouse System.vbproj.GenerateResource.Cache
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.Admin_Correction_Form.resources
 C:\Users\GAMING_RIG\Desktop\vb_nacheckan na  ni maam\Arjay Warehouse System\Arjay Warehouse System\obj\x86\Debug\Arjay_Warehouse_System.View_Correction_Request.resources
