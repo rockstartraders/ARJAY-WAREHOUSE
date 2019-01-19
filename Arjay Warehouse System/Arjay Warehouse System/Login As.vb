@@ -90,17 +90,25 @@ Public Class Login_As
 
         Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
-        Dim timeinandout As New Time_Keeping_System   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim produkto As New chart   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
         Me.Hide()
-        timeinandout.ShowDialog()
-        End
+        produkto.ShowDialog()
+        Me.Cursor = Cursors.Default    ' < -- cursor wait function -->
+        Me.Dispose()
+        Me.Close()
+
+
 
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
+
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
 
     End Sub
 End Class

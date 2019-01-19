@@ -1042,6 +1042,7 @@ Partial Class outgoing_dispatch
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "outgoing_dispatch"
         Me.Text = "Outgoing"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

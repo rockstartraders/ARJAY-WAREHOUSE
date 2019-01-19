@@ -58,11 +58,11 @@ Partial Class Login_As
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(643, 281)
+        Me.Label4.Location = New System.Drawing.Point(621, 270)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 24)
+        Me.Label4.Size = New System.Drawing.Size(129, 48)
         Me.Label4.TabIndex = 13
-        Me.Label4.Text = "TIME KEEPING"
+        Me.Label4.Text = "  PRODUCT " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DASHBOARD" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
@@ -104,10 +104,10 @@ Partial Class Login_As
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.timein_out
-        Me.Button4.Location = New System.Drawing.Point(611, 85)
+        Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.product_availability
+        Me.Button4.Location = New System.Drawing.Point(606, 117)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(195, 193)
+        Me.Button4.Size = New System.Drawing.Size(155, 150)
         Me.Button4.TabIndex = 18
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True

@@ -34,16 +34,16 @@ Partial Class Splash
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.text_animation
-        Me.PictureBox2.Location = New System.Drawing.Point(3, 0)
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 12)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(709, 89)
+        Me.PictureBox2.Size = New System.Drawing.Size(709, 69)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(3, 66)
+        Me.ProgressBar1.Location = New System.Drawing.Point(3, 58)
         Me.ProgressBar1.Maximum = 110
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(84, 23)
@@ -58,7 +58,7 @@ Partial Class Splash
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(716, 101)
+        Me.ClientSize = New System.Drawing.Size(716, 80)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox2)
         Me.DoubleBuffered = True
@@ -66,7 +66,7 @@ Partial Class Splash
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Splash"
-        Me.Opacity = 0.89R
+        Me.Opacity = 0.65R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Splash"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

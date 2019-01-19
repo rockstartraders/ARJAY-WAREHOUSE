@@ -12,13 +12,16 @@
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
 
+        ' < -- Progress bar -->
+
         ProgressBar1.Increment(1)
         If ProgressBar1.Value = ProgressBar1.Maximum Then
             Me.Hide()
             Timer1.Stop()
             Login_As.ShowDialog()
-            Me.Close()
             Me.Dispose()
+            Me.Close()
+
         End If
 
 
