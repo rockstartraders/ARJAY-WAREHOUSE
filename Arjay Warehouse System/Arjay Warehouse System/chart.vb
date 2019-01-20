@@ -36,6 +36,10 @@ Public Class chart
             ListView1.FullRowSelect = True
             lv.UseItemStyleForSubItems = False
 
+
+            
+
+
             ' <-- Graph Representation --> 
 
             Chart1.Series("Camote").Points.AddXY(rd.GetString("Con_Name"), rd.GetString("Prod_Camote"))
@@ -213,6 +217,15 @@ Public Class chart
     End Sub
 
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListView1.SelectedIndexChanged
+
+
+
+        
+
 
     End Sub
 End Class

@@ -15,6 +15,10 @@ Public Class Receiving_Login
     Private Sub Receiving_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
+
+        Button1.Enabled = False
+        TextBox1.Select()
+
         ' for entry log
 
         Dim D As Date = Now()  ' this is date and time 
@@ -110,12 +114,6 @@ Public Class Receiving_Login
 
 
 
-            'Me.Dispose()
-            'Me.Close()
-
-
-
-
 
             Dim ae As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
@@ -123,6 +121,149 @@ Public Class Receiving_Login
             ae.ShowDialog()
             End
 
+
+        End If
+
+    End Sub
+
+    Private Sub TextBox1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TextBox1.KeyDown
+
+        If e.KeyCode = Keys.Enter Then
+            TextBox2.Select()
+
+        End If
+
+
+
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
+
+
+    End Sub
+
+    Private Sub TextBox2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TextBox2.KeyDown
+
+        If e.KeyCode = Keys.Enter Then
+            Button1.Select()
+
+        End If
+
+
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
+        If TextBox2.Text <> "" Then
+            Button1.Enabled = True
+        Else
+            Button1.Enabled = False
+
+        End If
+      
+
+    End Sub
+
+    Private Sub Button1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Button1.KeyDown
+
+
+        If e.KeyCode = Keys.Enter Then
+
+            Dim username As String
+            Dim password As String
+
+
+            username = TextBox1.Text
+            password = TextBox2.Text
+
+
+            con.Open()
+
+            query = "SELECT * FROM `receiving access` WHERE `userid`='" & TextBox1.Text & "' and `password`= '" & TextBox2.Text & "'"
+            cmd = New MySqlCommand(query, con)
+            rd = cmd.ExecuteReader
+
+            If rd.HasRows Then
+
+                rd.Read()
+
+                ' <-- This is needed to show the username automatically inside VB form
+                rd.Read()
+                Receiving_Panel.Label1.Text = rd("userid")
+                Receiving_Panel.Label3.Text = rd("f_name")
+                Receiving_Panel.Label4.Text = rd("l_name")
+
+
+                con.Close()
+
+                ' <-- for logging purposes -->
+
+                con.Open()
+                query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox6.Text & "')"
+                cmd = New MySqlCommand(query, con)
+                cmd.CommandTimeout = 240  'for time out errors
+                rd = cmd.ExecuteReader()
+
+
+                Me.Hide()
+                Receiving_Panel.ShowDialog()
+                Me.Close()
+
+
+            Else
+
+                con.Close()
+                rd.Close()
+
+                MsgBox("Invalid User Name and Password !", 0 + 64)
+
+                '<-- Logging for invalid Instance -->
+                con.Open()
+                query = "INSERT INTO `entry log`(`time_stamp`, `username`, `pcname`, `ipaddress`, `access type`, `outcome`) values ('" & TextBox3.Text & "','" & TextBox1.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & Label4.Text & "','" & TextBox7.Text & "')"
+                cmd = New MySqlCommand(query, con)
+                cmd.CommandTimeout = 240  'for time out errors
+                rd = cmd.ExecuteReader()
+
+
+
+
+                TextBox1.Text = ""
+                TextBox2.Text = ""
+
+                con.Close()
+
+            End If
+
+        End If
+
+
+    End Sub
+
+    Private Sub Button2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Button2.KeyDown
+
+
+
+        If e.KeyCode = Keys.Enter Then
+
+            Dim abaniko As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+
+            If abaniko = DialogResult.Yes Then
+
+
+
+
+                Dim ae As New Login_As    ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+                Me.Hide()
+                ae.ShowDialog()
+                Me.Dispose()
+                Me.Close()
+
+
+            End If
 
         End If
 

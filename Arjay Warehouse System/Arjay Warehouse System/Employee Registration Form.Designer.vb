@@ -99,6 +99,7 @@ Partial Class Employee_Registration_Form
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(255, 21)
         Me.TextBox1.TabIndex = 36
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
         '
@@ -300,9 +301,8 @@ Partial Class Employee_Registration_Form
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(49, 577)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(386, 24)
+        Me.Label12.Size = New System.Drawing.Size(0, 24)
         Me.Label12.TabIndex = 49
-        Me.Label12.Text = "Person To Contact In Case of Emergency"
         '
         'Label11
         '
@@ -369,6 +369,7 @@ Partial Class Employee_Registration_Form
         Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox13.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox13.Location = New System.Drawing.Point(140, 100)
+        Me.TextBox13.MaxLength = 10
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(255, 21)
         Me.TextBox13.TabIndex = 66
@@ -378,6 +379,7 @@ Partial Class Employee_Registration_Form
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox14.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox14.Location = New System.Drawing.Point(140, 250)
+        Me.TextBox14.MaxLength = 10
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(255, 21)
         Me.TextBox14.TabIndex = 67

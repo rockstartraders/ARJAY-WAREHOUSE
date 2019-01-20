@@ -44,7 +44,7 @@ Partial Class Splash
         'ProgressBar1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(3, 58)
-        Me.ProgressBar1.Maximum = 110
+        Me.ProgressBar1.Maximum = 130
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(84, 23)
         Me.ProgressBar1.Step = 2
@@ -66,7 +66,7 @@ Partial Class Splash
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Splash"
-        Me.Opacity = 0.65R
+        Me.Opacity = 0.8R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Splash"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
