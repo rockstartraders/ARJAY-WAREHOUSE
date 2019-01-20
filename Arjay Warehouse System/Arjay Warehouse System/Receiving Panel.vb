@@ -105,10 +105,9 @@
         If asube = DialogResult.Yes Then
 
             Me.Hide()
-            Login_As.ShowDialog()
+            MsgBox("Goodbye")
             Me.Dispose()
             Me.Close()
-
 
 
         End If

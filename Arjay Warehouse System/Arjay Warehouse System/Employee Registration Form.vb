@@ -134,7 +134,19 @@ Public Class Employee_Registration_Form
 
     End Sub
 
+    Private Sub TextBox13_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox13.Click
+
+
+
+    End Sub
+
     Private Sub TextBox13_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox13.Enter
+
+
+    End Sub
+
+    Private Sub TextBox13_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox13.GotFocus
+
 
 
     End Sub
@@ -166,7 +178,7 @@ Public Class Employee_Registration_Form
 
     Private Sub TextBox13_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox13.TextChanged
 
-        TextBox13.Text = "ddmmyyyy - No Spaces"
+
 
 
 

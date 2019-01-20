@@ -13,7 +13,9 @@ Public Class Password_Reset_for_Dispatch
     Dim rd As MySqlDataReader
     Dim query As String
     Private Sub Password_Reset_for_Dispatch_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        
+
+        Button3.Enabled = False
+
         Dim D As Date = Now()  ' this is date and time 
         Me.Label3.Text = D
 
@@ -104,6 +106,14 @@ Public Class Password_Reset_for_Dispatch
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
+        If TextBox7.TextLength >= 8 Then
+            Button3.Enabled = True
+        Else
+            Button3.Enabled = False
+
+        End If
+
 
     End Sub
 

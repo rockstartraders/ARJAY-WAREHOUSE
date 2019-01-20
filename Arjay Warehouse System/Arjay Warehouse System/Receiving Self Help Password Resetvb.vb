@@ -44,6 +44,15 @@ Public Class Receiving_Self_Help_Password_Resetvb
     End Sub
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
 
+
+        If TextBox2.TextLength >= 8 Then
+            Button3.Enabled = True
+        Else
+            Button3.Enabled = False
+
+        End If
+
+
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
@@ -105,7 +114,8 @@ Public Class Receiving_Self_Help_Password_Resetvb
 
         Me.TextBox1.Text = Receiving_Panel.Label1.Text
         Button1.Enabled = False
-
+        Button3.Enabled = False
+        TextBox2.Select()
 
     End Sub
 

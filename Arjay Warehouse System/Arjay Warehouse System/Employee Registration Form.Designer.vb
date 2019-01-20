@@ -62,6 +62,8 @@ Partial Class Employee_Registration_Form
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox4
@@ -371,7 +373,7 @@ Partial Class Employee_Registration_Form
         Me.TextBox13.Location = New System.Drawing.Point(140, 100)
         Me.TextBox13.MaxLength = 10
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(255, 21)
+        Me.TextBox13.Size = New System.Drawing.Size(120, 21)
         Me.TextBox13.TabIndex = 66
         '
         'TextBox14
@@ -381,7 +383,7 @@ Partial Class Employee_Registration_Form
         Me.TextBox14.Location = New System.Drawing.Point(140, 250)
         Me.TextBox14.MaxLength = 10
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(255, 21)
+        Me.TextBox14.Size = New System.Drawing.Size(120, 21)
         Me.TextBox14.TabIndex = 67
         '
         'Label18
@@ -453,12 +455,36 @@ Partial Class Employee_Registration_Form
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.Black
+        Me.Label21.Location = New System.Drawing.Point(264, 102)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(131, 14)
+        Me.Label21.TabIndex = 133
+        Me.Label21.Text = "DDMMYYYY No Spaces"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.Black
+        Me.Label22.Location = New System.Drawing.Point(264, 252)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(131, 14)
+        Me.Label22.TabIndex = 134
+        Me.Label22.Text = "DDMMYYYY No Spaces"
+        '
         'Employee_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(497, 881)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
@@ -546,4 +572,6 @@ Partial Class Employee_Registration_Form
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
 End Class

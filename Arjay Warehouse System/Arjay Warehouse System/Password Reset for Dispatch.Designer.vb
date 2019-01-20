@@ -44,6 +44,7 @@ Partial Class Password_Reset_for_Dispatch
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -196,7 +197,7 @@ Partial Class Password_Reset_for_Dispatch
         '
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox7.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(145, 330)
+        Me.TextBox7.Location = New System.Drawing.Point(145, 320)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox7.Size = New System.Drawing.Size(201, 21)
@@ -239,7 +240,7 @@ Partial Class Password_Reset_for_Dispatch
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate3
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(190, 357)
+        Me.Button3.Location = New System.Drawing.Point(190, 364)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(97, 39)
         Me.Button3.TabIndex = 86
@@ -275,12 +276,23 @@ Partial Class Password_Reset_for_Dispatch
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(142, 344)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(215, 14)
+        Me.Label11.TabIndex = 87
+        Me.Label11.Text = "Password Must Be 8 or More Characters"
+        '
         'Password_Reset_for_Dispatch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(452, 566)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
@@ -332,4 +344,5 @@ Partial Class Password_Reset_for_Dispatch
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

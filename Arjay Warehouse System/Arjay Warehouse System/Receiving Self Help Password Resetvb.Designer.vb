@@ -31,6 +31,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox2
@@ -91,7 +92,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate5
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(167, 216)
+        Me.Button3.Location = New System.Drawing.Point(168, 244)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 38)
         Me.Button3.TabIndex = 17
@@ -105,7 +106,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.cancel10
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(220, 284)
+        Me.Button2.Location = New System.Drawing.Point(220, 298)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(90, 38)
         Me.Button2.TabIndex = 15
@@ -119,7 +120,7 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.update5
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(119, 284)
+        Me.Button1.Location = New System.Drawing.Point(119, 298)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(95, 38)
         Me.Button1.TabIndex = 14
@@ -127,12 +128,23 @@ Partial Class Receiving_Self_Help_Password_Resetvb
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(110, 213)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(215, 14)
+        Me.Label4.TabIndex = 18
+        Me.Label4.Text = "Password Must Be 8 or More Characters"
+        '
         'Receiving_Self_Help_Password_Resetvb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(442, 391)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -158,4 +170,5 @@ Partial Class Receiving_Self_Help_Password_Resetvb
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

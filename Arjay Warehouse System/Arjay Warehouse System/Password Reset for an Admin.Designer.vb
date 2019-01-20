@@ -44,6 +44,7 @@ Partial Class Password_Reset_for_an_Admin
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -239,7 +240,7 @@ Partial Class Password_Reset_for_an_Admin
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate2
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(181, 362)
+        Me.Button3.Location = New System.Drawing.Point(181, 376)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 3, 3)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(98, 44)
@@ -276,12 +277,23 @@ Partial Class Password_Reset_for_an_Admin
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(131, 358)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(215, 14)
+        Me.Label11.TabIndex = 86
+        Me.Label11.Text = "Password Must Be 8 or More Characters"
+        '
         'Password_Reset_for_an_Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(434, 589)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
@@ -333,4 +345,5 @@ Partial Class Password_Reset_for_an_Admin
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

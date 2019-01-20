@@ -20,8 +20,9 @@ Public Class Dispatch_Self_Help_Reset_Password
         '< --- Use this to display text from previous from to this new instance 
 
         Me.TextBox1.Text = Dispatch_Panel.Label1.Text
-
+        TextBox2.Select()
         Button1.Enabled = False
+        Button3.Enabled = False
 
        
 
@@ -110,7 +111,15 @@ Public Class Dispatch_Self_Help_Reset_Password
     End Sub
 
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-  
+
+
+        If TextBox2.TextLength >= 8 Then
+            Button3.Enabled = True
+        Else
+            Button3.Enabled = False
+
+        End If
+
 
     End Sub
 

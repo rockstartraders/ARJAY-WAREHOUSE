@@ -43,6 +43,14 @@ Public Class Admin_Self_Help_Password_Reset
     End Sub
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
 
+
+        If TextBox2.TextLength >= 8 Then
+            Button3.Enabled = True
+        Else
+            Button3.Enabled = False
+
+        End If
+
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
@@ -102,18 +110,23 @@ Public Class Admin_Self_Help_Password_Reset
 
     Private Sub Admin_Self_Help_Password_Reset_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        Button3.Enabled = False
         Me.TextBox1.Text = Admin_Panel.Label1.Text
         Button1.Enabled = False
+        TextBox2.Select()
+
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+
 
         ' <-- Form validation -->
 
         Dim newpassword As String
 
         newpassword = TextBox2.Text
-       
+
         con.Open()
         query = "select * from `admin access` where `password`='" & TextBox2.Text & "'"
         cmd = New MySqlCommand(query, con)

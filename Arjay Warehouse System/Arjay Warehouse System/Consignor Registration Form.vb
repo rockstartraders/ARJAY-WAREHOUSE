@@ -46,12 +46,12 @@ Public Class Consignor_Registration_Form
 
 
 
-        Dim a As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+        Dim areglo As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
 
-        If a = DialogResult.Yes Then
+        If areglo = DialogResult.Yes Then
 
 
-            
+
             Me.Dispose()
             Me.Close()
 
@@ -296,6 +296,30 @@ Public Class Consignor_Registration_Form
             'InitializeComponent() 'load all the controls again
             Consignor_Registration_Form_Load(e, e) 'Load everything in your form load event again
 
+
+
+        End If
+
+
+    End Sub
+
+    Private Sub Button2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Button2.KeyDown
+
+        ' < -- Enter Index --> 
+
+        If e.KeyCode = Keys.Enter Then
+            Dim areglo As DialogResult = MsgBox("Are You Sure You Want to Exit ?", 4 + 32, )
+
+            If areglo = DialogResult.Yes Then
+
+
+
+                Me.Dispose()
+                Me.Close()
+
+
+
+            End If
 
 
         End If

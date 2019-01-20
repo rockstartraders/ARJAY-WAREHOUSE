@@ -19,6 +19,8 @@ Public Class Password_Reset_for_an_Admin
         Me.Label3.Text = D
 
         Button1.Enabled = False
+        Button3.Enabled = False
+
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
         Dim adapter As New MySqlDataAdapter("SELECT `emp_no`, `f_name`, `m_name`, `l_name`, `dept`, `userid`, `password` FROM `admin access`", con)
@@ -204,6 +206,15 @@ Public Class Password_Reset_for_an_Admin
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
+
+        If TextBox7.TextLength >= 8 Then
+            Button3.Enabled = True
+        Else
+            Button3.Enabled = False
+
+        End If
+
 
     End Sub
 End Class

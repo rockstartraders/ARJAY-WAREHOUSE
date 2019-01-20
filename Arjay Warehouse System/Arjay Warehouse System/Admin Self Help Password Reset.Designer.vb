@@ -31,6 +31,7 @@ Partial Class Admin_Self_Help_Password_Reset
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox2
@@ -38,6 +39,7 @@ Partial Class Admin_Self_Help_Password_Reset
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Location = New System.Drawing.Point(130, 186)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(240, 21)
         Me.TextBox2.TabIndex = 13
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -88,7 +90,7 @@ Partial Class Admin_Self_Help_Password_Reset
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.validate
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(198, 228)
+        Me.Button3.Location = New System.Drawing.Point(183, 238)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(110, 38)
         Me.Button3.TabIndex = 16
@@ -122,12 +124,23 @@ Partial Class Admin_Self_Help_Password_Reset
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(146, 210)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(215, 14)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Password Must Be 8 or More Characters"
+        '
         'Admin_Self_Help_Password_Reset
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(486, 423)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -154,4 +167,5 @@ Partial Class Admin_Self_Help_Password_Reset
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
