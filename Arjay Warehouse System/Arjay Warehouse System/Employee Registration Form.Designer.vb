@@ -528,7 +528,7 @@ Partial Class Employee_Registration_Form
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Employee_Registration_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Employee Registration Form"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

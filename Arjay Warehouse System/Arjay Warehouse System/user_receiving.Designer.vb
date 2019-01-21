@@ -126,7 +126,7 @@ Partial Class user_receiving
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "user_receiving"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "View Receiving Details"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

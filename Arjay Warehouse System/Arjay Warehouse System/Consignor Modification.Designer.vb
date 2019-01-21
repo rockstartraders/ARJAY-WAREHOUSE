@@ -139,7 +139,7 @@ Partial Class Consignor_Modification
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Consignor_Modification"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Modify Consignors Landing Page"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

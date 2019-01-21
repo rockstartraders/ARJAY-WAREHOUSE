@@ -374,7 +374,7 @@ Partial Class Delete_Consignor_Records
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Delete_Consignor_Records"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Delete Consignor Records"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

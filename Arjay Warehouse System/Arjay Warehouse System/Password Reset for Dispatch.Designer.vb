@@ -318,7 +318,7 @@ Partial Class Password_Reset_for_Dispatch
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Password_Reset_for_Dispatch"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Password Reset for Dispatch"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

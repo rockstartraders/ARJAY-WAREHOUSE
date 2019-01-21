@@ -265,7 +265,7 @@ Partial Class Dispatch_Panel
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Dispatch_Panel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "DISPATCH PANEL"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

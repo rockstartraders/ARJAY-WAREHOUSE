@@ -186,7 +186,7 @@ Partial Class Admin_Create_Account_Landing_Page
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Admin_Create_Account_Landing_Page"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin Create Account Landing Page"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

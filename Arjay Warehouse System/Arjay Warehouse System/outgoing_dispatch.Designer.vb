@@ -1041,7 +1041,7 @@ Partial Class outgoing_dispatch
         Me.Controls.Add(Me.TextBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "outgoing_dispatch"
-        Me.Text = "Outgoing"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()

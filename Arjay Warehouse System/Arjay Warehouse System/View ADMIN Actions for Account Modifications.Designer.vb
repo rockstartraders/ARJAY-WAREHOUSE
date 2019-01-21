@@ -141,7 +141,7 @@ Partial Class View_ADMIN_Actions_for_Account_Modifications
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "View_ADMIN_Actions_for_Account_Modifications"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "View Access Modifications done By ADMIN "
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

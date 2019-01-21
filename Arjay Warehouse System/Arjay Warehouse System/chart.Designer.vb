@@ -628,7 +628,7 @@ Partial Class chart
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "chart"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "chart"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TabPage7.ResumeLayout(False)
         CType(Me.Chart7, System.ComponentModel.ISupportInitialize).EndInit()

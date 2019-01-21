@@ -160,7 +160,7 @@ Partial Class Password_Reset_Admin_Panel
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Password_Reset_Admin_Panel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Password Reset Admin Panel"
+        Me.Text = "ARJAY WAREHOUSE SYSTEM"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
