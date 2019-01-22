@@ -20,7 +20,10 @@ Public Class Incoming
 
     Private Sub Incoming_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-       
+
+        VScrollBar1.Minimum = 0
+        VScrollBar1.Maximum = 100
+
 
         ' < -- Default Load message --> 
 
@@ -755,6 +758,15 @@ Public Class Incoming
     End Sub
 
     Private Sub TextBox8_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+
+    End Sub
+
+    Private Sub Incoming_Scroll(ByVal sender As Object, ByVal e As System.Windows.Forms.ScrollEventArgs) Handles Me.Scroll
+        
+       
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class
