@@ -458,22 +458,22 @@ Partial Class Employee_Registration_Form
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
         Me.Label21.Location = New System.Drawing.Point(264, 102)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(131, 14)
+        Me.Label21.Size = New System.Drawing.Size(134, 14)
         Me.Label21.TabIndex = 133
         Me.Label21.Text = "DDMMYYYY No Spaces"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
         Me.Label22.Location = New System.Drawing.Point(264, 252)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(131, 14)
+        Me.Label22.Size = New System.Drawing.Size(134, 14)
         Me.Label22.TabIndex = 134
         Me.Label22.Text = "DDMMYYYY No Spaces"
         '

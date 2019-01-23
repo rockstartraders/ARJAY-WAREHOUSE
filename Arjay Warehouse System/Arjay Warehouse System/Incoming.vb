@@ -21,9 +21,7 @@ Public Class Incoming
     Private Sub Incoming_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 
-        VScrollBar1.Minimum = 0
-        VScrollBar1.Maximum = 100
-
+       
 
         ' < -- Default Load message --> 
 
@@ -767,6 +765,10 @@ Public Class Incoming
     End Sub
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub FlowLayoutPanel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
     End Sub
 End Class

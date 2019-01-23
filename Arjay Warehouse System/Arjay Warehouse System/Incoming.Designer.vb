@@ -99,7 +99,6 @@ Partial Class Incoming
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         Me.SuspendLayout()
         '
         'ComboBox3
@@ -960,21 +959,14 @@ Partial Class Incoming
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.WordWrap = False
         '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(1258, 9)
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(17, 956)
-        Me.VScrollBar1.TabIndex = 136
-        '
         'Incoming
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1284, 990)
-        Me.Controls.Add(Me.VScrollBar1)
+        Me.ClientSize = New System.Drawing.Size(1284, 1016)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -1135,5 +1127,4 @@ Partial Class Incoming
     Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
     Friend WithEvents PrintPreviewDialog1 As System.Windows.Forms.PrintPreviewDialog
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents VScrollBar1 As System.Windows.Forms.VScrollBar
 End Class
