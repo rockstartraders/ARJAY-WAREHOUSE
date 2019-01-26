@@ -18,10 +18,10 @@
 
         Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
-        Dim b As New Password_Reset_for_Dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim bsaSsassdsa As New Password_Reset_for_Receiving_Personnel  ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        b.Show()
+        bsaSsassdsa.Show()
 
         Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
@@ -34,10 +34,10 @@
 
         Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
-        Dim c As New Password_Reset_for_Receiving_Personnel   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim cbbbbbbbbbb As New Password_Reset_for_Dispatch   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
-        c.Show()
+        cbbbbbbbbbb.Show()
 
         Me.Cursor = Cursors.Default ' < -- Return cursor to default --> 
 
