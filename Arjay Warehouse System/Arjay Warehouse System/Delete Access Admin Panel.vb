@@ -37,7 +37,7 @@
         Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
 
-        Dim aaaakabbb As New Delete_Access_for_Dispatch_Admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim aaaakabbb As New Delete_Access_for_Receiving_admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         aaaakabbb.Show()
@@ -53,7 +53,7 @@
         Me.Cursor = Cursors.WaitCursor    ' < -- cursor wait function -->
 
 
-        Dim aaaakabbbd As New Delete_Access_for_Receiving_admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+        Dim aaaakabbbd As New Delete_Access_for_Dispatch_Admin_function   ' -- I need to create a new dim to avoid same instance and avoid instance error 
 
 
         aaaakabbbd.Show()

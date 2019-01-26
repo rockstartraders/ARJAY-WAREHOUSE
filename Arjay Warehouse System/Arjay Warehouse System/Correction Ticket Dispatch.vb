@@ -24,6 +24,7 @@ Public Class Correction_Ticket
         Dim D As Date = Now()  ' this is date and time 
         Me.Label3.Text = D
 
+        Button1.Enabled = False
 
         ' < -- Auto fill function / but during form load the combox will be set to empty
 
@@ -61,6 +62,14 @@ Public Class Correction_Ticket
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
+
+        If TextBox7.Text <> "" Then
+            Button1.Enabled = True
+
+        Else
+            Button1.Enabled = False
+        End If
 
     End Sub
 
@@ -237,6 +246,18 @@ Public Class Correction_Ticket
     End Sub
 
     Private Sub Label12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label12.Click
+
+    End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox2.SelectedIndexChanged
+
+        If ComboBox2.Text = "" Then
+            TextBox7.Enabled = False
+
+        Else
+            TextBox7.Enabled = True
+            TextBox7.Select()
+        End If
 
     End Sub
 End Class

@@ -24,6 +24,8 @@ Public Class Create_Admin_Account
         Dim D As Date = Now()  ' this is date and time 
         Me.Label10.Text = D
 
+        Button1.Enabled = False
+
         '<--  Generate random password to AVOID the ADMIN to do the hula hula which is masagwa -->
         '<-- URL : http://www.vbforums.com/showthread.php?637315-RESOLVED-Random-Password-Generator
 
@@ -175,6 +177,14 @@ Public Class Create_Admin_Account
     End Sub
 
     Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
+
+        If TextBox5.Text <> "" Then
+            Button1.Enabled = True
+
+        Else
+            Button1.Enabled = False
+        End If
+
 
     End Sub
 

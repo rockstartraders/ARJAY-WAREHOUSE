@@ -25,8 +25,6 @@ Public Class Admin_Correction_Form
         If TextBox1.Text = "" Then
             Button1.Enabled = False
 
-        Else
-            Button1.Enabled = True
         End If
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")
@@ -125,7 +123,6 @@ Public Class Admin_Correction_Form
 
         Else
             ComboBox1.Enabled = True
-            Button1.Enabled = True
             Button4.Enabled = False
 
         End If
@@ -146,6 +143,14 @@ Public Class Admin_Correction_Form
     End Sub
 
     Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+
+
+        If TextBox8.Text <> "" Then
+            Button1.Enabled = True
+        Else
+            Button1.Enabled = False
+
+        End If
 
     End Sub
 
