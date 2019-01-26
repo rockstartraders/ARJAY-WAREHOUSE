@@ -64,6 +64,7 @@ Partial Class Employee_Registration_Form
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox4
@@ -477,6 +478,16 @@ Partial Class Employee_Registration_Form
         Me.Label22.TabIndex = 134
         Me.Label22.Text = "DDMMYYYY No Spaces"
         '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(141, 577)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(257, 24)
+        Me.Label23.TabIndex = 135
+        Me.Label23.Text = "Emergency Contact Details"
+        '
         'Employee_Registration_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -484,6 +495,7 @@ Partial Class Employee_Registration_Form
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(497, 881)
+        Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.TextBox16)
@@ -575,4 +587,5 @@ Partial Class Employee_Registration_Form
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
 End Class
