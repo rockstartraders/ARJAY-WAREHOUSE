@@ -32,6 +32,7 @@ Partial Class Login_As
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label2
@@ -105,9 +106,9 @@ Partial Class Login_As
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.Button4.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.product_availability
-        Me.Button4.Location = New System.Drawing.Point(606, 117)
+        Me.Button4.Location = New System.Drawing.Point(606, 85)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(155, 150)
+        Me.Button4.Size = New System.Drawing.Size(155, 182)
         Me.Button4.TabIndex = 18
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
@@ -129,6 +130,7 @@ Partial Class Login_As
         'Button1
         '
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
@@ -140,6 +142,18 @@ Partial Class Login_As
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button15
+        '
+        Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.Button15.Image = Global.Arjay_Warehouse_System.My.Resources.Resources.close5
+        Me.Button15.Location = New System.Drawing.Point(390, 332)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(76, 71)
+        Me.Button15.TabIndex = 20
+        Me.Button15.UseVisualStyleBackColor = True
+        '
         'Login_As
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -147,7 +161,8 @@ Partial Class Login_As
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(822, 433)
-        Me.Controls.Add(Me.Label5)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
@@ -156,12 +171,14 @@ Partial Class Login_As
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label5)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login_As"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ARJAY WAREHOUSE SYSTEM"
+        Me.TransparencyKey = System.Drawing.Color.Transparent
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -175,4 +192,5 @@ Partial Class Login_As
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button15 As System.Windows.Forms.Button
 End Class

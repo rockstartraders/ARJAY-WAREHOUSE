@@ -17,6 +17,16 @@ Public Class Consignors_Address_Book
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Consignors_Address_Book_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
 
     Private Sub Consignors_Address_Book_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

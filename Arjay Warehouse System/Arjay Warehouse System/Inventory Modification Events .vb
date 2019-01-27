@@ -14,6 +14,16 @@ Public Class Inventory_Modification_Events
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Inventory_Modification_Events_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Inventory_Modification_Events_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 

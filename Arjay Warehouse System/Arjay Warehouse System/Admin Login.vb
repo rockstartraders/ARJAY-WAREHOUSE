@@ -9,6 +9,15 @@ Public Class Admin_Login
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Admin_Login_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+    End Sub
+
     ' for entry log 
 
     Private Sub Admin_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

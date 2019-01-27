@@ -7,6 +7,12 @@ Public Class Login_As
 
     End Sub
 
+    Private Sub Login_As_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+
+    End Sub
+
     Private Sub Login_As_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
@@ -109,6 +115,30 @@ Public Class Login_As
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+
+        ' < -- This is needed to Avoid Modal Error -->
+
+        Dim palabokfiesta As DialogResult = MsgBox("Are You Sure You Want to Sign Out From This Session ?", 4 + 32, )
+
+        If palabokfiesta = DialogResult.Yes Then
+
+
+
+            Dim consignorkagebunshinreadonlyonetwo As New Login_As   ' -- I need to create a new dim to avoid same instance and avoid instance error 
+
+
+            Me.Hide()
+            MsgBox("Goodbye", 0)
+            Me.Dispose()
+            Me.Close()
+
+
+        End If
+
 
     End Sub
 End Class

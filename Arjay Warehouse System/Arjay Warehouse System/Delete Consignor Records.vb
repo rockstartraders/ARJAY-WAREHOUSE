@@ -15,6 +15,16 @@ Public Class Delete_Consignor_Records
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Delete_Consignor_Records_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Delete_Consignor_Records_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         ' <-- Form Load Event --> 

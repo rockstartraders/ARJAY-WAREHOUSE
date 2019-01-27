@@ -8,6 +8,16 @@ Public Class Entry_Log_Viewer
     Dim cmd As MySqlCommand
     Dim rd As MySqlDataReader
     Dim query As String
+
+    Private Sub Entry_Log_Viewer_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
     Private Sub Entry_Log_Viewer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Dim con As New MySqlConnection("Server=db4free.net;port=3306;userid=arjaywarehouse;password=Hulinghulingproject;database=arjay_warehouse;old guids=true;Connection Timeout=240;")

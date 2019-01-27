@@ -39,6 +39,16 @@ Public Class Dispatch_Panel
 
     End Sub
 
+    Private Sub Dispatch_Panel_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Dispatch_Panel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
        

@@ -13,6 +13,16 @@ Public Class Dispatch_Login
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Dispatch_Login_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Dispatch_Login_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
 
 

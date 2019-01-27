@@ -6,6 +6,16 @@ Public Class View_ADMIN_Actions_for_Account_Modifications
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub View_ADMIN_Actions_for_Account_Modifications_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub View_ADMIN_Actions_for_Account_Modifications_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 

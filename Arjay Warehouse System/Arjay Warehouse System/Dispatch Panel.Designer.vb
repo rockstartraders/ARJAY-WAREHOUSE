@@ -244,6 +244,7 @@ Partial Class Dispatch_Panel
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(859, 643)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label9)

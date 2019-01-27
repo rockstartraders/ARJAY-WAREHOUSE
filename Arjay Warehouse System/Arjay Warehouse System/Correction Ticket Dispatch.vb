@@ -16,6 +16,16 @@ Public Class Correction_Ticket
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Correction_Ticket_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Correction_Ticket_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Dim rn As New Random

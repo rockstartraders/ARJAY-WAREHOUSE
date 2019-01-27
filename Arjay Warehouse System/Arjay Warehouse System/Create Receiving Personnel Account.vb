@@ -15,6 +15,15 @@ Public Class Create_Receiving_Personnel_Account
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Create_Receiving_Personnel_Account_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Create_Receiving_Personnel_Account_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
 

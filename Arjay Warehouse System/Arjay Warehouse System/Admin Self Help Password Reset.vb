@@ -108,6 +108,15 @@ Public Class Admin_Self_Help_Password_Reset
 
     End Sub
 
+    Private Sub Admin_Self_Help_Password_Reset_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+    End Sub
+
     Private Sub Admin_Self_Help_Password_Reset_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Button3.Enabled = False

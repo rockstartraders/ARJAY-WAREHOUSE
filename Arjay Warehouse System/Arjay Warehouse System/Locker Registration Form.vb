@@ -77,6 +77,16 @@ Public Class Locker_Registration_Form
 
     End Sub
 
+    Private Sub Locker_Registration_Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Locker_Registration_Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Dim D As Date = Now()  ' this is date and time 

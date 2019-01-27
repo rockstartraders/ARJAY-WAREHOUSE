@@ -14,6 +14,16 @@ Public Class Password_Reset_for_Receiving_Personnel
     Dim rd As MySqlDataReader
     Dim query As String
 
+    Private Sub Password_Reset_for_Receiving_Personnel_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
+
+        ' < -- disable x button from form --> 
+
+        e.Cancel = True
+
+
+    End Sub
+
     Private Sub Password_Reset_for_Receiving_Personnel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         ComboBox1.Select()

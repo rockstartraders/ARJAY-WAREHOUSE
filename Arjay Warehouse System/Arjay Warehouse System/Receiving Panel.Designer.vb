@@ -245,6 +245,7 @@ Partial Class Receiving_Panel
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(859, 646)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
