@@ -93,7 +93,11 @@ Public Class Admin_Login
 
                 Admin_Panel.ShowDialog()
                 Me.Dispose()
-                Me.Close()
+            Me.Close()
+            End
+
+
+
 
 
 
@@ -244,6 +248,7 @@ Public Class Admin_Login
                 Admin_Panel.ShowDialog()
                 Me.Dispose()
                 Me.Close()
+                End
 
 
 
