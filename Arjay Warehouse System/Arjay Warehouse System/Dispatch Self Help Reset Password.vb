@@ -169,16 +169,14 @@ Public Class Dispatch_Self_Help_Reset_Password
         newpassword = TextBox2.Text
 
         con.Open()
-        query = "select * from `admin access` where `password`='" & TextBox2.Text & "'"
+        query = "select * from `dispatch access` where `password`='" & TextBox2.Text & "'"
         cmd = New MySqlCommand(query, con)
         rd = cmd.ExecuteReader
 
         If rd.HasRows Then
             MsgBox("Sorry This Password is Not Acceptable , Please Enter a more Complex Password.", 0 + 64)
             TextBox2.Text = ""
-            'InitializeComponent() 'load all the controls again
-            'Admin_Self_Help_Password_Reset_Load(e, e) 'Load everything in your form load event again
-
+           
             Me.Cursor = Cursors.Default
 
         Else
