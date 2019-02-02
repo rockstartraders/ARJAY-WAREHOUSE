@@ -608,4 +608,9 @@ Public Class outgoing_dispatch
     Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub
+
+    Private Sub TextBox31_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox31.TextChanged
+
+      
+    End Sub
 End Class

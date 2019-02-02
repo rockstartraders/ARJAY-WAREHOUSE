@@ -618,9 +618,9 @@ Partial Class outgoing_dispatch
         Me.Label21.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.Location = New System.Drawing.Point(405, 362)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(76, 20)
+        Me.Label21.Size = New System.Drawing.Size(75, 20)
         Me.Label21.TabIndex = 165
-        Me.Label21.Text = "Received"
+        Me.Label21.Text = "Dispatch"
         '
         'TextBox15
         '
