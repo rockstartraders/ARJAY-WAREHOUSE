@@ -1,6 +1,6 @@
 
 
-![alt text](Warehouse_Icon.ico)
+<center>![alt text](Warehouse_Icon.ico)</center>
  # ARJAY-WAREHOUSE-SYSTEM
 
 - System created for Arjay Trading. <br>
@@ -15,4 +15,4 @@
 
 
 ### **About this:** <br>
-##### The database for this system has been migrated to a paid host already, but during the development and testing phase, I used _[db4free](https://db4free.net/)_ so that the system can be use and access online.
+#### The database for this system has been migrated to a paid host already, but during the development and testing phase, I used _[db4free](https://db4free.net/)_ so that the system can be use and access online.
