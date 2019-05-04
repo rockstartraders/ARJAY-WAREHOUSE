@@ -1,10 +1,7 @@
 
 
 
-<span align="center"><div style="text-align:center"><img src="./Warehouse_Icon.ico" /></div></span>
-
- # ARJAY-WAREHOUSE-SYSTEM
-
+<div style="text-align:center"><img src="./Warehouse_Icon.ico" /> <h1>ARJAY-WAREHOUSE-SYSTEM </h1></div>
 - System created for Arjay Trading. <br>
 - Used Vb.net and Db4free.net for its database (online database).
 <br>
