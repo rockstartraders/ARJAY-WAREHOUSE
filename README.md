@@ -1,7 +1,7 @@
 
 
 
-<div style="text-align:center"><img src="./Warehouse_Icon.ico" /></div>
+<div style="text-align:center"><center></center><img src="./Warehouse_Icon.ico" /></div>
 
  # ARJAY-WAREHOUSE-SYSTEM
 
