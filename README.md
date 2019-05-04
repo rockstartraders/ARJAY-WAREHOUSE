@@ -1,6 +1,8 @@
 
 
-<center>![alt text](Warehouse_Icon.ico)</center>
+
+<div style="text-align:center"><img src="./Warehouse_Icon.ico" /></div>
+
  # ARJAY-WAREHOUSE-SYSTEM
 
 - System created for Arjay Trading. <br>
