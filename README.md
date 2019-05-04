@@ -3,8 +3,7 @@
 <p align="center">
 <img src="./Warehouse_Icon.ico">
 </p>
-
-<h1 style="text-align:center;"> ARJAY-WAREHOUSE-SYSTEM </h1>
+<p style="text-align: center; font-size: 40px; "> ARJAY-WAREHOUSE-SYSTEM </p>
 
 - System created for Arjay Trading. <br>
 - Used Vb.net and Db4free.net for its database (online database).
