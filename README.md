@@ -29,4 +29,4 @@ ARJAY-WAREHOUSE-SYSTEM
 
  #### [Source Code here : ](https://github.com/rockstartraders/Arjay-Warehouse-System-V3.0)
 
- ##### **I No longer have access to it's database since its alreadybeen transfered to a paid db.** <br>
+ ##### **I No longer have access to it's database since its already been transfered to a paid db.** <br>
