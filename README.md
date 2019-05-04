@@ -26,8 +26,5 @@ ARJAY-WAREHOUSE-SYSTEM
 #### The database for this system has been migrated to a paid host already, but during the development and testing phase, I used _[db4free](https://db4free.net/)_ so that the system can be use and access online.
 
 <br>
-<br>
-
- ##### [Source Code here : ](https://github.com/rockstartraders/Arjay-Warehouse-System-V3.0)
-
+ #### [Source Code here : ](https://github.com/rockstartraders/Arjay-Warehouse-System-V3.0)<br> 
  ##### **I No longer have access to it's database since its alreadybeen transfered to a paid db.** <br>
